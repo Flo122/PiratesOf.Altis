@@ -1,4 +1,0 @@
-PiratesOf.Altis
-===============
-
-Altis Life
