@@ -53,6 +53,7 @@ ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
 		_inv lbSetData [(lbSize _inv)-1,_shrt];
 	};
 } foreach life_inv_items;
+
 {
 	if((_x select 1) == _side) then
 	{

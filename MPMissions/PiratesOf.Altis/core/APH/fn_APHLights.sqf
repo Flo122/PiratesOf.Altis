@@ -11,13 +11,13 @@ _vehicle = _this select 0;
        
 if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "lights")) exitWith {};
 _lightRed = [20, 10, 0];
-_lightBlue = [20, 20, 0.1];
+_lightBlue = [20, 10, 0];
 
 _lightleft = "#lightpoint" createVehicle getpos _vehicle;  
 sleep 0.4;
 _lightleft setLightColor _lightBlue;
 _lightleft setLightBrightness 0.1;
-_lightleft setLightAmbient [20, 20, 0.1];
+_lightleft setLightAmbient [20, 10, 0];
 
 switch (typeOf _vehicle) do
 {
@@ -52,7 +52,7 @@ _lightright = "#lightpoint" createVehicle getpos _vehicle;
 sleep 0.4;
 _lightright setLightColor _lightBlue;
 _lightright setLightBrightness 0.1;  
-_lightleft setLightAmbient [20, 20, 0.1];
+_lightleft setLightAmbient [20, 10, 0];
  
 switch (typeOf _vehicle) do
 {
@@ -96,14 +96,14 @@ while{ (alive _vehicle)} do
                 _leftRed = false;  
                 _lightright setLightBrightness 0.0;  
                 sleep 0.30;
-                _lightleft setLightBrightness 4;  
+                _lightleft setLightBrightness 6;  
         }  
                 else  
         {  
                 _leftRed = true;  
                 _lightleft setLightBrightness 0.0;  
                 sleep 0.30;
-                _lightright setLightBrightness 4;  
+                _lightright setLightBrightness 6;  
         };  
         sleep (_this select 1);  
 };  
