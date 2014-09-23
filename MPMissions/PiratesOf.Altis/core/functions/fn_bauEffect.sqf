@@ -14,3 +14,6 @@ _vehicle setHitPointDamage["HitEngine ",0.9];
 _vehicle setHitPointDamage["HitHull ",0.7];
 _vehicle setHitPointDamage["HitLGlass ",1.0];
 _vehicle setHitPointDamage["HitRGlass ",1.0];
+_vehicle setHitPointDamage["HitLFWheel",1];
+_vehicle setHitPointDamage["HitLF2Wheel",1];
+_vehicle setHitPointDamage["HitRFWheel",1];
