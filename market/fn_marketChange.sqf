@@ -2,9 +2,10 @@
 
 	Some random and dynamical stuff for market
 
+
 */
 
-private["_rand","_modifier","_price", "_globalchange","_defaultprice","_shortname","_difference"];
+private["_rand","_modifier","_price", "_globalchange","_defaultprice","_shortname","_difference","_display","_message"];
 
 _rand = [0,180] call life_fnc_randomRound;
 
@@ -49,7 +50,12 @@ switch(true) do
 	
 	case (_rand <= 37):
 	{
-		[[0,"Umfrage: Beliebteste Droge bei der Unterschicht ist CrystelMeth"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		disableSerialization;
+		_message = _this select 0;
+		[parseText format["<t size='2'>Marktforschungen haben ergeben das:</t>",["<t size='1.2'>Meth sehr Beliebt ist bei den Jungen Menschen"]] spawn BIS_fnc_AAN;
+		sleep 10; //Time the News is shown
+		_display = uinamespace getvariable "BIS_AAN";
+		_display closeDisplay 0;
 		
 		["methp", [17,36] call life_fnc_randomRound, true] call life_fnc_marketBuy;
 	};
