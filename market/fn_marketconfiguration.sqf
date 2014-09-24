@@ -1,17 +1,15 @@
-/*
-
-	Main configuration for non-persistent market system
-	Will need triggers to hook into vanilla pricing methods
-
 */
 
-////////////MAIN CONFIG
+Made for Blacklagoon by ImSorry/Milkyway
+
+/*
+
 
 life_market_resources = [
 
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
-	["diamondc", 5000, 500, 12000, 1.40, 0.25,
+	["diamondc", 5000, 1000, 22000, 4.00, 1,
 		[ 
 			["oilp",1], 
 			["iron_r",1],
