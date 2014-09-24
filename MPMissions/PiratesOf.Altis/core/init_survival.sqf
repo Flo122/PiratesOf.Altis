@@ -206,7 +206,7 @@
 				_damage = _damage + 0.1;
 				player setDamage (_damage);
 				[] call life_fnc_hudUpdate;
-				sleep 5;
+				sleep 10;
 			};
 		};
 	};
