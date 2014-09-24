@@ -1,6 +1,6 @@
 /*
 
-	Buy [SHORTNAME, AMOUNT, israw, send?]
+	Made for Blacklagoon by ImSorry/Milkyway
 
 */
 
