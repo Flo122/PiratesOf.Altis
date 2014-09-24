@@ -260,5 +260,5 @@ publicVariable "life_market_shortnames";
 	
 	publicVariable "life_market_prices";
 	
-	systemChat "Markt Preise wurden aktualisiert!";
+	systemChat "Marktpreise wurden aktualisiert!";
 //};
