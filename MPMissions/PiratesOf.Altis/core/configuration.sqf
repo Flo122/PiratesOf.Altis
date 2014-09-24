@@ -313,9 +313,6 @@ life_licenses =
 	["license_civ_uranip","civ"]
 ];
 
-illegalmarkers = ["Dealer_1","Dealer_1_4","Dealer_1_3","heroin_p","beruf_1_2","heroin_area","beruf_1","beruf_1_1_2_1_3","beruf_1_1_2_1_1","beruf_2_10","weed_1","turle_dealer","Weed_p_1","beruf_2","cocaine_1","beruf_1_1_2_1_2","cocaine processing","beruf_1_1","chop_shop_3","turle_dealer_1","sellgoldbars","sellgoldbars_1","chop_shop_1","chop_shop_4","chop_shop_2","heroin_1","coke_area","Rebelop_2_1","grenze","beruf_1_1_2_1_4","turtle_1_name_1","turtle_2","turtle_1_name","turtle_1","turtle_1_name_2","turtle_3","beruf_1_1_2_1_2_3","beruf_1_1_2_1_2_1","cp_1_1"];
-legalmarkers = ["cp_1","cp_2","gefahrenzone_1","schießplatz_1","cop_spawn_4"];
-
 //Setup License Variables
 {missionNamespace setVariable[(_x select 0),false];} foreach life_licenses;
 
