@@ -58,18 +58,6 @@ switch (_code) do
 			_handled = true;
 		};
 	};
-	Key for Smartphone
-	case 6:
-	{
-		if(_shift) then {_handled = true;};
-		if (_shift) then
-		{
-			if(!_alt && !_ctrlKey && !dialog) then
-			{
-				createDialog "Life_cell_phone"; //Call SmartPhone Dialog
-			};
-		};
-	};
 	//Map Key
 	case _mapKey:
 	{
@@ -94,6 +82,15 @@ switch (_code) do
 		if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {(life_curWep_h != "")}) then {
 			if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
 				player selectWeapon life_curWep_h;
+			};
+		};
+		
+		if(_ctrlKey) then {_handled = true;};
+		if (_ctrlKey) then
+		{
+			if(!_alt && !_shift && !dialog) then
+			{
+				createDialog "Life_my_smartphone"; //Call SmartPhone Dialog
 			};
 		};
 	};
