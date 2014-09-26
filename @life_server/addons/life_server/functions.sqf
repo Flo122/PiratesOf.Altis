@@ -274,7 +274,7 @@ compileFinal "
 		{
 			if(side player != west) exitWith {};
 			private[""_message""];
-			_message = format["">>>Polizeianfrage %2"",_from,_msg];
+			_message = format["">>>Polizeianfrage von %1: %2"",_from,_msg];
 			hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>Polizeianfrage<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Polizisten<br/><t color='#33CC33'>Von: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
 			[""PoliceDispatch"",[format[""Polizeianfrage von: %1"",_from]]] call bis_fnc_showNotification;
@@ -296,7 +296,7 @@ compileFinal "
 		{
 			private[""_message""];
 			_message = format["">>>Admin Nachricht: %1"",_msg];
-			_admin = format[""Sent by admin: %1"", _from];
+			_admin = format[""Gesendet von Admin: %1"", _from];
 			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Admin Message<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Dich<br/><t color='#33CC33'>Von: <t color='#ffffff'>Einem Admin<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
 			
 			[""AdminMessage"",[""Du hast eine Nachricht von einem Administrator erhalten!""]] call bis_fnc_showNotification;
