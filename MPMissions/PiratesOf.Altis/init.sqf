@@ -37,11 +37,8 @@ StartProgress = true;
 [] execVM "scripts\wetter.sqf";
 //Tränengas
 [] execVM "scripts\teargas.sqf";
-//Handbremse
-[] execVM "scripts\HandBrake.sqf";
 //Windshutzscheibe - wegen desync deaktiviert, weil desyncende Mitfahrer manchmal rausfliegen
 //[] execVM "scripts\windShield.sqf";
-
 //kein sidechat spammen
 [] execVM "scripts\noSideChat.sqf";
 
