@@ -1,3 +1,10 @@
+*/
+
+Made for Blacklagoon by ImSorry/Milkyway
+
+/*
+
+
 life_market_resources = [
 
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1

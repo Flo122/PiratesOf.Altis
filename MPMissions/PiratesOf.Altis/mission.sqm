@@ -13441,7 +13441,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_1";
-			init="this allowDamage false; this addAction [""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+			init="this allowDamage false; this addAction [""Gangaußenposten einnehme"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
 		};
 		class Item876
 		{
@@ -13773,7 +13773,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_2";
-			init="this allowDamage false; this addAction [""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+			init="this allowDamage false; this addAction [""Gangaußenposten einnehmen"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
 		};
 		class Item906
 		{
@@ -14105,7 +14105,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_3";
-			init="this allowDamage false; this addAction [""Capture Gang Area"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+			init="this allowDamage false; this addAction [""Gangaußenposten einnehme"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
 		};
 		class Item936
 		{

@@ -320,6 +320,16 @@ class playerSettings {
 			h = (1 / 25);
 		};
 		
+		class Interface : life_RscButtonMenu {
+			idc = 78000;
+			text = "Infos";
+			onButtonClick = "createDialog ""interface"";";
+			x = 0.1+ (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.805;
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+		
 		class ButtonWantedAdd : life_RscButtonMenu {
 			idc = 9800;
 			//shortcuts[] = {0x00050000 + 2};
