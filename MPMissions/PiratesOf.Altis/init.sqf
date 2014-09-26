@@ -42,6 +42,9 @@ StartProgress = true;
 //Windshutzscheibe - wegen desync deaktiviert, weil desyncende Mitfahrer manchmal rausfliegen
 //[] execVM "scripts\windShield.sqf";
 
+//kein sidechat spammen
+[] execVM "scripts\noSideChat.sqf";
+
 MAC_fnc_switchMove = {
     private["_object","_anim"];
     _object = _this select 0;
@@ -53,7 +56,7 @@ MAC_fnc_switchMove = {
 
 [] spawn
 {
-    sleep 1;
+    sleep 30;
     [] call life_fnc_updateClothing;
 };
 
