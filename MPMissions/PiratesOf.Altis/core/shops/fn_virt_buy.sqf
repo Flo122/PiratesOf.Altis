@@ -2,16 +2,22 @@
 /*
 	File: fn_virt_buy.sqf
 	Author: Bryan "Tonic" Boardwine
-	Edited by worldtrade1101
 	
 	Description:
 	Buy a virtual item from the store.
 */
-private["_type","_price","_amount","_diff","_name","_hideout"];
+private["_type","_price","_amount","_diff","_name","_hideout","_marketprice"];
 if((lbCurSel 2401) == -1) exitWith {hint localize "STR_Shop_Virt_Nothing"};
 _type = lbData[2401,(lbCurSel 2401)];
 _price = lbValue[2401,(lbCurSel 2401)];
 _amount = ctrlText 2404;
+////Marktsystem Anfang////
+_marketprice = [_type] call life_fnc_marketGetBuyPrice;
+if(_marketprice != -1) then
+{
+	_price = _marketprice;
+};
+		////Marktsystem Ende////
 if(!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 _diff = [_type,parseNumber(_amount),life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 _amount = parseNumber(_amount);
@@ -44,15 +50,29 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 			if((_price * _amount) > life_cash) exitWith {[false,_type,_amount] call life_fnc_handleInv; hint localize "STR_NOTF_NotEnoughMoney";};
 			hint format[localize "STR_Shop_Virt_BoughtItem",_amount,_name,[(_price * _amount)] call life_fnc_numberText];
 			__SUB__(life_cash,_price);
-			[[1,player,life_shop_type,_amount,_price,_type],"TON_fnc_Ajustprices",false,false] spawn life_fnc_MP;
+			if(_marketprice != -1) then 
+			{ 
+			[_type, _amount] spawn
+			{
+				sleep 120;
+				[_this select 0,_this select 1] call life_fnc_marketBuy;
+			};			
+			};
 		};
 	} else {
 		if((_price * _amount) > life_cash) exitWith {hint localize "STR_NOTF_NotEnoughMoney"; [false,_type,_amount] call life_fnc_handleInv;};
 		hint format[localize "STR_Shop_Virt_BoughtItem",_amount,_name,[(_price * _amount)] call life_fnc_numberText];
 		__SUB__(life_cash,(_price * _amount));
-		[[1,player,life_shop_type,_amount,_price,_type],"TON_fnc_Ajustprices",false,false] spawn life_fnc_MP;
+		if(_marketprice != -1) then 
+		{ 
+			[_type, _amount] spawn
+			{
+				sleep 120;
+				[_this select 0,_this select 1] call life_fnc_marketBuy;
+			};			
+		};
 	};
-	
 	[] call life_fnc_virt_update;
 };
+
 [0] call SOCK_fnc_updatePartial;

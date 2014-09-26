@@ -113,6 +113,7 @@ class CfgFunctions
 			class mauer {};
 			class mauer2 {};
 			class licht {};
+			class marketconfiguration {};
 		};
 		
 		class Housing

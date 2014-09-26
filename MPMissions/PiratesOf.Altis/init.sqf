@@ -12,6 +12,17 @@ life_versionInfo ="Altis Life RPG v3.1.4.8";
 [] execVM"briefing.sqf"; //Load Briefing
 [] execVM"KRON_Strings.sqf";
 
+//Marktsystem
+if(isDedicated && isNil("life_market_prices")) then
+{
+	[] call life_fnc_marketconfiguration;
+	diag_log "Markt Preise wurden aktualisiert!";
+	
+	"life_market_prices" addPublicVariableEventHandler
+	{
+		diag_log format["Markt Preise wurden aktualisiert! %1", _this select 1];
+	};
+
 StartProgress = true;
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
 

@@ -1,7 +1,7 @@
-class Market
+class marketView
 {
-	idd = 39000;
-	name = "Market";
+	idd = 39500;
+	name = "marketView";
 	movingEnable = false;
 	enableSimulation = true;
 	
