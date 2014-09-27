@@ -79,7 +79,7 @@ if(_ctrl == "money") then
 }
 	else
 {
-	if(((_totalWeight select 1) + _itemWeight) > (_totalWeight select 0)) exitWith {hint "Das fahzeug is bereits voll, oder kann so viel auf einmal nicht einalgern."};
+	if(((_totalWeight select 1) + _itemWeight) > (_totalWeight select 0)) exitWith {hint "Das fahzeug is bereits voll, oder kann nicht so viel auf einmal einlagern."};
 
 	if(!([false,_ctrl,_num] call life_fnc_handleInv)) exitWith {hint "Die Items konnten nicht ins Fahrzeug gelegt werden.";};
 	_index = [_ctrl,_inv] call TON_fnc_index;
