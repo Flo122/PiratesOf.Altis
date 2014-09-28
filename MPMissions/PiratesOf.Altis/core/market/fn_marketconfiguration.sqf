@@ -228,10 +228,8 @@ life_market_resources = [
 ];
 publicVariable "life_market_resources";
 
-////////////GENERATED CONFIG
-//life_market_changes = []; //[SHORTNAME,SELL,BUY]
+//GENERATED CONFIG
 life_market_shortnames = []; //shortnames if in market
-//life_market_clampprices = []; //[SHORTNAME,MIN,MAX]
 
 {
 	life_market_shortnames set [count life_market_shortnames, _x select 0];
@@ -243,7 +241,7 @@ foreach life_market_resources;
 publicVariable "life_market_shortnames";
 //publicVariable "life_market_clampprices";
 
-////////////SYNC PRICES WITH SERVER IF EMPTY
+//SYNC PRICES WITH SERVER IF EMPTY
 //if(isNil("life_market_prices")) then
 //{
 	life_market_prices = []; //[SHORTNAME,CURRENTPRICE,DIRECTIONGLOBAL,DIRECTIONLOCAL]
