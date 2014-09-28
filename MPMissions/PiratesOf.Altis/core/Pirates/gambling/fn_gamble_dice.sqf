@@ -58,8 +58,8 @@ while {king_gamble_roll_time_to_wait > 0} do
         };
     };
     
-    _image1 ctrlSetStructuredText parseText format["<img size='2.5' image='core\king\icons\%1'/>", _icons select _idx1 ];
-    _image2 ctrlSetStructuredText parseText format["<img size='2.5' image='core\king\icons\%1'/>", _icons select _idx2 ];
+    _image1 ctrlSetStructuredText parseText format["<img size='2.5' image='core\Pirates\icons\%1'/>", _icons select _idx1 ];
+    _image2 ctrlSetStructuredText parseText format["<img size='2.5' image='core\Pirates\icons\%1'/>", _icons select _idx2 ];
 
     sleep 0.05;
 };
