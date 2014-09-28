@@ -119,10 +119,6 @@ life_fnc_garageRefund = compileFinal
 [] execVM "core\init_survival.sqf";
 [] execVM "core\fn_addKey.sqf";
 
-_handle = [] spawn compile PreprocessFileLineNumbers "core\Pirates\init.sqf";
-diag_log "::Pirates Client:: Initialization";
-waitUntil {scriptDone _handle};
-diag_log "::Pirates Client:: initialized";
 
 //Delte Illegal Markes for cops
 if(playerSide == west) then {
