@@ -50,12 +50,7 @@ switch(true) do
 	
 	case (_rand <= 37):
 	{
-		disableSerialization;
-		_message = _this select 0;
-		[parseText format["<t size='2'>Marktforschungen haben ergeben das:</t>",["<t size='1.2'>Meth sehr Beliebt ist bei den Jungen Menschen</t>"]] spawn BIS_fnc_AAN;
-		sleep 10; //Time the News is shown
-		_display = uinamespace getvariable "BIS_AAN";
-		_display closeDisplay 0;
+		[[0,"News: Meth ist beliebt bei der Jugend"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		["methp", [17,36] call life_fnc_randomRound, true] call life_fnc_marketBuy;
 	};

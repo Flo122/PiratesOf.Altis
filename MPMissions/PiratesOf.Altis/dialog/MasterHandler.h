@@ -32,5 +32,4 @@
 #include "common_EditorWrapper.hpp"
 #include "market.hpp"
 #include "interface.hpp"
-
-#include "Pirates\gambling.hpp"
+#include "gambling.hpp"
