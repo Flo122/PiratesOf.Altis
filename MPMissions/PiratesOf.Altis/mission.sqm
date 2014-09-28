@@ -12133,7 +12133,7 @@ class Mission
 		};
 		class Item760
 		{
-			position[]={4029.6516,19.387709,13663.335};
+			position[]={4027.1091,19.257158,13659.695};
 			azimut=33.824299;
 			offsetY=0.050000001;
 			id=1076;
@@ -23329,7 +23329,7 @@ class Mission
 		};
 		class Item1778
 		{
-			position[]={3576.8472,13.103669,12901.809};
+			position[]={3573.2878,12.968228,12899.146};
 			azimut=57.999283;
 			offsetY=0.050000001;
 			id=2094;
@@ -65177,7 +65177,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item5941
 		{
@@ -65336,14 +65336,14 @@ class Mission
 		class Item5954
 		{
 			position[]={6186.2583,27.03109,15093.613};
-			azimut=324.82339;
+			azimut=324.823;
 			offsetY=0.2;
 			special="NONE";
 			id=6270;
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item5955
 		{
@@ -65426,7 +65426,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item5962
 		{
@@ -65509,7 +65509,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item5969
 		{
@@ -65592,7 +65592,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item5976
 		{
@@ -65675,7 +65675,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item5983
 		{
@@ -65758,7 +65758,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item5990
 		{
@@ -65841,7 +65841,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item5997
 		{
@@ -65924,7 +65924,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item6004
 		{
@@ -66007,7 +66007,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item6011
 		{
@@ -66090,7 +66090,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item6018
 		{
@@ -66173,7 +66173,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item6025
 		{
@@ -66332,14 +66332,14 @@ class Mission
 		class Item6038
 		{
 			position[]={14237.712,18.42601,18317.32};
-			azimut=411.0025;
+			azimut=411.00299;
 			offsetY=0.2;
 			special="NONE";
 			id=6354;
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item6039
 		{
@@ -66422,7 +66422,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 '];";
 		};
 		class Item6046
 		{
@@ -66505,7 +66505,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian && vehicle player == player && player distance _target < 4 ']; ";
 		};
 		class Item6053
 		{
