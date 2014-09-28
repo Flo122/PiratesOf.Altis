@@ -22,3 +22,5 @@ addons/animals_f_beta.pbo
 *.db
 *.bikey
 *.bat
+*.rpt
+*.log
