@@ -268,6 +268,7 @@ class Life_Client_Core
 		class switch {};
 		class autosave {};
 		class bauEffect {};
+		class addsubstract {};
 	};
 	
 	class Network
