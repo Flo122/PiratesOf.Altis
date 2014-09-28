@@ -510,9 +510,6 @@
 		<Key ID="STR_SMARTPHONE_RANDOMTITLE">
 			<Original>Nachricht zum lesen auswählen</Original>
 		</Key>
-		<Key ID="STR_Global_Close">
-			<Original>Close</Original>
-		</Key>
 		<Key ID="STR_SMARTPHONE_SCHREIBEN">
 			<Original>Schreiben</Original>
 		</Key>
@@ -1077,20 +1074,6 @@
 			<German>Es ist kein Fahrzeug in der Nähe des NPC</German>
 			<French>Il n'y a pas de véhicule près du PNJ</French>
 			<Italian>Non c'è alcun veicolo vicino all'NPC.</Italian>
-		</Key>		
-		<Key ID="STR_GARAGE_Title">
-			<Original>Sell vehicle</Original>
-			<English>Sell vehicle</English>
-			<German>Fahrzeug verkauf</German>
-			<French>Sell vehicle</French>
-			<Italian>Sell vehicle</Italian>
-		</Key>		
-		<Key ID="STR_GARAGE_Confirm">
-			<Original>Sell</Original>
-			<English>Sell</English>
-			<German>Verkaufen</German>
-			<French>Sell</French>
-			<Italian>Sell</Italian>
 		</Key>
 	</Package>
 	<Package name="Key_Chain">
