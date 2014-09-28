@@ -1,8 +1,3 @@
-*/
-
-Made for Blacklagoon by ImSorry/Milkyway
-
-/*
 
 
 life_market_resources = [
