@@ -22,7 +22,10 @@ if(isDedicated && isNil("life_market_prices")) then
 	{
 		diag_log format["Markt Preise wurden aktualisiert! %1", _this select 1];
 	};
+	[] execFSM "core\fsm\server.fsm";
+	diag_log "Server FSM executed";
 
+};
 StartProgress = true;
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
 
