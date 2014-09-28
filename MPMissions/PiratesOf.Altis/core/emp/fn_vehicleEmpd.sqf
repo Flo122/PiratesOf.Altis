@@ -12,7 +12,7 @@ if(_vehicle isKindOf "Car") then {
 	sleep 3.35;
 	if(local _vehicle) then {
 		_vehicle setFuel 0.075;
-	}
+	};
 };
 if(_vehicle isKindOf "Air") then {
 	_vehicle say3D "empwarn";
@@ -23,13 +23,13 @@ if(_vehicle isKindOf "Air") then {
 	sleep 3.35;
 	if(local _vehicle) then {
 		_vehicle setFuel 0.075;
-	}
+	};
 };
 if(_vehicle isKindOf "Ship") then {
 	_vehicle say3D "empwarn";
 	sleep 3.35;
 	if(local _vehicle) then {
 		_vehicle setFuel 0.075;
-	}
+	};
 };
 _vehicle setVariable["nano_empd",false,true];
