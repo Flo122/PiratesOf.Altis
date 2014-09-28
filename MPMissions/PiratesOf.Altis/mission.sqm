@@ -5205,7 +5205,7 @@ class Mission
 					leader=1;
 					skill=0.2;
 					text="gambling_1";
-					init="this enableSimulation false; this allowDamage false;  this addAction[""Illegales Glücksspiel"",king_fnc_gambling,1];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Illegales Glücksspiel"",king_fnc_gambling,"""",0,false,false,"""",'playerSide == civilian'];";
 				};
 			};
 		};
