@@ -39,7 +39,7 @@ switch(_type) do
 	case "505": {_type = ["Geblitzt",150000]};
 	case "506": {_type = ["Geblitzt",200000]};
 	case "507": {_type = ["Geblitzt",250000]}; 
-    
+    	case "999": {_type = ["Glueksspiel",10000]};
     case "8": {_type = ["Ruhestoerung",5000]};
     case "9": {_type = ["Fahren ohne Fahrerlaubnis",10000]};
     case "10": {_type = ["Fahren ohne Licht",2500]};
