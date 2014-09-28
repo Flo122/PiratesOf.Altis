@@ -3132,14 +3132,14 @@ class Mission
 				class Item109
 				{
 					position[]={4538.1211,264.02313,15406.603};
-					azimut=93.830635;
+					azimut=93.830597;
 					offsetY=0.5;
 					special="NONE";
 					id=184;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Send Message"",life_fnc_calldialog,0]; this setVariable[""realname"",""Nachrichten""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Piraten News senden"",life_fnc_calldialog,0]; this setVariable[""realname"",""Nachrichten""];";
 				};
 				class Item110
 				{
@@ -13441,7 +13441,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_1";
-			init="this allowDamage false; this addAction [""Gangaußenposten einnehme"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+			init="this allowDamage false; this addAction [""Gangaußenposten einnehmen"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
 		};
 		class Item876
 		{
@@ -14105,7 +14105,7 @@ class Mission
 			vehicle="FlagPole_F";
 			skill=0.60000002;
 			text="gang_flag_3";
-			init="this allowDamage false; this addAction [""Gangaußenposten einnehme"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
+			init="this allowDamage false; this addAction [""Gangaußenposten einnehmen"",life_fnc_captureHideout,"""",0,false,false,"""",' playerSide == civilian && !isNil {(group player) getVariable ""gang_owner""}'];";
 		};
 		class Item936
 		{
