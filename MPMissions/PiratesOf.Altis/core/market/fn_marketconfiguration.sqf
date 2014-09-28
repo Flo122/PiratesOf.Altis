@@ -1,4 +1,4 @@
-
+ 
 
 life_market_resources = [
 
