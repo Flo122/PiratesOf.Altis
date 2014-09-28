@@ -40,7 +40,7 @@ class controls {
 		class Channel7NewsEditText : Life_RscStructuredText
 		{
 			idc = -1;
-			text = "Message to all:";
+			text = "Nachricht:";
 			x = 0.12;
             y = 0.4;
 			w = 0.2;
