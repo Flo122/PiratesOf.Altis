@@ -1,8 +1,3 @@
-/*
-
-	Made for Blacklagoon by ImSorry/Milkyway
-
-*/
 
 private["_shortname","_amount","_price","_modifier","_globalprice","_min","_dir","_israw","_arr_resource","_arr_price","_modifier","_send","_relamount","_max"];
 
