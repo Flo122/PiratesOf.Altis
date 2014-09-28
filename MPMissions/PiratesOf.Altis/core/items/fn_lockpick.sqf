@@ -60,6 +60,7 @@ while {true} do
 player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
+if((animationState player=="amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon")) exitWith {life_action_inUse = false;};
 if(!isNil "_badDistance") exitWith {titleText[localize "STR_ISTR_Lock_TooFar","PLAIN"]; life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
