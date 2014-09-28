@@ -70,3 +70,8 @@ _buildings = ["safezone_1"];
 } forEach _buildings;
 
 fn_whoDunnit = compile preprocessFileLineNumbers "scripts\fn_whoDunnit.sqf";
+
+_handle = [] spawn compile PreprocessFileLineNumbers "core\Pirates\init.sqf";
+diag_log "::Pirates Client:: Initialization";
+waitUntil {scriptDone _handle};
+diag_log "::Pirates Client:: initialized";
