@@ -4,226 +4,611 @@ life_market_resources = [
 
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
-	["diamondc", 5000, 1000, 22000, 4.00, 1,
+	["hopfenp", 3540, 1770, 5310, 4.00, 1,
 		[ 
-			["oilp",1], 
+			["bronze",1],
 			["iron_r",1],
-			["copper_r",1],
-			["salt_r",1],
 			["glass",1],
-			["cement",1],
-			["vodka",1],
-			["silberp",1],
-			["goldp",1]
-		]
-	],
-	
-	["goldp", 4245, 25, 10450, 1.25, 0.5,
-		[ 
-			["diamondc",1], 
-			["iron_r",1],
+			["eisenp",1],
+			["holzp",1],
 			["copper_r",1],
-			["salt_r",1],
-			["glass",1],
-			["oilp",1],
-			["vodka",1],
-			["cement",1],
-			["silberp",1]
-		]
-	],
-	
-	["oilp", 2400, 25, 8000, 1.25, 0.5,
-		[ 
-			["diamondc",1], 
-			["iron_r",1],
-			["copper_r",1],
-			["salt_r",1],
-			["glass",1],
-			["cement",1],
-			["vodka",1],
-			["silberp",1],
-			["goldp",1]
-		]
-	],
-	
-	["salt_r", 3500, 25, 7000, 0.50, 0.125,
-		[ 
-			["diamondc",1], 
-			["iron_r",1],
-			["copper_r",1],
-			["oilp",1],
-			["glass",1],
-			["cement",1],
-			["vodka",1],
-			["silberp",1],
-			["goldp",1]
-		]
-	],
-	
-	["silberp", 4310, 25, 7350, 1.25, 0.5,
-		[ 
-			["diamondc",1], 
-			["iron_r",1],
-			["copper_r",1],
-			["salt_r",1],
-			["glass",1],
-			["oilp",1],
-			["vodka",1],
-			["cement",1],
-			["goldp",1]
-		]
-	],
-	
-	["iron_r", 1550, 25, 3525, 0.50, 0.125,
-		[ 
-			["diamondc",1], 
-			["oilp",1],
-			["copper_r",1],
-			["salt_r",1],
-			["glass",1],
-			["cement",1],
-			["vodka",1],
-			["silberp",1],
-			["goldp",1]
-		]
-	],
-	
-	["glass", 2025, 25, 2225, 0.50, 0.125,
-		[ 
-			["diamondc",1], 
-			["iron_r",1],
-			["copper_r",1],
-			["salt_r",1],
-			["oilp",1],
-			["cement",1],
-			["vodka",1],
-			["silberp",1],
-			["goldp",1]
-		]
-	],
-	
-	["vodka", 1000, 25, 5150, 0.50, 0.125,
-		[ 
-			["diamondc",1], 
-			["iron_r",1],
-			["copper_r",1],
-			["salt_r",1],
-			["glass",1],
-			["oilp",1],
-			["cement",1],
-			["silberp",1],
-			["goldp",1]
-		]
-	],
-	
-	["cement", 775, 25, 925, 1.25, 0.5,
-		[ 
-			["diamondc",1], 
-			["iron_r",1],
-			["copper_r",1],
-			["salt_r",1],
-			["glass",1],
-			["oilp",1],
-			["vodka",1],
-			["silberp",1],
-			["goldp",1]
-		]
-	],
-	
-	["copper_r", 1575, 25, 2175, 0.75, 0.25,
-		[ 
-			["diamondc",1], 
-			["iron_r",1],
+			["getreidep",1],
 			["oilp",1],
 			["salt_r",1],
-			["glass",1],
-			["cement",1],
-			["vodka",1],
+			["schmuck",1],
+			["schwefelp",1],
 			["silberp",1],
-			["goldp",1]
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["bronze", 13375, 7412, 22237, 1.25, 0.5,
+		[ 
+			["hopfenp",1], 
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["iron_r", 3017, 1508, 4525, 1.25, 0.5,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["glass", 3368, 1684, 5052, 0.50, 0.125,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["eisenp", 3153, 1576, 4729, 1.25, 0.5,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["holzp", 3248, 1624, 4872, 0.50, 0.125,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["copper_r", 3746, 1873, 5619, 0.50, 0.125,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["getreidep", 3210, 1605, 4815, 0.50, 0.125,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["oilp", 2571, 1285, 3865, 1.25, 0.5,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["salt_r", 4759, 2379, 7138, 0.75, 0.25,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["schmuck", 14825, 7412, 22237, 0.75, 0.25,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["schwefelp", 3222, 1611, 4833, 0.75, 0.25,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["silberp", 3966, 1983, 5949, 0.75, 0.25,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["uran5", 24144, 12072, 36216, 0.75, 0.25,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["traubenp", 4006, 2003, 6009, 0.75, 0.25,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["cement", 3342, 1671, 5013, 0.75, 0.25,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["tabakp",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["tabakp", 4577, 2288, 6865, 0.75, 0.25,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["zinnp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["zinnp", 3274, 1637, 4911, 0.75, 0.25,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zuckerp",1]
+		]
+	],
+	
+	["zuckerp", 4565, 2282, 6847, 0.75, 0.25,
+		[ 
+			["hopfenp",1], 
+			["bronze",1],
+			["iron_r",1],
+			["glass",1],
+			["eisenp",1],
+			["holzp",1],
+			["copper_r",1],
+			["getreidep",1],
+			["oilp",1],
+			["salt_r",1],
+			["schmuck",1],
+			["schwefelp",1],
+			["silberp",1],
+			["uran5",1],
+			["traubenp",1],
+			["cement",1],
+			["tabakp",1],
+			["zinnp",1]
 		]
 	],
 	
 	///////////////////////////////////
 	
-	["uranp", 11350, 1200, 16600, 3, 0.75,
+	["heroinp", 4527, 2263, 6790, 3, 0.75,
 		[
 			["marijuana",1],
+			["kkugel",1],
 			["cocainep",1],
-			["methp",1],
-			["moonshine",1],
-			["heroinp",1],
-			["frogslsd",1]
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1]
 		]
 	],
 	
-	["cocainep", 9500, 50, 17700, 1.25, 0.5,
+	["marijuana", 4365, 2182, 6547, 1.25, 0.5,
 		[
-			["marijuana",1],
 			["heroinp",1],
-			["methp",1],
-			["moonshine",1],
-			["uranp",1],
-			["frogslsd",1]
-		]
-	],
-	
-	["frogslsd", 2250, 50, 2400, 0.75, 0.25,
-		[
-			["marijuana",1],
+			["kkugel",1],
 			["cocainep",1],
-			["methp",1],
-			["moonshine",1],
-			["heroinp",1],
-			["uranp",1]
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1]
 		]
 	],
 	
-	["heroinp", 9545, 50, 14784, 1.25, 0.5,
+	["kkugel", 13987, 6993, 20980, 0.75, 0.25,
 		[
+			["heroinp",1],
 			["marijuana",1],
 			["cocainep",1],
-			["methp",1],
-			["moonshine",1],
-			["uranp",1],
-			["frogslsd",1]
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1]
 		]
 	],
 	
-	["moonshine", 5175, 50, 9589, 0.50, 0.125,
+	["cocainep", 5348, 2674, 8022, 1.25, 0.5,
 		[
+			["heroinp",1],
 			["marijuana",1],
-			["cocainep",1],
-			["methp",1],
-			["heroinp",1],
-			["uranp",1],
-			["frogslsd",1]
+			["kkugel",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1]
 		]
 	],
 	
-	["marijuana", 7817, 50, 11974, 0.75, 0.25,
+	["pbrau", 24701, 12350, 37051, 0.50, 0.125,
 		[
 			["heroinp",1],
-			["cocainep",1],
-			["methp",1],
-			["moonshine",1],
-			["uranp",1],
-			["frogslsd",1]
-		]
-	],
-	
-	["methp", 6000, 50, 24285, 1.25, 0.5,
-		[
 			["marijuana",1],
+			["kkugel",1],
 			["cocainep",1],
-			["heroinp",1],
-			["moonshine",1],
-			["uranp",1],
-			["frogslsd",1]
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1]
 		]
 	],
 	
-	["turtle", 12000, 50, 19000, 0, 0]
+	["pkugel", 62727, 31363, 94090, 0.75, 0.25,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1]
+		]
+	],
+	
+	["zuckerip", 4922, 2461, 7383, 1.25, 0.5,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1]
+		]
+	],
+	
+	["uranip", 12598, 6299, 18897, 1.25, 0.5,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1]
+		]
+	],
+	
+	["spulver", 11408, 5704, 17112, 1.25, 0.5,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["getreideip",1],
+			["tabakip",1]
+		]
+	],
+	
+	["getreideip", 4244, 2122, 6366, 1.25, 0.5,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["tabakip",1]
+		]
+	],
+	
+	["tabakip", 3977, 1988, 5965, 1.25, 0.5,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1]
+		]
+	],
+	
+	["turtle", 10077, 5038, 15115, 0, 0]
 		
 ];
 publicVariable "life_market_resources";
