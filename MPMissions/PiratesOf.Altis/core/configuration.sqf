@@ -422,8 +422,8 @@ buy_array =
 	["hopfenp",5000],
 	["traubenp",5000],
 	["speedbomb",1000000],
-	["mauer",2000],
-	["mauer2",2000],
+	["mauer",5000],
+	["mauer2",400],
 	["licht",2000]
 ];
 __CONST__(buy_array,buy_array);
