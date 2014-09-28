@@ -86,12 +86,12 @@ switch (_item) do
 	case "spulver": {2};
 	case "pkugel": {4};	
 	case "speedbomb": {10};
-	case "uran1": {20};
+	case "uran1": {19};
 	case "uran2": {17};
-	case "uran3": {14};
-	case "uran4": {12};
-	case "uran5": {10};
-	case "uranip": {5};
+	case "uran3": {15};
+	case "uran4": {13};
+	case "uran5": {11};
+	case "uranip": {9};
 	case "handcuffkey": {1};
 	case "mauer": {1};
 	case "mauer2": {1};
