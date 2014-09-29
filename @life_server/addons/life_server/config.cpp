@@ -50,9 +50,13 @@ class CfgFunctions
 			class bool{};
 			class mresString {};
 			class updatePartial {};
+			class repaintVehicle {};
+		    class marketconfiguration {};
+			class marketInsert {};
+			class marketInsertTimes {};
 		};
 	};
-	
+
 	class Life_System
 	{
 		tag = "life";
@@ -113,6 +117,7 @@ class CfgFunctions
 			class mauer {};
 			class mauer2 {};
 			class licht {};
+			class vehicleRepaint {};
 		};
 		
 		class Housing

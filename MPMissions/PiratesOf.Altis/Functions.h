@@ -10,6 +10,7 @@ class Socket_Reciever
 		class updateRequest {};
 		class syncData {};
 		class updatePartial {};
+		
 	};
 };
 
@@ -88,6 +89,7 @@ class Life_Client_Core
 	class Actions
 	{
 		file = "core\actions";
+		class takeOrgans {};
 		class buyLicense {};
 		class healHospital {};
 		class pushVehicle {};
@@ -291,6 +293,7 @@ class Life_Client_Core
 	class Civilian
 	{
 		file = "core\civilian";
+		class hasOrgan {};
 		class jailMe {};
 		class jail {};
 		class jailHungry {};
@@ -496,14 +499,12 @@ class Life_Client_Core
 	};
 };
 
-    class Sql_Market
-    {
-        tag = "SQL";
-        class Market
-        {
-            file = "\life_server\Functions\MySQL";
-            class marketconfiguration {};
-			class marketInsert {};
-			class marketInsertTimes {};
-        };
-    };
+
+	class Repaint
+	{
+		file = "core\repaint";
+		
+		class RepaintMenu;
+		class Repaintcolor;
+		class RepaintVehicle;		
+	};

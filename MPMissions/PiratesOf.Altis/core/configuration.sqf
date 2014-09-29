@@ -166,6 +166,7 @@ __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can nev
 
 life_inv_items = 
 [
+	"life_inv_kidney",
 	"life_inv_oilu",
 	"life_inv_oilp",
 	"life_inv_heroinu",
@@ -318,7 +319,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",2750],["heroinp",5500],["cocaine",2750],["cocainep",5500],["cannabis",1600],["marijuana",3200],["turtle",10000],["blastingcharge",50000],["boltcutter",5000],["getreideip",4500],["zuckerip",6900],["tabakip",3700],["kkugel",12000],["spulver",12000],["pbrau",16000],["pkugel",50000],["goldbar",75000],["uranip",7500]];
+life_illegal_items = [["heroinu",2750],["heroinp",5500],["cocaine",2750],["cocainep",5500],["cannabis",1600],["marijuana",3200],["turtle",10000],["blastingcharge",50000],["boltcutter",5000],["getreideip",4500],["zuckerip",6900],["tabakip",3700],["kkugel",12000],["spulver",12000],["pbrau",16000],["pkugel",50000],["goldbar",75000],["uranip",7500],["kidney",5000]];
 
 
 /*
@@ -326,6 +327,7 @@ life_illegal_items = [["heroinu",2750],["heroinp",5500],["cocaine",2750],["cocai
 */
 sell_array = 
 [
+	["kidney",50000],
 	["apple",25],
 	["salema",45],
 	["ornate",40],
@@ -385,6 +387,7 @@ __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
+	["kidney",75000],
 	["apple",75],
 	["rabbit",75],
 	["salema",70],

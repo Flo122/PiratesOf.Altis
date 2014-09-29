@@ -13,6 +13,7 @@ if(_var == "") exitWith {""};
 switch (_var) do
 {
 //Virtual Inventory Items
+	case "life_inv_kidney": {"Black Market Kidney"}; 
 	case "life_inv_oilu": {(localize "STR_Item_OilU")};
 	case "life_inv_oilp": {(localize "STR_Item_OilP")};
 	case "life_inv_heroinu": {(localize "STR_Item_HeroinU")};
