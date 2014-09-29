@@ -110,7 +110,7 @@
                             ["textures\rebel\rebel_suv.jpg","reb"],
                             ["textures\civ\civ_suv_monster.jpg","civ"],
                             ["textures\cop\sek_suv.jpg","cop"],
-                            ["textures\civ\civ_suv_jpg.jpg","sec"],
+                            ["textures\civ\civ_suv_sec.jpg","sec"],
                             ["textures\civ\civ_suv_poa.jpg","civ"]
                     ];
             };

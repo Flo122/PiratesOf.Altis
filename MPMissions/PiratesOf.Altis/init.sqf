@@ -37,7 +37,7 @@ StartProgress = true;
 [] execVM "scripts\radartrap30.sqf"; 
 [] execVM "scripts\radartrap50.sqf"; 
 [] execVM "scripts\radartrap70.sqf"; 
-[] execVM "scripts\wetter.sqf";
+//[] execVM "scripts\wetter.sqf";
 //Tränengas
 [] execVM "scripts\teargas.sqf";
 //Windshutzscheibe - wegen desync deaktiviert, weil desyncende Mitfahrer manchmal rausfliegen

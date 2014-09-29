@@ -5,4 +5,5 @@ CREATE TABLE IF NOT EXISTS `resources` (
 );
  
 INSERT INTO resources (resource, price)
-VALUES ('oilp', 6000), ('iron_r', 4000), ('diamondc', 4500), ('copper_r', 3000), ('salt_r', 2500), ('glass', 2500), ('cement', 4250), ('turtle', 12000), ('marijuana', 4500), ('cocainep', 6500), ('heroinp', 6000), ('goldbar', 95000);
+VALUES 
+('hopfenp', 3540), ('bronze', 13375), ('iron_r', 3017), ('glass', 3368), ('eisenp', 3153), ('holzp', 3248), ('copper_r', 3746), ('getreidep', 3210), ('oilp', 2571), ('salt_r', 4759), ('schmuck', 14825), ('schwefelp', 3222), ('silberp', 3966), ('uran5', 24144), ('traubenp', 4006), ('cement', 3342), ('tabakp', 4577), ('zinnp', 3274), ('zuckerp', 4565), ('heroinp', 4527), ('marijuana', 4365), ('kkugel', 13987), ('cocainep', 5348), ('pbrau', 24701), ('pkugel', 62727), ('zuckerip', 4922), ('uranip', 12598), ('spulver', 11408), ('getreideip', 4244), ('tabakip', 3977), ('turtle', 300), ('goldbar', 95000);
