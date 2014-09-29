@@ -33,7 +33,6 @@ if ((getPlayerUID player) != _vehOwner) exitWith {hint "You aren't the owner!"};
 				player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 			};						
 			sleep 0.29;
-			//[player,"spraycan"] call life_fnc_globalSound; //Just if you have global sounds!
 
 			_cP = _cP + 0.01;
 			_progress progressSetPosition _cP;
