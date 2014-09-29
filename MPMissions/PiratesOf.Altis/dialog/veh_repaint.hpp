@@ -3,7 +3,7 @@ class Life_vehicle_repaint {
 	name= "life_vehrepaint_menu";
 	movingEnable = false;
 	enableSimulation = true;
-	//onLoad = "[] execVM 'core\client\keychain\init.sqf'";
+
 	
 	class controlsBackground {
 		class Life_RscTitleBackground:Life_RscText {
