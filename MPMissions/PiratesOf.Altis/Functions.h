@@ -13,6 +13,8 @@ class Socket_Reciever
 	};
 };
 
+
+
 class SpyGlass
 {
 	tag = "SPY";
@@ -486,7 +488,6 @@ class Life_Client_Core
 		class marketSell {};
 		class marketGetBuyPrice {};
 		class marketGetSellPrice {};
-		class marketconfiguration {};
 		class marketReset {};
 		class marketChange {};
 		class marketGetRow {};
@@ -494,3 +495,15 @@ class Life_Client_Core
 		class marketSetPriceRow {};
 	};
 };
+
+    class Sql_Market
+    {
+        tag = "SQL";
+        class Market
+        {
+            file = "\life_server\Functions\MySQL";
+            class marketconfiguration {};
+			class marketInsert {};
+			class marketInsertTimes {};
+        };
+    };
