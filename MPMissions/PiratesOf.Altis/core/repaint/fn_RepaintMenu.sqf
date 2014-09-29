@@ -1,5 +1,5 @@
 private["_display","_vehicles","_objects","_color","haha","_pic","_text"];
-createDialog "life_vehrepaint_menu";
+createDialog "Life_vehicle_repaint";
 disableSerialization;
 if(!isNull (findDisplay 2300)) then {
 _display = findDisplay 2300;

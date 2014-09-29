@@ -497,14 +497,12 @@ class Life_Client_Core
 		class marketGetPriceRow {};
 		class marketSetPriceRow {};
 	};
-};
-
 
 	class Repaint
 	{
 		file = "core\repaint";
-		
 		class RepaintMenu;
 		class Repaintcolor;
 		class RepaintVehicle;		
 	};
+};
