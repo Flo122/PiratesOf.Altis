@@ -1,4 +1,4 @@
-private["_queryResult","_query","_item","_itemprice","_oilpPrice","_iron_rPrice","_diamondcPrice","_copper_rPrice","_salt_rPrice","_glassPrice","_cementPrice","_turtlePrice","_marijuanaPrice","_cocainepPrice","_heroinpPrice","_goldbarPrice"];
+private["_queryResult","_query","_item","_itemprice","_oilpPrice","_iron_rPrice","_diamondcPrice","_copper_rPrice","_salt_rPrice","_glassPrice","_cementPrice","_turtlePrice","_marijuanaPrice","_cocainepPrice","_heroinpPrice","_goldbarPrice","_bronzePrice","_getreidepPrice","_schmuckPrice","_uran5Price","_traubenpPrice","_zuckerpPrice","_zinnpPrice","_tabakpPrice","_hopfenpPrice","_holzpPrice","_schwefelpPrice"];
 
 
 _query = format["SELECT resource, price FROM resources"];
@@ -28,17 +28,17 @@ diag_log "------------------------------------------------";
 	if(_item == "marijuana") then {_marijuanaPrice = _itemprice}; 
 	if(_item == "cocainep") then {_cocainepPrice = _itemprice}; 
 	if(_item == "heroinp") then {_heroinpPrice = _itemprice}; 
-	if(_item == "bronze") then {_goldbarPrice = _itemprice}; 
-	if(_item == "getreidep") then {_goldbarPrice = _itemprice};
-	if(_item == "schmuck") then {_goldbarPrice = _itemprice};
-	if(_item == "uran5") then {_goldbarPrice = _itemprice};
-	if(_item == "traubenp") then {_goldbarPrice = _itemprice};
-	if(_item == "zuckerp") then {_goldbarPrice = _itemprice};
-	if(_item == "zinnp") then {_goldbarPrice = _itemprice};
-	if(_item == "tabakp") then {_goldbarPrice = _itemprice};
-	if(_item == "hopfenp") then {_goldbarPrice = _itemprice};
-	if(_item == "holzp") then {_goldbarPrice = _itemprice};
-	if(_item == "schwefelp") then {_goldbarPrice = _itemprice};
+	if(_item == "bronze") then {_bronzePrice = _itemprice}; 
+	if(_item == "getreidep") then {_getreidepPrice = _itemprice};
+	if(_item == "schmuck") then {_schmuckPrice = _itemprice};
+	if(_item == "uran5") then {_uran5Price = _itemprice};
+	if(_item == "traubenp") then {_traubenpPrice = _itemprice};
+	if(_item == "zuckerp") then {_zuckerpPrice = _itemprice};
+	if(_item == "zinnp") then {_zinnpPrice = _itemprice};
+	if(_item == "tabakp") then {_tabakpPrice = _itemprice};
+	if(_item == "hopfenp") then {_hopfenpPrice = _itemprice};
+	if(_item == "holzp") then {_holzpPrice = _itemprice};
+	if(_item == "schwefelp") then {_schwefelpPrice = _itemprice};
 	if(_item == "goldbar") then {_goldbarPrice = _itemprice};
 
 } forEach _rows; 
