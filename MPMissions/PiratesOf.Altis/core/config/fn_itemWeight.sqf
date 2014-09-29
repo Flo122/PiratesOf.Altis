@@ -40,8 +40,8 @@ switch (_item) do
 	case "copper_r": {4};
 	case "iron_r": {3};
 	case "sand": {6};
-	case "salt": {3};
-	case "salt_r": {1};
+	case "salt": {8};
+	case "salt_r": {4};
 	case "glass": {3};
 	case "diamond": {7};
 	case "diamondc": {4};
@@ -57,7 +57,7 @@ switch (_item) do
 	case "storagesmall": {5};
 	case "storagebig": {10};
 	case "tracker": {2};
-	case "getreideu": {5};
+	case "getreideu": {4};
 	case "holzu": {6};
 	case "hopfenu": {6};
 	case "schwefelu": {6};
@@ -66,15 +66,15 @@ switch (_item) do
 	case "traubenu": {7};
 	case "zinnu": {6};
 	case "zuckeru": {8};
-	case "getreideip": {4};
-	case "tabakip": {2};
+	case "getreideip": {3};
+	case "tabakip": {5};
 	case "zuckerip": {3};
 	case "eisenp": {3};
 	case "getreidep": {3};
 	case "holzp": {2};
 	case "hopfenp": {4};
 	case "schwefelp": {3};
-	case "silberp": {3};
+	case "silberp": {4};
 	case "tabakp": {4};
 	case "traubenp": {4};
 	case "zinnp": {3};
