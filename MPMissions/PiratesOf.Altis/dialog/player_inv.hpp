@@ -320,6 +320,7 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		/*
 		class ButtonMyGang : Life_RscButtonMenu {
 			idc = 2011;
 			text = "Gruppe";
@@ -329,6 +330,7 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		*/
 		//class Interface : life_RscButtonMenu {
 		//	idc = 78000;
 		//	text = "Infos";
