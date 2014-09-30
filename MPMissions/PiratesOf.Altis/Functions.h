@@ -522,16 +522,6 @@ class Life_Client_Core
 		class unlockGroup {};
 	};
 	*/
-	class Repaint
-	{
-		file = "core\repaint";
-		class RepaintMenu;
-		class Repaintcolor;
-		class RepaintVehicle;		
-	};
-};
-
-
 
 class King_Client_Core
   {

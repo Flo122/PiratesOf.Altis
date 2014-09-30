@@ -50,7 +50,6 @@ class CfgFunctions
 			class bool{};
 			class mresString {};
 			class updatePartial {};
-			class repaintVehicle {};
 		};
 	};
 
