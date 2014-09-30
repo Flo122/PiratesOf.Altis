@@ -48,9 +48,9 @@ _units = _units - [player];
 					default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
 					},_x getVariable ["realname",name _x],switch ((_x getVariable "rank")) do {
 					case 2: {"Wachtmeister"}; 
-					case 3: {"Polizekommisar"};
-					case 4: {"Polizeioberkommisar"};
-					case 5: {"Polizeihauptkommisar"};
+					case 3: {"Polizeikommissar"};
+					case 4: {"Polizeioberkommissar"};
+					case 5: {"Polizeihauptkommissar"};
 					case 6: {"Bundespolizist"};
 					case 7: {"Polizeichef"};
 					default {"Polizeianwärter"};
