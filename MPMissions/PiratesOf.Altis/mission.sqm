@@ -3702,7 +3702,6 @@ class Mission
 					skill=0.60000002;
 					text="hc_1";
 					description="Headless Client";
-					forceHeadlessClient=1;
 				};
 			};
 		};
