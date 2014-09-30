@@ -9,7 +9,7 @@ _fuel_price_one_step = _fuel_price / _steps;
 while {true} do
 {
 	waitUntil {sleep 1; ((vehicle player != player) && ((driver (vehicle player)) == player) && (fuel (vehicle player)) < 0.99 && (speed (vehicle player)) < 0.1 && count (nearestObjects [player, ["Land_fs_feed_F"], _fuel_min_distance]) > 0)};
-	hint format["Tankstelle gefunden bitte bleiben sie stehen damit sie betankt werden können. (Ein voller Tank kostet %1€)",_fuel_price];
+	hint format["Tankstelle gefunden bitte bleiben sie stehen damit sie betankt werden können. (Ein voller Tank kostet %1$)",_fuel_price];
 	_veh = vehicle player;
 	_veh_type = typeof _veh;
 	
@@ -36,9 +36,9 @@ while {true} do
 		life_atmcash = life_atmcash - _fuel_price_one_step;
 		_spent_money = _spent_money + _fuel_price_one_step;
 		
-		hintSilent format["Betankung läuft:\n%1%2 %3€", ceil (_fuel_new * 100), "%", _spent_money];
+		hintSilent format["Betankung läuft:\n%1%2 %3$", ceil (_fuel_new * 100), "%", _spent_money];
 		
-		sleep 0.5;
+		sleep 5;
 	};
 
 	[1,false] call SOCK_fnc_updateRequest;
