@@ -1,10 +1,10 @@
 author = "Tonic";
 onLoadName = "Altis Life RPG v3.1.4.8";
 onLoadMission = "A RPG game mode developed by Tonic and edited by Pirates of Altis";
-joinUnassigned = 1;
+joinUnassigned = 0;
 respawn = BASE;
 respawndelay = 5;
-disabledAI = true;
+disabledAI = 1;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 LoadScreen = "textures\logo.jpg";
