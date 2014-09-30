@@ -497,7 +497,22 @@ class Life_Client_Core
 		class marketGetPriceRow {};
 		class marketSetPriceRow {};
 	};
-
+	/* For Second Update 
+	class Groups
+	{
+		file = "core\Group";
+		class createGroup {};
+		class GroupBrowser {};
+		class GroupManagement {};
+		class GroupMenu {};
+		class joinGroup {};
+		class kickGroup {};
+		class leaveGroup {};
+		class setGroupLeader {};
+		class lockGroup {};
+		class unlockGroup {};
+	};
+	*/
 	class Repaint
 	{
 		file = "core\repaint";
@@ -505,4 +520,31 @@ class Life_Client_Core
 		class Repaintcolor;
 		class RepaintVehicle;		
 	};
+};
+
+
+
+class King_Client_Core
+  {
+   tag = "king";
+		
+	
+	class Fuelchanger
+	{
+		file = "core\Pirates\fuelchanger";
+        class useFuelStation {};
+        class cleanFuelStation {};
+	};
+			
+	class Gambling
+    {
+        file = "core\Pirates\gambling";
+        class gambling {};
+        class gamble {};
+        class gamble_timer {};
+        class gamble_bandit {};
+        class gamble_dice {};
+        class gamblingSetJackpotVariable {};
+        class gamblingWonJackpot {};
+    };
 };

@@ -320,7 +320,15 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-		
+		class ButtonMyGang : Life_RscButtonMenu {
+			idc = 2011;
+			text = "Gruppe";
+			onButtonClick = "[] call life_fnc_gangMenu";
+			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.8 - (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
 		//class Interface : life_RscButtonMenu {
 		//	idc = 78000;
 		//	text = "Infos";
