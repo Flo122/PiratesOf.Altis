@@ -85,7 +85,7 @@
                             [_path + "hatchback_01_ext_sport06_co.paa","civ"],
                             ["textures\civ\civ_hatchback_fire.jpg","civ"],
                             ["textures\civ\civ_hatchback_metallica.jpg","civ"],
-                            [_path + "hatchback_01_ext_sport04_co.jpg","cop"],
+                            [_path + "hatchback_01_ext_sport04_co.paa","cop"],
                             ["textures\cop\cop_hatchback.jpg","cop"]
                     ];
             };     
