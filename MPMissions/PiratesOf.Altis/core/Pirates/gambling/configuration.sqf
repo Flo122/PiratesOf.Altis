@@ -51,7 +51,7 @@ king_gamble_you_have_been_watched_gambling_illegal          = "DU WURDEST BEOBAC
 king_gamble_send_watched_illegal_gambling_to_chat_message   = "betreibt illegale Glücksspiele!"; //vor dem Text steht immer der Name des Spielers
 king_gamble_send_jackpot_won_to_chat_message                = "hat den Casino Jackpot gewonnen!"; //vor dem Text steht immer der Name des Spielers
 king_gamble_jackpot_won_text                                = "Du hast den Jackpot gewonnen!";
-king_gamble_jackpot_rules_text                              = "(Gewinn bei Slotmaschine 3x<img size='1.0' image='core\king\icons\gambling\cat_001.paa'/>)"; //vor dem Text steht immer der Name des Spielers
+king_gamble_jackpot_rules_text                              = "(Gewinn bei Slotmaschine 3x<img size='1.0' image='core\Pirates\icons\gambling\cat_001.paa'/>)"; //vor dem Text steht immer der Name des Spielers
 king_gamble_too_far_away_from_npc                           = "Du bist zuweit vom Casino entfernt... wie sollten wir dir so das Geld geben?";
 
 
