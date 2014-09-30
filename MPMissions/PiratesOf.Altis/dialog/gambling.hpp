@@ -227,7 +227,7 @@ class King_gambling {
                 class GamblingImageDice1 : Life_RscStructuredText
                 {
                     idc = 5101;
-                    text = "<img size='2.5' image='core\king\icons\metal_steel1.paa'/>";
+                    text = "<img size='2.5' image='core\Pirates\icons\metal_steel1.paa'/>";
                     
                     x = 0.05;
                     y = 0.1;
@@ -238,7 +238,7 @@ class King_gambling {
                 class GamblingImageDice2 : Life_RscStructuredText
                 {
                     idc = 5102;
-                    text = "<img size='2.5' image='core\king\icons\metal_steel1.paa'/>";
+                    text = "<img size='2.5' image='core\Pirates\icons\metal_steel1.paa'/>";
                     
                     x = 0.15;
                     y = 0.1;
@@ -321,7 +321,7 @@ class King_gambling {
                 class GamblingImage1 : Life_RscStructuredText
                 {
                     idc = 5201;
-                    text = "<img size='2.5' image='core\king\icons\metal_steel1.paa'/>";
+                    text = "<img size='2.5' image='core\Pirates\icons\metal_steel1.paa'/>";
                     x = 0.0;
                     y = 0.1;
                     w = 0.1;
@@ -331,7 +331,7 @@ class King_gambling {
                 class GamblingImage2 : Life_RscStructuredText
                 {
                     idc = 5202;
-                    text = "<img size='2.5' image='core\king\icons\metal_steel1.paa'/>";
+                    text = "<img size='2.5' image='core\Pirates\icons\metal_steel1.paa'/>";
                     x = 0.1;
                     y = 0.1;
                     w = 0.1;
@@ -341,7 +341,7 @@ class King_gambling {
                 class GamblingImage3 : Life_RscStructuredText
                 {
                     idc = 5203;
-                    text = "<img size='2.5' image='core\king\icons\metal_steel1.paa'/>";
+                    text = "<img size='2.5' image='core\Pirates\icons\metal_steel1.paa'/>";
                     x = 0.2;
                     y = 0.1;
                     w = 0.1;
