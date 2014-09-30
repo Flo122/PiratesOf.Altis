@@ -522,7 +522,7 @@ class Life_Client_Core
 		class unlockGroup {};
 	};
 	*/
-
+};
 class King_Client_Core
   {
    tag = "king";
