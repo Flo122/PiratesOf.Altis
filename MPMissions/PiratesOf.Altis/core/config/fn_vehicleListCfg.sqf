@@ -24,9 +24,9 @@ switch (_shop) do
 	case "med_shop":
 	{
 		_return = [
-			["C_Offroad_01_F",2000],
-			["C_SUV_01_F",25000],
-			["C_Van_01_box_F",10000]
+			["C_Offroad_01_F",40000],
+			["C_SUV_01_F",50000],
+			["C_Van_01_box_F",100000]
 		];
 	};
 	
@@ -68,19 +68,19 @@ switch (_shop) do
 		_return =
 		[
 			["C_Van_01_box_F",100000],
-			["C_Van_01_fuel_F",150000],
+			["C_Van_01_fuel_F",130000],
 			["I_Truck_02_transport_F",200000],
-			["I_Truck_02_covered_F",400000],
-			["O_Truck_02_fuel_F",500000],			
-			["O_Truck_03_transport_F",1000000],
-			["O_Truck_03_covered_F",2500000],
-			["O_Truck_03_fuel_F",2000000],
-			["O_Truck_03_device_F",6500000],
-			["B_Truck_01_transport_F",1500000],
-			["B_Truck_01_covered_F",2000000],
-			["B_Truck_01_box_F",4500000],
-			["B_Truck_01_fuel_F",3000000],
-			["B_Truck_01_ammo_F",4000000]
+			["I_Truck_02_covered_F",300000],
+			["O_Truck_02_fuel_F",350000],			
+			["O_Truck_03_transport_F",550000],
+			["O_Truck_03_covered_F",650000],
+			["O_Truck_03_fuel_F",700000],
+			["O_Truck_03_device_F",4000000],
+			["B_Truck_01_transport_F",1000000],
+			["B_Truck_01_covered_F",1500000],
+			["B_Truck_01_fuel_F",1700000],
+			["B_Truck_01_box_F",2200000],
+			["B_Truck_01_ammo_F",2500000]
 		];	
 	};
 	
@@ -219,9 +219,11 @@ switch (_shop) do
 			_return pushBack
 			["B_MRAP_01_F",2500000];
 			_return pushBack
-			["I_Heli_light_03_unarmed_F",2000000];
+			["B_Truck_01_box_F",1900000];
 			_return pushBack
-			["O_Truck_03_device_F",5500000];
+			["O_Truck_03_device_F",3500000];
+			_return pushBack
+			["I_Heli_light_03_unarmed_F",2000000];
 			_return pushBack
 			["I_Heli_Transport_02_F",3000000];
 		};
