@@ -71,7 +71,7 @@ if((player getVariable["restrained",false])) exitWith {life_action_inUse = false
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_GNOTF_CaptureCancel","PLAIN"]; life_action_inUse = false;_hideout setVariable["inCapture",false,true];_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 life_action_inUse = false;
 
-titleText["Hideout has been captured.","PLAIN"];
+titleText["Gangaußenposten eingenommen.","PLAIN"];
 _flagTexture = [
 		"\A3\Data_F\Flags\Flag_red_CO.paa",
 		"\A3\Data_F\Flags\Flag_green_CO.paa",
@@ -85,7 +85,7 @@ _flagTexture = [
 _this select 0 setFlagTexture _flagTexture;
 //_gangName = _group getVariable ["gang_name",""];
 [[[0,1],format[localize "STR_GNOTF_CaptureSuccess",name player,(group player) getVariable "gang_name" ]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-    // CREATE MARKER AT MAP BY Pictureclass
+// CREATE MARKER AT MAP BY Pictureclass
      
     _markername = str(getPos _hideout);
     _gangname2 = formatText["Eingenommen von: %1",(group player) getVariable "gang_name"];
