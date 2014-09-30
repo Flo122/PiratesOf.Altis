@@ -2450,7 +2450,7 @@ class Mission
 				class Item49
 				{
 					position[]={3738.0977,12.785799,13267.416};
-					azimut=51.988937;
+					azimut=51.988899;
 					special="NONE";
 					id=124;
 					side="CIV";
