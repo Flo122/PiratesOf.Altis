@@ -6,7 +6,7 @@
 	Sends the query request to the database, if an array is returned then it creates
 	the vehicle if it's not in use or dead.
 */
-private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir"];
+private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir","_fuel"];
 _vid = [_this,0,-1,[0]] call BIS_fnc_param;
 _pid = [_this,1,"",[""]] call BIS_fnc_param;
 _sp = [_this,2,[],[[],""]] call BIS_fnc_param;
@@ -21,7 +21,7 @@ if(_vid == -1 OR _pid == "") exitWith {};
 if(_vid in serv_sv_use) exitWith {};
 serv_sv_use pushBack _vid;
 
-_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, AND pid='%2'",_vid,_pid];
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, fuel FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};
 _tickTime = diag_tickTime;

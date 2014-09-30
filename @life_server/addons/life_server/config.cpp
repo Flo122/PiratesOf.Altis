@@ -113,7 +113,6 @@ class CfgFunctions
 			class mauer {};
 			class mauer2 {};
 			class licht {};
-			class vehicleRepaint {};
 		};
 		
 		class Housing

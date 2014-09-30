@@ -18,3 +18,4 @@ _vehicle = _nearVehicles select 0;
 
 if(isNil "_vehicle") exitWith {deleteVehicle _mauer;};
 [[_vehicle],"life_fnc_bauEffect",_vehicle,false] spawn life_fnc_MP;
+deleteVehicle _mauer;
