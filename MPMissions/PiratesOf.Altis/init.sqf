@@ -32,7 +32,6 @@ StartProgress = true;
 //Scripts
 [] execVM "scripts\zlt_fastrope.sqf";
 [] execVM "welcomeMessage.sqf";
-[] execVM "scripts\fn_statusBar.sqf";
 [] execVM "scripts\safezone.sqf";
 [] execVM "scripts\radartrap30.sqf"; 
 [] execVM "scripts\radartrap50.sqf"; 
