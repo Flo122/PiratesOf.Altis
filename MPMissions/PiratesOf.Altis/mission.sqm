@@ -5048,7 +5048,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5122;
+		items=5104;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -56251,68 +56251,69 @@ class Mission
 		};
 		class Item5095
 		{
-			position[]={3664.98,10.418827,13106.718};
-			azimut=992.96082;
+			position[]={3658.0825,10.368666,13104.061};
+			azimut=904.11499;
 			id=5404;
 			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
+			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
 			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
 		};
 		class Item5096
 		{
-			position[]={3664.9346,10.416376,13105.021};
-			azimut=992.30908;
+			position[]={3659.7776,10.394468,13103.98};
+			azimut=903.46301;
 			id=5405;
 			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
+			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
+			health=0.57399446;
 			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
 		};
 		class Item5097
 		{
-			position[]={3664.8716,10.418166,13103.49};
-			azimut=991.52179;
+			position[]={3661.3076,10.403386,13103.884};
+			azimut=902.67603;
 			id=5406;
 			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
+			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
 			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
 		};
 		class Item5098
 		{
-			position[]={3667.9287,10.431731,13103.368};
-			azimut=811.56567;
+			position[]={3661.4148,10.399743,13106.937};
+			azimut=722.71997;
 			id=5407;
 			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
+			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
 			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
 		};
 		class Item5099
 		{
-			position[]={3667.9382,10.433996,13105.059};
-			azimut=810.91394;
+			position[]={3659.8413,10.391432,13107.024};
+			azimut=722.06799;
 			id=5408;
 			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
+			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
 			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
 		};
 		class Item5100
 		{
-			position[]={3667.9641,10.436079,13106.595};
-			azimut=810.12665;
+			position[]={3658.3044,10.366818,13107.041};
+			azimut=721.28101;
 			id=5409;
 			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
+			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
 			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
 		};
 		class Item5101
 		{
-			position[]={3666.4753,10.428071,13106.174};
-			azimut=541.98773;
+			position[]={3658.6567,10.374451,13105.544};
+			azimut=453.14194;
 			id=5410;
 			side="EMPTY";
 			vehicle="Land_WoodenTable_large_F";
@@ -56321,8 +56322,8 @@ class Mission
 		};
 		class Item5102
 		{
-			position[]={3666.3979,10.424665,13104.007};
-			azimut=541.98773;
+			position[]={3660.8225,10.399391,13105.424};
+			azimut=453.14194;
 			id=5411;
 			side="EMPTY";
 			vehicle="Land_WoodenTable_large_F";
@@ -56331,191 +56332,9 @@ class Mission
 		};
 		class Item5103
 		{
-			position[]={3666.4919,10.426753,13105.104};
-			azimut=171.95341;
-			id=5412;
-			side="EMPTY";
-			vehicle="Land_Sunshade_02_F";
-			leader=1;
-			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
-		};
-		class Item5104
-		{
-			position[]={3648.894,10.228243,13107.913};
-			azimut=1084.2679;
-			id=5413;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5105
-		{
-			position[]={3647.4316,10.206121,13108.039};
-			azimut=1083.6163;
-			id=5414;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5106
-		{
-			position[]={3645.9431,10.18014,13108.099};
-			azimut=1082.829;
-			id=5415;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5107
-		{
-			position[]={3645.595,10.177761,13105.01};
-			azimut=902.87335;
-			id=5416;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5108
-		{
-			position[]={3647.2854,10.209383,13104.96};
-			azimut=902.22162;
-			id=5417;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5109
-		{
-			position[]={3648.8203,10.238117,13104.898};
-			azimut=901.43433;
-			id=5418;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5110
-		{
-			position[]={3648.4331,10.228891,13106.396};
-			azimut=633.29541;
-			id=5419;
-			side="EMPTY";
-			vehicle="Land_WoodenTable_large_F";
-			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
-		};
-		class Item5111
-		{
-			position[]={3646.2705,10.188352,13106.525};
-			azimut=633.29541;
-			id=5420;
-			side="EMPTY";
-			vehicle="Land_WoodenTable_large_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item5112
-		{
-			position[]={3647.363,10.208899,13106.409};
-			azimut=263.26096;
-			id=5421;
-			side="EMPTY";
-			vehicle="Land_Sunshade_02_F";
-			leader=1;
-			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
-		};
-		class Item5113
-		{
-			position[]={3658.0825,10.368666,13104.061};
-			azimut=904.11469;
-			id=5422;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5114
-		{
-			position[]={3659.7776,10.394468,13103.98};
-			azimut=903.46295;
-			id=5423;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5115
-		{
-			position[]={3661.3076,10.403386,13103.884};
-			azimut=902.67566;
-			id=5424;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5116
-		{
-			position[]={3661.4148,10.399743,13106.937};
-			azimut=722.71954;
-			id=5425;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5117
-		{
-			position[]={3659.8413,10.391432,13107.024};
-			azimut=722.06781;
-			id=5426;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5118
-		{
-			position[]={3658.3044,10.366818,13107.041};
-			azimut=721.28052;
-			id=5427;
-			side="EMPTY";
-			vehicle="Land_CampingChair_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false; this addAction [""<t color='#0099FF'>Hinsetzen</t>"",""scripts\sitdown.sqf""]";
-		};
-		class Item5119
-		{
-			position[]={3658.6567,10.374451,13105.544};
-			azimut=453.14194;
-			id=5428;
-			side="EMPTY";
-			vehicle="Land_WoodenTable_large_F";
-			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
-		};
-		class Item5120
-		{
-			position[]={3660.8225,10.399391,13105.424};
-			azimut=453.14194;
-			id=5429;
-			side="EMPTY";
-			vehicle="Land_WoodenTable_large_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item5121
-		{
 			position[]={3659.7273,10.391591,13105.535};
 			azimut=83.107292;
-			id=5430;
+			id=5412;
 			side="EMPTY";
 			vehicle="Land_Sunshade_02_F";
 			leader=1;
