@@ -35,7 +35,7 @@ if(king_gamble_npc_name distance player > 5) exitWith {hint format["%1", king_ga
 king_gamble_roll_time_to_wait = king_gamble_roll_time;
 [] spawn king_fnc_gamble_timer;
 
-_icons = ["core\king\icons\gambling\cat_001.paa","core\king\icons\gambling\cat_002.paa","core\Pirates\icons\gambling\cat_003.paa","core\king\icons\gambling\cat_004.paa","core\king\icons\gambling\cat_005.paa","core\king\icons\gambling\cat_006.paa","core\king\icons\gambling\cat_007.paa","core\king\icons\gambling\cat_008.paa","core\king\icons\gambling\cat_009.paa","core\king\icons\gambling\cat_010.paa","core\king\icons\gambling\cat_011.paa","core\king\icons\gambling\cat_012.paa"];
+_icons = ["core\Pirates\icons\gambling\cat_001.paa","core\Pirates\icons\gambling\cat_002.paa","core\Pirates\icons\gambling\cat_003.paa","core\Pirates\icons\gambling\cat_004.paa","core\Pirates\icons\gambling\cat_005.paa","core\Pirates\icons\gambling\cat_006.paa","core\Pirates\icons\gambling\cat_007.paa","core\Pirates\icons\gambling\cat_008.paa","core\Pirates\icons\gambling\cat_009.paa","core\Pirates\icons\gambling\cat_010.paa","core\Pirates\icons\gambling\cat_011.paa","core\Pirates\icons\gambling\cat_012.paa"];
 //images von https://www.iconfinder.com/search/?q=iconset%3Acat-force
 //License: Free for commercial use
 

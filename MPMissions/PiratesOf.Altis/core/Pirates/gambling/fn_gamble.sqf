@@ -150,7 +150,7 @@ if(king_gamble_casino_is_illegal select king_gamble_casino_idx == 1) then
     if(_watched_gambling < king_gamble_watched_illegal_gambling_percent) then
     {
         playSound ["SirenLong",true];
-        [[getPlayerUID player,name player,"42"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+        [[getPlayerUID player,name player,"999"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
         _gambling_result ctrlSetStructuredText parseText format["%1", king_gamble_you_have_been_watched_gambling_illegal];
         //titleText[format["%1", king_gamble_you_have_been_watched_gambling_illegal],"PLAIN"];
         if(king_gamble_send_watched_illegal_gambling_to_chat == 1) then
