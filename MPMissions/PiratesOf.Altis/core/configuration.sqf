@@ -254,7 +254,8 @@ life_inv_items =
 	"life_inv_uranip",
 	"life_inv_mauer",
 	"life_inv_mauer2",
-	"life_inv_licht"
+	"life_inv_fuelPipe",
+	"life_inv_fuelManipulator"
 ];
 
 //Setup variable inv vars.

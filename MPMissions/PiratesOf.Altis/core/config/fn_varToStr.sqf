@@ -102,6 +102,8 @@ switch (_var) do
 	case "life_inv_mauer": {"Straßensperre"};
 	case "life_inv_mauer2": {"Mauer"};
 	case "life_inv_licht": {"Hütchen"};
+	case "life_inv_fuelManipulator": {"Tankmanipulator"};
+	case "life_inv_fuelPipe": {"Benzinschlauch"};
 	
 	//License Block
 	case "license_civ_donator": {(localize "STR_License_Donator")};

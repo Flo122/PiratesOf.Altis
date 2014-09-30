@@ -167,7 +167,9 @@ _yItems = _yItems + [_name];
 	["life_inv_speedbomb", life_inv_speedbomb],
 	["life_inv_mauer", life_inv_mauer],
 	["life_inv_mauer2", life_inv_mauer2],
-	["life_inv_licht", life_inv_licht]
+	["life_inv_licht", life_inv_licht],
+	["life_inv_fuelManipulator", life_inv_fuelManipulator],
+	["life_inv_fuelPipe", life_inv_fuelPipe]
 ];
 
 

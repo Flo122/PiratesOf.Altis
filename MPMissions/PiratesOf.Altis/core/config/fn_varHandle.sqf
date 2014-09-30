@@ -106,6 +106,7 @@ switch (_mode) do
 			case "mauer": {"life_inv_mauer"};
 			case "mauer2": {"life_inv_mauer2"};
 			case "licht": {"life_inv_licht"};
+			case "fuelManipulator": {"life_inv_fuelManipulator"};
 			};
 	};
 	
@@ -204,6 +205,8 @@ switch (_mode) do
 			case "life_inv_mauer": {"mauer"};
 			case "life_inv_mauer2": {"mauer2"};
 			case "life_inv_licht": {"licht"};
+			case "life_inv_fuelManipulator": {"fuelManipulator"};
+			case "life_inv_fuelPipe": {"fuelPipe"};
 		};
 	};
 };
