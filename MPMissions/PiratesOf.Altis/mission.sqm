@@ -2450,13 +2450,13 @@ class Mission
 				class Item49
 				{
 					position[]={3738.0977,12.785799,13267.416};
-					azimut=51.988899;
+					azimut=51.988937;
 					special="NONE";
 					id=124;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Hole Fahrzeuge""];   life_garage_sp = ""car_g_1"";  }];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Garage""];this allowDamage false; this enableSimulation false; this addAction [""Lackieren"", life_fnc_RepaintMenu];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Hole Fahrzeuge""];   life_garage_sp = ""car_g_1"";  }];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Garage""];";
 				};
 				class Item50
 				{
@@ -3702,6 +3702,7 @@ class Mission
 					skill=0.60000002;
 					text="hc_1";
 					description="Headless Client";
+					forceHeadlessClient=1;
 				};
 			};
 		};
