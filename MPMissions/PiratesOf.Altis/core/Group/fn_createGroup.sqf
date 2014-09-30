@@ -10,7 +10,7 @@ _value = ctrlText 2522;
 _len = [_value] call KRON_StrLen;
 
 if(_len > 25) exitWith {hint "Die Maximale Zahl an buchstaben fuer eine Gruppe ist 25."};
-if(life_cash < 10000) exitWith {hint "Du hast keine 10000€ um eine Gruppe zu eroeffnen!"};
+if(life_cash < 10000) exitWith {hint "Du hast keine 10000$ um eine Gruppe zu eroeffnen!"};
 if(isNil {life_gang_list}) exitWith {hint "Server not authorized for feature."};
 if(([_value,life_gang_list] call fnc_index) != -1) exitWith {hint "Diesen Gruppen namen gibt es bereits!"};
 
