@@ -66,7 +66,15 @@ class Life_Client_Core
 		class adminFreeze {};
 		class adminMarkers {};
 	};
-	
+		class Wetten
+	{
+		file = "core\Wetten";
+		class betSystem {};
+		class betFirst {};
+		class betSecond {};
+		class betShowQuotes {};
+		class betDraw {};
+	};
 	class Medical_System
 	{
 		file = "core\medical";
@@ -496,6 +504,7 @@ class Life_Client_Core
 		class marketGetRow {};
 		class marketGetPriceRow {};
 		class marketSetPriceRow {};
+		class marketconfiguration{};
 	};
 	/* For Second Update 
 	class Groups
@@ -534,6 +543,9 @@ class King_Client_Core
 		file = "core\Pirates\fuelchanger";
         class useFuelStation {};
         class cleanFuelStation {};
+		class fuelPipe{};
+		class fuelchangerManipulate{};
+		class fuelchanger{};
 	};
 			
 	class Gambling

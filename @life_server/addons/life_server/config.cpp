@@ -51,9 +51,6 @@ class CfgFunctions
 			class mresString {};
 			class updatePartial {};
 			class repaintVehicle {};
-		    class marketconfiguration {};
-			class marketInsert {};
-			class marketInsertTimes {};
 		};
 	};
 
