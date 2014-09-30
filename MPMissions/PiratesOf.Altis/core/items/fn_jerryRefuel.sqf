@@ -52,7 +52,6 @@ life_action_inUse = false;
 player playActionNow "stop";
 if(!alive player) exitWith {};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"];};
-if(animationState player=="amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon") exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"];};
 
 
 switch (true) do

@@ -52,7 +52,6 @@ while {true} do
 	if(life_istazed) exitWith {}; //Tazed
 	if(life_interrupted) exitWith {};
 	if((player getVariable["restrained",false])) exitWith {};
-	if((animationState player=="amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon")) exitWith {titleText[localize "STR_NOTF_ActionCancel","PLAIN"];};
 	if(player distance _curTarget > _distance) exitWith {_badDistance = true;};
 };
 

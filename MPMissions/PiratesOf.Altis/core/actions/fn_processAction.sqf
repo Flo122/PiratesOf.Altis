@@ -106,7 +106,6 @@ if(_hasLicense) then
 	};
 	
 	if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-	if(animationState player=="amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon") exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 	
 	if(_2var) then 
 	{
