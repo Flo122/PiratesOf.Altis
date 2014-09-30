@@ -187,6 +187,19 @@ switch (true) do
 			[] spawn life_fnc_licht;
 		};
 	};
+	
+	case (_item == "fuelManipulator"):
+    {
+        closeDialog 0;
+        [] spawn king_fnc_fuelchangerManipulate;
+    };    
+       
+     case (_item == "fuelPipe"):
+    {
+        closeDialog 0;
+        [] spawn king_fnc_fuelPipe;
+    };
+	
 	case (_item == "kidney"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
