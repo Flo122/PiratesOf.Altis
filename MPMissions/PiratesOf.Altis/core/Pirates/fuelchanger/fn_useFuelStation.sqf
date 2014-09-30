@@ -38,7 +38,7 @@ while {true} do
 		
 		hintSilent format["Betankung läuft:\n%1%2 %3$", ceil (_fuel_new * 100), "%", _spent_money];
 		
-		sleep 5;
+		sleep 2.5;
 	};
 
 	[1,false] call SOCK_fnc_updateRequest;

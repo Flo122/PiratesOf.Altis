@@ -106,6 +106,7 @@ switch (_mode) do
 			case "mauer": {"life_inv_mauer"};
 			case "mauer2": {"life_inv_mauer2"};
 			case "licht": {"life_inv_licht"};
+			case "fuelPipe": {"life_inv_fuelPipe"};
 			case "fuelManipulator": {"life_inv_fuelManipulator"};
 			};
 	};

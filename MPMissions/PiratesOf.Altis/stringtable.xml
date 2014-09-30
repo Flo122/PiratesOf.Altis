@@ -3867,7 +3867,7 @@
 		<Key ID="STR_ISTR_Jerry_Process">
 			<Original>Refuelling %1</Original>
 			<English>Refuelling %1</English>
-			<German>Tanken %1</German>
+			<German>Betanke %1</German>
 			<French>Ravitaillement %1</French>
 			<Italian>Rifornendo %1</Italian>
 		</Key>
