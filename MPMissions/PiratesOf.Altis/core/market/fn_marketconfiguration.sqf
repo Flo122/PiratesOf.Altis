@@ -612,9 +612,7 @@ life_market_resources = [
 ];
 publicVariable "life_market_resources";
 
-diag_log "------------- Life Market Resources -------------";
-diag_log format["Result: %1",life_market_resources];
-diag_log "------------------------------------------------";
+
 
 life_market_shortnames = [];
 
@@ -633,4 +631,3 @@ foreach life_market_resources;
 	
 publicVariable "life_market_prices";
 
-systemChat "Market Prices Generated!";
