@@ -12,7 +12,7 @@ if(serverCommandAvailable "#kick") exitWith
 
 _pw = ctrlText 1400;
 
-if(isNil("_pw") || _pw == "PiratesOfAltisAdmin") exitWith
+if(isNil("_pw") || _pw == "") exitWith
 {
     hint "Du musst ein Passwort eingeben!";
 };
