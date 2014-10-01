@@ -11,7 +11,7 @@ _deleted = false;
 while {true} do
 {
 	private["_veh","_units"];
-	sleep (30 * 60);
+	sleep (10 * 60);
 	{
 		_veh = _x;
 		_vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "vehicleClass");
@@ -19,7 +19,7 @@ while {true} do
 		if(_vehicleClass in ["Car","Air","Ship","Armored","Submarine"]) then
 		{
 			_dbInfo = _veh getVariable["dbInfo",[]];
-			_units = {(_x distance _veh < 1500)} count playableUnits;
+			_units = {(_x distance _veh < 1000)} count playableUnits;
 			if(count crew _x == 0) then
 			{
 				switch (true) do
