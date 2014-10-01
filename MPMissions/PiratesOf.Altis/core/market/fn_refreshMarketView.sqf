@@ -45,7 +45,7 @@ else
 			//Trend Global
 			ctrlSetText [1004, format["$%1", [_x select 2] call life_fnc_numberText ] ];
 			
-			if((_x select 2) >= 0) then
+			if((_x select 2) >= 1) then
 			{
 				ctrlSetText [1200, "icons\trendup.paa"];
 			}
@@ -57,7 +57,7 @@ else
 			//Trend local
 			ctrlSetText [1005, format["$%1", [_x select 3] call life_fnc_numberText ] ];
 			
-			if((_x select 3) >= 0) then
+			if((_x select 3) >= 1) then
 			{
 				ctrlSetText [1201, "icons\trendup.paa"];
 			}
