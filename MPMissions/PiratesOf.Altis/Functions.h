@@ -48,7 +48,38 @@ class Life_Client_Core
 		class initAPH {};
 		class initZeus {};
 	};
-	
+	class Admin
+	{
+		file = "core\admin";
+		class admininfo {};
+		class admininfo_Extended {};
+		class adminid {};
+		class admingetID {};
+		
+		class adminMenu {};
+		class adminQuery {};
+		
+		class adminKick {};
+		class adminBan {};
+		
+		class adminMenu_Extended {};
+		class adminQuery_Extended {};
+		
+		class adminGodMode {};
+		class adminAddMoney {};	
+		class adminSpawnVehicle {};
+		class adminInstaHealth {};
+		
+		class adminTpTo {};
+		class adminTpHere {};
+		
+		class adminRestrain {};
+		class adminUnrestrain {};
+		
+		class adminAuthentificate {};
+		class adminCheckAuth {};
+	};
+	/*
 	class Admin
 	{
 		file = "core\admin";
@@ -66,6 +97,7 @@ class Life_Client_Core
 		class adminFreeze {};
 		class adminMarkers {};
 	};
+	*/
 		class Wetten
 	{
 		file = "core\Wetten";

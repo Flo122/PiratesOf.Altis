@@ -1,26 +1,24 @@
-#include <macro.h>
-/*
-File: fn_adminGodMode.sqf
-Author: Tobias 'Xetoxyc' Sittenauer
- 
-Description: Enables God mode for Admin
+/**
+*	godMode(BOOLEAN ebale)
+*
 */
 
-if(__GETC__(life_adminlevel) < 2) exitWith {closeDialog 0; hint localize "STR_Admin_ErrorLevel";};
+private ["_enable"];
+_enable = _this select 0;
 
-[] spawn {
-  while {dialog} do {
-   closeDialog 0;
-   sleep 0.05;
-  };
+//Give money
+player allowDamage _enable;
+
+//Hint + Infos
+if( _enable ) then
+{
+	[[0,format["ADMIN: %1 hat God-Mode angeschaltet.",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	hint "God-Mode AN";
+}
+else
+{
+	[[0,format["ADMIN: %1 hat God-Mode ausgeschaltet.",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	hint "God-Mode AUS";
 };
- 
-if(life_god) then {
-	life_god = false;
-	titleText ["God mode disabled","PLAIN"]; titleFadeOut 2;
-	player allowDamage true;
-} else {
-	life_god = true;
-	titleText ["God mode enabled","PLAIN"]; titleFadeOut 2;
-	player allowDamage false;
-}; 
+
+
