@@ -11,7 +11,7 @@ _deleted = false;
 while {true} do
 {
 	private["_veh","_units"];
-	sleep (60 * 60);
+	sleep (30 * 60);
 	{
 		_veh = _x;
 		_vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "vehicleClass");
@@ -47,7 +47,7 @@ while {true} do
 					_uid = _dbInfo select 0;
 					_plate = _dbInfo select 1;
 
-					_query = format["UPDATE vehicles SET active='0', fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate,(fuel _veh)];
+					_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
 					waitUntil {!DB_Async_Active};
 					[_query,1] call DB_fnc_asyncCall;
 				};
