@@ -3,7 +3,7 @@ life_market_resources = [
 
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
-	["hopfenp", 3540, 1770, 5310, 4.00, 1,
+	["hopfenp", 3540, 1770, 55310, 4.00, 2,
 		[ 
 			["bronze",1],
 			["iron_r",1],
@@ -26,7 +26,7 @@ life_market_resources = [
 		]
 	],
 	
-	["bronze", 13375, 7412, 22237, 1.25, 0.5,
+	["bronze", 13375, 7412, 52237, 3.25, 2.5,
 		[ 
 			["hopfenp",1], 
 			["iron_r",1],
@@ -49,7 +49,7 @@ life_market_resources = [
 		]
 	],
 	
-	["iron_r", 3017, 1508, 4525, 1.25, 0.5,
+	["iron_r", 3017, 1508, 54525, 3.25, 2.5,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -72,7 +72,7 @@ life_market_resources = [
 		]
 	],
 	
-	["glass", 3368, 1684, 5052, 0.50, 0.125,
+	["glass", 3368, 1684, 65052, 1.50, 1.125,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -95,7 +95,7 @@ life_market_resources = [
 		]
 	],
 	
-	["eisenp", 3153, 1576, 4729, 1.25, 0.5,
+	["eisenp", 3153, 1576, 74729, 2.25, 1.75,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -118,7 +118,7 @@ life_market_resources = [
 		]
 	],
 	
-	["holzp", 3248, 1624, 4872, 0.50, 0.125,
+	["holzp", 3248, 1624, 44872, 3.50, 2.125,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -141,7 +141,7 @@ life_market_resources = [
 		]
 	],
 	
-	["copper_r", 3746, 1873, 5619, 0.50, 0.125,
+	["copper_r", 3746, 1873, 65619, 2.50, 1.125,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -164,7 +164,7 @@ life_market_resources = [
 		]
 	],
 	
-	["getreidep", 3210, 1605, 4815, 0.50, 0.125,
+	["getreidep", 3210, 1605, 48315, 3.50, 2.125,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -187,7 +187,7 @@ life_market_resources = [
 		]
 	],
 	
-	["oilp", 2571, 1285, 3865, 1.25, 0.5,
+	["oilp", 2571, 1285, 73865, 2.25, 1.5,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -210,7 +210,7 @@ life_market_resources = [
 		]
 	],
 	
-	["salt_r", 4759, 2379, 7138, 0.75, 0.25,
+	["salt_r", 4759, 2379, 37138, 2.75, 1.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -233,7 +233,7 @@ life_market_resources = [
 		]
 	],
 	
-	["schmuck", 14825, 7412, 22237, 0.75, 0.25,
+	["schmuck", 14825, 7412, 100000, 5.75, 3.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -256,7 +256,7 @@ life_market_resources = [
 		]
 	],
 	
-	["schwefelp", 3222, 1611, 4833, 0.75, 0.25,
+	["schwefelp", 3222, 1611, 24833, 4.75, 3.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -279,7 +279,7 @@ life_market_resources = [
 		]
 	],
 	
-	["silberp", 3966, 1983, 5949, 0.75, 0.25,
+	["silberp", 3966, 1983, 55949, 5.75, 4.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -302,7 +302,7 @@ life_market_resources = [
 		]
 	],
 	
-	["uran5", 24144, 12072, 36216, 0.75, 0.25,
+	["uran5", 24144, 12072, 136216, 4.75, 3.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -325,7 +325,7 @@ life_market_resources = [
 		]
 	],
 	
-	["traubenp", 4006, 2003, 6009, 0.75, 0.25,
+	["traubenp", 4006, 2003, 46009, 4.75, 2.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -348,7 +348,7 @@ life_market_resources = [
 		]
 	],
 	
-	["cement", 3342, 1671, 5013, 0.75, 0.25,
+	["cement", 3342, 1671, 25013, 5.75, 3.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -371,7 +371,7 @@ life_market_resources = [
 		]
 	],
 	
-	["tabakp", 4577, 2288, 6865, 0.75, 0.25,
+	["tabakp", 4577, 2288, 26865, 3.75, 2.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -394,7 +394,7 @@ life_market_resources = [
 		]
 	],
 	
-	["zinnp", 3274, 1637, 4911, 0.75, 0.25,
+	["zinnp", 3274, 1637, 44911, 4.75, 3.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -417,7 +417,7 @@ life_market_resources = [
 		]
 	],
 	
-	["zuckerp", 4565, 2282, 6847, 0.75, 0.25,
+	["zuckerp", 4565, 2282, 46847, 4.75, 4.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -442,7 +442,7 @@ life_market_resources = [
 	
 	///////////////////////////////////
 	
-	["heroinp", 4527, 2263, 6790, 3, 0.75,
+	["heroinp", 4527, 2263, 46790, 4, 2.75,
 		[
 			["marijuana",1],
 			["kkugel",1],
@@ -457,7 +457,7 @@ life_market_resources = [
 		]
 	],
 	
-	["marijuana", 4365, 2182, 6547, 1.25, 0.5,
+	["marijuana", 4365, 2182, 46547, 6, 5.5,
 		[
 			["heroinp",1],
 			["kkugel",1],
@@ -472,7 +472,7 @@ life_market_resources = [
 		]
 	],
 	
-	["kkugel", 13987, 6993, 20980, 0.75, 0.25,
+	["kkugel", 13987, 6993, 80980, 6.75, 4.25,
 		[
 			["heroinp",1],
 			["marijuana",1],
@@ -487,7 +487,7 @@ life_market_resources = [
 		]
 	],
 	
-	["cocainep", 5348, 2674, 8022, 1.25, 0.5,
+	["cocainep", 5348, 2674, 88022, 2.25, 1.5,
 		[
 			["heroinp",1],
 			["marijuana",1],
@@ -502,7 +502,7 @@ life_market_resources = [
 		]
 	],
 	
-	["pbrau", 24701, 12350, 37051, 0.50, 0.125,
+	["pbrau", 24701, 12350, 37051, 1.50, 1.125,
 		[
 			["heroinp",1],
 			["marijuana",1],
@@ -517,7 +517,7 @@ life_market_resources = [
 		]
 	],
 	
-	["pkugel", 62727, 31363, 94090, 0.75, 0.25,
+	["pkugel", 62727, 31363, 294090, 4.75, 3.25,
 		[
 			["heroinp",1],
 			["marijuana",1],
@@ -532,7 +532,7 @@ life_market_resources = [
 		]
 	],
 	
-	["zuckerip", 4922, 2461, 7383, 1.25, 0.5,
+	["zuckerip", 4922, 2461, 17383, 3.25, 2.5,
 		[
 			["heroinp",1],
 			["marijuana",1],
@@ -547,7 +547,7 @@ life_market_resources = [
 		]
 	],
 	
-	["uranip", 12598, 6299, 18897, 1.25, 0.5,
+	["uranip", 12598, 6299, 118897, 4.25, 2.5,
 		[
 			["heroinp",1],
 			["marijuana",1],
@@ -562,7 +562,7 @@ life_market_resources = [
 		]
 	],
 	
-	["spulver", 11408, 5704, 17112, 1.25, 0.5,
+	["spulver", 11408, 5704, 47112, 5.25, 2.5,
 		[
 			["heroinp",1],
 			["marijuana",1],
@@ -577,7 +577,7 @@ life_market_resources = [
 		]
 	],
 	
-	["getreideip", 4244, 2122, 6366, 1.25, 0.5,
+	["getreideip", 4244, 2122, 66366, 4.25, 2.5,
 		[
 			["heroinp",1],
 			["marijuana",1],
@@ -592,7 +592,7 @@ life_market_resources = [
 		]
 	],
 	
-	["tabakip", 3977, 1988, 5965, 1.25, 0.5,
+	["tabakip", 3977, 1988, 52965, 2.25, 1.5,
 		[
 			["heroinp",1],
 			["marijuana",1],
@@ -607,7 +607,7 @@ life_market_resources = [
 		]
 	],
 	
-	["turtle", 10077, 5038, 15115, 0, 0]
+	["turtle", 10077, 122038, 15115, 0, 0]
 		
 ];
 publicVariable "life_market_resources";
