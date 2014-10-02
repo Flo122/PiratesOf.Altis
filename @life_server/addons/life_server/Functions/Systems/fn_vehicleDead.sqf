@@ -22,8 +22,4 @@ _thread = [_query,1] call DB_fnc_asyncCall;
 sleep (1.3 * 60);
 if(!isNil "_vehicle" && {!isNull _vehicle}) then {
 	deleteVehicle _vehicle;
-	//delete ropes
-	_ropes = (_vehicle getvariable ["zlt_ropes", []]);
-	{deletevehicle _x} foreach _ropes;
-	_vehicle setvariable ["zlt_ropes", [], true];
 };

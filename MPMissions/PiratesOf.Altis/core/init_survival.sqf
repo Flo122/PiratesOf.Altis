@@ -195,7 +195,7 @@
 		sleep 1;
 		while {((player distance (getMarkerPos "uran_1") < 100) && (player getVariable["Revive",TRUE]))} do
 		{
-			if((uniform player == "U_C_Scientist") && (uniform player == "U_B_HeliPilotCoveralls") && (uniform player == "U_I_HeliPilotCoveralls") && (uniform player == "U_B_CombatUniform_mcam") && (uniform player == "U_B_CombatUniform_mcam_worn") && (uniform player == "U_B_CombatUniform_mcam_vest")) then
+			if((uniform player == "U_C_Scientist") || (uniform player == "U_B_HeliPilotCoveralls") || (uniform player == "U_I_HeliPilotCoveralls") || (uniform player == "U_B_CombatUniform_mcam") || (uniform player == "U_B_CombatUniform_mcam_worn") || (uniform player == "U_B_CombatUniform_mcam_vest")) then
 			{
 				hint "!!! Du traegst einen Strahlenschutzanzug. Ueberpruefe ihn regelmaessig! !!";
 				sleep 15;
