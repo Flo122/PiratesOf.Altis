@@ -295,28 +295,28 @@ switch (_code) do
 	//U Key
 	case 22:
 	{
-	if(!_alt && !_ctrlKey) then {
-	if(vehicle player == player) then {
-	_veh = cursorTarget;
-	} else { //www.infinity-core.de
-	_veh = vehicle player;
-	};
-
-	if(_veh isKindOf "House_F" && playerSide == civilian) then {
-	if(_veh in life_vehicles && player distance _veh < 3) then {
-	_door = [_veh] call life_fnc_nearestDoor;
-	if(_door == 0) exitWith {hint "Du bist nicht in der Nähe einer Tür!"};
-	_locked = _veh getVariable [format["bis_disabled_Door_%1",_door],0];
-	if(_locked == 0) then {
-	_veh setVariable[format["bis_disabled_Door_%1",_door],1,true];
-	_veh animate [format["door_%1_rot",_door],0];
-	systemChat "Du hast die Tür abgeschlossen.";
-	} else {
-	_veh setVariable[format["bis_disabled_Door_%1",_door],0,true];
-	_veh animate [format["door_%1_rot",_door],1];
-	systemChat "Du hast die Tür aufgeschlossen.";
-	};
-	};
+		if(!_alt && !_ctrlKey) then {
+			if(vehicle player == player) then {
+				_veh = cursorTarget;
+			} else {
+				_veh = vehicle player;
+			};
+			
+			if(_veh isKindOf "House_F" && playerSide == civilian) then {
+				if(_veh in life_vehicles && player distance _veh < 8) then {
+					_door = [_veh] call life_fnc_nearestDoor;
+					if(_door == 0) exitWith {hint localize "STR_House_Door_NotNear"};
+					_locked = _veh getVariable [format["bis_disabled_Door_%1",_door],0];
+					if(_locked == 0) then {
+						_veh setVariable[format["bis_disabled_Door_%1",_door],1,true];
+						_veh animate [format["door_%1_rot",_door],0];
+						systemChat localize "STR_House_Door_Lock";
+					} else {
+						_veh setVariable[format["bis_disabled_Door_%1",_door],0,true];
+						_veh animate [format["door_%1_rot",_door],1];
+						systemChat localize "STR_House_Door_Unlock";
+					};
+				};
 	} else {
 	_locked = locked _veh;
 
