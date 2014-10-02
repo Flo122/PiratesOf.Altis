@@ -252,7 +252,7 @@ class life_admin_menu {
 			tooltip = "Entfesseln"; //--- ToDo: Localize;
 			onButtonClick = "[] spawn life_fnc_adminUnrestrain;";
 		};
-		class tool_b_health: RscButtonMenu
+		class tool_b_health: Life_RscButtonMenu
 		{
 			idc = 2414;
 			text = "100 Health"; //--- ToDo: Localize;
@@ -262,7 +262,7 @@ class life_admin_menu {
 			h = 1 * GUI_GRID_H;
 			onButtonClick = "[true,false,false] spawn life_fnc_adminInstaHealth;";
 		};
-		class tool_b_water: RscButtonMenu
+		class tool_b_water: Life_RscButtonMenu
 		{
 			idc = 2415;
 			text = "100 Water"; //--- ToDo: Localize;
@@ -272,7 +272,7 @@ class life_admin_menu {
 			h = 1 * GUI_GRID_H;
 			onButtonClick = "[false,false,true] spawn life_fnc_adminInstaHealth;";
 		};
-		class tool_b_food: RscButtonMenu
+		class tool_b_food: Life_RscButtonMenu
 		{
 			idc = 2416;
 			text = "100 Food"; //--- ToDo: Localize;
@@ -282,7 +282,7 @@ class life_admin_menu {
 			h = 1 * GUI_GRID_H;
 			onButtonClick = "[false,true,false] spawn life_fnc_adminInstaHealth;";
 		};
-		class tool_b_marketreset: RscButtonMenu
+		class tool_b_marketreset: Life_RscButtonMenu
 		{
 			idc = -1;
 			text = "Marktpreise Reset"; //--- ToDo: Localize;
