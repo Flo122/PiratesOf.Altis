@@ -98,13 +98,13 @@ class Life_Client_Core
 		class adminMarkers {};
 	};
 	*/
-	class Paint
+	class anstrich
 	{
 		file = "core\repaint";
 		
-		class RepaintMenu;
-		class Repaintcolor;
-		class RepaintVehicle;		
+		class RepaintMenu {};
+		class Repaintcolor {};
+		class RepaintVehicle {};		
 	};
 		class Wetten
 	{
