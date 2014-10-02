@@ -160,8 +160,8 @@ if(playerSide == east) then {
 		};
 		
 		if(_curTarget in life_vehicles) then {
+		_Btn6 ctrlShow false;
 		_Btn6 ctrlEnable false;
-		_Btn6 ctrlSetText localize "Schlüssel vorhanden";
 		} else {
 		_Btn6 ctrlSetText localize "STR_vInAct_keyVehAction";
 		_Btn6 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_keyVehAction;";

@@ -22,9 +22,9 @@ if (BTC_active_lift == 1) then
 	BTC_lift_pilot    = [];
 	BTC_lift          = 1;
 	BTC_lifted        = 0;
-	BTC_lift_min_h    = 3;
-	BTC_lift_max_h    = 9;
-	BTC_lift_radius   = 3;
+	BTC_lift_min_h    = 2;
+	BTC_lift_max_h    = 13;
+	BTC_lift_radius   = 5;
 	BTC_def_hud       = 0;
 	BTC_def_pip       = 1;
 	BTC_l_def_veh_pip = ["B_Heli_Light_01_F","O_Heli_Light_02_F","B_Heli_Transport_01_F","I_Heli_Transport_02_F"];
