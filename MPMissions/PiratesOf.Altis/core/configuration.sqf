@@ -357,7 +357,7 @@ sell_array =
 	["pickaxe",750],
 	["redgull",200],
 	["peach",50],
-	["fuelF",1000],
+	["fuelF",100],
 	["spikeStrip",1200],
 	["tracker",2500],
 	["goldbar",125000],
