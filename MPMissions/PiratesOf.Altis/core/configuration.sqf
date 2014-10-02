@@ -601,6 +601,5 @@ life_garage_sell =
 	["B_MRAP_01_F",30000],
 	["B_MRAP_01_hmg_F",100000],
 	["I_MRAP_03_F",30000],
-	["I_MRAP_03_hmg_F",100000]
-];
+	["I_MRAP_03_hmg_F",100000]];
 __CONST__(life_garage_sell,life_garage_sell);
