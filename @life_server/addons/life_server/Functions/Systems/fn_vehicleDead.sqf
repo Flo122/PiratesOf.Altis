@@ -15,6 +15,7 @@ _uid = _dbInfo select 0;
 _plate = _dbInfo select 1;
 
 _query = format["UPDATE vehicles SET alive='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+//_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
 
 waitUntil {!DB_Async_Active};
 _thread = [_query,1] call DB_fnc_asyncCall;
@@ -22,8 +23,4 @@ _thread = [_query,1] call DB_fnc_asyncCall;
 sleep (1.3 * 60);
 if(!isNil "_vehicle" && {!isNull _vehicle}) then {
 	deleteVehicle _vehicle;
-	//delete ropes
-	_ropes = (_vehicle getvariable ["zlt_ropes", []]);
-	{deletevehicle _x} foreach _ropes;
-	_vehicle setvariable ["zlt_ropes", [], true];
 };

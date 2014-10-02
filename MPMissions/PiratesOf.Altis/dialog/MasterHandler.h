@@ -31,6 +31,5 @@
 #include "emp_menu.hpp"
 #include "common_EditorWrapper.hpp"
 #include "market.hpp"
-#include "interface.hpp"
 #include "gambling.hpp"
 #include "admin_pw.hpp"

@@ -31,16 +31,12 @@ if(_impound) then
 	} 
 		else
 	{
-		_query = format["UPDATE vehicles SET active='0', fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate,(fuel _vehicle)];
+		_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
 		waitUntil {!DB_Async_Active};
 		_thread = [_query,1] call DB_fnc_asyncCall;
 		//waitUntil {scriptDone _thread};
 		if(!isNil "_vehicle" && {!isNull _vehicle}) then {
 			deleteVehicle _vehicle;
-			//delete ropes
-			_ropes = (_vehicle getvariable ["zlt_ropes", []]);
-			{deletevehicle _x} foreach _ropes;
-			_vehicle setvariable ["zlt_ropes", [], true];
 		};
 		life_impound_inuse = false;
 		(owner _unit) publicVariableClient "life_impound_inuse";
@@ -62,16 +58,12 @@ if(_impound) then
 		(owner _unit) publicVariableClient "life_garage_store";
 	};
 	
-	_query = format["UPDATE vehicles SET active='0', fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate,(fuel _vehicle)];
+	_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
 	waitUntil {!DB_Async_Active};
 	_thread = [_query,1] call DB_fnc_asyncCall;
 	//waitUntil {scriptDone _thread};
 	if(!isNil "_vehicle" && {!isNull _vehicle}) then {
 		deleteVehicle _vehicle;
-		//delete ropes
-		_ropes = (_vehicle getvariable ["zlt_ropes", []]);
-		{deletevehicle _x} foreach _ropes;
-		_vehicle setvariable ["zlt_ropes", [], true];
 	};
 	life_garage_store = false;
 	(owner _unit) publicVariableClient "life_garage_store";
