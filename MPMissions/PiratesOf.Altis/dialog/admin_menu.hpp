@@ -6,9 +6,9 @@
 #define GUI_GRID_WAbs	(1)
 #define GUI_GRID_HAbs	(1)
 
-class life_extended_admin_menu {
+class life_admin_menu {
 	idd = 2900;
-	name= "life_extended_admin_menu";
+	name= "life_admin_menu";
 	movingEnable = false;
 	enableSimulation = true;
 	onLoad = "[] spawn life_fnc_adminMenu_Extended;";
