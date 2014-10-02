@@ -576,6 +576,7 @@ class King_Client_Core
 		class fuelPipe{};
 		class fuelchangerManipulate{};
 		class fuelchanger{};
+		class AntiFuel{};
 	};
 			
 	class Gambling

@@ -11,6 +11,7 @@ if(_item == "") exitWith {};
 
 switch (_item) do
 {
+	case "AntiFuel": {2};
 	case "Handschuhe": {2};
 	case "Skalpel": {3};
 	case "kidney": {15};

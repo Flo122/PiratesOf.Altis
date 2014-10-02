@@ -193,7 +193,12 @@ switch (true) do
         closeDialog 0;
         [] spawn king_fnc_fuelchangerManipulate;
     };    
-       
+      	
+	case (_item == "AntiFuel"):
+    {
+        closeDialog 0;
+		[] spawn king_fnc_AntiFuel;
+    };    
      case (_item == "fuelPipe"):
     {
         closeDialog 0;
