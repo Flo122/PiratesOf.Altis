@@ -28629,7 +28629,7 @@ class Mission
 		};
 		class Item2324
 		{
-			position[]={14202.75,16.128975,16564.5};
+			position[]={14207.745,16.17452,16566.068};
 			azimut=-48.478909;
 			special="NONE";
 			id=2633;
@@ -28640,7 +28640,7 @@ class Mission
 		};
 		class Item2325
 		{
-			position[]={14199.767,16.300268,16561.137};
+			position[]={14204.762,16.234468,16562.705};
 			azimut=-48.478909;
 			special="NONE";
 			id=2634;
@@ -28651,7 +28651,7 @@ class Mission
 		};
 		class Item2326
 		{
-			position[]={14207.599,16.190891,16564.723};
+			position[]={14212.594,16.407118,16566.291};
 			azimut=-48.478909;
 			special="NONE";
 			id=2635;
@@ -28662,7 +28662,7 @@ class Mission
 		};
 		class Item2327
 		{
-			position[]={14211.086,16.398462,16561.635};
+			position[]={14216.081,16.485477,16563.203};
 			azimut=-48.478909;
 			special="NONE";
 			id=2636;
@@ -28673,7 +28673,7 @@ class Mission
 		};
 		class Item2328
 		{
-			position[]={14203.649,16.412624,16553.24};
+			position[]={14208.645,16.425833,16554.809};
 			azimut=-48.478909;
 			special="NONE";
 			id=2637;
@@ -28684,7 +28684,7 @@ class Mission
 		};
 		class Item2329
 		{
-			position[]={14200.137,16.39043,16556.295};
+			position[]={14205.132,16.377966,16557.863};
 			azimut=-48.478909;
 			special="NONE";
 			id=2638;
@@ -28695,7 +28695,7 @@ class Mission
 		};
 		class Item2330
 		{
-			position[]={14208.5,16.435722,16553.451};
+			position[]={14213.495,16.482031,16555.02};
 			azimut=-48.478909;
 			special="NONE";
 			id=2639;
@@ -28706,7 +28706,7 @@ class Mission
 		};
 		class Item2331
 		{
-			position[]={14211.435,16.462906,16556.76};
+			position[]={14216.43,16.518549,16558.328};
 			azimut=-48.478909;
 			special="NONE";
 			id=2640;
@@ -28717,7 +28717,7 @@ class Mission
 		};
 		class Item2332
 		{
-			position[]={14205.656,16.371883,16559.063};
+			position[]={14210.651,16.429338,16560.631};
 			azimut=10;
 			special="NONE";
 			id=2641;
@@ -57759,7 +57759,7 @@ class Mission
 		};
 		class Item262
 		{
-			position[]={14205.342,16.370853,16558.928};
+			position[]={14210.337,16.430021,16560.496};
 			name="APH_air_2";
 			type="Empty";
 			angle=310;
