@@ -5,7 +5,7 @@
     Description:
     Holt das Item aus dem Inventar und setzt es auf der Map.
 */
-if((playerSide == civilian) && (playerSide == independent)) exitWith {};
+if((playerSide == civilian) OR (playerSide == independent)) exitWith {hint "Du bist nicht berechtig diesen Item zu benutzen";};
 private["_position","_mauer2"];
 _mauer2 = "Land_CncBarrier_stripes_F" createVehicle [0,0,0];
 _mauer2 attachTo[player,[0,2.5,0.2]];

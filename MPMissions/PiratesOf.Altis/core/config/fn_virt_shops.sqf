@@ -12,7 +12,7 @@ switch (_shop) do
 {
 	case "organ": {["Organ Markt",["kidney"]]}; 
 	case "market": {["Altis Markt",["water","rabbit","apple","redgull","tbacon","lockpick","handcuffkey","pickaxe","fuelF","peach","storagesmall","storagebig","Handschuhe"]]};
-	case "APH": {["APH Markt",["water","rabbit","apple","redgull","tbacon","fuelF","peach",,"AntiFuel"]]};
+	case "APH": {["APH Markt",["water","rabbit","apple","redgull","tbacon","fuelF","peach","AntiFuel","mauer"]]};
 	case "rebel": {["Rebellen Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","fuelManipulator","peach","boltcutter","blastingcharge","tracker","speedbomb","Skalpel"]]};
 	case "gang": {["Gang Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter","tracker","speedbomb"]]};
 	case "wongs": {["Wong's Feinkost",["turtlesoup","turtle"]]};

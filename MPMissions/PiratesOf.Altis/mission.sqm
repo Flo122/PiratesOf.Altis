@@ -45186,7 +45186,7 @@ class Mission
 			vehicle="Land_InfoStand_V1_F";
 			leader=1;
 			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false;  this setVariable[""realname"",""ADAC""]; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Fahrzeuggarage"",{[[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; createDialog ""Life_impound_menu""; disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""APH_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east '];  this addAction[""Helikoptergarage"",{[[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; createDialog ""Life_impound_menu""; disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""APH_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east '];  this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  this addAction[""APH Truck Shop"",life_fnc_vehicleShopMenu,[""APH_shop"",east,""APH_car_1"",""APH"",""Fahrzeug Shop""]]; this addAction[""APH Heli Shop"",life_fnc_vehicleShopMenu,[""APH_air_hs"",east,""APH_air_1"",""APH"",""Heli Shop""]]; this addAction[""Markt"",life_fnc_virt_menu,""APH""]; this addAction[""General Store"",life_fnc_weaponShopMenu,""APH_basic""]; this addAction[""Kleidung"",life_fnc_clothingMenu,""aAPH""];";
+			init="this allowDamage false;  this enableSimulation false;  this setVariable[""realname"",""ADAC""]; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Fahrzeuggarage"",{[[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; createDialog ""Life_impound_menu""; disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""APH_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east '];  this addAction[""Helikoptergarage"",{[[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; createDialog ""Life_impound_menu""; disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""APH_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east '];  this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  this addAction[""APH Truck Shop"",life_fnc_vehicleShopMenu,[""APH_shop"",east,""APH_car_1"",""APH"",""Fahrzeug Shop""]]; this addAction[""APH Heli Shop"",life_fnc_vehicleShopMenu,[""APH_air_hs"",east,""APH_air_1"",""APH"",""Heli Shop""]]; this addAction[""Markt"",life_fnc_virt_menu,""APH""]; this addAction[""General Store"",life_fnc_weaponShopMenu,""APH_basic""]; this addAction[""Kleidung"",life_fnc_clothingMenu,""APH""];";
 		};
 		class Item3916
 		{
@@ -55556,7 +55556,7 @@ class Mission
 		};
 		class Item5032
 		{
-			position[]={3256.1238,6.6949229,12459.319};
+			position[]={3250.2175,6.4851012,12460.104};
 			azimut=-48.478909;
 			special="NONE";
 			id=5341;
@@ -55567,7 +55567,7 @@ class Mission
 		};
 		class Item5033
 		{
-			position[]={3253.1404,6.6966434,12456.154};
+			position[]={3247.2341,6.6259069,12456.938};
 			azimut=-48.478909;
 			special="NONE";
 			id=5342;
@@ -55578,7 +55578,7 @@ class Mission
 		};
 		class Item5034
 		{
-			position[]={3260.9724,6.7736931,12459.74};
+			position[]={3255.0662,6.6669517,12460.524};
 			azimut=-48.478909;
 			special="NONE";
 			id=5343;
@@ -55589,7 +55589,7 @@ class Mission
 		};
 		class Item5035
 		{
-			position[]={3264.4607,6.8405595,12456.652};
+			position[]={3258.5544,6.7519493,12457.437};
 			azimut=-48.478909;
 			special="NONE";
 			id=5344;
@@ -55600,7 +55600,7 @@ class Mission
 		};
 		class Item5036
 		{
-			position[]={3257.0232,6.8304539,12448.258};
+			position[]={3251.1169,6.7451792,12449.042};
 			azimut=-48.478909;
 			special="NONE";
 			id=5345;
@@ -55611,7 +55611,7 @@ class Mission
 		};
 		class Item5037
 		{
-			position[]={3253.5105,6.775197,12451.313};
+			position[]={3247.6042,6.6607571,12452.098};
 			azimut=-48.478909;
 			special="NONE";
 			id=5346;
@@ -55622,7 +55622,7 @@ class Mission
 		};
 		class Item5038
 		{
-			position[]={3261.6392,6.8588185,12448.86};
+			position[]={3255.7329,6.8163085,12449.645};
 			azimut=-48.478909;
 			special="NONE";
 			id=5347;
@@ -55633,7 +55633,7 @@ class Mission
 		};
 		class Item5039
 		{
-			position[]={3264.5737,6.8635039,12451.935};
+			position[]={3258.6675,6.7909451,12452.719};
 			azimut=-48.478909;
 			special="NONE";
 			id=5348;
@@ -55644,7 +55644,7 @@ class Mission
 		};
 		class Item5040
 		{
-			position[]={3258.9006,6.7761984,12454.015};
+			position[]={3252.9944,6.7171693,12454.799};
 			azimut=345;
 			special="NONE";
 			id=5349;
@@ -58330,7 +58330,7 @@ class Mission
 		};
 		class Item335
 		{
-			position[]={3258.8521,6.7754402,12453.999};
+			position[]={3252.9458,6.71703,12454.783};
 			name="APH_air_1";
 			type="Empty";
 			angle=245;
