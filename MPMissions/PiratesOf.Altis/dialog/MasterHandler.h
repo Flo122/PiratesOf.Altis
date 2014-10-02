@@ -33,3 +33,4 @@
 #include "market.hpp"
 #include "gambling.hpp"
 #include "admin_pw.hpp"
+#include "veh_repaint.hpp"

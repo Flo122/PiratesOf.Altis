@@ -288,9 +288,9 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-			class ButtonAdminMenu : Life_RscButtonMenu {
+		class ButtonAdminMenu : Life_RscButtonMenu {
 			idc = 2021;
-			text = "$STR_PM_AdminMenu";
+			text = "Admin Menu";
 			onButtonClick = "createDialog ""life_admin_menu"";";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.805;

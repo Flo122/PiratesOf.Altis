@@ -16,6 +16,8 @@ switch (_mode) do
 	{
 		switch (_var) do
 		{
+			case "Handschuhe": {"life_inv_Handschuhe"};
+			case "Skalpel": {"life_inv_Skalpel"};
 			case "kidney": {"life_inv_kidney"};
 			case "oilu": {"life_inv_oilu"};
 			case "oilp": {"life_inv_oilp"};
@@ -115,6 +117,8 @@ switch (_mode) do
 	{
 		switch (_var) do
 		{
+			case "life_inv_Handschuhe": {"Handschuhe"}; 
+			case "life_inv_Skalpel": {"Skalpel"}; 
 			case "life_inv_kidney": {"kidney"}; 
 			case "life_inv_oilu": {"oilu"};
 			case "life_inv_oilp": {"oilp"};
