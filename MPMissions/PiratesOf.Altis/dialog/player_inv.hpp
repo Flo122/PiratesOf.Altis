@@ -288,21 +288,10 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-		/*
-		class ButtonAdminMenu : Life_RscButtonMenu {
-			idc = 2021;
-			text = "$STR_PM_AdminMenu";
-			onButtonClick = "createDialog ""life_admin_menu"";";
-			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.805;
-			w = (6.25 / 40);
-			h = (1 / 25);
-		};
-		*/
 			class ButtonAdminMenu : Life_RscButtonMenu {
 			idc = 2021;
 			text = "$STR_PM_AdminMenu";
-			onButtonClick = "createDialog ""life_extended_admin_menu"";";
+			onButtonClick = "createDialog ""life_admin_menu"";";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.805;
 			w = (6.25 / 40);
@@ -340,15 +329,6 @@ class playerSettings {
 			h = (1 / 25);
 		};
 		*/
-		//class Interface : life_RscButtonMenu {
-		//	idc = 78000;
-		//	text = "Infos";
-		//	onButtonClick = "createDialog ""interface"";";
-		//	x = 0.1+ (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-		//	y = 0.805;
-		//	w = (6.25 / 40);
-		//	h = (1 / 25);
-		//};
 		
 		class ButtonWantedAdd : life_RscButtonMenu {
 			idc = 9800;
