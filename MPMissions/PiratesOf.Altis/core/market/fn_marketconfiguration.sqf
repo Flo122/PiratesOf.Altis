@@ -3,7 +3,7 @@ life_market_resources = [
 
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
-	["hopfenp", 3540, 1770, 55310, 4.00, 2,
+	["hopfenp", 3540, 1770, 25310, 4.00, 2,
 		[ 
 			["bronze",1],
 			["iron_r",1],
@@ -26,7 +26,7 @@ life_market_resources = [
 		]
 	],
 	
-	["bronze", 13375, 7412, 52237, 3.25, 2.5,
+	["bronze", 13375, 7412, 22237, 3.25, 2.5,
 		[ 
 			["hopfenp",1], 
 			["iron_r",1],
@@ -49,7 +49,7 @@ life_market_resources = [
 		]
 	],
 	
-	["iron_r", 3017, 1508, 54525, 3.25, 2.5,
+	["iron_r", 3017, 1508, 24525, 3.25, 2.5,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -72,7 +72,7 @@ life_market_resources = [
 		]
 	],
 	
-	["glass", 3368, 1684, 65052, 1.50, 1.125,
+	["glass", 3368, 1684, 45052, 1.50, 1.125,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -95,7 +95,7 @@ life_market_resources = [
 		]
 	],
 	
-	["eisenp", 3153, 1576, 74729, 2.25, 1.75,
+	["eisenp", 3153, 1576, 24729, 2.25, 1.75,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -118,7 +118,7 @@ life_market_resources = [
 		]
 	],
 	
-	["holzp", 3248, 1624, 44872, 3.50, 2.125,
+	["holzp", 3248, 1624, 24872, 3.50, 2.125,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -141,7 +141,7 @@ life_market_resources = [
 		]
 	],
 	
-	["copper_r", 3746, 1873, 65619, 2.50, 1.125,
+	["copper_r", 3746, 1873, 35619, 2.50, 1.125,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -187,7 +187,7 @@ life_market_resources = [
 		]
 	],
 	
-	["oilp", 2571, 1285, 73865, 2.25, 1.5,
+	["oilp", 2571, 1285, 23865, 2.25, 1.5,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -394,7 +394,7 @@ life_market_resources = [
 		]
 	],
 	
-	["zinnp", 3274, 1637, 44911, 4.75, 3.25,
+	["zinnp", 3274, 1637, 24911, 4.75, 3.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -417,7 +417,7 @@ life_market_resources = [
 		]
 	],
 	
-	["zuckerp", 4565, 2282, 46847, 4.75, 4.25,
+	["zuckerp", 4565, 2282, 26847, 4.75, 4.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -442,7 +442,7 @@ life_market_resources = [
 	
 	///////////////////////////////////
 	
-	["heroinp", 4527, 2263, 46790, 4, 2.75,
+	["heroinp", 4527, 2263, 26790, 4, 2.75,
 		[
 			["marijuana",1],
 			["kkugel",1],
@@ -608,7 +608,18 @@ life_market_resources = [
 	],
 	
 	["turtle", 10077, 122038, 15115, 0, 0]
-		
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1]
+		]
 ];
 publicVariable "life_market_resources";
 

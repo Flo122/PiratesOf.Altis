@@ -9,7 +9,7 @@ _var_item = ["fuelManipulator",0] call life_fnc_varHandle;
 _value_item = missionNamespace getVariable _var_item;
 if(_value_item <= 0) exitWith {};
 
-if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then
+if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") ) then
 {
     _success = [20, "Manipuliere den Tank", _veh] call life_fnc_progressWaitUntilFinished;
     if(!_success) exitWith {};
