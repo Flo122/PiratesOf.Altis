@@ -16,7 +16,7 @@ while {true} do
 		case (_veh_type == "I_Heli_Transport_02_F"): {_factor = 3;};
 		case (_veh_type == "I_Heli_light_03_unarmed_F"): {_factor = 3;};
 		case (_veh_type == "B_Heli_Light_01_F"): {_factor = 1;}; //Hummingbird
-		default {_factor = 2;};
+		default {_factor = 1;};
 	};
 	
 	while {true} do
