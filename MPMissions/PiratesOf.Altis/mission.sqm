@@ -55656,7 +55656,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=339;
+		items=338;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -58347,13 +58347,6 @@ class Mission
 			position[]={3252.468,6.7978287,12445.613};
 			name="APH_impound_1";
 			type="Empty";
-		};
-		class Item338
-		{
-			position[]={8296.002,76.476929,10081.864};
-			name="kidneys";
-			type="hd_unknown";
-			colorName="ColorRed";
 		};
 	};
 	class Sensors
