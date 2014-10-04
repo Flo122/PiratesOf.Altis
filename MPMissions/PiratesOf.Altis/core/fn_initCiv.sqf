@@ -12,6 +12,11 @@ civ_spawn_3 = nearestObjects[getMarkerPos  "civ_spawn_3", ["Land_i_Shop_01_V1_F"
 civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", ["Land_i_Shop_01_V1_F","Land_i_Shop_02_V1_F","Land_i_Shop_03_V1_F","Land_i_Stone_HouseBig_V1_F"],150];
 waitUntil {!(isNull (findDisplay 46))};
 
+if(license_civ_sec OR license_civ_donator) then
+{
+live_paycheck = live_paycheck + 8000;
+}
+ 
 if(life_is_arrested) then
 {
 	life_is_arrested = false;
