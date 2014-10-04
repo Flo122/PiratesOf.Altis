@@ -620,7 +620,7 @@ life_market_resources = [
 			["spulver",1],
 			["getreideip",1]
 		]
-	],
+	]
 ];
 publicVariable "life_market_resources";
 
