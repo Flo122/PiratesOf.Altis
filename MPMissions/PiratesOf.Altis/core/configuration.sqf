@@ -138,7 +138,7 @@ switch (playerSide) do
 	case west: 
 	{
 		life_atmcash = 25000; //Starting Bank Money
-		life_paycheck = 5000;
+		life_paycheck = 10000;
 		switch(__GETC__(life_coplevel)) do
 		{
 			case 0: {life_paycheck = life_paycheck + 0;};
