@@ -94,5 +94,43 @@
 				shadow=true;
 				text="";
 			};
+			class geldtext
+			{
+				type=0;
+				idc=23520;
+				style=0;
+				x=-1;
+				y=-1;
+				w=0.3;
+				h=0.05;
+				sizeEx=0.03;
+				size=1;
+				font="PuristaSemibold";
+				colorBackground[]={0,0,0,0};
+				colorText[] = { 1 , 1 , 1 , 1 };
+				shadow=true;
+				text="";			
+			};
+			class fpstext
+			{
+				type=0;
+				idc=23525;
+				style=0;
+				x=-1;
+				y=-1;
+				w=0.3;
+				h=0.05;
+				sizeEx=0.03;
+				size=1;
+				font="PuristaSemibold";
+				colorBackground[]={0,0,0,0};
+				colorText[] = { 1 , 1 , 1 , 1 };
+				shadow=true;
+				text="";	
+			};
+			
 		};   
- 	};
+ 	
+	};
+	
+	
