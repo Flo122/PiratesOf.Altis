@@ -353,7 +353,7 @@ sell_array =
 	["Skalpel",1000],    
 	["fuelManipulator",1000],    
 	["fuelPipe",1000],
-	["kidney",50000],
+	["kidney",25000],
 	["apple",25],
 	["salema",45],
 	["ornate",40],
@@ -414,7 +414,7 @@ __CONST__(sell_array,sell_array);
 buy_array = 
 [
 	["AntiFuel",5000], 
-	["Handschuhe",400],    
+	["Handschuhe",25000],    
 	["Skalpel",50000],    
 	["fuelManipulator",50000],
 	["fuelPipe",50000],

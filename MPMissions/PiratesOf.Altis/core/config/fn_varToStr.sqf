@@ -13,10 +13,10 @@ if(_var == "") exitWith {""};
 switch (_var) do
 {
 //Virtual Inventory Items
-	case "life_inv_AntiFuel": {"Scanner"}; 
-	case "life_inv_Handschuhe": {"Einweg-Handschuhe"}; 
-	case "life_inv_Skalpel": {"Skalpel"}; 
-	case "life_inv_kidney": {"Black Market Kidney"}; 
+	case "life_inv_AntiFuel": {(localize "STR_Item_Scanner")}; 
+	case "life_inv_Handschuhe": {(localize "STR_Item_Handschuh")}; 
+	case "life_inv_Skalpel": {(localize "STR_Item_Skalpel")};
+	case "life_inv_kidney": {(localize "STR_Item_Niere")};
 	case "life_inv_oilu": {(localize "STR_Item_OilU")};
 	case "life_inv_oilp": {(localize "STR_Item_OilP")};
 	case "life_inv_heroinu": {(localize "STR_Item_HeroinU")};
@@ -102,11 +102,11 @@ switch (_var) do
 	case "life_inv_uran4": {(localize "STR_Item_Uran4")};
 	case "life_inv_uran5": {(localize "STR_Item_Uran5")};
 	case "life_inv_uranip": {(localize "STR_Item_Uranip")};
-	case "life_inv_mauer": {"Straßensperre"};
-	case "life_inv_mauer2": {"Mauer"};
-	case "life_inv_licht": {"Hütchen"};
-	case "life_inv_fuelManipulator": {"Tankmanipulator"};
-	case "life_inv_fuelPipe": {"Benzinschlauch"};
+	case "life_inv_mauer": {(localize "STR_Item_Mauer")};
+	case "life_inv_mauer2": {(localize "STR_Item_Mauer2")};
+	case "life_inv_licht": {(localize "STR_Item_Licht")};
+	case "life_inv_fuelManipulator": {(localize "STR_Item_FuelM")};
+	case "life_inv_fuelPipe": {(localize "STR_Item_FuelP")};
 	
 	//License Block
 	case "license_civ_donator": {(localize "STR_License_Donator")};

@@ -2885,6 +2885,51 @@
 		</Key>
 	</Package>
 	<Package name="Life_Items">
+		<Key ID="STR_Item_Scanner">
+			<Original>Scanner</Original>
+			<English>Scanner</English>
+			<German>Scanner</German>
+		</Key>
+		<Key ID="STR_Item_Skalpel">
+			<Original>Scalpel</Original>
+			<English>Scalpel</English>
+			<German>Skalpel</German>
+		</Key>
+		<Key ID="STR_Item_Handschuh">
+			<Original>Medical Gloves</Original>
+			<English>Einmal-Handschuh</English>
+			<German>Einmal-Handschuh</German>
+		</Key>
+		<Key ID="STR_Item_Niere">
+			<Original>Kidney</Original>
+			<English>Kidney</English>
+			<German>Niere</German>
+		</Key>
+		<Key ID="STR_Item_Mauer">
+			<Original>Road Barrier</Original>
+			<English>Road Barrier</English>
+			<German>Strassensperre</German>
+		</Key>
+		<Key ID="STR_Item_Mauer2">
+			<Original>Wall</Original>
+			<English>Wall</English>
+			<German>Mauer</German>
+		</Key>
+		<Key ID="STR_Item_Licht">
+			<Original>Traffic Cone</Original>
+			<English>Traffic Cone</English>
+			<German>Verkehrskegel</German>
+		</Key>
+		<Key ID="STR_Item_FuelM">
+			<Original>Fuel Manipulator</Original>
+			<English>Fuel Manipulator</English>
+			<German>Tankmanipulator</German>
+		</Key>
+		<Key ID="STR_Item_FuelP">
+			<Original>Fuel Pipe</Original>
+			<English>Fuel Pipe</English>
+			<German>Tankschlauch</German>
+		</Key>
 		<Key ID="STR_Item_Uran1">
 			<Original>Uranium ore</Original>
 			<English>Uranium ore</English>

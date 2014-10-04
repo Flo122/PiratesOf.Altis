@@ -16,17 +16,6 @@ if(life_blacklisted) exitWith
 	sleep 30;
 };
 
-switch (__GETC__(life_coplevel)) do {
-	case 1: { life_paycheck = 5000; };
-	case 2: { life_paycheck = 7500; };
-	case 3: { life_paycheck = 10000; };
-	case 4: { life_paycheck = 12500; };
-	case 5: { life_paycheck = 15000; };
-	case 6: { life_paycheck = 17500; };
-	case 7: { life_paycheck = 20000; };
-	default { life_paycheck = 5000; };
-};
-
 if((__GETC__(life_coplevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
 	sleep 35;
