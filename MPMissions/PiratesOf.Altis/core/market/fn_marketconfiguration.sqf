@@ -233,7 +233,7 @@ life_market_resources = [
 		]
 	],
 	
-	["schmuck", 14825, 7412, 100000, 5.75, 3.25,
+	["schmuck", 14825, 7412, 100000, 3.75, 3.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -279,7 +279,7 @@ life_market_resources = [
 		]
 	],
 	
-	["silberp", 3966, 1983, 55949, 5.75, 4.25,
+	["silberp", 3966, 1983, 55949, 4.75, 4.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -325,7 +325,7 @@ life_market_resources = [
 		]
 	],
 	
-	["traubenp", 4006, 2003, 46009, 4.75, 2.25,
+	["traubenp", 4006, 2003, 46009, 2.75, 2.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -348,7 +348,7 @@ life_market_resources = [
 		]
 	],
 	
-	["cement", 3342, 1671, 25013, 5.75, 3.25,
+	["cement", 3342, 1671, 25013, 4.75, 3.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -394,7 +394,7 @@ life_market_resources = [
 		]
 	],
 	
-	["zinnp", 3274, 1637, 24911, 4.75, 3.25,
+	["zinnp", 3274, 1637, 24911, 2.75, 1.25,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -417,7 +417,7 @@ life_market_resources = [
 		]
 	],
 	
-	["zuckerp", 4565, 2282, 26847, 4.75, 4.25,
+	["zuckerp", 4565, 2282, 26847, 1.75, 0.85,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -607,7 +607,7 @@ life_market_resources = [
 		]
 	],
 	
-	["turtle", 10077, 122038, 15115, 0, 0]
+	["turtle", 30077, 22038, 122038, 10, 4]
 		[
 			["heroinp",1],
 			["marijuana",1],
