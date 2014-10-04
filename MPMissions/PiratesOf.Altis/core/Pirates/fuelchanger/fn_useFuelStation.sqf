@@ -14,12 +14,12 @@ while {true} do
 	_veh_type = typeof _veh;	
 	//clean the fuelstation to prevent automatic refuel
 	_fuelstation = (nearestObjects [player, ["Land_fs_feed_F"], _fuel_min_distance]) select 0;
-	if(_veh_type == _veh isKindOf "Air") then
+	if(_veh isKindOf "Air") then
 	{
 	_steps = steps + 4;
 	_fuel_price = _fuel_price + 1000;
 	}
-	if(_veh_type == _veh isKindOf "Car") then
+	if(_veh isKindOf "Car") then
 	{
 	_steps = steps - 12;
 	_fuel_price = _fuel_price - 1000;
