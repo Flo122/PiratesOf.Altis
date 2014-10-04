@@ -138,28 +138,24 @@ switch (playerSide) do
 	case west: 
 	{
 		life_atmcash = 25000; //Starting Bank Money
-		life_paycheck = 10000;
+		//life_paycheck = 10000;
 		switch(__GETC__(life_coplevel)) do
 		{
-			case 0: {life_paycheck = life_paycheck + 0;};
-			case 1: {life_paycheck = life_paycheck + 0;};
-			case 2: {life_paycheck = life_paycheck + 2500;};
-			case 3: {life_paycheck = life_paycheck + 5000;};
-			case 4: {life_paycheck = life_paycheck + 7500;};
-			case 5: {life_paycheck = life_paycheck + 10000;};
-			case 6: {life_paycheck = life_paycheck + 12500;};
-			case 7: {life_paycheck = life_paycheck + 15000;};
+			case 0: {life_paycheck = 10000;};
+			case 1: {life_paycheck = 10000;};
+			case 2: {life_paycheck = 12500;};
+			case 3: {life_paycheck = 15000;};
+			case 4: {life_paycheck = 17500;};
+			case 5: {life_paycheck = 20000;};
+			case 6: {life_paycheck = 25000;};
+			case 7: {life_paycheck = 27000;};
 		};
 	};
 	case civilian: 
 	{
 		life_atmcash = 25000; //Starting Bank Money
 		life_paycheck = 2000; //Paycheck Amount
-		if(license_civ_sec) then
-		life_paycheck = life_paycheck + 8000;
-		if(license_civ_donator) then
-		life_paycheck = life_paycheck + 1000;
-	
+
 	};
 	
 	case independent:
