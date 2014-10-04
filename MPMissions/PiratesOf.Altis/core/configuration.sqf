@@ -162,7 +162,8 @@ switch (playerSide) do
 	
 	};
 	
-	case independent: {
+	case independent:
+	{
 		life_atmcash = 25000;
 		life_paycheck = 10000;
 	};
