@@ -186,7 +186,7 @@
 		};
 	};
 };
-
+/*
 [] spawn
 {
 	while {true} do
@@ -211,7 +211,7 @@
 		};
 	};
 }; 
-
+*/
 [] spawn  {
 	while{true} do
 	{
