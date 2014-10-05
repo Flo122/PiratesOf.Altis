@@ -48,4 +48,17 @@ switch (_state) do
 			hint localize "STR_Civ_LicenseRemove_2";
 		};
 	};	
+	case 4:
+	{
+		if(__GETC__(life_coplevel) >= 5 )
+		{
+			if(cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "restrained")')
+			{
+			license_civ_gun = false;
+			license_civ_rebel = false;
+			license_civ_driver = false;
+			license_civ_bm = false;
+			};
+		};
+	};
 };
