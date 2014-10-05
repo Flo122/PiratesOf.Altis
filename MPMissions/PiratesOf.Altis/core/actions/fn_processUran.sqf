@@ -57,12 +57,12 @@ if(_hasLicense) then
         _progress progressSetPosition _cP;
         _pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
         if(_cP >= 1) exitWith {};
-        if(player distance _vendor > 10) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+        if(player distance _vendor > 10) exitWith {};
     };
 
-    if(player distance _vendor > 10) exitWith {hint "Du musst innerhalb von 10 Metern bleiben."; 5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-    if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-    if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+    if(player distance _vendor > 10) exitWith {hint "Du musst innerhalb von 10 Metern bleiben."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
+    if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
+    if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
     5 cutText ["","PLAIN"];
 
     titleText[format["Du hast %1 %2 bekommen",_oldVal,_itemName],"PLAIN"];
@@ -75,5 +75,5 @@ if(_hasLicense) then
 
     hint "Du kannst das nicht ohne Lizenz verarbeiten.";
     life_is_processing = false;
-	_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];
+
 };    
