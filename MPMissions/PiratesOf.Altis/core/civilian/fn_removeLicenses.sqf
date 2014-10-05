@@ -48,6 +48,7 @@ switch (_state) do
 			hint localize "STR_Civ_LicenseRemove_2";
 		};
 	};	
+	/*
 	case 4:
 	{
 		if(__GETC__(life_coplevel) >= 5 )
@@ -61,4 +62,5 @@ switch (_state) do
 			};
 		};
 	};
+	*/
 };
