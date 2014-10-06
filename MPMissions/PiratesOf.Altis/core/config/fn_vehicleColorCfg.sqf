@@ -49,7 +49,8 @@
                             ["textures\civ\civ_offroad_sushi.jpg","civ"],
                             ["textures\civ\civ_offroad_weed.jpg","civ"],
                             ["textures\rebel\rebel_offroad.jpg","reb"],
-                            ["textures\APH\APH_offroad.paa","APH"]                 
+                            ["textures\APH\APH_offroad.paa","APH"],
+							["textures\civ\civ_offroad_unicorn.jpg","civ"]						
                     ];
             };
             // Hatchback
@@ -67,7 +68,8 @@
                             ["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","civ"],
                             ["textures\civ\civ_hatchback_fire.jpg","civ"],
                             ["textures\civ\civ_hatchback_metallica.jpg","civ"],
-                            ["textures\cop\cop_hatchback.jpg","cop"]
+                            ["textures\cop\cop_hatchback.paa","cop"],
+							["textures\civ\civ_hatchback_unicorn.jpg","civ"]	
                            
                     ];
             };
@@ -86,7 +88,8 @@
                             ["textures\civ\civ_hatchback_fire.jpg","civ"],
                             ["textures\civ\civ_hatchback_metallica.jpg","civ"],
                             [_path + "hatchback_01_ext_sport04_co.paa","cop"],
-                            ["textures\cop\cop_hatchback.paa","cop"]
+                            ["textures\cop\cop_hatchback.paa","cop"],
+							["textures\civ\civ_hatchback_unicorn.jpg","civ"]	
                     ];
             };     
             // SUV
@@ -109,9 +112,10 @@
                             ["textures\civ\civ_suv_yokohama.jpg","civ"],
                             ["textures\rebel\rebel_suv.jpg","reb"],
                             ["textures\civ\civ_suv_monster.jpg","civ"],
-                            ["textures\cop\sek_suv.jpg","cop"],
+                            ["textures\cop\sek_suv.paa","cop"],
                             ["textures\civ\civ_suv_sec.jpg","sec"],
-                            ["textures\civ\civ_suv_poa.jpg","civ"]
+                            ["textures\civ\civ_suv_poa.jpg","civ"],
+							["textures\civ\civ_suv_unicorn.jpg","civ"]	
                     ];
             };
             // Truck
@@ -164,6 +168,7 @@
                             ["textures\civ\civ_zamak_redbull_0.jpg","civ"]
                     ];
             };
+			// Zamak
             // HEMTT
             case "B_Truck_01_box_F":
             {
@@ -287,8 +292,13 @@
                             ["textures\cop\cop_hunter_0.paa","cop","textures\cop\cop_hunter_1.paa"],
                             ["textures\cop\cop_hunter_2_0.paa","cop","textures\cop\cop_hunter_2_1.paa"],
                             ["textures\cop\sek_hunter_0.paa","cop","textures\cop\sek_hunter_1.paa"],
-                            ["textures\donator\donator_hunter_0.jpg","civ","textures\donator\donator_hunter_1.jpg"],
-                            ["textures\donator\donator_hunter2_0.jpg","civ","textures\donator\donator_hunter2_1.jpg"]
+                            ["textures\donator\donator_hunter_dollar_0.jpg","civ","textures\donator\donator_hunter_dollar_1.jpg"],
+                            ["textures\donator\donator_hunter_macht_0.jpg","civ","textures\donator\donator_hunter_macht_1.jpg"],
+                            ["textures\donator\donator_hunter_unicorn_0.jpg","civ","textures\donator\donator_hunter_unicorn_1.jpg"],
+                            ["textures\donator\donator_hunter_rot_0.jpg","civ","textures\donator\donator_hunter_rot_1.jpg"],
+                            ["textures\donator\donator_hunter_blau_0.jpg","civ","textures\donator\donator_hunter_blau_1.jpg"],
+                            ["textures\donator\donator_hunter_gruen_0.jpg","civ","textures\donator\donator_hunter_gruen_1.jpg"],
+                            ["textures\donator\donator_hunter_grau_0.jpg","civ","textures\donator\donator_hunter_grau_1.jpg"]
                     ];
             };
             // Hunter
@@ -306,16 +316,10 @@
                     _ret =
                     [
                             ["textures\rebel\rebel_ifrit_braun_0.jpg","reb","textures\rebel\rebel_ifrit_braun_1.jpg"],
-                            ["textures\rebel\rebel_ifrit_grau_0.jpg","reb","textures\rebel\rebel_ifrit_grau_1.jpg"]
-                    ];
-            };
-            // Ifrit       
-            case "O_MRAP_02_hmg_F":
-            {
-                    _ret =
-                    [
-                            ["textures\rebel\rebel_ifrit_braun_0.jpg","reb","textures\rebel\rebel_ifrit_braun_1.jpg"],
-                            ["textures\rebel\rebel_ifrit_grau_0.jpg","reb","textures\rebel\rebel_ifrit_grau_1.jpg"]
+                            ["textures\rebel\rebel_ifrit_grau_0.jpg","reb","textures\rebel\rebel_ifrit_grau_1.jpg"],
+							["textures\rebel\rebel_ifrit_unicorn_0.jpg","reb","textures\rebel\rebel_ifrit_unicorn_1.jpg"],
+                            ["textures\rebel\rebel_ifrit_blau_0.jpg","reb","textures\rebel\rebel_ifrit_blau_1.jpg"],
+							["textures\rebel\rebel_ifrit_rot_0.jpg","reb","textures\rebel\rebel_ifrit_rot_1.jpg"]
                     ];
             };
             // Strider     

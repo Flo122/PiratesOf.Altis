@@ -196,6 +196,8 @@ switch (_shop) do
 			["I_MRAP_03_F",30000];
 			_return pushBack
 			["I_MRAP_03_hmg_F",500000];
+			_return pushBack
+			["B_Heli_Transport_01_F",200000];
 		};
 	};
 		

@@ -48,6 +48,7 @@ switch (_vehicle) do
 			case 13: {_color = "Marihuana"};
 			case 14: {_color = "Rebel"};
 			case 15: {_color = "APH"};
+			case 16: {_color = "Unicorn"};
 		};
 	};
 	// Hatchback
@@ -66,6 +67,7 @@ switch (_vehicle) do
 			case 8: {_color = "Feuer";};
 			case 9: {_color = "Metallica"};
 			case 10: {_color = "Polizei"};
+			case 11: {_color = "Unicorn"};
 			};
 	};
 	// Hatchback Sport
@@ -83,6 +85,7 @@ switch (_vehicle) do
 			case 7: {_color = "Metallica"};
 			case 8: {_color = "Undercover"};
 			case 9: {_color = "Polizei"};
+			case 10: {_color = "Unicorn"};
 		};
 	};
 	// SUV	
@@ -107,7 +110,8 @@ switch (_vehicle) do
 			case 14: {_color = "Monster Energy"};
 			case 15: {_color = "PEK"};
 			case 16: {_color = "Security"};
-			case 17: {_color = "PoA"};				
+			case 17: {_color = "PoA"};
+			case 18: {_color = "Unicorn"};			
 		};
 	};	
 	// Truck
@@ -284,6 +288,11 @@ switch (_vehicle) do
 			case 2: {_color = "PEK"};
 			case 3: {_color = "Donator"};
 			case 4: {_color = "Die Macht"};
+			case 5: {_color = "Unicorn"};
+			case 5: {_color = "Unicorn"};
+			case 5: {_color = "Unicorn"};
+			case 5: {_color = "Unicorn"};
+			case 5: {_color = "Unicorn"};
 		};
 	};
 	// Hunter
@@ -302,15 +311,9 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Braun"};
 			case 1: {_color = "Grau"};
-		};
-	};
-	// Ifrit
-	case "O_MRAP_02_hmg_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Braun"};
-			case 1: {_color = "Grau"};
+			case 5: {_color = "Unicorn"};
+			case 5: {_color = "Blau"};
+			case 5: {_color = "Rot"};
 		};
 	};
 	// Strider
