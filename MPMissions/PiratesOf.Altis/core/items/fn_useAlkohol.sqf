@@ -2,7 +2,7 @@
 closeDialog 0;
 
 //Little hint then wait a litle before starting drugs effects
-hint "Hicks, du fühlst dich komisch.";
+hint "Hicks, du fuehlst dich komisch.";
 sleep 3;
 
 //Activate ppEffects we need
@@ -10,7 +10,7 @@ sleep 3;
 enableCamShake true;
 
 //Let's go for 45secs of effetcs
-for "_i" from 0 to 900 do
+for "_i" from 0 to 300 do
 {
     "radialBlur" ppEffectAdjust  [random 0.8,random 0.7,0.30,0.35];
     "radialBlur" ppEffectCommit 3;
@@ -25,9 +25,11 @@ for "_i" from 0 to 900 do
 //Stop effects
 "radialBlur" ppEffectAdjust  [0,0,0,0];
 "radialBlur" ppEffectCommit 5;
+"filmGrain" ppEffectEnable false;
 sleep 6;
 
 //Deactivate ppEffects
 "radialBlur" ppEffectEnable false;
+"filmGrain" ppEffectEnable false;
 resetCamShake;
 player setVariable ["drug_alk", false, true];
