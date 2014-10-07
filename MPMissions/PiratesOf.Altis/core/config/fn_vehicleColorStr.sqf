@@ -289,10 +289,10 @@ switch (_vehicle) do
 			case 3: {_color = "Donator"};
 			case 4: {_color = "Die Macht"};
 			case 5: {_color = "Unicorn"};
-			case 6: {_color = "Unicorn"};
-			case 7: {_color = "Unicorn"};
-			case 8: {_color = "Unicorn"};
-			case 9: {_color = "Unicorn"};
+			case 6: {_color = "Rot"};
+			case 7: {_color = "Blau"};
+			case 8: {_color = "Gruen"};
+			case 9: {_color = "Grau"};
 		};
 	};
 	// Hunter
