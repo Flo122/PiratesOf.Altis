@@ -26,7 +26,7 @@ life_market_resources = [
 		]
 	],
 	
-	["bronze", 13375, 6688, 26750, 4.25, 2.75
+	["bronze", 13375, 6688, 26750, 4.25, 2.75,
 		[ 
 			["hopfenp",1], 
 			["iron_r",1],
@@ -233,7 +233,7 @@ life_market_resources = [
 		]
 	],
 	
-	["schmuck", 14825, 7413, 29650, 4.25, 2.75
+	["schmuck", 14825, 7413, 29650, 4.25, 2.75,
 		[ 
 			["hopfenp",1], 
 			["bronze",1],
@@ -442,8 +442,185 @@ life_market_resources = [
 	
 	///////////////////////////////////
 	
-	["heroinp", 4527, 2264, 11318, 4, 2.5
+	["heroinp", 4527, 2264, 11318, 4, 2.5,
 		[
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1],
+			["turtle",1]
+		]
+	],
+	
+	["marijuana", 4365, 2183, 10913, 4, 2.5,
+		[
+			["heroinp",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1],
+			["turtle",1]
+		]
+	],
+	
+	["kkugel", 13987, 6994, 34968, 4.25, 2.75,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1],
+			["turtle",1]
+		]
+	],
+	
+	["cocainep", 5348, 2674, 13370, 4, 2.5,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1],
+			["turtle",1]
+		]
+	],
+	
+	["pbrau", 24701, 12351, 61753, 4.25, 2.75,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1],
+			["turtle",1]
+		]
+	],
+	
+	["pkugel", 62727, 31364, 156818, 4.5, 3,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1],
+			["turtle",1]
+		]
+	],
+	
+	["zuckerip", 4922, 2461, 12305, 4, 2.5,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1],
+			["turtle",1]
+		]
+	],
+	
+	["uranip", 12598, 6299, 31495, 4, 2.5,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["spulver",1],
+			["getreideip",1],
+			["tabakip",1],
+			["turtle",1]
+		]
+	],
+	
+	["spulver", 11408, 5704, 28520, 4.25, 2.75,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["getreideip",1],
+			["tabakip",1],
+			["turtle",1]
+		]
+	],
+	
+	["getreideip", 4244, 2122, 10610, 4, 2.5,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["tabakip",1],
+			["turtle",1]
+		]
+	],
+	
+	["tabakip", 3977, 1989, 9942, 4, 2.5,
+		[
+			["heroinp",1],
+			["marijuana",1],
+			["kkugel",1],
+			["cocainep",1],
+			["pbrau",1],
+			["pkugel",1],
+			["zuckerip",1],
+			["uranip",1],
+			["spulver",1],
+			["getreideip",1],
+			["turtle",1]
+		]
+	],
+	
+	["turtle", 15038, 30077, 75192, 4, 2.5,
+	[
+			["heroinp",1],
 			["marijuana",1],
 			["kkugel",1],
 			["cocainep",1],
@@ -455,160 +632,7 @@ life_market_resources = [
 			["getreideip",1],
 			["tabakip",1]
 		]
-	],
-	
-	["marijuana", 4365, 2183, 10913, 4, 2.5
-		[
-			["heroinp",1],
-			["kkugel",1],
-			["cocainep",1],
-			["pbrau",1],
-			["pkugel",1],
-			["zuckerip",1],
-			["uranip",1],
-			["spulver",1],
-			["getreideip",1],
-			["tabakip",1]
-		]
-	],
-	
-	["kkugel", 13987, 6994, 34968, 4.25, 2.75
-		[
-			["heroinp",1],
-			["marijuana",1],
-			["cocainep",1],
-			["pbrau",1],
-			["pkugel",1],
-			["zuckerip",1],
-			["uranip",1],
-			["spulver",1],
-			["getreideip",1],
-			["tabakip",1]
-		]
-	],
-	
-	["cocainep", 5348, 2674, 13370, 4, 2.5
-		[
-			["heroinp",1],
-			["marijuana",1],
-			["kkugel",1],
-			["pbrau",1],
-			["pkugel",1],
-			["zuckerip",1],
-			["uranip",1],
-			["spulver",1],
-			["getreideip",1],
-			["tabakip",1]
-		]
-	],
-	
-	["pbrau", 24701, 12351, 61753, 4.25, 2.75
-		[
-			["heroinp",1],
-			["marijuana",1],
-			["kkugel",1],
-			["cocainep",1],
-			["pkugel",1],
-			["zuckerip",1],
-			["uranip",1],
-			["spulver",1],
-			["getreideip",1],
-			["tabakip",1]
-		]
-	],
-	
-	["pkugel", 62727, 31364, 156818, 4.5, 3
-		[
-			["heroinp",1],
-			["marijuana",1],
-			["kkugel",1],
-			["cocainep",1],
-			["pbrau",1],
-			["zuckerip",1],
-			["uranip",1],
-			["spulver",1],
-			["getreideip",1],
-			["tabakip",1]
-		]
-	],
-	
-	["zuckerip", 4922, 2461, 12305, 4, 2.5
-		[
-			["heroinp",1],
-			["marijuana",1],
-			["kkugel",1],
-			["cocainep",1],
-			["pbrau",1],
-			["pkugel",1],
-			["uranip",1],
-			["spulver",1],
-			["getreideip",1],
-			["tabakip",1]
-		]
-	],
-	
-	["uranip", 12598, 6299, 31495, 4, 2.5
-		[
-			["heroinp",1],
-			["marijuana",1],
-			["kkugel",1],
-			["cocainep",1],
-			["pbrau",1],
-			["pkugel",1],
-			["zuckerip",1],
-			["spulver",1],
-			["getreideip",1],
-			["tabakip",1]
-		]
-	],
-	
-	["spulver", 11408, 5704, 28520, 4.25, 2.75
-		[
-			["heroinp",1],
-			["marijuana",1],
-			["kkugel",1],
-			["cocainep",1],
-			["pbrau",1],
-			["pkugel",1],
-			["zuckerip",1],
-			["uranip",1],
-			["getreideip",1],
-			["tabakip",1]
-		]
-	],
-	
-	["getreideip", 4244, 2122, 10610, 4, 2.5
-		[
-			["heroinp",1],
-			["marijuana",1],
-			["kkugel",1],
-			["cocainep",1],
-			["pbrau",1],
-			["pkugel",1],
-			["zuckerip",1],
-			["uranip",1],
-			["spulver",1],
-			["tabakip",1]
-		]
-	],
-	
-	["tabakip", 3977, 1989, 9942, 4, 2.5
-		[
-			["heroinp",1],
-			["marijuana",1],
-			["kkugel",1],
-			["cocainep",1],
-			["pbrau",1],
-			["pkugel",1],
-			["zuckerip",1],
-			["uranip",1],
-			["spulver",1],
-			["getreideip",1]
-		]
-	],
-	
-	["turtle", 30077, 30077, 30077, 0, 0]
-		
+	]	
 ];
 publicVariable "life_market_resources";
 
