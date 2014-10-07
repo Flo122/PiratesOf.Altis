@@ -11,7 +11,7 @@ sleep 3;
 enableCamShake true;
 
 //Let's go for 120secs of effetcs
-for "_i" from 0 to 900 do
+for "_i" from 0 to 300 do
 {
     "chromAberration" ppEffectAdjust [random 0.05,random 0.05,true];
     "chromAberration" ppEffectCommit 1;   
