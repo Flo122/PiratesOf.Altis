@@ -294,11 +294,11 @@
                             ["textures\cop\sek_hunter_0.paa","cop","textures\cop\sek_hunter_1.paa"],
                             ["textures\donator\donator_hunter_dollar_0.jpg","civ","textures\donator\donator_hunter_dollar_1.jpg"],
                             ["textures\donator\donator_hunter_macht_0.jpg","civ","textures\donator\donator_hunter_macht_1.jpg"],
-                            ["textures\donator\donator_hunter_unicorn_0.jpg","civ","textures\donator\donator_hunter_unicorn_1.jpg"],
-                            ["textures\donator\donator_hunter_rot_0.jpg","civ","textures\donator\donator_hunter_rot_1.jpg"],
-                            ["textures\donator\donator_hunter_blau_0.jpg","civ","textures\donator\donator_hunter_blau_1.jpg"],
-                            ["textures\donator\donator_hunter_gruen_0.jpg","civ","textures\donator\donator_hunter_gruen_1.jpg"],
-                            ["textures\donator\donator_hunter_grau_0.jpg","civ","textures\donator\donator_hunter_grau_1.jpg"]
+                            ["textures\donator\donator_hunter_unicorn_0.jpg","civ","textures\donator\donator_hunter_1.jpg"],
+                            ["textures\donator\donator_hunter_rot_0.jpg","civ","textures\donator\donator_hunter_1.jpg"],
+                            ["textures\donator\donator_hunter_blau_0.jpg","civ","textures\donator\donator_hunter_1.jpg"],
+                            ["textures\donator\donator_hunter_gruen_0.jpg","civ","textures\donator\donator_hunter_1.jpg"],
+                            ["textures\donator\donator_hunter_grau_0.jpg","civ","textures\donator\donator_hunter_1.jpg"]
                     ];
             };
             // Hunter

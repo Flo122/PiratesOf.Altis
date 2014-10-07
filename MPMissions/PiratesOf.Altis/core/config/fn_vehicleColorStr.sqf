@@ -289,10 +289,10 @@ switch (_vehicle) do
 			case 3: {_color = "Donator"};
 			case 4: {_color = "Die Macht"};
 			case 5: {_color = "Unicorn"};
-			case 5: {_color = "Unicorn"};
-			case 5: {_color = "Unicorn"};
-			case 5: {_color = "Unicorn"};
-			case 5: {_color = "Unicorn"};
+			case 6: {_color = "Unicorn"};
+			case 7: {_color = "Unicorn"};
+			case 8: {_color = "Unicorn"};
+			case 9: {_color = "Unicorn"};
 		};
 	};
 	// Hunter
@@ -311,9 +311,9 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Braun"};
 			case 1: {_color = "Grau"};
-			case 5: {_color = "Unicorn"};
-			case 5: {_color = "Blau"};
-			case 5: {_color = "Rot"};
+			case 2: {_color = "Unicorn"};
+			case 3: {_color = "Blau"};
+			case 4: {_color = "Rot"};
 		};
 	};
 	// Strider
