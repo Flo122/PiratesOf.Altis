@@ -79,8 +79,8 @@ life_licht = ObjNull;
 ****** Weight Variables *****
 *****************************
 */
-life_maxWeight = 20; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
-life_maxWeightT = 20; //Static variable representing the players max carrying weight on start.
+life_maxWeight = 40; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
+life_maxWeightT = 40; //Static variable representing the players max carrying weight on start.
 life_carryWeight = 0; //Represents the players current inventory weight (MUST START AT 0).
 
 /*
@@ -138,24 +138,12 @@ switch (playerSide) do
 	case west: 
 	{
 		life_atmcash = 25000; //Starting Bank Money
-		//life_paycheck = 10000;
-		switch(__GETC__(life_coplevel)) do
-		{
-			case 0: {life_paycheck = 10000;};
-			case 1: {life_paycheck = 10000;};
-			case 2: {life_paycheck = 12500;};
-			case 3: {life_paycheck = 15000;};
-			case 4: {life_paycheck = 17500;};
-			case 5: {life_paycheck = 20000;};
-			case 6: {life_paycheck = 25000;};
-			case 7: {life_paycheck = 27000;};
-		};
+		life_paycheck = 10000;
 	};
 	case civilian: 
 	{
 		life_atmcash = 25000; //Starting Bank Money
 		life_paycheck = 2000; //Paycheck Amount
-
 	};
 	
 	case independent:
