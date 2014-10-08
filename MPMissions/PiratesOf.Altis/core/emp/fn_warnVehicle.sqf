@@ -11,6 +11,6 @@ if(!isNull (findDisplay 3494)) then {
 	_vehicle = nn_last_vehicles select _index;
 	if(isNull _vehicle) exitWith {};
 	[[_vehicle], "life_fnc_vehicleWarned",crew _vehicle,false] spawn life_fnc_MP;
-	sleep 10;
+	sleep 30;
 	nn_empInUse = false;
 };
