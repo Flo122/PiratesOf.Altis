@@ -71,7 +71,25 @@ player createDiarySubject ["close","Schlusswort"];
 				"
 		]
 	];
-
+	
+		player createDiaryRecord["foreword",
+		[
+			"Changelog",
+				"
+				Fixed Schwarzmarktlizens Knast sicher<br/>
+				Fuel Traker<br/>
+				- Balanced<br/>
+				- Added Scanner Counter Item<br/>
+				- Preis Balance<br/><br/>
+				Handschellenschlüssel bei Rebellenlager/Schwarzmarkt <br/>
+				Marktsystem Fixed<br/>
+				Fuel Balanced <br/>
+				Script verbesserung CPU auslastung Fixed<br/>
+		
+				"
+		]
+	];
+	
 	player createDiaryRecord ["foreword",
 		[
 			"Spezielle Steuerungselemente",
