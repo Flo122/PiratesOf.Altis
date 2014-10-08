@@ -636,25 +636,25 @@ life_market_resources = [
 ];
 publicVariable "life_market_resources";
 
-diag_log "------------- Life Market Resources -------------";
-diag_log format["Result: %1",life_market_resources];
-diag_log "------------------------------------------------";
 
-life_market_shortnames = [];
+life_market_clampprices = []; 
 
 {
-	life_market_shortnames set [count life_market_shortnames, _x select 0];
+
+life_market_clampprices set [count life_market_clampprices, [_x select 0, _x select 2, _x select 3] ];
+
 }
 foreach life_market_resources;
 
 publicVariable "life_market_shortnames";
 
-life_market_prices = [];
+life_market_prices = []; 
 {
-	life_market_prices set [count life_market_prices, [_x select 0, _x select 1, 0, 0] ];
+
+life_market_prices set [count life_market_prices, [_x select 0, _x select 1, 0, 0] ];
 }
 foreach life_market_resources;
-	
+
 publicVariable "life_market_prices";
 
 systemChat "Market Prices Generated!";
