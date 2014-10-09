@@ -217,8 +217,9 @@ class life_admin_menu {
 			w = 4 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 			tooltip = "Herporten"; //--- ToDo: Localize;
-			onButtonClick = "[] spawn life_fnc_adminTpHere;";
+			onButtonClick = "[] spawn life_fnc_admintpmap;closeDialog 0;";
 		};
+			
 		class player_b_tpTo: Life_RscButtonMenu
 		{
 			idc = 2411;
@@ -228,7 +229,7 @@ class life_admin_menu {
 			w = 4 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 			tooltip = "Zum Spieler hinporten"; //--- ToDo: Localize;
-			onButtonClick = "[] spawn life_fnc_adminTpTo;";
+			onButtonClick = "[] call life_fnc_admintp;";
 		};
 		class player_b_restrain: Life_RscButtonMenu
 		{
@@ -304,3 +305,4 @@ class life_admin_menu {
 	    };
 	};
 };
+

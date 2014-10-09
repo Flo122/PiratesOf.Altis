@@ -78,6 +78,10 @@ class Life_Client_Core
 		
 		class adminAuthentificate {};
 		class adminCheckAuth {};
+	
+		class admintp {};
+		class admintpmap {};
+		class admintptome {};
 	};
 	/*
 	class Admin
