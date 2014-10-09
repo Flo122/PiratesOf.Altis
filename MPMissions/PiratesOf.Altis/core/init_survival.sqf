@@ -189,7 +189,7 @@
 
 [] spawn
 {
-if(playerside == civillian) then {
+if(playerside == civilian) then {
 	while {true} do
 	{
 		private["_damage"];
