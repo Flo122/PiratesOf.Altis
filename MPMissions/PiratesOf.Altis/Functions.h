@@ -527,25 +527,15 @@ class Life_Client_Core
 		class calldialog {};
 		class sendChannel {};
 	};
-	
-	class Market
+	class economy
 	{
-		file = "core\market";
-		
-		class openMarketView {};
-		class refreshMarketView {};
-		class marketShortView {};
-		class marketBuy {};
-		class marketSell {};
-		class marketGetBuyPrice {};
-		class marketGetSellPrice {};
-		class marketReset {};
-		class marketChange {};
-		class marketGetRow {};
-		class marketGetPriceRow {};
-		class marketSetPriceRow {};
-		class marketconfiguration{};
+		file = "core\economy";
+		class virt_updatePrice {};
+		class addsubstract {};
+		class openEconomy {};
+		class virt_updateEconomy {};
 	};
+
 	/* For Second Update 
 	class Groups
 	{
