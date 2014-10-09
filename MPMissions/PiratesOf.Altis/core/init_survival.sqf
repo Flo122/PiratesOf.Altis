@@ -60,8 +60,8 @@
 		if (backpack player == "B_Bergen_sgg") then { _load = 40; };
 		if (backpack player == "B_Kitbag_cbr") then { _load = 45; };
 		if (backpack player == "B_Kitbag_mcamo") then { _load = 45; };
-		if (backpack player == "B_Carryall_oli") then { _load = 50; };
-		if (backpack player == "B_Carryall_khk") then { _load = 50; };
+		if (backpack player == "B_Carryall_oli") then { _load = 60; };
+		if (backpack player == "B_Carryall_khk") then { _load = 60; };
 		// cops	
 		if (backpack player == "B_Carryall_mcamo") then { _load = 50; };
 		life_maxWeight = life_maxWeightT + _load;
@@ -186,7 +186,7 @@
 		};
 	};
 };
-/*
+
 [] spawn
 {
 	while {true} do
@@ -195,7 +195,7 @@
 		sleep 1;
 		while {((player distance (getMarkerPos "uran_1") < 100) && (player getVariable["Revive",TRUE]))} do
 		{
-			if((uniform player == "U_C_Scientist") OR (uniform player == "U_B_HeliPilotCoveralls") OR (uniform player == "U_I_HeliPilotCoveralls") OR (uniform player == "U_B_CombatUniform_mcam") OR (uniform player == "U_B_CombatUniform_mcam_worn") OR (uniform player == "U_B_CombatUniform_mcam_vest")) then
+			if(uniform player == "U_C_Scientist") then
 			{
 				hint "!!! Du traegst einen Strahlenschutzanzug. Ueberpruefe ihn regelmaessig! !!";
 				sleep 15;
@@ -211,7 +211,7 @@
 		};
 	};
 }; 
-*/
+
 [] spawn  {
 	while{true} do
 	{
