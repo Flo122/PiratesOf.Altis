@@ -6,7 +6,7 @@ _jackpot = [_this,0,0,[0]] call BIS_fnc_param;
 if(_jackpot <= 0) exitWith {};
 
 
-life_cash = life_cash + _jackpot;
+life_cash_pirates = life_cash_pirates + _jackpot;
 
 //save data to db
 //[1,true] call SOCK_fnc_updateRequest;

@@ -8,7 +8,7 @@ closeDialog 0;
 _baseprice = 10000;  //Price for repaint
 _vehicleData = _veh getVariable["vehicle_info_owners",[]];
 _vehOwner = (_vehicleData select 0) select 0;
-if(life_cash < _basePrice) exitWith {hint "You don't have enough cash, to pay me"};
+if(life_cash_pirates < _basePrice) exitWith {hint "You don't have enough cash, to pay me"};
 
 if(isNil {_vehicleData}) exitWith {hint "Cheated car?."};
 if ((getPlayerUID player) != _vehOwner) exitWith {hint "You aren't the owner!"};
@@ -53,7 +53,7 @@ if ((getPlayerUID player) != _vehOwner) exitWith {hint "You aren't the owner!"};
 
 
 	
-		life_cash = life_cash - _basePrice;
+		life_cash_pirates = life_cash_pirates - _basePrice;
 		//Send toDB
 		[[_veh,_color_index],"TON_fnc_vehicleRepaint",false,false] spawn life_fnc_MP;
 		

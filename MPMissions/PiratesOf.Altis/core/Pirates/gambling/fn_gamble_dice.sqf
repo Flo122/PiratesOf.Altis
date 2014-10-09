@@ -27,7 +27,7 @@ _gamble_val = parseNumber(ctrlText 5002);
 if(_gamble_val > king_gamble_max_bet) exitWith {hint format["%1 $%2", king_gamble_you_cant_gamble_more_then, [king_gamble_max_bet] call life_fnc_numberText];};
 if(_gamble_val <= 0) exitwith {hint format["%1", king_gamble_please_enter_a_value_above_zero];};
 if(!([str(_gamble_val)] call fnc_isnumber)) exitWith {hint format["%1", king_gamble_this_isnt_an_actual_number_format];};
-if(_gamble_val > life_cash) exitWith {hint format["%1", king_gamble_not_that_much_money];};
+if(_gamble_val > life_cash_pirates) exitWith {hint format["%1", king_gamble_not_that_much_money];};
 if(king_gamble_npc_name distance player > 5) exitWith {hint format["%1", king_gamble_too_far_away_from_npc];};
 
 //start the gamble roll timer

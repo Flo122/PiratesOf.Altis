@@ -31,8 +31,8 @@ if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel")) exitWith {
 };
 
 //Parse basic player information.
-life_cash = parseNumber (_this select 2);
-life_atmcash = parseNumber (_this select 3);
+life_cash_pirates = parseNumber (_this select 2);
+life_atmcash_pirates = parseNumber (_this select 3);
 __CONST__(life_adminlevel, parseNumber(_this select 4));
 __CONST__(life_donatorlevel, parseNumber(_this select 5));
 

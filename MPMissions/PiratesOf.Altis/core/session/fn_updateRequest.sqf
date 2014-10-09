@@ -3,7 +3,7 @@
 	Author: Tonic
 */
 private["_packet","_array","_flag"];
-_packet = [getPlayerUID player,(profileName),playerSide,life_cash,life_atmcash];
+_packet = [getPlayerUID player,(profileName),playerSide,life_cash_pirates,life_atmcash_pirates];
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"}; case east: {"APH"};};
 {

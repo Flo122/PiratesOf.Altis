@@ -54,7 +54,7 @@ sleep 2.5;
 
 if(!(_win == life_bets)) exitWith {hint "Du hast leider Falsch gewettet"};
 if(_win == life_bets) then {hint format["Du hast Richtig gewettet und $%1 gewonnen",(_fac*2500)];
-	life_cash = life_cash + (2500*_fac);
+	life_cash_pirates = life_cash_pirates + (2500*_fac);
 };
 
 life_club1 = "";

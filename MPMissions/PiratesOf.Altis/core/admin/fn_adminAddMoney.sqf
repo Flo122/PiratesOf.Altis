@@ -15,7 +15,7 @@ if(_money <= 0) exitWith
 };
 
 //Give money
-life_cash = life_cash + _money;
+life_cash_pirates = life_cash_pirates + _money;
 
 //Hint + Infos
 hint format["Du hast $%1 ercheatet.", _money];
@@ -24,5 +24,5 @@ hint format["Du hast $%1 ercheatet.", _money];
 //Additional info
 sleep 2;
 
-hintSilent format["Aktueller Geldbetrag: $%1", [life_cash] call life_fnc_numberText];
+hintSilent format["Aktueller Geldbetrag: $%1", [life_cash_pirates] call life_fnc_numberText];
 

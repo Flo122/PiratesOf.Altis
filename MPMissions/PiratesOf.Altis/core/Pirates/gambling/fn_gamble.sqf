@@ -31,7 +31,7 @@ _jackpot_won        = [_this,4,0,[0]] call BIS_fnc_param;
 if(_gamble_val > king_gamble_max_bet) exitWith {hint format["%1 $%2", king_gamble_you_cant_gamble_more_then, [king_gamble_max_bet] call life_fnc_numberText];};
 if(_gamble_val <= 0) exitwith {hint format["%1", king_gamble_please_enter_a_value_above_zero];};
 if(!([str(_gamble_val)] call fnc_isnumber)) exitWith {hint format["%1", king_gamble_this_isnt_an_actual_number_format];};
-if(_gamble_val > life_cash) exitWith {hint format["%1", king_gamble_not_that_much_money];};
+if(_gamble_val > life_cash_pirates) exitWith {hint format["%1", king_gamble_not_that_much_money];};
 if(king_gamble_npc_name distance player > 5) exitWith {hint format["%1", king_gamble_too_far_away_from_npc];};
 
 
@@ -49,7 +49,7 @@ else
     _won = 0;
 };
 
-//_life_cash_OLD = life_cash;
+//_life_cash_pirates_OLD = life_cash_pirates;
 
 //block the player for gambling and set the time for the next try
 king_gamble_player_is_blocked = 1;
@@ -79,7 +79,7 @@ king_gamble_npc_name enableAI "Anim";
 
 if(_won == 1) then
 {
-    life_cash = life_cash + _gamble_val;
+    life_cash_pirates = life_cash_pirates + _gamble_val;
 
     if(_jackpot_won == 1) then
     {
@@ -116,7 +116,7 @@ if(_won == 1) then
 }
 else
 {
-    life_cash = life_cash - _gamble_val;
+    life_cash_pirates = life_cash_pirates - _gamble_val;
 
     //add the lost money to the jackpot
     _gamble_val_to_jackpot = ceil (_gamble_val * (king_gamble_add_lost_money_to_the_jackpot_percent / 100.0));
@@ -160,7 +160,7 @@ if(king_gamble_casino_is_illegal select king_gamble_casino_idx == 1) then
     };
 };
 
-//hint format["Param |%1|, |%2|, |%3|, |%4|, |%5|", _gamble_type, _gamble_return, _gamble_val, _life_cash_OLD, life_cash];
+//hint format["Param |%1|, |%2|, |%3|, |%4|, |%5|", _gamble_type, _gamble_return, _gamble_val, _life_cash_pirates_OLD, life_cash_pirates];
 
 //save data to db
 [1,false] call SOCK_fnc_updateRequest;

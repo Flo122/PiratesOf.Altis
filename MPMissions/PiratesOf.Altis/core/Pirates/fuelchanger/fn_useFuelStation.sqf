@@ -36,13 +36,13 @@ while {true} do
 		if((speed (vehicle player)) > 0.1) exitWith {};
 		if(!(alive (vehicle player))) exitWith {};
 		if((player distance _fuelstation) > _fuel_min_distance) exitWith {};
-		if(life_atmcash < _fuel_price_one_step) exitWith {hint "Du hast nicht genug Geld dabei."; sleep 1;};
+		if(life_atmcash_pirates < _fuel_price_one_step) exitWith {hint "Du hast nicht genug Geld dabei."; sleep 1;};
 		
 		_fuel_old = fuel _veh;
 		_fuel_new = _fuel_old + (1 / _steps);
 		_veh setFuel _fuel_new;
 		
-		life_atmcash = life_atmcash - _fuel_price_one_step;
+		life_atmcash_pirates = life_atmcash_pirates - _fuel_price_one_step;
 		_spent_money = _spent_money + _fuel_price_one_step;
 		
 		hintSilent format["Betankung läuft:\n%1%2 %3$", ceil (_fuel_new * 100), "%", _spent_money];
