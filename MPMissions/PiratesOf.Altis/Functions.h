@@ -84,23 +84,7 @@ class Life_Client_Core
 		class admintptome {};
 	};
 
-	class anstrich
-	{
-		file = "core\repaint";
-		
-		class RepaintMenu {};
-		class Repaintcolor {};
-		class RepaintVehicle {};		
-	};
-		class Wetten
-	{
-		file = "core\Wetten";
-		class betSystem {};
-		class betFirst {};
-		class betSecond {};
-		class betShowQuotes {};
-		class betDraw {};
-	};
+
 	class Medical_System
 	{
 		file = "core\medical";
@@ -123,7 +107,6 @@ class Life_Client_Core
 	class Actions
 	{
 		file = "core\actions";
-		class takeOrgans {};
 		class buyLicense {};
 		class healHospital {};
 		class pushVehicle {};
@@ -304,7 +287,6 @@ class Life_Client_Core
 		class schutzSirene {};
 		class emptyFuel {};
 		class switch {};
-		class autosave {};
 		class bauEffect {};
 		class addsubstract {};
 	};
@@ -522,22 +504,7 @@ class Life_Client_Core
 		class virt_updateEconomy {};
 	};
 
-	/* For Second Update 
-	class Groups
-	{
-		file = "core\Group";
-		class createGroup {};
-		class GroupBrowser {};
-		class GroupManagement {};
-		class GroupMenu {};
-		class joinGroup {};
-		class kickGroup {};
-		class leaveGroup {};
-		class setGroupLeader {};
-		class lockGroup {};
-		class unlockGroup {};
-	};
-	*/
+
 };
 class King_Client_Core
   {
@@ -549,10 +516,7 @@ class King_Client_Core
 		file = "core\Pirates\fuelchanger";
         class useFuelStation {};
         class cleanFuelStation {};
-		class fuelPipe{};
-		class fuelchangerManipulate{};
-		class fuelchanger{};
-		class AntiFuel{};
+
 	};
 			
 	class Gambling
