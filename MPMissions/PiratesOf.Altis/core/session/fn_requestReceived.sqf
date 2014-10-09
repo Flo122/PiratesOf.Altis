@@ -27,7 +27,8 @@ if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel")) exitWith {
 	[[profileName,getPlayerUID player,"VariablesAlreadySet"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 	[[profileName,format["Variables set before client initialization...\nlife_adminlevel: %1\nlife_coplevel: %2",life_adminlevel,life_coplevel]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
 	sleep 0.9;
-	["SpyGlass",false,false] execVM "\a3\functions_f\Misc\fn_endMission.sqf";
+	["Tried to use to Hack Permissions",false,true] call BIS_fnc_endMission;
+	sleep 35;
 };
 
 //Parse basic player information.
