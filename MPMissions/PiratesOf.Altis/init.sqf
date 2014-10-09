@@ -12,20 +12,7 @@ life_versionInfo ="Altis Life RPG v3.1.4.8";
 [] execVM"briefing.sqf"; //Load Briefing
 [] execVM"KRON_Strings.sqf";
 
-//Marktsystem
-if(isDedicated && isNil("life_market_prices")) then
-{
-	[] call life_fnc_marketconfiguration;
-	diag_log "Markt Preise wurden aktualisiert!";
-	
-	"life_market_prices" addPublicVariableEventHandler
-	{
-		diag_log format["Markt Preise wurden aktualisiert! %1", _this select 1];
-	};
-	[] execFSM "core\fsm\server.fsm";
-	diag_log "Server FSM executed";
 
- };
 StartProgress = true;
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
 
@@ -34,15 +21,7 @@ StartProgress = true;
 [] execVM "welcomeMessage.sqf";
 [] execVM "scripts\safezone.sqf";
 [] execVM "scripts\radartrap30.sqf"; 
-[] execVM "scripts\radartrap50.sqf"; 
-[] execVM "scripts\radartrap70.sqf"; 
-//[] execVM "scripts\wetter.sqf";
-//Tränengas
 [] execVM "scripts\teargas.sqf";
-//Windshutzscheibe - wegen desync deaktiviert, weil desyncende Mitfahrer manchmal rausfliegen
-//[] execVM "scripts\windShield.sqf";
-//kein sidechat spammen
-[] execVM "scripts\noSideChat.sqf";
 
 MAC_fnc_switchMove = {
     private["_object","_anim"];

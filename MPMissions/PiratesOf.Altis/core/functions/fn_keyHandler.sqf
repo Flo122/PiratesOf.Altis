@@ -155,6 +155,18 @@ switch (_code) do
 		
 	};
 	
+	case 6:
+	{
+		if(_shift) then {_handled = true;};
+		if (_shift) then
+		{
+			if(!_alt && !_ctrlKey && !dialog) then
+			{
+				createDialog "Life_cell_phone"; 
+			};
+		};
+	};
+	
 	//surrender... shift + g
 	case 34:
 	{

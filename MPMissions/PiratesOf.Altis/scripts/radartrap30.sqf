@@ -27,6 +27,44 @@ while {playerSide == civilian} do
 			[[0,format["%1 wurde geblitzt! Fahrzeug: %3, Geschwindigkeit: %2 Kmh!",name player, round _speed, _name]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
 			sleep 3;
 		};
+		if ((player == driver _vehicle) && (_vehicle distance _x < 20) && (_speed >= 60)) then 
+		{ 
+			titleCut [" ","white in",1];
+			switch(true) do
+			{
+				case (_speed >= 5 and _speed < 15): 	{life_atmcash_pirates = life_atmcash_pirates - 2000;};
+				case (_speed >= 15 and _speed < 35): 	{life_atmcash_pirates = life_atmcash_pirates - 5000;};
+				case (_speed >= 35 and _speed < 65): 	{life_atmcash_pirates = life_atmcash_pirates - 20000;};
+				case (_speed >= 65 and _speed < 90): 	{life_atmcash_pirates = life_atmcash_pirates - 50000;};
+				case (_speed >= 90 and _speed < 115): 	{life_atmcash_pirates = life_atmcash_pirates - 100000;};
+				case (_speed >= 115 and _speed < 165): 	{life_atmcash_pirates = life_atmcash_pirates - 150000;};
+				case (_speed >= 165 and _speed < 215): 	{life_atmcash_pirates = life_atmcash_pirates - 200000;};
+				case (_speed >= 215 and _speed < 350): 	{life_atmcash_pirates = life_atmcash_pirates - 250000;};
+			};
+			hint parseText format ["Du wurdest gerade geblitzt! (Limit: 50, Geschwindigkeit: %1)", round _speed];
+			[[0,format["%1 wurde geblitzt! Fahrzeug: %4, Position: %3, Geschwindigkeit: %2 Kmh!",name player, round _speed, _x, _name]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;		
+			[[0,format["%1 wurde geblitzt! Fahrzeug: %3, Geschwindigkeit: %2 Kmh!",name player, round _speed, _name]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
+			sleep 3;
+		};
+		if ((player == driver _vehicle) && (_vehicle distance _x < 20) && (_speed >= 80)) then 
+		{ 
+			titleCut [" ","white in",1];
+			switch(true) do
+			{
+				case (_speed >= 5 and _speed < 15): 	{life_atmcash_pirates = life_atmcash_pirates - 2000;};
+				case (_speed >= 15 and _speed < 35): 	{life_atmcash_pirates = life_atmcash_pirates - 5000;};
+				case (_speed >= 35 and _speed < 65): 	{life_atmcash_pirates = life_atmcash_pirates - 20000;};
+				case (_speed >= 65 and _speed < 90): 	{life_atmcash_pirates = life_atmcash_pirates - 50000;};
+				case (_speed >= 90 and _speed < 115): 	{life_atmcash_pirates = life_atmcash_pirates - 100000;};
+				case (_speed >= 115 and _speed < 165): 	{life_atmcash_pirates = life_atmcash_pirates - 150000;};
+				case (_speed >= 165 and _speed < 215): 	{life_atmcash_pirates = life_atmcash_pirates - 200000;};
+				case (_speed >= 215 and _speed < 350): 	{life_atmcash_pirates = life_atmcash_pirates - 250000;};
+			};
+			hint parseText format ["Du wurdest gerade geblitzt! (Limit: 70, Geschwindigkeit: %1)", round _speed];
+			[[0,format["%1 wurde geblitzt! Fahrzeug: %4, Position: %3, Geschwindigkeit: %2 Kmh!",name player, round _speed, _x, _name]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;		
+			[[0,format["%1 wurde geblitzt! Fahrzeug: %3, Geschwindigkeit: %2 Kmh!",name player, round _speed, _name]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
+			sleep 3;
+		};
 	} foreach _blitzer;
 	sleep 1;
 };
