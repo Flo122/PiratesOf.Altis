@@ -189,6 +189,7 @@
 
 [] spawn
 {
+if(playerside == civillian) then {
 	while {true} do
 	{
 		private["_damage"];
@@ -197,7 +198,7 @@
 		{
 			if(uniform player == "U_C_Scientist") then
 			{
-				hint "!!! Du traegst einen Strahlenschutzanzug. Ueberpruefe ihn regelmaessig! !!";
+				hint "!!! Du traegst einen Strahlenschutzanzoug. Ueberpruefe ihn regelmaessig! !!";
 				sleep 15;
 			}else
 			{
@@ -210,6 +211,7 @@
 			};
 		};
 	};
+};
 }; 
 
 [] spawn  {
