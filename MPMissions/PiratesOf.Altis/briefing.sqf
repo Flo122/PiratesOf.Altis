@@ -114,9 +114,9 @@ player createDiarySubject ["close","Schlusswort"];
 			"Daten",
 				"
 				- Filter: Pirates of Altis<br/>
-				- IP: 176.9.137.54:2302<br/>
-				- TS: 46.105.121.155:8772<br/>
-				- Forum: www.pirates-of-altis.de<br/><br/>
+				- IP: 37.187.162.202:2302<br/>
+				- TS: ts.pirates-of-altis.de<br/>
+				- Homepage: www.pirates-of-altis.de<br/><br/>
 				"
 		]
 	];
