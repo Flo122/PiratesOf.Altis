@@ -50,7 +50,6 @@ class CfgFunctions
 			class bool{};
 			class mresString {};
 			class updatePartial {};
-			class repaintVehicle {};
 		};
 	};
 
@@ -116,7 +115,6 @@ class CfgFunctions
 			class licht {};
 			class getPrices {};
             class ajustprices {};
-			class vehicleRepaint {};
 		};
 		
 		class Housing
