@@ -1,6 +1,6 @@
 /*
-    File: fn_copLights.sqf
-    Author: mindstorm, modified by Adanteh
+    File: fn_APHLights.sqf
+    Author: mindstorm
     Link: http://forums.bistudio.com/showthread.php?157474-Offroad-Police-sirens-lights-and-underglow
        
     Description:
@@ -14,9 +14,9 @@ _lightRed = [20, 10, 0];
 _lightBlue = [20, 10, 0];
 
 _lightleft = "#lightpoint" createVehicle getpos _vehicle;  
-sleep 0.4;
+sleep 0.2;
 _lightleft setLightColor _lightBlue;
-_lightleft setLightBrightness 0.1;
+_lightleft setLightBrightness 0.2;
 _lightleft setLightAmbient [20, 10, 0];
 
 switch (typeOf _vehicle) do
@@ -43,15 +43,15 @@ switch (typeOf _vehicle) do
 };
  
 _lightleft setLightAttenuation [0.181, 0, 1000, 130];
-_lightleft setLightIntensity 5;
+_lightleft setLightIntensity 2;
 _lightleft setLightFlareSize 0.10;
 _lightleft setLightFlareMaxDistance 25;
 _lightleft setLightUseFlare true;
  
 _lightright = "#lightpoint" createVehicle getpos _vehicle;  
-sleep 0.4;
+sleep 0.2;
 _lightright setLightColor _lightBlue;
-_lightright setLightBrightness 0.1;  
+_lightright setLightBrightness 0.2;  
 _lightleft setLightAmbient [20, 10, 0];
  
 switch (typeOf _vehicle) do
@@ -79,7 +79,7 @@ switch (typeOf _vehicle) do
 };
  
 _lightright setLightAttenuation [0.181, 0, 1000, 130];
-_lightright setLightIntensity 5;
+_lightright setLightIntensity 2;
 _lightright setLightFlareSize 0.10;
 _lightright setLightFlareMaxDistance 25;
 _lightright setLightUseFlare true;
@@ -95,14 +95,14 @@ while{ (alive _vehicle)} do
         {  
                 _leftRed = false;  
                 _lightright setLightBrightness 0.0;  
-                sleep 0.30;
+                sleep 0.15;
                 _lightleft setLightBrightness 6;  
         }  
                 else  
         {  
                 _leftRed = true;  
                 _lightleft setLightBrightness 0.0;  
-                sleep 0.30;
+                sleep 0.01;
                 _lightright setLightBrightness 6;  
         };  
         sleep (_this select 1);  
