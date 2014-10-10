@@ -104,7 +104,7 @@ client_session_list = [];
 		sleep (30 * 60);
 		{
 			_x setVariable["sellers",[],true];
-		} foreach [Dealer_1,Dealer_2,Dealer_3];
+		} foreach [Dealer_1,Dealer_2,Dealer_3,Dealer_4,Dealer_5,Dealer_6];
 	};
 };
 
@@ -133,5 +133,3 @@ _rsb allowDamage false;
 _dome allowDamage false;
 life_server_isReady = true;
 publicVariable "life_server_isReady";
-
-// [] execVM "\life_server\mods\mod_cruiseControl.sqf";
