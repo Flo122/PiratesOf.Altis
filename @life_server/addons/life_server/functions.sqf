@@ -154,7 +154,7 @@ compileFinal "
 TON_fnc_cell_textcop =
 compileFinal "
 	private[""_msg"",""_to""];
-	if(({side _x == west} count playableUnits) == 0) exitWith {hint format["Die Polizei ist derzeit nicht zu erreichen. Bitte versuchen Sie es später nochmal."];};
+	if(({side _x == west} count playableUnits) == 0) exitWith {hint ""Die Polizei ist derzeit nicht zu erreichen. Bitte versuchen Sie es später nochmal.""};
 	ctrlShow[3016,false];
 	_msg = ctrlText 3003;
 	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";ctrlShow[3016,true];};
