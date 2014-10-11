@@ -131,4 +131,3 @@ _handle = [] spawn compile PreprocessFileLineNumbers "core\Pirates\init.sqf";
 };
 
 [] spawn life_fnc_fatigueReset;
-[] spawn life_fnc_autoSave;
