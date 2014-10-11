@@ -251,6 +251,29 @@ switch (_code) do
 			};
 		};
 	};
+		// O, police gate opener
+    case 24:
+	{
+		if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player)) then {
+			[] call life_fnc_copOpener;
+		};
+		if (_shift && !_alt && !_ctrlKey && (playerSide == west)) then {
+			[] call life_fnc_atmMenu;
+		};
+	};
+	//Ü Key
+	case 26:
+	{	
+		if(playerSide == west) then {
+		
+		if(!isNull life_spikestrip) exitWith {hint "Du hast bereits ein Nagelband gelegt"};
+		if(([false,"spikeStrip",1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_spikeStrip;
+		};
+
+		};
+	};
 };
 
 _handled;

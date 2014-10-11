@@ -25,35 +25,6 @@ __CONST__(JJJJ_MMMM___EEEEEEE_LLYYSSTTIICCC_SHIT_RE,"No");
 __CONST__(JJJJ_MMMM___EEEEEEE_LLYYSSTTIICCC_SHIT_RE_OLD,"No");
 __CONST__(JJJJ_MMMM___EEEEEEE_SPAWN_VEH,"No");
 __CONST__(JJJJ_MMMM___EEEEEEE_SPAWN_WEAPON,"No");
-
-/*
-	Compile our list of allowed addon patches, by default this DOES NOT ALLOW ANY ADDONS.
-	
-	If you want to white-list addons such as JSRS or Blastcore you need to start a test instance (Host locally and not the mission) and first fill the SPY_cfg_patchList array, once you executed it (Filled it)
-	Run the following code and it will copy the list of addons / patches not in the list to your clipboard (Ctrl + V) and then add it to the array.
-	
-	_cfgPatches = [];
-	_binConfigPatches = configFile >> "CfgPatches";
-	for "_i" from 0 to count (_binConfigPatches)-1 do {
-		_patchEntry = _binConfigPatches select _i;
-		if(isClass _patchEntry) then {
-			if(!((configName _patchEntry) in SPY_cfg_patchList)) then {
-				_cfgPatches set[count _cfgPatches,(configName _patchEntry)];
-			};
-		};
-	};
-
-	copyToClipboard str(_cfgPatches);
-	
-	i.e
-	["cba_xeh","Extended_EventHandlers","CBA_Extended_EventHandlers","JSRS_Environment","WarFXPE","cba_common","cba_events","cba_hashes","cba_network","cba_strings","cba_ui","cba_vectors","JSRS2_120mm_Cannon","JSRS2_127","JSRS2_155mm_AMOS",
-	"JSRS2_230mm_Titan","JSRS2_30mm_Cannon","JSRS2_35mm_Autocannon","JSRS2_4Five45","JSRS2_ACPC","JSRS2_Autocannon","JSRS2_Bullethits","JSRS2_DAGR","JSRS2_DAR","JSRS2_EBR","JSRS2_Explosions","JSRS2_Explosives","JSRS2_Filters","JSRS2_FS2000",
-	"JSRS2_Gatling","JSRS2_GMG20","JSRS2_GMG40","JSRS2_Khaybar","JSRS2_LMGRCWS","JSRS2_M134","JSRS2_M200","JSRS2_M320R","JSRS2_M6","JSRS2_Minigun","JSRS2_MX","JSRS2_NLAW","JSRS2_P07","JSRS2_PDW","JSRS2_Rahim","JSRS2_Rook40","JSRS2_RPG32",
-	"JSRS2_Scorpian","JSRS2_SDAR","JSRS2_Skalpel_ATGM","JSRS2_Skyfire","JSRS2_Sonic_Cracks","JSRS2_Titan","JSRS2_TRG20","JSRS2_Vector","JSRS2_Veh_Titan","JSRS2_Zafir","JSRS2_Zubr45","Blastcore_VEP","cba_ai","cba_arrays","cba_diagnostic","cba_help",
-	"cba_ui_helper","cba_versioning","JSRS2_Movement","JSRS2_Silencers","cba_main","cba_main_a3","JSRS2_2S9_Sorcher","JSRS2_AFV4_Gorgon","JSRS2_AH99_Blackfoot","JSRS2_AH9_Pawnee","JSRS2_AMV7_Marshal","JSRS2_BTRK_Kamysh","JSRS2_CH49_Mohawk","JSRS2_Distance",
-	"JSRS2_FighterPlane3","JSRS2_FV720_Mora","JSRS2_Hunter","JSRS2_Ifrit","JSRS2_IFV6a_Cheetah","JSRS2_IFV6c_Panther","JSRS2_M2A1_Slammer","JSRS2_M4_Scorcher","JSRS2_M5_Sandstorm","JSRS2_MBT52_Kuma","JSRS2_Mi48_Kajman","JSRS2_MSE3_Marid","JSRS2_Offroad",
-	"JSRS2_Po30_Orca","JSRS2_Strider","JSRS2_SUV","JSRS2_T100_Varsuk","JSRS2_Truck1","JSRS2_Truck2","JSRS2_UAV_1","JSRS2_UH80_GhostHawk","JSRS2_Van","JSRS2_WY55_Hellcat","JSRS2_ZSU39_Tigris","cba_xeh_a3"]
-*/
 	
 _patchList = 
 ["life_server","CAData","A3_BaseConfig_F","A3_Dubbing_Radio_F","A3_Functions_F","A3_Functions_F_EPA","A3_Functions_F_EPC","A3_Data_F","A3_Data_F_ParticleEffects","A3_Editor_F","A3_Functions_F_Curator",
@@ -112,7 +83,15 @@ _patchList =
 "A3_Soft_F_Bootcamp_Truck","A3_Soft_F_Bootcamp_Quadbike","A3_Soft_F_Bootcamp_Offroad_01","A3_Weapons_F_Bootcamp","A3_Modules_F_Bootcamp_Misc","A3_Modules_F_Bootcamp","A3_Characters_F_Bootcamp_Common","A3_Weapons_F_Bootcamp_Ammoboxes","A3_UI_F_Bootcamp",
 "A3_Characters_F_Bootcamp","A3_Weapons_F_Bootcamp_LongRangeRifles_M320","A3_Weapons_F_Bootcamp_LongRangeRifles_GM6","A3_Structures_F_Bootcamp_Items_Food","A3_Structures_F_Bootcamp_Items_Electronics","A3_Structures_F_Bootcamp_Civ_SportsGrounds",
 "A3_Structures_F_Bootcamp_Civ_Camping","A3_Language_F_Bootcamp","A3_Functions_F_Bootcamp","A3_Structures_F_Bootcamp_VR_Helpers","A3_Structures_F_Bootcamp_VR_CoverObjects","A3_Structures_F_Bootcamp_VR_Blocks","A3_Structures_F_Bootcamp_Training",
-"A3_Structures_F_Bootcamp_System","A3_Structures_F_Bootcamp_Items_Sport","A3_Structures_F_Bootcamp_Ind_Cargo","A3_Sounds_F_Bootcamp","A3_Data_F_Bootcamp","A3_Map_VR_Scenes","A3_Missions_F_Bootcamp","A3_Music_F_Bootcamp","Map_VR"
+"A3_Structures_F_Bootcamp_System","A3_Structures_F_Bootcamp_Items_Sport","A3_Structures_F_Bootcamp_Ind_Cargo","A3_Sounds_F_Bootcamp","A3_Data_F_Bootcamp","A3_Map_VR_Scenes","A3_Missions_F_Bootcamp","A3_Music_F_Bootcamp","Map_VR",
+"cba_xeh","Extended_EventHandlers","CBA_Extended_EventHandlers","cba_common","cba_events","cba_hashes","cba_network","cba_strings","cba_ui","cba_keybinding",
+"cba_vectors","cba_ai","cba_arrays","cba_diagnostic","cba_help","cba_ui_helper","cba_versioning","cba_main","cba_main_a3","cba_xeh_a3","Modified_MPInterrupt",
+"JSRS_Environment","JSRS2_120mm_Cannon","JSRS2_127","JSRS2_155mm_AMOS","JSRS2_230mm_Titan","JSRS2_30mm_Cannon","JSRS2_35mm_Autocannon","JSRS2_4Five45","JSRS2_ACPC","JSRS2_Autocannon","JSRS2_Bullethits","JSRS2_DAGR","JSRS2_DAR","JSRS2_EBR",
+"JSRS2_Explosions","JSRS2_Explosives","JSRS2_Filters","JSRS2_FS2000","JSRS2_Gatling","JSRS2_GMG20","JSRS2_GMG40","JSRS2_Khaybar","JSRS2_LMGRCWS","JSRS2_M134","JSRS2_M200","JSRS2_M320R","JSRS2_M6","JSRS2_Minigun","JSRS2_MX","JSRS2_NLAW","JSRS2_P07",
+"JSRS2_PDW","JSRS2_Rahim","JSRS2_Rook40","JSRS2_RPG32","JSRS2_Scorpian","JSRS2_SDAR","JSRS2_Skalpel_ATGM","JSRS2_Skyfire","JSRS2_Sonic_Cracks","JSRS2_Titan","JSRS2_TRG20","JSRS2_Vector","JSRS2_Veh_Titan","JSRS2_Zafir","JSRS2_Zubr45","JSRS2_Movement",
+"JSRS2_Silencers","JSRS2_2S9_Sorcher","JSRS2_AFV4_Gorgon","JSRS2_AH99_Blackfoot","JSRS2_AH9_Pawnee","JSRS2_AMV7_Marshal","JSRS2_BTRK_Kamysh","JSRS2_CH49_Mohawk","JSRS2_Distance","JSRS2_FighterPlane3","JSRS2_FV720_Mora","JSRS2_Hunter","JSRS2_Ifrit",
+"JSRS2_IFV6a_Cheetah","JSRS2_IFV6c_Panther","JSRS2_M2A1_Slammer","JSRS2_M4_Scorcher","JSRS2_M5_Sandstorm","JSRS2_MBT52_Kuma","JSRS2_Mi48_Kajman","JSRS2_MSE3_Marid","JSRS2_Offroad","JSRS2_Po30_Orca","JSRS2_Strider","JSRS2_SUV","JSRS2_T100_Varsuk",
+"JSRS2_Truck1","JSRS2_Truck2","JSRS2_UAV_1","JSRS2_UH80_GhostHawk","JSRS2_Van","JSRS2_WY55_Hellcat","JSRS2_ZSU39_Tigris","JSRS2_Gau8","DragonFyre_Titan","JSRS2_CAS_Plane1","JSRS2_CAS_Plane2","WarFXPE","Blastcore_VEP"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
@@ -126,14 +105,12 @@ for "_i" from 0 to count (_binConfigPatches)-1 do {
 		if(!((configName _patchEntry) in _patchList)) exitWith {
 			[[profileName,getPlayerUID player,(configName _patchEntry)],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 			[[profileName,format["Unknown Addon Patch: %1",(configName _patchEntry)]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
-			sleep 0.5;
 			["SpyGlass",false,false] call _endM;
 		};
 	};
 };
-
+/*
 //Check for copy-pasters of Dev-Con styled execution.
-//Because I am nice, add these to the following below to allow CBA; "CBA_CREDITS_CONT_C","CBA_CREDITS_M_P
 private["_children","_allowedChildren"];
 _children = [configFile >> "RscDisplayMPInterrupt" >> "controls",0] call BIS_fnc_returnChildren;
 _allowedChildren = [
@@ -145,10 +122,25 @@ _allowedChildren = [
 	if(!((configName _x) in _allowedChildren)) exitWith {
 		[[profileName,getPlayerUID player,"Modified_MPInterrupt"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 		[[profileName,"Devcon like executor detected"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
-		sleep 0.5;
 		["SpyGlass",false,false] call _endM;
 	};
 } foreach _children;
+*/
+//Validate that RscDisplayInventory is not modified common cheat-engine sqf executor method.
+private["_onLoad","_onUnload"];
+_onLoad = getText(configFile >> "RscDisplayInventory" >> "onLoad");
+_onUnload = getText(configFile >> "RscDisplayInventory" >> "onUnload");
+
+if(_onLoad != "[""onLoad"",_this,""RscDisplayInventory"",'IGUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""") exitWith {
+	[[profileName,getPlayerUID player,"Modified_RscDisplayInventory_onLoad"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+	[[profileName,"Modified RscDisplayInventory_onLoad (CheatEngine injection)"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+	["SpyGlass",false,false] call _endM;
+};
+if(_onUnload != "[""onUnload"",_this,""RscDisplayInventory"",'IGUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""") exitWith {
+	[[profileName,getPlayerUID player,"Modified_RscDisplayInventory_onUnload"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+	[[profileName,"Modified RscDisplayInventory_onUnload (CheatEngine injection)"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+	["SpyGlass",false,false] call _endM;
+};
 
 /*
 	Display Validator

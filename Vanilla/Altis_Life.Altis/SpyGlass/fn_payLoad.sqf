@@ -44,7 +44,7 @@ if(__GETC__(SPY_cfg_runPatchCheck)) then {
 		};
 	};
 };
-
+/*
 //Check for copy-pasters of Dev-Con styled execution.
 private["_children","_allowedChildren"];
 _children = [configFile >> "RscDisplayMPInterrupt" >> "controls",0] call BIS_fnc_returnChildren;
@@ -61,7 +61,7 @@ _allowedChildren = [
 		["SpyGlass",false,false] call BIS_fnc_endMission;
 	};
 } foreach _children;
-
+*/
 //Validate that RscDisplayInventory is not modified common cheat-engine sqf executor method.
 private["_onLoad","_onUnload"];
 _onLoad = getText(configFile >> "RscDisplayInventory" >> "onLoad");
