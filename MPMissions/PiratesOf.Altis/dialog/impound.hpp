@@ -90,16 +90,7 @@ class Life_impound_menu
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-			class Lackierung : life_RscButtonMenu 
-		{
-			idc = -1;
-			text = "Umlackierung";
-			onButtonClick = "[] call life_fnc_RepaintMenu;";
-			x = 0.41 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.9 - (1 / 25);
-			w = (6.25 / 40);
-			h = (1 / 25);
-		};
+
 	};
 	
 	
