@@ -46,6 +46,7 @@ if(_veh distance impound_obj < 50) then
 	if(_price > life_cash) then
 	{
 		_price = _price + 200;
+
 		if(_price > life_atmcash) exitWith {hint localize "STR_Shop_Unimpound_NotEnough"};
 		life_atmcash = life_atmcash - _price;
 		life_cash = life_cash + _price;
