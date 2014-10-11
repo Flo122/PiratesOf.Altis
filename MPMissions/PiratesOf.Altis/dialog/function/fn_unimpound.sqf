@@ -36,8 +36,6 @@ hint localize "STR_Garage_SpawningVeh";
 if(life_atmcash > _price)
 {
 	life_atmcash = life_atmcash - _price;
-};
-	else
-{
+} else {
 	life_cash = life_cash - _price;
 };
