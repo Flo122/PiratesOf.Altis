@@ -159,12 +159,13 @@ if(playerSide == east) then {
 			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn2 ctrlEnable false;} else {_Btn2 ctrlEnable true;};
 		};
 		
-		_Btn6 ctrlEnable false;
+		_Btn6 ctrlShow false;
 		
 		if(_curTarget in life_vehicles) then {
-		_Btn6 ctrlEnable false;
+		_Btn6 ctrlShow false;
 		} else {
 		_Btn6 ctrlEnable true;
+		_Btn6 ctrlShow true;
 		_Btn6 ctrlSetText localize "STR_vInAct_keyVehAction";
 		_Btn6 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_keyVehAction;";
 		};
