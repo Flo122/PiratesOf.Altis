@@ -297,7 +297,7 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-class ButtonSyncData : life_RscButtonMenu {
+		class ButtonSyncData : life_RscButtonMenu {
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};
 			text = "$STR_PM_SyncData";
@@ -308,7 +308,7 @@ class ButtonSyncData : life_RscButtonMenu {
 			h = (1 / 25);
 		};
 		
-class ButtonMarket : Life_RscButtonMenu {
+		/*class ButtonMarket : Life_RscButtonMenu {
 			idc = -1;
 			text = "Market";
 			onButtonClick = "[] call life_fnc_OpenEconomy;";
@@ -318,6 +318,7 @@ class ButtonMarket : Life_RscButtonMenu {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		*/
 		/*
 		class ButtonMyGang : Life_RscButtonMenu {
 			idc = 2011;
