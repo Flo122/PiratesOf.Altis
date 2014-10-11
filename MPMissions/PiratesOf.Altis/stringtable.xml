@@ -461,12 +461,12 @@
 			<Portuguese>Chamar SAMU</Portuguese>
 		</Key>		
 		<Key ID="STR_CELL_APHRequest">
-			<Original>APH</Original>
-			<English>APH</English>
-			<German>APH</German>
-			<French>APH</French>
-			<Italian>APH</Italian>
-			<Portuguese>APH</Portuguese>
+			<Original>An den APH</Original>
+			<English>An den APH</English>
+			<German>An den APH</German>
+			<French>An den APH</French>
+			<Italian>An den APH</Italian>
+			<Portuguese>An den APH</Portuguese>
 		</Key>		
 		<Key ID="STR_CELL_CopMSGAllBTN">
 			<Original>Globale Nachricht</Original>

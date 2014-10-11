@@ -1,10 +1,32 @@
-
-if(player distance (getMarkerPos "apple_1" || "apple_2" || "apple_1" || "apple_3" || "apple_4") < 50) exitWith
+if(player distance (getMarkerPos "apple_1") < 50) exitWith
         {
            [] spawn life_fnc_gather;
         };
-
-if(player distance (getMarkerPos "peaches_1" || "peaches_2" || "peaches_3" || "peaches_4") < 50) exitWith
+if(player distance (getMarkerPos "apple_2") < 50) exitWith
+        {
+           [] spawn life_fnc_gather;
+        };
+if(player distance (getMarkerPos "apple_3") < 50) exitWith
+        {
+           [] spawn life_fnc_gather;
+        };
+if(player distance (getMarkerPos "apple_4") < 50) exitWith
+        {
+           [] spawn life_fnc_gather;
+        };
+if(player distance (getMarkerPos "peaches_1") < 50) exitWith
+        {
+           [] spawn life_fnc_gather;
+        };
+if(player distance (getMarkerPos "peaches_2") < 50) exitWith
+        {
+           [] spawn life_fnc_gather;
+        };
+if(player distance (getMarkerPos "peaches_3") < 50) exitWith
+        {
+           [] spawn life_fnc_gather;
+        };
+if(player distance (getMarkerPos "peaches_4") < 50) exitWith
         {
            [] spawn life_fnc_gather;
         };
