@@ -14,8 +14,6 @@ class Socket_Reciever
 	};
 };
 
-
-
 class SpyGlass
 {
 	tag = "SPY";
@@ -48,6 +46,7 @@ class Life_Client_Core
 		class initAPH {};
 		class initZeus {};
 	};
+	
 	class Admin
 	{
 		file = "core\admin";
@@ -83,7 +82,6 @@ class Life_Client_Core
 		class admintpmap {};
 		class admintptome {};
 	};
-
 
 	class Medical_System
 	{
@@ -495,17 +493,8 @@ class Life_Client_Core
 		class calldialog {};
 		class sendChannel {};
 	};
-	class economy
-	{
-		file = "core\economy";
-		class virt_updatePrice {};
-		class addsubstract {};
-		class openEconomy {};
-		class virt_updateEconomy {};
-	};
-
-
 };
+
 class King_Client_Core
   {
    tag = "king";

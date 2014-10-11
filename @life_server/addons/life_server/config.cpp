@@ -113,8 +113,6 @@ class CfgFunctions
 			class mauer {};
 			class mauer2 {};
 			class licht {};
-			class getPrices {};
-            class ajustprices {};
 		};
 		
 		class Housing
