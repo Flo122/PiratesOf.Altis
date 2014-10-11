@@ -133,34 +133,6 @@ publicVariable "TON_fnc_clientGangLeader";
 	-fnc_cell_adminmsgall
 */
 
-//To EMS
-TON_fnc_cell_emsrequest = 
-compileFinal "
-private[""_msg"",""_to""];
-	ctrlShow[3022,false];
-	_msg = ctrlText 3003;
-	_to = ""EMS Units"";
-	if(_msg == """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3022,true];};
-		
-	[[_msg,name player,5],""TON_fnc_clientMessage"",independent,false] spawn life_fnc_MP;
-	[] call life_fnc_cellphone;
-	hint format[""You have sent a message to all EMS Units."",_to,_msg];
-	ctrlShow[3022,true];
-";
-//To APH
-TON_fnc_cell_APHrequest = 
-compileFinal "
-private[""_msg"",""_to""];
-	ctrlShow[3022,false];
-	_msg = ctrlText 3003;
-	_to = ""EMS Units"";
-	if(_msg == """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3022,true];};
-		
-	[[_msg,name player,5],""TON_fnc_clientMessage"",independent,false] spawn life_fnc_MP;
-	[] call life_fnc_cellphone;
-	hint format[""You have sent a message to all EMS Units."",_to,_msg];
-	ctrlShow[3022,true];
-";
 //To One Person
 TON_fnc_cell_textmsg =
 compileFinal "
@@ -221,7 +193,7 @@ compileFinal "
 	[] call life_fnc_cellphone;
 	hint format[""Admin Message Sent To: %1 - Message: %2"",name _to,_msg];
 ";
-
+//Admin to All
 TON_fnc_cell_adminmsgall =
 compileFinal "
 	if(isServer) exitWith {};
@@ -233,6 +205,47 @@ compileFinal "
 	[[_msg,name player,4],""TON_fnc_clientMessage"",true,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
 	hint format[""Admin Message Sent To All: %1"",_msg];
+";
+//To EMS
+TON_fnc_cell_emsrequest = 
+compileFinal "
+private[""_msg"",""_to""];
+	ctrlShow[3022,false];
+	_msg = ctrlText 3003;
+	_to = ""EMS Units"";
+	if(_msg == """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3022,true];};
+		
+	[[_msg,name player,5],""TON_fnc_clientMessage"",independent,false] spawn life_fnc_MP;
+	[] call life_fnc_cellphone;
+	hint format[""You have sent a message to all EMS Units."",_to,_msg];
+	ctrlShow[3022,true];
+";
+//To APH
+TON_fnc_cell_APHrequest = 
+compileFinal "
+private[""_msg"",""_to""];
+	ctrlShow[3022,false];
+	_msg = ctrlText 3003;
+	_to = ""EMS Units"";
+	if(_msg == """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3022,true];};
+		
+	[[_msg,name player,6],""TON_fnc_clientMessage"",east,false] spawn life_fnc_MP;
+	[] call life_fnc_cellphone;
+	hint format[""You have sent a message to all EMS Units."",_to,_msg];
+	ctrlShow[3022,true];
+";
+//Admin to All
+TON_fnc_cell_copmsgall =
+compileFinal "
+	if(isServer) exitWith {};
+	if((call life_coplevel) < 2) exitWith {hint ""Du bist kein Polizist!"";};
+	private[""_msg"",""_from""];
+	_msg = ctrlText 3003;
+	if(_msg == """") exitWith {hint ""You must enter a message to send!"";};
+	
+	[[_msg,name player,4],""TON_fnc_clientMessage"",true,false] spawn life_fnc_MP;
+	[] call life_fnc_cellphone;
+	hint format[""Cop Message Sent To All: %1"",_msg];
 ";
 
 publicVariable "TON_fnc_cell_textmsg";

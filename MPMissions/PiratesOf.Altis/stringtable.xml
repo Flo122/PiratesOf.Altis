@@ -439,7 +439,7 @@
 		<Key ID="STR_CELL_AdminMsg">
 			<Original>Admin Message</Original>
 			<English>Admin Message</English>
-			<German>AdminMSG</German>
+			<German>Admin PN</German>
 			<French>Admin Message</French>
 			<Italian>Admin Msg</Italian>
 			<Portuguese>Msg do Admin</Portuguese>
@@ -459,7 +459,7 @@
 			<French>Requête Medecin</French>
 			<Italian>Msg medici</Italian>
 			<Portuguese>Chamar SAMU</Portuguese>
-		</Key>
+		</Key>		
 		<Key ID="STR_CELL_APHRequest">
 			<Original>APH</Original>
 			<English>APH</English>
@@ -467,74 +467,8 @@
 			<French>APH</French>
 			<Italian>APH</Italian>
 			<Portuguese>APH</Portuguese>
-		</Key>		
-		<Key ID="STR_SMARTPHONE_Coptitle">
-			<Original>Polizei</Original>
-			<English>Police</English>
-			<German>Polizei</German>
-			<French>Polizei</French>
-			<Italian>Polizei</Italian>
-			<Portuguese>Polizei</Portuguese>
-		</Key>		
-		<Key ID="STR_CELL_CopMSGAll">
-			<Original>Globale Nachricht</Original>
-			<English>Globl Message</English>
-			<German>Globale Nachricht</German>
-			<French>Globale Nachricht</French>
-			<Italian>Globale Nachricht</Italian>
-			<Portuguese>Globale Nachricht</Portuguese>
-		</Key>		
-		<Key ID="STR_SMARTPHONE_COPMSG">
-			<Original>Polizei</Original>
-			<English>Police</English>
-			<German>Polizei</German>
-			<French>Polizei</French>
-			<Italian>Polizei</Italian>
-			<Portuguese>Polizei</Portuguese>
-		</Key>
 		</Key>
 		</Package>
-		<Package name="Smartphone">
-		<Key ID="STR_PM_Smartphone">
-			<Original>Smartphone</Original>
-		</Key>
-		<Key ID="STR_SMARTPHONE_TITLE">
-			<Original>Smartphone Menu</Original>
-		</Key>
-		<Key ID="STR_SMARTPHONE_PLAYERLISTTITLE">
-			<Original>Playerlist</Original>
-		</Key>
-		<Key ID="STR_SMARTPHONE_MESSAGETITLE">
-			<Original>Nachrichten  | VON | WANN</Original>
-		</Key>
-		<Key ID="STR_SMARTPHONE_RANDOMTITLE">
-			<Original>Nachricht zum lesen auswählen</Original>
-		</Key>
-		<Key ID="STR_SMARTPHONE_SCHREIBEN">
-			<Original>Schreiben</Original>
-		</Key>
-		<Key ID="STR_SMARTPHONE_NOTRUF">
-			<Original>Notruf</Original>
-		</Key>
-		<Key ID="STR_SMARTPHONE_Absenden">
-			<Original>Absenden</Original>
-		</Key>
-		<Key ID="STR_Global_Delete">
-			<Original>Posteingang Leeren</Original>
-		</Key>		
-		<Key ID="STR_Global_Admin">
-			<Original>Administrator</Original>
-		</Key>		
-		<Key ID="STR_SMARTPHONE_Admintitle">
-			<Original>Admin</Original>
-		</Key>
-		<Key ID="STR_SMARTPHONE_NACHRICHTTITLE">
-			<Original>Nachricht an:</Original>
-		</Key>
-		<Key ID="STR_SMARTPHONE_Notruftitle">
-			<Original>NOTRUFE | Abuse führt zum BAN!</Original>
-		</Key>
-	</Package>
 	<Package name="Chop_Shop">
 		<Key ID="STR_ChopShop_Title">
 			<Original>Local Chop Shop</Original>

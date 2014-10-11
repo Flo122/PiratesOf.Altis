@@ -224,9 +224,6 @@ class Life_Client_Core
 		class wanted2 {};
 		class cellphone2 {};
 		class AAN {};
-		class smartphone {};
-		class newMsg {};
-		class showMsg {};
 	};
 	
 	class Functions
@@ -307,7 +304,6 @@ class Life_Client_Core
 	class Civilian
 	{
 		file = "core\civilian";
-		class hasOrgan {};
 		class jailMe {};
 		class jail {};
 		class jailHungry {};

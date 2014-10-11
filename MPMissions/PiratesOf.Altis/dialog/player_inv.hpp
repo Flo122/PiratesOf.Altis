@@ -288,6 +288,7 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		
 		class ButtonAdminMenu : Life_RscButtonMenu {
 			idc = 2021;
 			text = "Admin Menu";

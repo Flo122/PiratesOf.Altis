@@ -107,9 +107,6 @@ class CfgFunctions
 			class cleanupRequest {};
 			class setObjVar {};
 			class keyManagement {};
-			class handleMessages {};
-            class msgRequest {};
-            class cleanupMessages {};
 			class mauer {};
 			class mauer2 {};
 			class licht {};

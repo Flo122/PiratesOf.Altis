@@ -27,7 +27,6 @@
 #include "compensate.hpp"
 #include "wantedadd2.hpp"
 #include "channel.hpp"
-#include "smartphone.hpp"
 #include "emp_menu.hpp"
 #include "common_EditorWrapper.hpp"
 #include "gambling.hpp"

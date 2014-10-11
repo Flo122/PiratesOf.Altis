@@ -15,8 +15,8 @@ waitUntil {!(isNull (findDisplay 46))};
 if(license_civ_sec OR license_civ_donator) then
 {
 live_paycheck = live_paycheck + 8000;
-}
- 
+};
+
 if(life_is_arrested) then
 {
 	life_is_arrested = false;

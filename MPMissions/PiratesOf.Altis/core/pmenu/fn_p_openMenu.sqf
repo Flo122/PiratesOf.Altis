@@ -56,5 +56,5 @@ if(__GETC__(life_adminlevel) > 3) then
 	ctrlShow[2904,false];
 
 
-}
+};
 [] call life_fnc_p_updateMenu;
