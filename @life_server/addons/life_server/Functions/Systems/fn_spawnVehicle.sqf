@@ -114,5 +114,5 @@ if((_vInfo select 1) == "APH" && (_vInfo select 2) == "C_Offroad_01_F") then
 {
 	[[_vehicle,"APH_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
-[[1,"Dein Fahrzeug steht breit!"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
+[[1,"Dein Fahrzeug steht bereit!"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 serv_sv_use = serv_sv_use - [_vid];
