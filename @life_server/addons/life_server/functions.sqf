@@ -139,29 +139,29 @@ compileFinal "
 	private[""_msg"",""_to""];
 	ctrlShow[3015,false];
 	_msg = ctrlText 3003;
-	if(lbCurSel 3004 == -1) exitWith {hint ""You must select a player you are sending the text to!""; ctrlShow[3015,true];};
+	if(lbCurSel 3004 == -1) exitWith {hint ""Du musst einen Spieler auswählen!""; ctrlShow[3015,true];};
 	_to = call compile format[""%1"",(lbData[3004,(lbCurSel 3004)])];
 	if(isNull _to) exitWith {ctrlShow[3015,true];};
 	if(isNil ""_to"") exitWith {ctrlShow[3015,true];};
-	if(_msg == """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3015,true];};
+	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";ctrlShow[3015,true];};
 	
 	[[_msg,name player,0],""TON_fnc_clientMessage"",_to,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""You sent %1 a message: %2"",name _to,_msg];
+	hint format[""Du hast %1 eine Nachricht gesendet: %2"",name _to,_msg];
 	ctrlShow[3015,true];
 ";
 //To All Cops
 TON_fnc_cell_textcop =
 compileFinal "
 	private[""_msg"",""_to""];
+	if(({side _x == west} count playableUnits) == 0) exitWith {hint format["Die Polizei ist derzeit nicht zu erreichen. Bitte versuchen Sie es später nochmal."];};
 	ctrlShow[3016,false];
 	_msg = ctrlText 3003;
-	_to = ""The Police"";
-	if(_msg == """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3016,true];};
+	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";ctrlShow[3016,true];};
 		
 	[[_msg,name player,1],""TON_fnc_clientMessage"",true,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""You sent %1 a message: %2"",_to,_msg];
+	hint format[""Du hast der Polizei eine Nachricht geschickt: %1"",_msg];
 	ctrlShow[3016,true];
 ";
 //To All Admins
@@ -171,81 +171,83 @@ compileFinal "
 	ctrlShow[3017,false];
 	_msg = ctrlText 3003;
 	_to = ""The Admins"";
-	if(_msg == """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3017,true];};
+	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";ctrlShow[3017,true];};
 		
 	[[_msg,name player,2],""TON_fnc_clientMessage"",true,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""You sent %1 a message: %2"",_to,_msg];
+	hint format[""Du hast dem Admin %1 eine Nacricht gesendet: %2"",_to,_msg];
 	ctrlShow[3017,true];
 ";
 //Admin To One Person
 TON_fnc_cell_adminmsg =
 compileFinal "
 	if(isServer) exitWith {};
-	if((call life_adminlevel) < 1) exitWith {hint ""You are not an admin!"";};
+	if((call life_adminlevel) < 1) exitWith {hint ""Du bist kein Admin!"";};
 	private[""_msg"",""_to""];
 	_msg = ctrlText 3003;
 	_to = call compile format[""%1"",(lbData[3004,(lbCurSel 3004)])];
 	if(isNull _to) exitWith {};
-	if(_msg == """") exitWith {hint ""You must enter a message to send!"";};
+	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";};
 	
 	[[_msg,name player,3],""TON_fnc_clientMessage"",_to,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""Admin Message Sent To: %1 - Message: %2"",name _to,_msg];
+	hint format[""Adminnachricht verdentet an: %1 - Nachricht: %2"",name _to,_msg];
 ";
 //Admin to All
 TON_fnc_cell_adminmsgall =
 compileFinal "
 	if(isServer) exitWith {};
-	if((call life_adminlevel) < 1) exitWith {hint ""You are not an admin!"";};
+	if((call life_adminlevel) < 1) exitWith {hint ""Du bist kein Admin!"";};
 	private[""_msg"",""_from""];
 	_msg = ctrlText 3003;
-	if(_msg == """") exitWith {hint ""You must enter a message to send!"";};
+	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";};
 	
 	[[_msg,name player,4],""TON_fnc_clientMessage"",true,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""Admin Message Sent To All: %1"",_msg];
+	hint format[""Globale Nachricht versendet: %1"",_msg];
 ";
 //To EMS
 TON_fnc_cell_emsrequest = 
 compileFinal "
-private[""_msg"",""_to""];
+	private[""_msg"",""_to""];
+	if(({side _x == independent} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Arzt im Dienst. Bitte probiere es später nochmal."];};
 	ctrlShow[3022,false];
 	_msg = ctrlText 3003;
 	_to = ""EMS Units"";
-	if(_msg == """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3022,true];};
+	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";ctrlShow[3022,true];};
 		
 	[[_msg,name player,5],""TON_fnc_clientMessage"",independent,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""You have sent a message to all EMS Units."",_to,_msg];
+	hint format[""Du hast eine Nachricht an die Sanitäter versendet."",_to,_msg];
 	ctrlShow[3022,true];
 ";
 //To APH
 TON_fnc_cell_APHrequest = 
 compileFinal "
-private[""_msg"",""_to""];
-	ctrlShow[3022,false];
+	private[""_msg"",""_to""];
+	if(({side _x == east} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Pannenhelfer im Dienst. Bitte probiere es später nochmal."];};
+	ctrlShow[3023,false];
 	_msg = ctrlText 3003;
 	_to = ""EMS Units"";
-	if(_msg == """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3022,true];};
+	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";ctrlShow[3023,true];};
 		
 	[[_msg,name player,6],""TON_fnc_clientMessage"",east,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""You have sent a message to all EMS Units."",_to,_msg];
-	ctrlShow[3022,true];
+	hint format[""Du hast eine Nachricht an den APH versendet."",_to,_msg];
+	ctrlShow[3023,true];
 ";
 //Admin to All
 TON_fnc_cell_copmsgall =
 compileFinal "
 	if(isServer) exitWith {};
-	if((call life_coplevel) < 2) exitWith {hint ""Du bist kein Polizist!"";};
+	if((call life_coplevel) < 1) exitWith {hint ""Du bist kein Polizist!"";};
 	private[""_msg"",""_from""];
-	_msg = ctrlText 3003;
-	if(_msg == """") exitWith {hint ""You must enter a message to send!"";};
+	_msg = ctrlText 888806;
+	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";};
 	
 	[[_msg,name player,4],""TON_fnc_clientMessage"",true,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""Cop Message Sent To All: %1"",_msg];
+	hint format[""Polizeirundruf versendet an alle: %1"",_msg];
 ";
 
 publicVariable "TON_fnc_cell_textmsg";
@@ -255,6 +257,8 @@ publicVariable "TON_fnc_cell_adminmsg";
 publicVariable "TON_fnc_cell_adminmsgall";
 publicVariable "TON_fnc_cell_emsrequest";
 publicVariable "TON_fnc_cell_APHrequest";
+publicVariable "TON_fnc_cell_copmsgall";
+
 //Client Message
 /*
 	0 = private message

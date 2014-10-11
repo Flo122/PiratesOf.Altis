@@ -156,6 +156,19 @@ class Life_cell_phone {
 			y = 0.45;
 			w = 0.2;
 			h = (1 / 25);
+		};		
+		
+		class CopMsgAll : life_RscButtonMenu
+		{
+			idc = 888800;
+			text = "$STR_CELL_APHRequest";
+			colorBackground[] = {0.030, 0.144, 0.255,1.0};
+			onButtonClick = "createDialog ""Life_cell_phone_cop"";";
+			
+			x = 0.53;
+			y = 0.45;
+			w = 0.2;
+			h = (1 / 25);
 		};
 		
 		class CloseButtonKey : Life_RscButtonMenu {
@@ -164,6 +177,161 @@ class Life_cell_phone {
 			onButtonClick = "closeDialog 0;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.51 + (1 / 50);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+	};
+};
+
+/*
+class Life_cell_phone_admin {
+	idd = 888802;
+	name= "life_my_smartphone_admin";
+	movingEnable = false;
+	enableSimulation = true;
+	onLoad = "[7] spawn life_fnc_newMsg;";
+	
+	class controlsBackground {
+		class Life_RscTitleBackground:Life_RscText {
+			colorBackground[] = {0.584, 0.086, 0.086,1.0};
+			idc = -1;
+			x = 0.1;
+			y = 0.2;
+			w = 0.64;
+			h = (1 / 25);
+		};
+		
+		class MainBackground:Life_RscText {
+			colorBackground[] = {0, 0, 0, 0.7};
+			idc = -1;
+			x = 0.1;
+			y = 0.2 + (11 / 250);
+			w = 0.64;
+			h = 0.15 - (5 / 250);
+		};
+	};
+	
+	class controls {
+
+		
+		class Title : Life_RscTitle {
+			colorBackground[] = {0, 0, 0, 0};
+			idc = 888803;
+			text = "$STR_SMARTPHONE_Admintitle";
+			x = 0.1;
+			y = 0.2;
+			w = 0.6;
+			h = (1 / 25);
+		};
+		
+		class textEdit : Life_RscEdit {
+		
+		idc = 888804;
+		
+		text = "";
+		sizeEx = 0.030;
+		x = 0.11; 
+		y = 0.26;
+		w = 0.62; 
+		h = 0.03;
+		
+		};
+		
+		class AdminMsgAll : life_RscButtonMenu 
+		{
+			idc = 888898;
+			text = "$STR_CELL_AdminMSGAll";
+			colorBackground[] = {0.584, 0.086, 0.086,1.0};
+			onButtonClick = "[7,-1,(ctrlText 888804)] call life_fnc_newMsg;";
+			x = 0.11;
+			y = 0.31;
+			w = 0.235;
+			h = (1 / 25);
+		};
+		
+		class CloseButton : Life_RscButtonMenu {
+			idc = -1;
+			text = "$STR_Global_Close";
+			onButtonClick = "closeDialog 0;";
+			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.357 + (1 / 50);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+	};
+};
+*/
+
+class Life_cell_phone_cop {
+	idd = 888808;
+	name= "Life_cell_phone_cop";
+	movingEnable = false;
+	enableSimulation = true;
+	
+	class controlsBackground {
+		class Life_RscTitleBackground:Life_RscText {
+			colorBackground[] = {0.030, 0.144, 0.255,1.0};
+			idc = -1;
+			x = 0.1;
+			y = 0.2;
+			w = 0.64;
+			h = (1 / 25);
+		};
+		
+		class MainBackground:Life_RscText {
+			colorBackground[] = {0, 0, 0, 0.7};
+			idc = -1;
+			x = 0.1;
+			y = 0.2 + (11 / 250);
+			w = 0.64;
+			h = 0.15 - (5 / 250);
+		};
+	};
+	
+	class controls {
+
+		
+		class Title : Life_RscTitle {
+			colorBackground[] = {0, 0, 0, 0};
+			idc = 888805;
+			text = "$STR_SMARTPHONE_Coptitle";
+			x = 0.1;
+			y = 0.2;
+			w = 0.6;
+			h = (1 / 25);
+		};
+		
+		class textEdit : Life_RscEdit {
+		
+		idc = 888806;
+		
+		text = "";
+		sizeEx = 0.030;
+		x = 0.11; 
+		y = 0.26;
+		w = 0.62; 
+		h = 0.03;
+		
+		};
+		
+		class CopMsgAll : life_RscButtonMenu 
+		{
+			idc = 888807;
+			text = "$STR_CELL_CopMSGAll";
+			colorBackground[] = {0.030, 0.144, 0.255,1.0};
+			onButtonClick = "[] call TON_fnc_cell_copmsgall";
+			x = 0.11;
+			y = 0.31;
+			w = 0.235;
+			h = (1 / 25);
+		};
+		
+		class CloseButton : Life_RscButtonMenu {
+			idc = -1;
+			text = "$STR_Global_Close";
+			onButtonClick = "closeDialog 0;";
+			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.357 + (1 / 50);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};

@@ -18,12 +18,12 @@ while {true} do
 	{
 	_steps = steps + 4;
 	_fuel_price = _fuel_price + 1000;
-	}
+	};
 	if(_veh isKindOf "Car") then
 	{
 	_steps = steps - 12;
 	_fuel_price = _fuel_price - 1000;
-	}
+	};
 	
 	sleep 1;
 	_spent_money = 0;

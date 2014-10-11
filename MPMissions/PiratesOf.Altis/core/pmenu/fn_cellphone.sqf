@@ -21,6 +21,12 @@ if((__GETC__(life_adminlevel) < 1)) then
 	ctrlShow[3020,false];
 	ctrlShow[3021,false];
 };
+
+if((__GETC__(life_coplevel) < 1)) then
+{
+	ctrlShow[888800,false];
+};
+
 {
 	if(alive _x && _x != player) then
 	{
