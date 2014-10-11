@@ -39,10 +39,6 @@ life_request_timer = false;
 life_schutz = false;
 life_channel_send = false; 
 life_TankLaster = 1;
-life_kw_athira = false; 
-life_kw_kavala = false; 
-life_kw_sofia = false; 
-life_kw_kavala = false; 
 nn_last_vehicles = [];
 nn_empInUse = false;
 
@@ -83,22 +79,6 @@ life_maxWeight = 40; //Identifies the max carrying weight (gets adjusted through
 life_maxWeightT = 40; //Static variable representing the players max carrying weight on start.
 life_carryWeight = 0; //Represents the players current inventory weight (MUST START AT 0).
 
-/*
-*****************************
-****** Food Variables *******
-*****************************
-
-life_eat_Salema = 40;
-life_eat_Ornate = 20;
-life_eat_Mackerel = 20;
-life_eat_Tuna = 100;
-life_eat_Mullet = 30;
-life_eat_CatShark = 60;
-life_eat_Rabbit = 20;
-life_eat_Apple = 5;
-life_eat_turtlesoup = 62;
-life_eat_donuts = 30;
-*/
 /*
 *****************************
 ****** Life Variables *******
@@ -257,9 +237,7 @@ life_inv_items =
 	"life_inv_uranip",
 	"life_inv_mauer",
 	"life_inv_mauer2",
-	"life_inv_licht",
-	"life_inv_fuelPipe",
-	"life_inv_fuelManipulator"
+	"life_inv_licht"
 ];
 
 //Setup variable inv vars.
