@@ -210,7 +210,7 @@ compileFinal "
 TON_fnc_cell_emsrequest = 
 compileFinal "
 	private[""_msg"",""_to""];
-	if(({side _x == independent} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Arzt im Dienst. Bitte probiere es später nochmal."];};
+	if(({side _x == independent} count playableUnits) == 0) exitWith {hint ""Zurzeit ist kein Arzt im Dienst. Bitte probiere es später nochmal.""};
 	ctrlShow[3022,false];
 	_msg = ctrlText 3003;
 	_to = ""EMS Units"";
@@ -225,7 +225,7 @@ compileFinal "
 TON_fnc_cell_APHrequest = 
 compileFinal "
 	private[""_msg"",""_to""];
-	if(({side _x == east} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Pannenhelfer im Dienst. Bitte probiere es später nochmal."];};
+	if(({side _x == east} count playableUnits) == 0) exitWith {hint ""Zurzeit ist kein Pannenhelfer im Dienst. Bitte probiere es später nochmal.""};
 	ctrlShow[3023,false];
 	_msg = ctrlText 3003;
 	_to = ""EMS Units"";
@@ -245,7 +245,7 @@ compileFinal "
 	_msg = ctrlText 888806;
 	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";};
 	
-	[[_msg,name player,4],""TON_fnc_clientMessage"",true,false] spawn life_fnc_MP;
+	[[_msg,name player,7],""TON_fnc_clientMessage"",true,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
 	hint format[""Polizeirundruf versendet an alle: %1"",_msg];
 ";

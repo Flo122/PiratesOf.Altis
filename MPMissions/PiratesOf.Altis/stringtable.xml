@@ -467,7 +467,31 @@
 			<French>APH</French>
 			<Italian>APH</Italian>
 			<Portuguese>APH</Portuguese>
+		</Key>		
+		<Key ID="STR_CELL_CopMSGAllBTN">
+			<Original>Globale Nachricht</Original>
+			<English>Globale Nachricht</English>
+			<German>Globale Nachricht</German>
+			<French>Globale Nachricht</French>
+			<Italian>Globale Nachricht</Italian>
+			<Portuguese>Globale Nachricht</Portuguese>
+		</Key>		
+		<Key ID="STR_CELL_Coptitle">
+			<Original>Polizei</Original>
+			<English>Police</English>
+			<German>Polizei</German>
+			<French>Polizei</French>
+			<Italian>Polizei</Italian>
+			<Portuguese>Polizei</Portuguese>
 		</Key>
+		<Key ID="STR_CELL_CopMSGAll">
+			<Original>Polizei</Original>
+			<English>Police</English>
+			<German>Polizei</German>
+			<French>Polizei</French>
+			<Italian>Polizei</Italian>
+			<Portuguese>Polizei</Portuguese>
+		</Key>		
 		</Package>
 	<Package name="Chop_Shop">
 		<Key ID="STR_ChopShop_Title">

@@ -161,7 +161,7 @@ class Life_cell_phone {
 		class CopMsgAll : life_RscButtonMenu
 		{
 			idc = 888800;
-			text = "$STR_CELL_APHRequest";
+			text = "$STR_CELL_CopMSGAll";
 			colorBackground[] = {0.030, 0.144, 0.255,1.0};
 			onButtonClick = "createDialog ""Life_cell_phone_cop"";";
 			
@@ -294,7 +294,7 @@ class Life_cell_phone_cop {
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 888805;
-			text = "$STR_SMARTPHONE_Coptitle";
+			text = "$STR_CELL_Coptitle";
 			x = 0.1;
 			y = 0.2;
 			w = 0.6;
@@ -317,7 +317,7 @@ class Life_cell_phone_cop {
 		class CopMsgAll : life_RscButtonMenu 
 		{
 			idc = 888807;
-			text = "$STR_CELL_CopMSGAll";
+			text = "$STR_CELL_CopMSGAllBTN";
 			colorBackground[] = {0.030, 0.144, 0.255,1.0};
 			onButtonClick = "[] call TON_fnc_cell_copmsgall";
 			x = 0.11;
