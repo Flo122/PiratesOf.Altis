@@ -1,7 +1,6 @@
 private["_veh","_veh_type","_fuelstation","_fuel_old","_fuel_new","_fuel_price","_steps","_spent_money","_fuel_min_distance"];
      
 _fuel_price = 2000;
-
 _steps = 20.0;
 _fuel_min_distance = 7;
 _fuel_price_one_step = _fuel_price / _steps;
@@ -14,16 +13,6 @@ while {true} do
 	_veh_type = typeof _veh;	
 	//clean the fuelstation to prevent automatic refuel
 	_fuelstation = (nearestObjects [player, ["Land_fs_feed_F"], _fuel_min_distance]) select 0;
-	if(_veh isKindOf "Air") then
-	{
-	_steps = steps + 4;
-	_fuel_price = _fuel_price + 1000;
-	};
-	if(_veh isKindOf "Car") then
-	{
-	_steps = steps - 12;
-	_fuel_price = _fuel_price - 1000;
-	};
 	
 	sleep 1;
 	_spent_money = 0;
