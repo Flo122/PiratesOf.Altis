@@ -10847,7 +10847,7 @@ class Mission
 			vehicle="Land_PaperBox_open_full_F";
 			leader=1;
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Paket ablegen"",life_fnc_dpFinish,""dp_16"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target ']; this addAction[""Paket nehmen"",life_fnc_getDPMission,""dp_16"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Paket ablegen"",life_fnc_dpFinish,""dp_1"",0,false,false,"""",'!isNil ""life_dp_point"" && life_delivery_in_progress && life_dp_point == _target ']; this addAction[""Paket nehmen"",life_fnc_getDPMission,""dp_1"",0,false,false,"""",' isNil ""life_dp_point"" && !life_delivery_in_progress '];";
 		};
 		class Item694
 		{
