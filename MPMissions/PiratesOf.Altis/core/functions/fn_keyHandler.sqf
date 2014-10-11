@@ -24,7 +24,7 @@ _interruptionKeys = [17,30,31,32]; //A,S,W,D
 if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player getVariable ["restrained",false])}) exitWith {
 	true;
 };
-
+//No circonflex
 if(life_action_inUse) exitWith {
 	if(!life_interrupted && _code in _interruptionKeys) then {life_interrupted = true;};
 	_handled;
