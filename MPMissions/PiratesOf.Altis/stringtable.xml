@@ -952,7 +952,7 @@
 		<Key ID="STR_Garage_CashError">
 			<Original>You don't have $%1 in your bank account</Original>
 			<English>You don't have $%1 in your bank account</English>
-			<German>Du hast keine $%1 auf deinem Bankkonto</German>
+			<German>Du hast keine $%1 auf deinem Bankkonto oder auf der Hand</German>
 			<French>Tu n'as pas %1$ sur ton compte en banque.</French>
 			<Italian>Non hai €%1 nel tuo conto in banca</Italian>
 		</Key>

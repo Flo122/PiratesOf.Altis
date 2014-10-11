@@ -33,7 +33,7 @@ if(typeName life_garage_sp == "ARRAY") then {
 
 hint localize "STR_Garage_SpawningVeh";
 
-if(life_atmcash > _price)
+if(life_atmcash >= _price) then
 {
 	life_atmcash = life_atmcash - _price;
 } else {
