@@ -211,7 +211,7 @@ class life_admin_menu {
 		class player_b_tpHere: Life_RscButtonMenu
 		{
 			idc = 2410;
-			text = "TpHere"; //--- ToDo: Localize;
+			text = "MAP TP"; //--- ToDo: Localize;
 			x = 30.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 13 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4 * GUI_GRID_W;
@@ -282,16 +282,6 @@ class life_admin_menu {
 			w = 6.5 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 			onButtonClick = "[false,true,false] spawn life_fnc_adminInstaHealth;";
-		};
-		class tool_b_marketreset: Life_RscButtonMenu
-		{
-			idc = -1;
-			text = "Marktpreise Reset"; //--- ToDo: Localize;
-			x = 2.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 15 * GUI_GRID_H + GUI_GRID_Y;
-			w = 6.5 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-			onButtonClick = "[] spawn life_fnc_marketReset;";
 		};
 		 class tool_b_money_add1000000: Life_RscButtonMenu
 	    {

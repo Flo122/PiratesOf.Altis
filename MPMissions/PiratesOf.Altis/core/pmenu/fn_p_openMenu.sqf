@@ -42,11 +42,6 @@ if(__GETC__(life_adminlevel) < 1) then
 
 if(__GETC__(life_adminlevel) < 2) then
 {
-
-};
-if(__GETC__(life_adminlevel) > 3) then
-{
-
 	ctrlShow[2911,false];
 	ctrlShow[2910,false];
 	ctrlShow[2909,false];
@@ -54,7 +49,6 @@ if(__GETC__(life_adminlevel) > 3) then
 	ctrlShow[2907,false];
 	ctrlShow[2906,false];
 	ctrlShow[2904,false];
-
-
 };
+
 [] call life_fnc_p_updateMenu;
