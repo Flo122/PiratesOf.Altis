@@ -34,7 +34,7 @@ compileFinal "
 	if(isNull _ret) exitWith {};
 	if(isNil ""_ret"") exitWith {};
 	
-	[[life_atmcash_pirates,life_cash_pirates,owner player,player],""life_fnc_admininfo"",_ret,false] spawn life_fnc_MP;
+	[[life_atmcash,life_cash,owner player,player],""life_fnc_admininfo"",_ret,false] spawn life_fnc_MP;
 ";
 publicVariable "TON_fnc_player_query";
 
@@ -47,7 +47,7 @@ compileFinal "
 	_from = _this select 1;
 	if(!([str(_val)] call TON_fnc_isnumber)) exitWith {};
 	if(_from == """") exitWith {};
-	life_atmcash_pirates = life_atmcash_pirates + _val;
+	life_atmcash = life_atmcash + _val;
 	hint format[""%1 hat dir $%2 ueberwiesen."",_from,[_val] call life_fnc_numberText];
 	
 ";
