@@ -51,7 +51,7 @@ switch (_add) do {
 	_amounttext ctrlSetText format ["%1",_amount];
 	 } else {
 	_amount = ctrlText 2405;
-	if(!([_amount] call fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
+	if(!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 	
 	if (parseNumber _amount == 0) exitwith {};
 	_amount = parseNumber _amount - 1;
