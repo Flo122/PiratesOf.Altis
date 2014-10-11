@@ -50,5 +50,5 @@ if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR
 
 life_action_inUse = false;
 _vault setVariable["chargeplaced",false,true];
-life_atmcash_pirates = life_atmcash_pirates + 50000;
+life_atmcash = life_atmcash + 50000;
 hint parseText format["Du hast die Bombe erfolgreich entschaerft. Dafuer erhaeltst du $50000."];

@@ -72,7 +72,7 @@ if(_rip) then
    5 cutText ["","PLAIN"];
    titleText[format["Du hast $%1 erbeutet, flieh so schnell du kannst!",[_kassa] call life_fnc_numberText],"PLAIN"];
    deleteMarker _marker;
-   life_cash_pirates = life_cash_pirates + _kassa;
+   life_cash = life_cash + _kassa;
 
    _rip = false;
    life_use_atm_2 = false;

@@ -23,13 +23,13 @@ _robber = false;
 
 if(!life_use_atm) then 
 {
-	life_cash_pirates = 0;
+	life_cash = 0;
 	_robber = true;
 };
 
 if(!life_use_atm_2) then 
 {
-	life_cash_pirates = 0;
+	life_cash = 0;
 	_robber = true;
 };
 

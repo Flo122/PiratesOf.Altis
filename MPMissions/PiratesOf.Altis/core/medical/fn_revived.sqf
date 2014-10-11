@@ -20,7 +20,7 @@ camDestroy life_deathCamera;
 
 //Take fee for services.
 
-life_atmcash_pirates = life_atmcash_pirates - (call life_revive_fee);
+life_atmcash = life_atmcash - (call life_revive_fee);
 
 //Retexturing of units clothing, vanilla files only retexture the EMS unit.
 switch(playerSide) do {

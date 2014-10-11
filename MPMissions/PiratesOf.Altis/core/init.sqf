@@ -116,7 +116,7 @@ life_fnc_garageRefund = compileFinal
 	_price = _this select 0;
 	_unit = _this select 1;
 	if(_unit != player) exitWith {};
-	life_atmcash_pirates = life_atmcash_pirates + _price;
+	life_atmcash = life_atmcash + _price;
 ";
 
 [] execVM "core\init_survival.sqf";

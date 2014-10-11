@@ -62,7 +62,7 @@ if (life_UranLaster == 4) exitWith {hint "Du kannst Uran und seine weiterverarbe
 if(_ctrl == "money") then
 {
 	_index = [_ctrl,_inv] call TON_fnc_index;
-	if(life_cash_pirates < _num) exitWith {hint "Du hast nicht genug Geld um es im Fahrzeug zu lagern!"};
+	if(life_cash < _num) exitWith {hint "Du hast nicht genug Geld um es im Fahrzeug zu lagern!"};
 	if(_index == -1) then
 	{
 		_inv pushBack [_ctrl,_num];
@@ -73,7 +73,7 @@ if(_ctrl == "money") then
 		_inv set[_index,[_ctrl,_val + _num]];
 	};
 	
-	life_cash_pirates = life_cash_pirates - _num;
+	life_cash = life_cash - _num;
 	life_trunk_vehicle setVariable["Trunk",[_inv,(_veh_data select 1) + _itemWeight],true];
 	[life_trunk_vehicle] call life_fnc_vehInventory;
 }

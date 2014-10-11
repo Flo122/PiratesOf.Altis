@@ -169,7 +169,7 @@ else
 
 ctrlSetText[5004, king_gamble_title_text + " [" + _legal_illegal_text + "]"];
 
-_text_your_money ctrlSetStructuredText parseText format["<img size='1.6' image='icons\money.paa'/>$%1",[life_cash_pirates] call life_fnc_numberText];
+_text_your_money ctrlSetStructuredText parseText format["<img size='1.6' image='icons\money.paa'/>$%1",[life_cash] call life_fnc_numberText];
 
 //hide all gamble views
 ctrlShow [5100, false];
