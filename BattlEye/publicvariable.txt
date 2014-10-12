@@ -1,0 +1,2 @@
+1 "" !="life_HC_isActive" !="HC_UID"
+7 "" !="life_market_shortnames" !="life_fnc_MP_packet" !="BIS_fnc_MP_packet" !="JipTimeNow" !="life_HC_isActive" !="HC_UID" !="life_gang_list" !="bank_addfunds" !="life_market_prices" !="IL_SetMass" !="IL_SetScore" !="IL_SetDir" !="life_market_resources" !="bis_fnc_execvm" !="Life_fnc_execvm"
