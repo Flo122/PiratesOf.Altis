@@ -1,5 +1,4 @@
 private["_veh","_veh_type","_fuelstation","_fuel_old","_fuel_new","_fuel_price","_steps","_spent_money","_fuel_min_distance"];
-     
 _fuel_price = 2000;
 _steps = 20.0;
 _fuel_min_distance = 7;
