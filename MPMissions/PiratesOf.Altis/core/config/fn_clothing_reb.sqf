@@ -23,13 +23,13 @@ switch (_filter) do
 			["U_I_G_resistanceLeader_F",nil,15000],
 			["U_O_SpecopsUniform_ocamo",nil,17500],
 			["U_O_PilotCoveralls",nil,20000],
-			["U_IG_leader","Guerilla Leader",22500],
-			["U_IG_Guerilla3_1",42500],
-			["U_IG_Guerilla2_3",52500],
-			["U_IG_Guerilla3_2",32500],
-			["U_O_CombatUniform_oucamo",42500],
-			["U_I_CombatUniform_tshirt",52500],
-			["U_B_PilotCoveralls",22500],
+			["U_IG_leader","Guerilla Leader",nil,22500],
+			["U_IG_Guerilla3_1",nil,42500],
+			["U_IG_Guerilla2_3",nil,52500],
+			["U_IG_Guerilla3_2",nil,32500],
+			["U_O_CombatUniform_oucamo",nil,42500],
+			["U_I_CombatUniform_tshirt",nil,52500],
+			["U_B_PilotCoveralls",nil,22500],
 			["U_O_GhillieSuit",nil,100000]
 		];
 	};
