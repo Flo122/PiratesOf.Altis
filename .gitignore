@@ -13,7 +13,6 @@ addons/animals_f_beta.pbo
 *.list
 *.Arma3Profile
 *.exe
-*.txt
 *.blob
 *.vdf
 *.bin
