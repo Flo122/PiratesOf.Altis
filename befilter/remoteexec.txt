@@ -1,1 +1,1 @@
-1 ""
+1 "" !="removeBackpack this; removeAllWeapons this;"

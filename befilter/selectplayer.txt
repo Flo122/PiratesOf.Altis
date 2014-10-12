@@ -1,1 +1,1 @@
-1 ""
+1 "" !="B_medic_F" !="I_medic_F" !="C_man_1_3_F" !="C_man_1"
