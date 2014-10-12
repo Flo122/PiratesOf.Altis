@@ -23,8 +23,8 @@ switch(__GETC__(life_coplevel)) do
 			case 3: {life_paycheck = 15000;};
 			case 4: {life_paycheck = 17500;};
 			case 5: {life_paycheck = 20000;};
-			case 6: {life_paycheck = 25000;};
-			case 7: {life_paycheck = 27000;};
+			case 6: {life_paycheck = 22500;};
+			case 7: {life_paycheck = 25000;};
 			default { life_paycheck = 10000; };
 		};
 
