@@ -2719,7 +2719,7 @@ class Mission
 					skill=0.60000002;
 					text="aph_1";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="APH";
+					description="Abgeschaltet";
 				};
 				class Item1
 				{
@@ -2731,7 +2731,7 @@ class Mission
 					skill=0.60000002;
 					text="aph_2";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="APH";
+					description="Abgeschaltet";
 				};
 				class Item2
 				{
@@ -2743,7 +2743,7 @@ class Mission
 					skill=0.60000002;
 					text="aph_4";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="APH";
+					description="Abgeschaltet";
 				};
 				class Item3
 				{
@@ -2755,7 +2755,7 @@ class Mission
 					skill=0.60000002;
 					text="aph_3";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="APH";
+					description="Abgeschaltet";
 				};
 				class Item4
 				{
@@ -2767,7 +2767,7 @@ class Mission
 					skill=0.60000002;
 					text="aph_5";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="APH";
+					description="Abgeschaltet";
 				};
 			};
 		};
