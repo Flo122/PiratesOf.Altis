@@ -15,9 +15,6 @@ waitUntil {!(isNull (findDisplay 46))};
 		sleep 35;
 	};
 
-_logistic = execVM "scripts\=BTC=_Logistic\=BTC=_logistic_Init.sqf";
-_igiload = execVM "scripts\IgiLoad\IgiLoadInit.sqf";
-
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
