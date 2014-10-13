@@ -12,7 +12,6 @@ switch (_shop) do
 {
 
 	case "market": {["Altis Markt",["water","rabbit","apple","redgull","tbacon","lockpick","handcuffkey","pickaxe","fuelF","peach","storagesmall","storagebig"]]};
-	case "APH": {["APH Markt",["water","rabbit","apple","redgull","tbacon","fuelF","peach","mauer"]]};
 	case "rebel": {["Rebellen Markt",["water","rabbit","handcuffkey","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","tracker","speedbomb"]]};
 	case "gang": {["Gang Markt",["water","rabbit","handcuffkey","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter","tracker","speedbomb"]]};
 	case "wongs": {["Wong's Feinkost",["turtlesoup","turtle"]]};
@@ -24,7 +23,7 @@ switch (_shop) do
 	case "iron": {["Altis Metallhandel",["iron_r","copper_r","eisenp"]]};
 	case "diamond": {["Diamantenhandel",["diamond","diamondc"]]};
 	case "salt": {["Salzhandel",["salt_r"]]};
-	case "cop": {["Polizeihandel",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","tracker","mauer","mauer2","licht"]]};
+	case "cop": {["Polizeihandel",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","tracker"]]};
 	case "cement": {["Cement Dealer",["cement"]]};
 	case "sprit": {["Spirituosenhandel",["getreideip","zuckerip"]]};
 	case "tabak": {["Tabakfachhandel",["tabakp","tabakip"]]};

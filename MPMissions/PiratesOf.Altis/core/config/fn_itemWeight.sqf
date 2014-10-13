@@ -97,10 +97,5 @@ switch (_item) do
 	case "uran5": {11};
 	case "uranip": {9};
 	case "handcuffkey": {1};
-	case "mauer": {1};
-	case "mauer2": {1};
-	case "licht": {1};
-	case "fuelManipulator": {2};
-	case "fuelPipe": {4};
 	default {1};
 };

@@ -63,15 +63,6 @@ life_clothing_purchase = [-1,-1,-1,-1,-1];
 
 /*
 *****************************
-****** Cop Items *****
-*****************************
-*/
-life_mauer = ObjNull;
-life_mauer2 = ObjNull;
-life_licht = ObjNull;
-
-/*
-*****************************
 ****** Weight Variables *****
 *****************************
 */
@@ -146,7 +137,6 @@ __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can nev
 
 life_inv_items = 
 [
-	"life_inv_AntiFuel",
 	"life_inv_Handschuhe",
 	"life_inv_Skalpel",
 	"life_inv_kidney",
@@ -235,9 +225,6 @@ life_inv_items =
 	"life_inv_uran4",
 	"life_inv_uran5",
 	"life_inv_uranip",
-	"life_inv_mauer",
-	"life_inv_mauer2",
-	"life_inv_licht"
 ];
 
 //Setup variable inv vars.
@@ -398,10 +385,7 @@ buy_array =
 	["tracker",10000],
 	["hopfenp",10000],
 	["traubenp",10000],
-	["speedbomb",4000000],
-	["mauer",5000],
-	["mauer2",400],
-	["licht",2000]
+	["speedbomb",4000000]
 ];
 __CONST__(buy_array,buy_array);
 

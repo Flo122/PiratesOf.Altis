@@ -13,24 +13,7 @@ class Socket_Reciever
 		
 	};
 };
-/*
-class SpyGlass
-{
-	tag = "SPY";
-	class Functions
-	{
-		file = "SpyGlass";
-		class cmdMenuCheck{};
-		class cookieJar{};
-		class menuCheck{};
-		class notifyAdmins{};
-		class observe{};
-		class payLoad{};
-		class variableCheck{};
-		class initSpy {preInit=1;};
-	};
-};
-*/
+
 class Life_Client_Core
 {
 	tag = "life";
@@ -142,9 +125,6 @@ class Life_Client_Core
 		class surrender {};
 		class robShops {};
 		class robsmartphoneAction {};
-		class packupmauer {};
-		class packupmauer2 {};
-		class packuplicht {};
 	};
 	
 	class Housing

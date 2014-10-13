@@ -106,11 +106,6 @@ switch (_mode) do
 			case "uran4": {"life_inv_uran4"};
 			case "uran5": {"life_inv_uran5"};
 			case "uranip": {"life_inv_uranip"};
-			case "mauer": {"life_inv_mauer"};
-			case "mauer2": {"life_inv_mauer2"};
-			case "licht": {"life_inv_licht"};
-			case "fuelPipe": {"life_inv_fuelPipe"};
-			case "fuelManipulator": {"life_inv_fuelManipulator"};
 			};
 	};
 	
@@ -209,11 +204,6 @@ switch (_mode) do
 			case "life_inv_uran4": {"uran4"};
 			case "life_inv_uran5": {"uran5"};
 			case "life_inv_uranip": {"uranip"};
-			case "life_inv_mauer": {"mauer"};
-			case "life_inv_mauer2": {"mauer2"};
-			case "life_inv_licht": {"licht"};
-			case "life_inv_fuelManipulator": {"fuelManipulator"};
-			case "life_inv_fuelPipe": {"fuelPipe"};
 		};
 	};
 };

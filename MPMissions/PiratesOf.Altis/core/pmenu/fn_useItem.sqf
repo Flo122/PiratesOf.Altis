@@ -160,51 +160,6 @@ switch (true) do
 		[] spawn life_fnc_speedBomb;
     };
 	
-	case (_item == "mauer"):
-	{
-		if(!isNull life_mauer) exitWith {hint "Du stellst schon eine Mauer auf!"};
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{
-			if((playerSide == civilian) && (playerSide == independent)) exitWith {titleText["Du bist nicht berechtig dies item zu besitzen.","PLAIN"];};
-			[] spawn life_fnc_mauer;
-		};
-	};
-	case (_item == "mauer2"):
-	{
-		if(!isNull life_mauer2) exitWith {hint "Du stellst schon eine Mauer auf!"};
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{
-			if((playerSide == civilian) && (playerSide == independent)) exitWith {titleText["Du bist nicht berechtig dies item zu besitzen.","PLAIN"];};
-			[] spawn life_fnc_mauer2;
-		};
-	};
-	case (_item == "licht"):
-	{	
-		if(!isNull life_licht) exitWith {hint "Du stellst schon ein Hütchen auf!"};
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{	
-			if((playerSide == civilian) && (playerSide == independent)) exitWith {titleText["Du bist nicht berechtig dies item zu besitzen.","PLAIN"];};
-			[] spawn life_fnc_licht;
-		};
-	};
-	
-	case (_item == "fuelManipulator"):
-    {
-        closeDialog 0;
-        [] spawn king_fnc_fuelchangerManipulate;
-    };    
-      	
-	case (_item == "AntiFuel"):
-    {
-        closeDialog 0;
-		[] spawn king_fnc_AntiFuel;
-    };    
-     case (_item == "fuelPipe"):
-    {
-        closeDialog 0;
-        [] spawn king_fnc_fuelPipe;
-    };
-	
 	case (_item == "kidney"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then

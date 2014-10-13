@@ -1,0 +1,10 @@
+
+
+[2014-10-13 18:27:14] Log session started
+
+[2014-10-13 18:27:14] [2,0] Log session ended
+
+
+[2014-10-13 19:09:40] Log session started
+
+[2014-10-13 19:09:40] [2,0] Log session ended

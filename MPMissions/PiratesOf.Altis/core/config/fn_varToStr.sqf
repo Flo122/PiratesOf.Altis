@@ -102,11 +102,6 @@ switch (_var) do
 	case "life_inv_uran4": {(localize "STR_Item_Uran4")};
 	case "life_inv_uran5": {(localize "STR_Item_Uran5")};
 	case "life_inv_uranip": {(localize "STR_Item_Uranip")};
-	case "life_inv_mauer": {(localize "STR_Item_Mauer")};
-	case "life_inv_mauer2": {(localize "STR_Item_Mauer2")};
-	case "life_inv_licht": {(localize "STR_Item_Licht")};
-	case "life_inv_fuelManipulator": {(localize "STR_Item_FuelM")};
-	case "life_inv_fuelPipe": {(localize "STR_Item_FuelP")};
 	
 	//License Block
 	case "license_civ_donator": {(localize "STR_License_Donator")};
