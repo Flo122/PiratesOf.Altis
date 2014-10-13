@@ -137,9 +137,6 @@ __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can nev
 
 life_inv_items = 
 [
-	"life_inv_Handschuhe",
-	"life_inv_Skalpel",
-	"life_inv_kidney",
 	"life_inv_oilu",
 	"life_inv_oilp",
 	"life_inv_heroinu",
