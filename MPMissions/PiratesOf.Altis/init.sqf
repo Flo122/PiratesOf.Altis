@@ -20,7 +20,6 @@ StartProgress = true;
 [] execVM "scripts\zlt_fastrope.sqf";
 [] execVM "welcomeMessage.sqf";
 [] execVM "scripts\safezone.sqf";
-[] execVM "scripts\radartrap30.sqf"; 
 [] execVM "scripts\teargas.sqf";
 
 MAC_fnc_switchMove = {

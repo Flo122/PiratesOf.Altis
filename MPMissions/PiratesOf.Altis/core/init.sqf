@@ -121,7 +121,6 @@ life_fnc_garageRefund = compileFinal
 
 [] execVM "core\init_survival.sqf";
 [] execVM "core\fn_addKey.sqf";
-_handle = [] spawn compile PreprocessFileLineNumbers "core\Pirates\init.sqf";
 
 //Update Clothing
 [] spawn
