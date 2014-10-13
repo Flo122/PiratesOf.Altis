@@ -262,7 +262,6 @@ class Life_Client_Core
 		class schutzSirene {};
 		class emptyFuel {};
 		class switch {};
-		class bauEffect {};
 		class addsubstract {};
 	};
 	
@@ -438,9 +437,6 @@ class Life_Client_Core
 		class weedSmoke {};
 		class usePkugel {};
 		class speedBomb {};
-		class mauer {};
-		class mauer2 {};
-		class licht {};
 	};
 	
 	class Dialog_Controls

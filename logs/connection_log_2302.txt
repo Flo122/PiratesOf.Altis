@@ -62,3 +62,14 @@
 [2014-10-13 18:32:27] [1,2] RecvMsgClientLogOnResponse() : [A:1:93960196:4732] 'OK'
 [2014-10-13 19:09:40] [3,2] LogOff()
 [2014-10-13 19:09:40] [2,2] AsyncDisconnect()
+
+
+[2014-10-14 00:06:21] Log session started
+
+[2014-10-14 00:06:21] [0,0] SetSteamID( [A:1:0:0] )
+[2014-10-14 00:06:21] [1,2] Connect() starting connection (eNetQOSLevelLow, 146.66.152.15:27018, UDP)
+
+[2014-10-14 00:06:22] [1,2] ConnectionCompleted() (146.66.152.14:27018, UDP)
+[2014-10-14 00:06:22] [1,2] RecvMsgClientLogOnResponse() : [A:1:3102182406:4732] 'OK'
+[2014-10-14 00:08:15] [3,2] LogOff()
+[2014-10-14 00:08:15] [2,2] AsyncDisconnect()

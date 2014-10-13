@@ -8,3 +8,8 @@
 [2014-10-13 19:09:40] Log session started
 
 [2014-10-13 19:09:40] [2,0] Log session ended
+
+
+[2014-10-14 00:08:15] Log session started
+
+[2014-10-14 00:08:15] [2,0] Log session ended

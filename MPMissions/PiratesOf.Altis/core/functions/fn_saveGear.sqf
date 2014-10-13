@@ -164,10 +164,7 @@ _yItems = _yItems + [_name];
 	["life_inv_tracker", life_inv_tracker],
 	["life_inv_blastingcharge", life_inv_blastingcharge],
 	["life_inv_boltcutter", life_inv_boltcutter],
-	["life_inv_speedbomb", life_inv_speedbomb],
-	["life_inv_mauer", life_inv_mauer],
-	["life_inv_mauer2", life_inv_mauer2],
-	["life_inv_licht", life_inv_licht]
+	["life_inv_speedbomb", life_inv_speedbomb]
 ];
 
 

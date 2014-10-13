@@ -3706,30 +3706,6 @@
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
-		<Key ID="STR_ISTR_Mauer_Place">
-			<Original>Place Spike Strip</Original>
-			<German>Straßensperre platzieren</German>
-		</Key>
-		<Key ID="STR_ISTR_Mauer_Pack">
-			<Original>Pack up Spike Strip</Original>
-			<German>Straßensperre einsammeln</German>
-		</Key>
-		<Key ID="STR_ISTR_Mauer2_Place">
-			<Original>Place Spike Strip</Original>
-			<German>Mauer platzieren</German>
-		</Key>
-		<Key ID="STR_ISTR_Mauer2_Pack">
-			<Original>Pack up Spike Strip</Original>
-			<German>Mauer einsammeln</German>
-		</Key>
-		<Key ID="STR_ISTR_Licht_Place">
-			<Original>Place Spike Strip</Original>
-			<German>Hütchen platzieren</German>
-		</Key>
-		<Key ID="STR_ISTR_Licht_Pack">
-			<Original>Pack up Spike Strip</Original>
-			<German>Hütchen einsammeln</German>
-		</Key>
 		<Key ID="STR_ISTR_Blast_VaultOnly">
 			<Original>This can only be used on a vault.</Original>
 			<English>This can only be used on a vault.</English>
