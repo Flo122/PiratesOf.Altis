@@ -24,9 +24,9 @@ switch (_shop) do
 	case "med_shop":
 	{
 		_return = [
-			["C_Offroad_01_F",40000],
-			["C_SUV_01_F",50000],
-			["C_Van_01_box_F",100000]
+			["C_Offroad_01_F",20000],
+			["C_SUV_01_F",30000],
+			["C_Van_01_box_F",50000]
 		];
 	};
 	
