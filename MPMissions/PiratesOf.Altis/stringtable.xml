@@ -461,12 +461,12 @@
 			<Portuguese>Chamar SAMU</Portuguese>
 		</Key>		
 		<Key ID="STR_CELL_PMORequest">
-			<Original>An den PMO</Original>
-			<English>An den PMO</English>
-			<German>An den PMO</German>
-			<French>An den PMO</French>
-			<Italian>An den PMO</Italian>
-			<Portuguese>An den PMO</Portuguese>
+			<Original>An die PMO</Original>
+			<English>An die PMO</English>
+			<German>An die PMO</German>
+			<French>An die PMO</French>
+			<Italian>An die PMO</Italian>
+			<Portuguese>An die PMO</Portuguese>
 		</Key>		
 		<Key ID="STR_CELL_CopMSGAllBTN">
 			<Original>Globale Nachricht</Original>

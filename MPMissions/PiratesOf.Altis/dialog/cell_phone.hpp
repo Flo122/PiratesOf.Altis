@@ -144,7 +144,7 @@ class Life_cell_phone {
 			w = 0.2;
 			h = (1 / 25);
 		};
-		/*
+		
 		class PMORequest : life_RscButtonMenu
 		{
 			idc = 3023;
@@ -157,7 +157,7 @@ class Life_cell_phone {
 			w = 0.2;
 			h = (1 / 25);
 		};		
-		*/
+		
 		class CopMsgAll : life_RscButtonMenu
 		{
 			idc = 888800;
