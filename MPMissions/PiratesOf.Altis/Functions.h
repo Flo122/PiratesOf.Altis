@@ -26,7 +26,7 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
-		class initAPH {};
+		class initPMO {};
 		class initZeus {};
 	};
 	
@@ -110,7 +110,6 @@ class Life_Client_Core
 		class restrainAction {};
 		class searchAction {};
 		class searchVehAction {};
-		class keyVehAction {};
 		class unrestrain {};
 		class pickupItem {};
 		class pickupMoney {};
@@ -174,8 +173,7 @@ class Life_Client_Core
 		class clothing_dive {};
 		class clothing_kart {};
 		class clothing_donator {};
-		class clothing_sec {};
-		class clothing_APH {};
+		class clothing_PMO {};
 		class clothing_medic {};
 	};
 	
@@ -314,14 +312,11 @@ class Life_Client_Core
 		class trackMarkers {};
 	};
 	
-	class APH
+	class PMO
 	{
-		file = "core\APH";
-		class APHMarkers {};
-		class APHLoadout {};
-		class APHLights {};
-		class APHSirenLights {};
-		class APHEnter {};
+		file = "core\PMO";
+		class PMOMarkers {};
+		class PMOLoadout {};
 	};
 	
 	class Cop

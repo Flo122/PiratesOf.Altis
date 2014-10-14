@@ -40,7 +40,7 @@ _text ctrlSetStructuredText parseText format["<img size='1.7' image='icons\bank.
 			case west: {_type = "Cop"};
 			case civilian: {_type = "Civ"};
 			case independent: {_type = "Medic"};
-			case east: {_type = "APH"};
+			case east: {_type = "PMO"};
 		};
 		_units lbAdd format["%1 (%2)",_x getVariable["realname",name _x],_type];
 		_units lbSetData [(lbSize _units)-1,str(_x)];

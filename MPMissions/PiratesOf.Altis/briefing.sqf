@@ -224,19 +224,6 @@ player createDiarySubject ["close","Schlusswort"];
 				"
 		]
 	];
-
-	
-	
-
-
-	player createDiaryRecord["behavioral",
-		[
-			"APH",
-				"
-				Der APH hat ebenso politische Immunitaet wie Sanitäter.<br/><br/>
-				"
-		]
-	];
 	
 	player createDiaryRecord["behavioral",
 		[

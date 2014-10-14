@@ -32,12 +32,13 @@ if(playerSide == independent && {backpack player != ""}) then {
 	unitBackpack player setObjectTextureGlobal [0,"textures\uniforms\medic_backpack.paa"];
 };
 
-/* ===APH=== */
-/* Normal */
+
+/*
 if(playerSide == east && {uniform player == "U_B_HeliPilotCoveralls"}) then {
-	[[player,0,"textures\uniforms\APH_uniform.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
+	[[player,0,"textures\uniforms\PMO_uniform.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 };
-/* Backpack */
+
 if(playerSide == east && {backpack player != ""}) then {
-	unitBackpack player setObjectTextureGlobal [0,"textures\uniforms\APH_backpack.paa"];
+	unitBackpack player setObjectTextureGlobal [0,"textures\uniforms\PMO_backpack.paa"];
 };
+/*

@@ -11,7 +11,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"APH Klamottenladen"];
+ctrlSetText[3103,"PMO Klamottenladen"];
 
 switch (_filter) do
 {
@@ -19,7 +19,7 @@ switch (_filter) do
 	case 0:
 	{
 		_ret = [
-			["U_B_HeliPilotCoveralls","APH Dienstkleidung",500]
+			["U_I_G_Story_Protagonist_F","Dienstuniform",1000]
 		];
 		
 		
@@ -77,7 +77,8 @@ switch (_filter) do
 	case 3:
 	{
 		_ret = [
-			["V_Rangemaster_belt",nil,10000]
+			["V_TacVest_khk",nil,1000],
+			["V_PlateCarrier1_blk","Anti Gas Weste",200000]
 		];
 	};
 	
@@ -85,7 +86,7 @@ switch (_filter) do
 	case 4:
 	{
 		_ret = [
-			["B_Kitbag_sgg",nil,5000]
+			["B_Bergen_blk",nil,1000]
 		];
 	};
 };

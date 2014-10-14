@@ -83,7 +83,7 @@ switch(playerSide) do {
 	};	
 	
 	case east: {
-		[_vehicle,"APH_offroad",true] spawn life_fnc_vehicleAnimate;
+		[_vehicle,"PMO_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
 };
 

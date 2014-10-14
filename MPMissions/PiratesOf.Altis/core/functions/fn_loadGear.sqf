@@ -28,7 +28,7 @@ if(count _itemArray == 0) exitWith
         };
 		
 		case east: {
-            [] call life_fnc_APHLoadout;
+            [] call life_fnc_PMOLoadout;
         };
     };
 };

@@ -285,21 +285,30 @@ switch(_shop) do
 		};
 	};
 	
-	case "APH_basic":
+	case "PMO_basic":
 	{
 		switch (true) do 
 		{
-			case (playerSide != east): {"Du bist kein APH"};
+			case (playerSide != east): {"Du bist kein PMO"};
 			default {
-				["APH Shop",
-					[	
-						["ItemRadio","Smartphone",100],
-						["ItemGPS",nil,100],
-						["NVGoggles",nil,1200],
-						["Binocular",nil,150],
-						["FirstAidKit",nil,150],
-						["ToolKit",nil,250],
-						["Medikit",nil,50]
+				["Altis Sicherheitsdienst",
+					[
+						["hgun_P07_snds_F",nil,1000],
+						["16Rnd_9x21_Mag",nil,50],
+						["arifle_MXC_Black_F",nil,1000],
+						["arifle_MX_Black_F",nil,1000],
+						["arifle_MX_SW_Black_F",nil,1000],
+						["arifle_MXM_Black_F",nil,1000],
+						["muzzle_snds_H",nil,500],
+						["30Rnd_65x39_caseless_mag",nil,100],
+						["100Rnd_65x39_caseless_mag",nil,100],
+						["optic_Arco",nil,500],
+						["optic_Hamr",nil,500],
+						["optic_MRCO",nil,500],
+						["optic_DMS",nil,500],
+						["optic_NVS",nil,500],
+						["optic_SOS",nil,500],
+						["optic_LRPS",nil,500]
 					]
 				];
 			};
@@ -621,38 +630,6 @@ switch(_shop) do
 				["Rangefinder",nil,9000]
 			]
 		];
-	};
-	
-	case "sec":
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (!license_civ_sec): {"Du gehoerst nicht zum Sicherheitsdienst!"};
-			default
-			{
-				["Altis Security",
-					[
-						["hgun_P07_snds_F",nil,1000],
-						["16Rnd_9x21_Mag",nil,50],
-						["arifle_MXC_Black_F",nil,1000],
-						["arifle_MX_Black_F",nil,1000],
-						["arifle_MX_SW_Black_F",nil,1000],
-						["arifle_MXM_Black_F",nil,1000],
-						["muzzle_snds_H",nil,500],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["100Rnd_65x39_caseless_mag",nil,100],
-						["optic_Arco",nil,500],
-						["optic_Hamr",nil,500],
-						["optic_MRCO",nil,500],
-						["optic_DMS",nil,500],
-						["optic_NVS",nil,500],
-						["optic_SOS",nil,500],
-						["optic_LRPS",nil,500]
-					]
-				];
-			};
-		};
 	};
 	case "umwelt":
 	{

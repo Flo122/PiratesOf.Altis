@@ -69,7 +69,7 @@ switch (_code) do
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case civilian : {if(!visibleMap) then {[] spawn life_fnc_gangMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
-			case east: {if(!visibleMap) then {[] spawn life_fnc_APHMarkers;}};
+			case east: {if(!visibleMap) then {[] spawn life_fnc_PMOMarkers;}};
 		};
 	};
 	
@@ -131,7 +131,7 @@ switch (_code) do
 		{
 			[] call life_fnc_restrainAction;
 		};
-		//Cops -> APH
+		//Cops -> PMO
 		if(_shift) then {_handled = true;};
 		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == east) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 		{
@@ -225,9 +225,6 @@ switch (_code) do
 					};
 					if(playerSide == independent) then {
 						[vehicle player] call life_fnc_medicSirenLights;
-					};
-					if(playerSide == east) then {
-						[vehicle player] call life_fnc_APHSirenLights;
 					};
 					_handled = true;
 			};

@@ -13,12 +13,11 @@ disableSerialization;
 //Cop / Civ Pre Check
 if((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian) exitWith {hint localize "STR_Shop_NotaCiv"; closeDialog 0;};
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
-if((_this select 3) == "sec" && !license_civ_sec) exitWith {hint localize "STR_Shop_NotaSec"; closeDialog 0;};
 if((_this select 3) == "donator" && !license_civ_donator) exitWith {hint localize "STR_Shop_NotaDonator"; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};
 if((_this select 3) in ["medic"] && playerSide != independent) exitWith { hint localize "STR_Shop_NotaMedic"; closeDialog 0;};
-if((_this select 3) in ["APH"] && playerSide != east) exitWith { hint localize "STR_Shop_NotaAPH"; closeDialog 0;};
+if((_this select 3) in ["PMO"] && playerSide != east) exitWith { hint localize "STR_Shop_NotaPMO"; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 

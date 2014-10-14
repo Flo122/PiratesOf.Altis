@@ -105,7 +105,6 @@ switch (_var) do
 	
 	//License Block
 	case "license_civ_donator": {(localize "STR_License_Donator")};
-	case "license_civ_sec": {(localize "STR_License_Sec")};
 	case "license_civ_driver": {(localize "STR_License_Driver")};
 	case "license_civ_air": {(localize "STR_License_Pilot")};
 	case "license_civ_heroin": {(localize "STR_License_Heroin")};

@@ -14,33 +14,18 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 	if(count _vehicleData == 0) exitWith {deleteVehicle _vehicle}; //Bad vehicle.
 	_vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
-	if(playerSide == west) then {
 	[[0,format[localize "STR_NOTF_BeingImpounded",(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-	};
-	if(playerSide == east) then {
-	[[0,format[localize "STR_APH_BeingImpounded",(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-	};
 	
 	life_action_inUse = true;
 	
-	if(playerSide == west) then {
 	_upp = localize "STR_NOTF_Impounding";
-	};
-	if(playerSide == east) then {
-	_upp = localize "STR_APH_Impounding";
-	};
 	//Setup our progress bar.
 	disableSerialization;
 	5 cutRsc ["life_progress","PLAIN"];
 	_ui = uiNameSpace getVariable "life_progress";
 	_progress = _ui displayCtrl 38201;
 	_pgText = _ui displayCtrl 38202;
-	if(playerSide == west) then {
 	_pgText ctrlSetText format["%2 wird beschlagnahmt (1%1)...","%",_vehicleName];
-	};
-	if(playerSide == east) then {
-	_pgText ctrlSetText format["%2 wird eingelagert (1%1)...","%",_vehicleName];
-	};
 	_progress progressSetPosition 0.01;
 	_cP = 0.01;
 	while{true} do
@@ -56,7 +41,6 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	5 cutText ["","PLAIN"];
 	
 	if((player distance _vehicle > 10) && (playerSide == west)) exitWith {hint localize "STR_NOTF_ImpoundingCancelled"; life_action_inUse = false;};
-	if((player distance _vehicle > 10) && (playerSide == east)) exitWith {hint localize "STR_APH_ImpoundingCancelled"; life_action_inUse = false;};
 
 	if(!alive player) exitWith {life_action_inUse = false;};
 	if((count crew _vehicle) == 0) then
@@ -80,24 +64,13 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 		
 		waitUntil {!life_impound_inuse};
 		
-		if(playerSide == west) then {
 		hint format[localize "STR_NOTF_Impounded",_type,_price];
 		[[0,format[localize "STR_NOTF_HasImpounded",profileName,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-		};
-		if(playerSide == east) then {
-		hint format[localize "STR_APH_Impounded",_type,_price];
-		[[0,format[localize "STR_APH_HasImpounded",profileName,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-		};
 		life_atmcash = life_atmcash + _price;
 	}
 		else
 	{
-		if(playerSide == west) then {
 		hint localize "STR_NOTF_ImpoundingCancelled";
-		};
-		if(playerSide == east) then {
-		hint localize "STR_APH_ImpoundingCancelled";
-		};
 	};
 };
 life_action_inUse = false;

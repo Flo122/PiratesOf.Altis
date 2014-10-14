@@ -47,7 +47,7 @@ switch (_vehicle) do
 			case 12: {_color = "Sushi"};
 			case 13: {_color = "Marihuana"};
 			case 14: {_color = "Rebel"};
-			case 15: {_color = "APH"};
+			case 15: {_color = "PMO"};
 			case 16: {_color = "Unicorn"};
 		};
 	};
@@ -199,7 +199,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "APH"};
+			case 0: {_color = "PMO"};
 		};
 	};
 	// HEMTT
@@ -231,7 +231,7 @@ switch (_vehicle) do
 			case 13: {_color = "RedBull"};
 			case 14: {_color = "Rebel"};
 			case 15: {_color = "Schwarz"};
-			case 16: {_color = "APH"};
+			case 16: {_color = "PMO"};
 		};
 	};
 	// Orca
@@ -275,7 +275,7 @@ switch (_vehicle) do
 			case 0: {_color = "Ion"};
 			case 1: {_color = "Dahoman"};
 			case 2: {_color = "Rebel"};
-			case 3: {_color = "APH"};
+			case 3: {_color = "PMO"};
 		};
 	};
 	// Hunter

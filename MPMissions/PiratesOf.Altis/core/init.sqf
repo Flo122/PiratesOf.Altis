@@ -67,8 +67,8 @@ switch (playerSide) do
 		
 	case east:
 	{
-		//Initialize APH and blah
-		_handle = [] spawn life_fnc_initAPH;
+		//Initialize PMO and blah
+		_handle = [] spawn life_fnc_initPMO;
 		waitUntil {scriptDone _handle};
 	};
 	

@@ -17,14 +17,13 @@ switch (life_veh_shop select 0) do
 {
 	case "med_shop": {_ret = true;};
 	case "kart_shop": {_ret = license_civ_driver;};
-	case "APH_air_hs": {_ret = true;};
-	case "APH_shop": {_ret = true;};
-	case "APH_basic": {_ret = true;};
+	case "PMO_air_hs": {_ret = true;};
+	case "PMO_shop": {_ret = true;};
+	case "PMO_basic": {_ret = true;};
 	case "med_air_hs": {_ret = license_med_air;};
 	case "civ_car": {_ret = license_civ_driver;};
 	case "civ_ship": {_ret = license_civ_boat;};
 	case "civ_air": {_ret = license_civ_air;};
-	case "sec": {_ret = license_civ_sec;};
 	case "cop_air": {_ret = license_cop_air;};
 	case "cop_airhq": {_ret = license_cop_air;};
 	case "civ_truck":	{_ret = license_civ_truck;};

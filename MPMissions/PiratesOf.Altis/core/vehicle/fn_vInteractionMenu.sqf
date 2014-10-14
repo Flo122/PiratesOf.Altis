@@ -121,57 +121,45 @@ if(playerSide == civilian) then {
 };
  
 if(playerSide == east) then {
+ 	//Set Repair Action
+	_Btn1 ctrlSetText localize "STR_vInAct_Repair";
+	_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
  
-		//Set Repair Action
-		_Btn1 ctrlSetText localize "STR_vInAct_Repair";
-		_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
- 
-		if("ToolKit" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
-		
-		if(count crew _curTarget == 0) then {_Btn2 ctrlEnable false;};
-		_Btn2 ctrlSetText localize "STR_vInAct_PullOut";
-		_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
-		
-		_Btn3 ctrlSetText localize "STR_vInAct_Registration";
-		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
-		
-		//Check that you are near a place to APH impound.
-		if(!((player distance (getMarkerPos "APH_impound_1") < 50) OR  (player distance (getMarkerPos "APH_impound_2") < 50) OR (player distance (getMarkerPos "APH_impound_3") < 50))) then 
-		{
-			_Btn4 ctrlEnable false;
-		};
-		
-		_Btn4 ctrlSetText localize "STR_vInAct_Impound";
-		_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
-		
-		if(_curTarget isKindOf "Ship") then {
-			_Btn5 ctrlSetText localize "STR_vInAct_PushBoat";
-			_Btn5 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
-			if(_curTarget isKindOf "Ship" && {local _curTarget} && {count crew _curTarget == 0}) then { _Btn2 ctrlEnable true;} else {_Btn2 ctrlEnable false};
-		} else {
+	if("ToolKit" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
+	
+	//unflip und boot push
+	if(_curTarget isKindOf "Ship") then {
+		_Btn2 ctrlSetText localize "STR_vInAct_PushBoat";
+		_Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
+		if(_curTarget isKindOf "Ship" && {local _curTarget} && {count crew _curTarget == 0}) then { _Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
+	} else {
 		if(typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kart_01_Red_F","C_Kart_01_Fuel_F","C_Kart_01_Vrana_F"]) then {
-			_Btn5 ctrlSetText localize "STR_vInAct_GetInKart";
-			_Btn5 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
-			if(count crew _curTarget == 0 && {canMove _curTarget} && {locked _curTarget == 0}) then {_Btn2 ctrlEnable true;} else {_Btn2 ctrlEnable false};
+			_Btn2 ctrlSetText localize "STR_vInAct_GetInKart";
+			_Btn2 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
+			if(count crew _curTarget == 0 && {canMove _curTarget} && {locked _curTarget == 0}) then {_Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
 		} else {
-			_Btn5 ctrlSetText localize "STR_vInAct_Unflip";
-			_Btn5 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
-			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn2 ctrlEnable false;} else {_Btn2 ctrlEnable true;};
+			_Btn2 ctrlSetText localize "STR_vInAct_Unflip";
+			_Btn2 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
+			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
 		};
-		
-		_Btn6 ctrlShow false;
-		
-		if(_curTarget in life_vehicles) then {
-		_Btn6 ctrlShow false;
-		} else {
-		_Btn6 ctrlEnable true;
-		_Btn6 ctrlShow true;
-		_Btn6 ctrlSetText localize "STR_vInAct_keyVehAction";
-		_Btn6 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_keyVehAction;";
-		};
-
 	};
-};
+	
+	if(typeOf _curTarget == "O_Truck_03_device_F") then {
+		_Btn3 ctrlSetText localize "STR_vInAct_DeviceMine";
+		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_deviceMine";
+		if(!isNil {(_curTarget getVariable "mining")} OR !local _curTarget && {_curTarget in life_vehicles}) then {
+			_Btn3 ctrlEnable false;
+		} else {
+			_Btn3 ctrlEnable true;
+		};
+	} else {
+		_Btn3 ctrlShow false;
+	};
+	
+	_Btn4 ctrlShow false;
+	_Btn5 ctrlShow false;
+	_Btn6 ctrlShow false;
+		};
  
 if(playerSide == independent) then {
 	

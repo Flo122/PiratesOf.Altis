@@ -235,7 +235,6 @@ life_licenses =
 	["license_cop_cg","cop"],
 	["license_med_air","med"],
 	["license_civ_donator","civ"],
-	["license_civ_sec","civ"],
 	["license_civ_home","civ"],
 	["license_civ_rebel","civ"],
 	["license_civ_bm","civ"],	

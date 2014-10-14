@@ -37,18 +37,17 @@ switch (_shop) do
 		];
 	};
 	
-	case "APH_shop":
+	case "PMO_shop":
 	{
 		_return = [
-			["C_Offroad_01_F",10000],
-			["B_Truck_01_mover_F",40000]
+			["C_SUV_01_F",25000],
+			["I_MRAP_03_F",200000]
 		];
 	};
 	
-	case "APH_air_hs": {
+	case "PMO_air_hs": {
 		_return = [
-			["B_Heli_Light_01_F",50000],
-			["I_Heli_Transport_02_F",100000]
+			["B_Heli_Light_01_F",200000]
 		];
 	};
 	case "civ_car":
@@ -102,19 +101,6 @@ switch (_shop) do
 			["C_Boat_Civil_01_F",22000],
 			["B_SDV_01_F",1000000]
 		];
-	};
-	
-	case "sec":
-	{
-		if(license_civ_sec) then
-		{
-			_return pushBack
-			["C_SUV_01_F",25000];
-			_return pushBack
-			["I_MRAP_03_F",200000];
-			_return pushBack
-			["B_Heli_Light_01_F",200000];
-		};
 	};
 	
 	case "reb_car":

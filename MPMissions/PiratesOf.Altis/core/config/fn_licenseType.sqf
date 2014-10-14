@@ -20,7 +20,6 @@ switch (_mode) do
 			case "sek": {_var = "license_cop_sek"}; //Swat License cost
 			case "cg": {_var = "license_cop_cg"}; //Coast guard license cost
 			case "mair": {_var = "license_med_air"};
-			case "sec": {_var = "license_civ_sec"};
 			case "driver": {_var = "license_civ_driver"}; //Drivers License cost
 			case "truck":{_var = "license_civ_truck"}; //Truck License
 			case "pilot": {_var = "license_civ_air"}; //Pilot/air license cost
@@ -77,7 +76,6 @@ switch (_mode) do
 			case "license_cop_sek": {_var = "sek"}; //Swat License cost
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
 			case "license_med_air": {_var = "mair"};
-			case "license_civ_sec": {_var = "sec"};
 			case "license_civ_driver": {_var = "driver"}; //Drivers License cost
 			case "license_civ_truck":{_var = "truck"}; //Truck License
 			case "license_civ_air": {_var = "pilot"}; //Pilot/air license cost

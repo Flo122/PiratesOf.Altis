@@ -460,13 +460,13 @@
 			<Italian>Msg medici</Italian>
 			<Portuguese>Chamar SAMU</Portuguese>
 		</Key>		
-		<Key ID="STR_CELL_APHRequest">
-			<Original>An den APH</Original>
-			<English>An den APH</English>
-			<German>An den APH</German>
-			<French>An den APH</French>
-			<Italian>An den APH</Italian>
-			<Portuguese>An den APH</Portuguese>
+		<Key ID="STR_CELL_PMORequest">
+			<Original>An den PMO</Original>
+			<English>An den PMO</English>
+			<German>An den PMO</German>
+			<French>An den PMO</French>
+			<Italian>An den PMO</Italian>
+			<Portuguese>An den PMO</Portuguese>
 		</Key>		
 		<Key ID="STR_CELL_CopMSGAllBTN">
 			<Original>Globale Nachricht</Original>
@@ -1594,48 +1594,6 @@
 			<Italian>%1 ha sequestrato il %2 di %3</Italian>
 		</Key>
 		<Key ID="STR_NOTF_AbortESC">
-			<Original>Abort available in %1</Original>
-			<English>Abort available in %1</English>
-			<German>Abbruch möglich in %1</German>
-			<French>Abandonner disponible dans %1</French>
-			<Italian>Abbandona disponibile in %1</Italian>
-		</Key>
-		<Key ID="STR_APH_BeingImpounded">
-			<Original>%1 your %2 is being impounded by the APH.</Original>
-			<English>%1 your %2 is being impounded by the APH.</English>
-			<German>%1 dein %2 wird vom APH eingelagert.</German>
-			<French>%1 votre %2 est envoyé a la fourrière par la APH.</French>
-			<Italian>%1 il tuo %2 sta per essere sequestrato dalla APH.</Italian>
-		</Key>
-		<Key ID="STR_APH_Impounding">
-			<Original>Impounding Vehicle</Original>
-			<English>Impounding Vehicle</English>
-			<German>Fahrzeug wird beschlagnahmt</German>
-			<French>Mise en fourrière</French>
-			<Italian>Sequestro Veicolo in corso</Italian>
-		</Key>
-		<Key ID="STR_APH_ImpoundingCancelled">
-			<Original>Impounding has been cancelled.</Original>
-			<English>Impounding has been cancelled.</English>
-			<German>Einlagerung abgebrochen.</German>
-			<French>Mise en fourrière annulée.</French>
-			<Italian>Il sequestro è stato annullato.</Italian>
-		</Key>
-		<Key ID="STR_APH_Impounded">
-			<Original>You have impounded a %1\n\nYou have received $%2 for cleaning up the streets!</Original>
-			<English>You have impounded a %1\n\nYou have received $%2 for cleaning up the streets!</English>
-			<German>Du hast einen %1 eingelagert\n\nDu hast $%2 als Entlohnung bekommen!</German>
-			<French>Vous avez mis en fourrière un(e) %1\n\nVous avez reçus $%2 pour avoir nettoyé les rues!</French>
-			<Italian>Hai sequestrato un %1\n\nHai ricevuto €%2 per aver mantenuto l'ordine nelle strade!</Italian>
-		</Key>
-		<Key ID="STR_APH_HasImpounded">
-			<Original>%1 has impounded %2's %3</Original>
-			<English>%1 has impounded %2's %3</English>
-			<German>%1 hat %2's %3 beschlagnahmt</German>
-			<French>%1 a mis en fourrière le %3 de %2.</French>
-			<Italian>%1 ha sequestrato il %2 di %3</Italian>
-		</Key>
-		<Key ID="STR_APH_AbortESC">
 			<Original>Abort available in %1</Original>
 			<English>Abort available in %1</English>
 			<German>Abbruch möglich in %1</German>
@@ -3454,10 +3412,10 @@
 			<English>Security Service</English>
 			<German>Sicherheitsdienst</German>
 		</Key>
-		<Key ID="STR_License_APH">
-			<Original>APH Flight License</Original>
-			<English>APH Flight License</English>
-			<German>APH Fluglizenz</German>
+		<Key ID="STR_License_PMO">
+			<Original>PMO Flight License</Original>
+			<English>PMO Flight License</English>
+			<German>PMO Fluglizenz</German>
 		</Key>
 		<Key ID="STR_License_Bm">
 			<Original>Black Market License</Original>
@@ -4614,7 +4572,7 @@
 		<Key ID="STR_vInAct_Impound_disabled">
 			<Original>Impound Vehicle</Original>
 			<English>Impound Vehicle</English>
-			<German>APH verstaendigen</German>
+			<German>PMO verstaendigen</German>
 			<French>Mise en fourrière</French>
 			<Italian>Sequestra Veicolo</Italian>
 		</Key>
@@ -4791,9 +4749,9 @@
 			<English>You are not a Medic!</English>
 			<German>Du bist kein Sanitäter!</German>
 		</Key>		
-		<Key ID="STR_Shop_NotaAPH">
-			<Original>You are not a APH!</Original>
-			<English>You are not a APH!</English>
+		<Key ID="STR_Shop_NotaPMO">
+			<Original>You are not a PMO!</Original>
+			<English>You are not a PMO!</English>
 			<German>Du bist kein Pannenhelfer!</German>
 		</Key>
 		<Key ID="STR_Shop_YouNeed">

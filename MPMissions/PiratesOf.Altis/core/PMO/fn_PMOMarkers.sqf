@@ -5,13 +5,13 @@
 	Description:
 	Marks cops on the map for other cops. Only initializes when the actual map is open.
 */
-private["_markers","_APH"];
+private["_markers","_PMO"];
 _markers = [];
-_APH = [];
+_PMO = [];
 
 sleep 0.5;
 if(visibleMap) then {
-	{if(side _x == east) then {_APH pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
+	{if(side _x == east) then {_PMO pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
 	
 	//Create markers
 	{
@@ -21,7 +21,7 @@ if(visibleMap) then {
 		_marker setMarkerTextLocal format["%1", name _x];
 	
 		_markers pushBack [_marker,_x];
-	} foreach _APH;
+	} foreach _PMO;
 		
 	while {visibleMap} do
 	{
@@ -43,5 +43,5 @@ if(visibleMap) then {
 
 	{deleteMarkerLocal (_x select 0);} foreach _markers;
 	_markers = [];
-	_APH = [];
+	_PMO = [];
 };

@@ -65,12 +65,6 @@ switch (_side) do
 			["donator_spawn","Donatorcamp","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};
-		if(license_civ_sec) then
-		{
-		_return = _return + [
-			["sec_spawn","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
-			];
-		};
 	
 		if(count life_houses > 0) then {
 			{
@@ -93,9 +87,7 @@ switch (_side) do
 	
 	case east: {
 		_return = [
-			["APH_spawn_1","Kavala APH","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["APH_spawn_2","Flughafen APH","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["APH_spawn_3","Sofia APH","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["PMO_spawn","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};
 };

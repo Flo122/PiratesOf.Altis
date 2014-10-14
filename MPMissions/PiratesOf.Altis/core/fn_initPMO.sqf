@@ -1,6 +1,6 @@
 #include <macro.h>
 /*
-	File: fn_initAPH.sqf
+	File: fn_initPMO.sqf
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
@@ -10,7 +10,7 @@ private["_end"];
 player addRating 99999999;
 waitUntil {!(isNull (findDisplay 46))};
 
-	if((__GETC__(life_APHlevel) < 1) && (__GETC__(life_adminlevel) == 0)) then {
+	if((__GETC__(life_PMOlevel) < 1) && (__GETC__(life_adminlevel) == 0)) then {
 		["NotWhitelisted",false,true] call BIS_fnc_endMission;
 		sleep 35;
 	};

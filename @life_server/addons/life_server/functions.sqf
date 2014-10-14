@@ -221,8 +221,8 @@ compileFinal "
 	hint format[""Du hast eine Nachricht an die Sanitäter versendet."",_to,_msg];
 	ctrlShow[3022,true];
 ";
-//To APH
-TON_fnc_cell_APHrequest = 
+//To PMO
+TON_fnc_cell_PMOrequest = 
 compileFinal "
 	private[""_msg"",""_to""];
 	if(({side _x == east} count playableUnits) == 0) exitWith {hint ""Zurzeit ist kein Pannenhelfer im Dienst. Bitte probiere es später nochmal.""};
@@ -233,7 +233,7 @@ compileFinal "
 		
 	[[_msg,name player,6],""TON_fnc_clientMessage"",east,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""Du hast eine Nachricht an den APH versendet."",_to,_msg];
+	hint format[""Du hast eine Nachricht an den PMO versendet."",_to,_msg];
 	ctrlShow[3023,true];
 ";
 //Admin to All
@@ -256,7 +256,7 @@ publicVariable "TON_fnc_cell_textadmin";
 publicVariable "TON_fnc_cell_adminmsg";
 publicVariable "TON_fnc_cell_adminmsgall";
 publicVariable "TON_fnc_cell_emsrequest";
-publicVariable "TON_fnc_cell_APHrequest";
+publicVariable "TON_fnc_cell_PMOrequest";
 publicVariable "TON_fnc_cell_copmsgall";
 
 //Client Message
@@ -344,10 +344,10 @@ compileFinal "
 		
 		case 6: {
 			private[""_message""];
-			_message = format["">>>APH Anfrage: %1"",_msg];
-			hint parseText format [""<t color='#FFFF00'><t size='2'><t align='center'>APH Anfrage<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Dich<br/><t color='#33CC33'>Von: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%2"",_from,_msg];
+			_message = format["">>>PMO Anfrage: %1"",_msg];
+			hint parseText format [""<t color='#FFFF00'><t size='2'><t align='center'>PMO Anfrage<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Dich<br/><t color='#33CC33'>Von: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
-			[""TextMessage"",[format[""APH Anfrage von %1"",_from]]] call bis_fnc_showNotification;
+			[""TextMessage"",[format[""PMO Anfrage von %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
 		};
 		

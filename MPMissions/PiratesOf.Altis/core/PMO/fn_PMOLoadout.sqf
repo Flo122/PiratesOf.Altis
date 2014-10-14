@@ -1,5 +1,5 @@
 /*
-	File: fn_APHLoadout.sqf
+	File: fn_PMOLoadout.sqf
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
