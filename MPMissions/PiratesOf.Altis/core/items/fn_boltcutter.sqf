@@ -10,9 +10,9 @@ if(isNull _building) exitWith {};
 if(!(_building isKindOf "House_F")) exitWith {hint "You are not looking at a house door."};
 if(isNil "life_boltcutter_uses") then {life_boltcutter_uses = 0;};
 if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building) then {
-	[[[1,2],localize "STR_ISTR_Bolt_AlertFed"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	[[[1,2],"STR_ISTR_Bolt_AlertFed",true,[]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 } else {
-	[[0,format[localize "STR_ISTR_Bolt_AlertHouse",profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	[[0,"STR_ISTR_Bolt_AlertHouse",true,[profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 };
 
 _doors = 1;
@@ -46,7 +46,7 @@ _cP = 0.01;
 switch (typeOf _building) do {
 	case "Land_Dome_Big_F": {_cpRate = 0.003;};
 	case "Land_Research_house_V1_F": {_cpRate = 0.0015;};
-	default {_cpRate = 0.005;}
+	default {_cpRate = 0.08;}
 };
 
 while {true} do
@@ -87,4 +87,4 @@ _building setVariable[format["bis_disabled_Door_%1",_door],0,true]; //Unlock the
 if((_building getVariable["locked",false])) then {
 	_building setVariable["locked",false,true];
 };
-[[getPlayerUID player,profileName,"55"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+[[getPlayerUID player,profileName,"459"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;

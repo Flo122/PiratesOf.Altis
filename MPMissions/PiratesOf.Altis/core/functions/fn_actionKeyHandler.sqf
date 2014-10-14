@@ -19,12 +19,12 @@ if(isNull _curTarget) exitWith {
 		if(!isNil "_fish") then {
 			[_fish] call life_fnc_catchFish;
 		};
-		} else {
-if(playerSide == civilian) then {
-	_handle = [] spawn life_fnc_switch;
-	waitUntil {scriptDone _handle};
-};
-};
+	} else {
+		if((playerSide == civilian) or (playerSide == east)) then {
+			_handle = [] spawn life_fnc_switch;
+			waitUntil {scriptDone _handle};
+		};
+	};
 };
 
 if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith {

@@ -674,11 +674,11 @@
 			<Italian>Catturando il Covo</Italian>
 		</Key>
 		<Key ID="STR_GNOTF_CaptureSuccess">
-			<Original>%1 and his gang: %2 - have taken control of a local hideout!</Original>
-			<English>%1 and his gang: %2 - have taken control of a local hideout!</English>
+			<Original>%1 und seine Gang: %2 - haben die Kontrolle über ein lokales Versteck übernommen!</Original>
+			<English>%1 und seine Gang: %2 - haben die Kontrolle über ein lokales Versteck übernommen!</English>
 			<German>%1 und seine Gang: %2 - haben die Kontrolle über ein lokales Versteck übernommen!</German>
-			<French>%1 et sa gang: %2 ont pris le controle de la cachette !</French>
-			<Italian>%1 e la sua Gang: % 2 - hanno preso il controllo di un Covo!</Italian>
+			<French>%1 und seine Gang: %2 - haben die Kontrolle über ein lokales Versteck übernommen!</French>
+			<Italian>%1 und seine Gang: %2 - haben die Kontrolle über ein lokales Versteck übernommen!</Italian>
 		</Key>
 		<Key ID="STR_GNOTF_Over32">
 			<Original>You can't have a gang name longer then 32 characters.</Original>
@@ -987,7 +987,7 @@
 		<Key ID="STR_Garage_SoldCar">
 			<Original>You sold that vehicle for $%1</Original>
 			<English>You sold that vehicle for $%1</English>
-			<German>Du verkaufst dein Fahrzeug für $%1</German>
+			<German>Du hast dein Fahrzeug für $%1 verkauft</German>
 			<French>Vous avez vendu votre véhicule pour $%1</French>
 			<Italian>Hai venduto il veicolo per €%1</Italian>
 		</Key>

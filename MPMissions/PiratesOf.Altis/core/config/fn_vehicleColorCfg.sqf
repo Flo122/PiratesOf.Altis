@@ -112,7 +112,7 @@
 					["textures\rebel\rebel_suv.paa","reb"],
 					["textures\civ\civ_suv_monster.paa","civ"],
 					["textures\cop\sek_suv.paa","cop"],
-					["textures\civ\civ_suv_PMO.paa","PMO"],
+					["textures\civ\civ_suv_PMO.jpg","PMO"],
 					["textures\civ\civ_suv_poa.paa","civ"]
 				];
 			};
@@ -269,7 +269,7 @@
                     [
                             [_path + "Skins\heli_transport_02_1_ion_co.paa","civ",_path + "Skins\heli_transport_02_2_ion_co.paa",_path + "Skins\heli_transport_02_3_ion_co.paa"],
                             [_path + "Skins\heli_transport_02_1_dahoman_co.paa","civ",_path + "Skins\heli_transport_02_2_dahoman_co.paa",_path + "Skins\heli_transport_02_3_dahoman_co.paa"],
-                            [_path + "heli_transport_02_1_indp_co.paa","reb",_path + "heli_transport_02_2_indp_co.paa",_path + "heli_transport_02_3_indp_co.paa"]s
+                            [_path + "heli_transport_02_1_indp_co.paa","reb",_path + "heli_transport_02_2_indp_co.paa",_path + "heli_transport_02_3_indp_co.paa"]
                     ];
             };             
             // Hunter

@@ -7,7 +7,7 @@
 	meant to keep the network traffic down with large sums of data flowing
 	through life_fnc_MP
 */
-private["_mode","_packet","_array","_flag"];
+private["_mode","_packet","_array","_flag","_value","_value2"];
 _mode = [_this,0,0,[0]] call BIS_fnc_param;
 _packet = [steamid,playerSide,nil,_mode];
 _array = [];
@@ -49,6 +49,19 @@ switch(_mode) do {
 	case 6: {
 		_packet set[2,life_cash];
 		_packet set[4,life_atmcash];
+	};
+	
+	case 8: {
+	_value = [_this,2,[],[[]]] call BIS_fnc_param;
+	_value = [_value] call DB_fnc_mresArray;
+	_value2 = [_this,4,0,[0]] call BIS_fnc_param;
+	_value2 = [_value2] call DB_fnc_numberSafe;
+	switch(_side) do {
+	case west: {_query = format["UPDATE players SET cop_gear='%1', cash='%2' WHERE playerid='%3'",_value,_value2,_uid];};
+	case civilian: {_query = format["UPDATE players SET civ_gear='%1', cash='%2' WHERE playerid='%3'",_value,_value2,_uid];};
+	case independent: {_query = format["UPDATE players SET med_gear='%1', cash='%2' WHERE playerid='%3'",_value,_value2,_uid];};
+	case east: {_query = format["UPDATE players SET PMO_gear='%1', cash='%2' WHERE playerid='%3'",_value,_value2,_uid];};
+	};
 	};
 };
 

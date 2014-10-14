@@ -32,7 +32,6 @@ if(vehicle player != player) exitWith {hint localize "STR_ISTR_Pick_MineVeh";};
 
 _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
-life_pickaxe_delay = true;
 life_action_gather = true;
 [player,"mining"] call life_fnc_globalSound;
 for "_i" from 0 to 2 do
@@ -49,5 +48,4 @@ if(([true,_mine,_diff] call life_fnc_handleInv)) then
 };
 
 sleep 0.5;
-delay_pickaxe = false;
 life_action_gather = false;

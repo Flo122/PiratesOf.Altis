@@ -77,6 +77,12 @@ switch(_mode) do {
 		_array = [_this,2,[],[[]]] call BIS_fnc_param;
 		[_uid,_side,_array,0] call TON_fnc_keyManagement;
 	};
+	
+	case 8: {
+	[] call life_fnc_saveGear;
+	_packet set[2,life_gear];
+	_packet set[4,life_tune];
+	};
 };
 
 if(_query == "") exitWith {};

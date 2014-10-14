@@ -63,27 +63,27 @@ while {true} do
 	if(life_interrupted) exitWith {_hideout setVariable["inCapture",false,true];};
 };
 
-//Kill the UI display and check for various states
-5 cutText ["","PLAIN"];
-player playActionNow "stop";
-if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;_hideout setVariable["inCapture",false,true];};
-if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_GNOTF_CaptureCancel","PLAIN"]; life_action_inUse = false;_hideout setVariable["inCapture",false,true];};
-life_action_inUse = false;
+	//Kill the UI display and check for various states
+	5 cutText ["","PLAIN"];
+	player playActionNow "stop";
+	if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;_hideout setVariable["inCapture",false,true];};
+	if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_GNOTF_CaptureCancel","PLAIN"]; life_action_inUse = false;_hideout setVariable["inCapture",false,true];};
+	life_action_inUse = false;
 
-titleText["Hideout has been captured.","PLAIN"];
-_flagTexture = [
-		"\A3\Data_F\Flags\Flag_red_CO.paa",
-		"\A3\Data_F\Flags\Flag_green_CO.paa",
-		"\A3\Data_F\Flags\Flag_blue_CO.paa",
-		"\A3\Data_F\Flags\Flag_white_CO.paa",
-		"\A3\Data_F\Flags\flag_fd_red_CO.paa",
-		"\A3\Data_F\Flags\flag_fd_green_CO.paa",
-		"\A3\Data_F\Flags\flag_fd_blue_CO.paa",
-		"\A3\Data_F\Flags\flag_fd_orange_CO.paa"
-	] call BIS_fnc_selectRandom;
-_this select 0 setFlagTexture _flagTexture;
-//_gangName = _group getVariable ["gang_name",""];
-[[[0,1],format[localize "STR_GNOTF_CaptureSuccess",name player,(group player) getVariable "gang_name" ]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	titleText["Hideout has been captured.","PLAIN"];
+	_flagTexture = [
+			"\A3\Data_F\Flags\Flag_red_CO.paa",
+			"\A3\Data_F\Flags\Flag_green_CO.paa",
+			"\A3\Data_F\Flags\Flag_blue_CO.paa",
+			"\A3\Data_F\Flags\Flag_white_CO.paa",
+			"\A3\Data_F\Flags\flag_fd_red_CO.paa",
+			"\A3\Data_F\Flags\flag_fd_green_CO.paa",
+			"\A3\Data_F\Flags\flag_fd_blue_CO.paa",
+			"\A3\Data_F\Flags\flag_fd_orange_CO.paa"
+		] call BIS_fnc_selectRandom;
+	_this select 0 setFlagTexture _flagTexture;
+	//_gangName = _group getVariable ["gang_name",""];
+	[[[0,1],"STR_GNOTF_CaptureSuccess",true,[name player,(group player) getVariable "gang_name"]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
     // CREATE MARKER AT MAP BY Pictureclass
      
     _markername = str(getPos _hideout);

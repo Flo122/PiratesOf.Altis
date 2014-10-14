@@ -52,3 +52,4 @@ life_action_inUse = false;
 _vault setVariable["chargeplaced",false,true];
 life_atmcash = life_atmcash + 50000;
 hint parseText format["Du hast die Bombe erfolgreich entschaerft. Dafuer erhaeltst du $50000."];
+[[0,"STR_ISTR_Defuse_Success"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
