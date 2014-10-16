@@ -49480,7 +49480,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Kohlehandel"",life_fnc_virt_menu,""kohle""]; this setVariable[""realname"",""Kohlehandel""];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Kohlehandel"",life_fnc_virt_menu,""kohle"",0,FALSE,FALSE,"""",' vehicle player == player && player distance cursorTarget < 4 ']; this setVariable[""realname"",""Kohlehandel""];";
 		};
 		class Item4587
 		{

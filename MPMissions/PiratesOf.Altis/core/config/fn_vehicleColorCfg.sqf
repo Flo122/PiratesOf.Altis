@@ -101,19 +101,19 @@
 					["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
 					["textures\cop\cop_suv.paa","cop"],
 					["textures\medic\medic_suv.paa","med"],
-					["textures\civ\civ_suv_wm.paa","civ"],
-					["textures\civ\civ_suv_batman.paa","civ"],
-					["textures\civ\civ_suv_carbon.paa","civ"],
-					["textures\civ\civ_suv_carbonwhite.paa","civ"],
-					["textures\civ\civ_suv_fast.paa","civ"],
-					["textures\civ\civ_suv_ferrari.paa","civ"],
-					["textures\civ\civ_suv_skull.paa","civ"],
-					["textures\civ\civ_suv_yokohama.paa","civ"],
-					["textures\rebel\rebel_suv.paa","reb"],
-					["textures\civ\civ_suv_monster.paa","civ"],
-					["textures\cop\sek_suv.paa","cop"],
+					["textures\civ\civ_suv_wm.jpg","civ"],
+					["textures\civ\civ_suv_batman.jpg","civ"],
+					["textures\civ\civ_suv_carbon.jpg","civ"],
+					["textures\civ\civ_suv_carbonwhite.jpg","civ"],
+					["textures\civ\civ_suv_fast.jpg","civ"],
+					["textures\civ\civ_suv_ferrari.jpg","civ"],
+					["textures\civ\civ_suv_skull.jpg","civ"],
+					["textures\civ\civ_suv_yokohama.jpg","civ"],
+					["textures\rebel\rebel_suv.jpg","reb"],
+					["textures\civ\civ_suv_monster.jpg","civ"],
+					["textures\cop\sek_suv.jpg","cop"],
 					["textures\civ\civ_suv_PMO.jpg","PMO"],
-					["textures\civ\civ_suv_poa.paa","civ"]
+					["textures\civ\civ_suv_poa.jpg","civ"]
 				];
 			};
             // Truck
