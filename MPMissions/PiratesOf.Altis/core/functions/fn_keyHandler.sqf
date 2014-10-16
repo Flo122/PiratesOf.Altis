@@ -87,15 +87,6 @@ switch (_code) do
 				player selectWeapon life_curWep_h;
 			};
 		};
-		
-		if(_ctrlKey) then {_handled = true;};
-		if (_ctrlKey) then
-		{
-			if(!_alt && !_shift && !dialog) then
-			{
-				createDialog "Life_my_smartphone"; //Call SmartPhone Dialog
-			};
-		};
 	};
 	
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
