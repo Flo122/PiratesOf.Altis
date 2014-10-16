@@ -17,10 +17,6 @@ disableSerialization;
 
 if (_type == -1) exitwith {};
 
-
-
-//if(!([_amount] call fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
-
 switch (_add) do {
 	case 0 : {
 	if (_type == 0 ) then {
