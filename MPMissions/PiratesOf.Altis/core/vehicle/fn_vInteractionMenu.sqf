@@ -65,6 +65,7 @@ if(playerSide == west) then {
 		};
 	};
 	
+<<<<<<< HEAD
 	if(({side _x == east} count playableUnits) > 999) then {
 	_Btn6 ctrlShow false;
 	_Btn6 ctrlEnable false;
@@ -72,6 +73,10 @@ if(playerSide == west) then {
 	} else {
 	_Btn6 ctrlShow true;
 	_Btn6 ctrlEnable true;
+=======
+	_Btn6 ctrlEnable true;
+	_Btn3 ctrlShow true;
+>>>>>>> origin/master
 	_Btn6 ctrlSetText localize "STR_vInAct_Impound";
 	};
 	

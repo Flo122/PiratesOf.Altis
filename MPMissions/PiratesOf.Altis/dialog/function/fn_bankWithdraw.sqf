@@ -12,5 +12,6 @@ if(_val < 100 && life_atmcash > 999999) exitWith {hint localize "STR_ATM_Withdra
 life_cash = life_cash + _val;
 life_atmcash = life_atmcash - _val;
 hint format [localize "STR_ATM_WithdrawSuccess",[_val] call life_fnc_numberText];
+diag_log format ["%1 hat %2 von seinem Konto abgehoben",player getVariable["realname",name player],[_val] call life_fnc_numberText];
 [] call life_fnc_atmMenu;
 [6] call SOCK_fnc_updatePartial;
