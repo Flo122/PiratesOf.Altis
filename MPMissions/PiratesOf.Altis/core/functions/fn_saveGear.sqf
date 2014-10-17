@@ -141,7 +141,7 @@ if(count (handGunItems player) > 0) then
 {
     _name = (_x select 0);
     _val = (_x select 1);
-    if (_val > 0) then {
+    if (_val >= 0) then {
         for "_i" from 1 to _val do {
             _yItems = _yItems + [_name];
         };
