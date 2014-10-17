@@ -80,8 +80,7 @@ if(playerSide == west) then {
 	_Btn6 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
 	
 };
-	
-};
+
  
 if(playerSide == civilian) then {
 	//Set Repair Action
