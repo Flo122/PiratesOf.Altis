@@ -18,5 +18,6 @@ life_cash = life_cash - _value;
 life_atmcash = life_atmcash + _value;
 
 hint format[localize "STR_ATM_DepositMSG",[_value] call life_fnc_numberText];
+diag_log format ["%1 hat %2 auf sein Konto eingezahlt",player getVariable["realname",name player],[_value] call life_fnc_numberText];
 [] call life_fnc_atmMenu;
 [6] call SOCK_fnc_updatePartial;

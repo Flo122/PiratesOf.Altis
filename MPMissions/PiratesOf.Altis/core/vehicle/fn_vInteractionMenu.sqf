@@ -65,6 +65,8 @@ if(playerSide == west) then {
 		};
 	};
 	
+	_Btn6 ctrlEnable true;
+	_Btn3 ctrlShow true;
 	_Btn6 ctrlSetText localize "STR_vInAct_Impound";
 	_Btn6 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
 	

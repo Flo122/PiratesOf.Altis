@@ -23,4 +23,5 @@ life_atmcash = life_atmcash - (_val + _tax);
 [[_val,profileName],"TON_fnc_clientWireTransfer",_unit,false] spawn life_fnc_MP;
 [] call life_fnc_atmMenu;
 hint format[localize "STR_ATM_SentMoneySuccess",[_val] call life_fnc_numberText,_unit getVariable["realname",name _unit],[_tax] call life_fnc_numberText];
+diag_log format ["%1 hat %2 eine Summe von %3 überwiesen",player getVariable["realname",name player],_unit getVariable["realname",name _unit],[_val] call life_fnc_numberText];
 [1] call SOCK_fnc_updatePartial;
