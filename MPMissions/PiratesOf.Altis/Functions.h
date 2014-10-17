@@ -165,6 +165,7 @@ class Life_Client_Core
 		class vehicleWeightCfg {};
 		class houseConfig {};
 		class seizeCfg {};
+		class resourceCfg {};
 		
 		//Clothing Store Configs
 		class clothing_cop {};
@@ -259,7 +260,6 @@ class Life_Client_Core
 		class globalSoundClient {};
 		class schutzSirene {};
 		class emptyFuel {};
-		class switch {};
 		class addsubstract {};
 	};
 	
@@ -411,7 +411,6 @@ class Life_Client_Core
 	class Items
 	{
 		file = "core\items";
-		class pickaxeUse {};
 		class lockpick {};
 		class handcuffkey {};
 		class spikeStrip {};

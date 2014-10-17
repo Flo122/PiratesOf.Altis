@@ -31,7 +31,6 @@ life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 life_sit = false;
-life_pickaxe_delay = false;
 life_action_gather = false;
 life_tracked = [];
 life_fatigue = 0.5; //Set the max fatigue limit (50%)
@@ -286,6 +285,37 @@ life_licenses =
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
 life_illegal_items = [["heroinu",2263],["heroinp",4527],["cocaine",2674],["cocainep",5348],["cannabis",2182],["marijuana",4365],["turtle",30077],["blastingcharge",100000],["boltcutter",75000],["getreideip",4244],["zuckerip",4922],["tabakip",3977],["kkugel",13987],["spulver",11408],["pbrau",24701],["pkugel",62727],["goldbar",75000],["uranip",12598]];
+
+/*
+	Resources list
+	
+	to remove the ability to gather a specific resource just comment it out on the list (all zones will be deactivated)
+*/
+resource_list = [
+	"apple", 
+	"peach", 
+	"heroinu", 
+	"cocaine", 
+	"cannabis", 
+	"methu", 
+	"traubenu", 
+	"zuckeru", 
+	"getreideu", 
+	"hopfenu", 
+	"tabaku", 
+	"copperore",
+	"ironore",
+	"salt",
+	"sand",
+    "diamond",
+    "oilu",
+	"rock",
+	"zinnu",
+	"silberu",
+	"holzu",
+	"schwefelu",
+	"uran1"
+];
 
 
 /*

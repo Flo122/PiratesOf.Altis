@@ -3,45 +3,68 @@
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
-	Main functionality for gathering.
+	Main functionality for gathering. - rewritten to work with a more user friendly configuration, as well as allowing easily to configure necessary items like pickaxe
 */
-if (life_action_gather) exitWith {hint "Du sammelst bereits!"};
-
-private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone","_dice"];
-_dice = round(random 3) +1;
-_resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","trauben_1","zucker_1","getreide_1","hopfen_1","tabak_1"];
+private["_gather","_itemWeight","_diff","_itemName","_batchSize","_resourceZones","_resourceCfg", "_zone", "_x", "_valRequiredItem", "_requiredItem", "_zoneSize", "_varItem", "_valItem", "_resourcetypeof"];
+//Action is in use, exit before we do anything to prevent spamming. 
+if (life_action_gather) exitWith {}; 
+//we have a heavy loop ahead so we want to prevent people from spamming
+life_action_gather = true;
+//check if we are in the resource zone for any of the resources
 _zone = "";
-
-//Find out what zone we're near
 {
-	if(player distance (getMarkerPos _x) < 50) exitWith {_zone = _x;};
-} foreach _resourceZones;
+	_gather = _x;
+	_resourceCfg = [_gather] call life_fnc_resourceCfg;
+	_resourceZones = _resourceCfg select 0;
+	// if there are no zones defined we are done here
+	if (count _resourceZones == 0) exitWith {};
+	_zoneSize = _resourceCfg select 1;
+	_batchSize = _resourceCfg select 2;
+	_requiredItem = _resourceCfg select 3;
+	_resourcetypeof = _resourceCfg select 4;
+	{
+		if((player distance (getMarkerPos _x)) < _zoneSize) exitWith {_zone = _x;};
+	} forEach _resourceZones;
+	//if we found a zone we are done here as well
+	if(_zone != "") exitWith {};
+} forEach resource_list;
 
 if(_zone == "") exitWith {
-	life_action_inUse = false;
+	//hint localize "STR_NOTF_notNearResource";
+	life_action_gather = false;
 };
 
-//Get the resource that will be gathered from the zone name...
-switch(true) do {
-	case (_zone in ["apple_1","apple_2","apple_3","apple_4"]): {_gather = "apple"; _val = _dice;};
-	case (_zone in ["peaches_1","peaches_2","peaches_3","peaches_4"]): {_gather = "peach"; _val = _dice;};
-	case (_zone in ["heroin_1"]): {_gather = "heroinu"; _val = _dice;};
-	case (_zone in ["cocaine_1"]): {_gather = "cocaine"; _val = _dice;};
-	case (_zone in ["weed_1"]): {_gather = "cannabis"; _val = _dice;};
-	case (_zone in ["trauben_1"]): {_gather = "traubenu"; _val = _dice;};
-	case (_zone in ["zucker_1"]): {_gather = "zuckeru"; _val = _dice;};
-	case (_zone in ["getreide_1"]): {_gather = "getreideu"; _val = _dice;};
-	case (_zone in ["hopfen_1"]): {_gather = "hopfenu"; _val = _dice;};
-	case (_zone in ["tabak_1"]): {_gather = "tabaku"; _val = _dice;};
-	default {""};
+// if an item is required we need to check if we have that particular item in our inventory
+if(_requiredItem == "") then {
+	//to make the exitWith easier we assume that you have one
+	_valItem = 1;
+}
+else {
+	_varItem = [_requiredItem,0] call life_fnc_varHandle;
+	_valItem = missionNamespace getVariable _varItem;
 };
+//lets check and exit with a nice message
+if (_valItem < 1) exitWith {
+	//TODO add translation string
+	titleText["Eine Spitzhacke wird benötigt.","PLAIN"];
+	life_action_gather = false;
+};
+
 //gather check??
-if(vehicle player != player) exitWith {};
+if((vehicle player) != player) exitWith {/*hint localize "STR_NOTF_GatherVeh";*/};
 
-_diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
-life_action_gather = true;
+_diff = [_gather,_batchSize,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+if(_diff == 0) exitWith {
+	hint localize "STR_NOTF_InvFull";
+	life_action_gather = false;
+};
+if (_resourcetypeof == 1) then {
+//sound for harvers or mining
 [player,"harvest"] call life_fnc_globalSound;
+} else {
+[player,"mining"] call life_fnc_globalSound;
+};
+//run gather animation 3 times (0,1,2)
 for "_i" from 0 to 2 do
 {
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";

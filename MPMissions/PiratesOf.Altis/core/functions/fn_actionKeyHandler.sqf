@@ -12,18 +12,13 @@ _curTarget = cursorTarget;
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (getPosASL player);
-if(isNull _curTarget) exitWith {
+if(isNull _curTarget) then {
 	if(_isWater) then {
 		private["_fish"];
 		_fish = (nearestObjects[getPos player,["Fish_Base_F"],3]) select 0;
-		if(!isNil "_fish") then {
-			[_fish] call life_fnc_catchFish;
-		};
+		if(!isNil "_fish") exitWith {[_fish] call life_fnc_catchFish;};
 	} else {
-		if((playerSide == civilian) or (playerSide == east)) then {
-			_handle = [] spawn life_fnc_switch;
-			waitUntil {scriptDone _handle};
-		};
+		if(playerSide == civilian) exitWith {[] call life_fnc_gather;};
 	};
 };
 

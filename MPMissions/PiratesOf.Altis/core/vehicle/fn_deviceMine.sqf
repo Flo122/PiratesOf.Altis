@@ -4,7 +4,7 @@
 	Description:
 	Starts automated mining of resource from the tempest device.
 */
-private["_vehicle","_resourceZones","_zone","_weight","_item","_vInv","_itemIndex"];
+private["_vehicle","_resourceZones","_zone","_weight","_resource","_vInv","_itemIndex","_items","_space","_sum","_itemWeight","_val"];
 _vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _vehicle) exitWith {}; //Null was passed?
 if(!isNil {_vehicle getVariable "mining"}) exitWith {hint localize "STR_NOTF_DeviceIsMining";}; //Mining is already in process..
@@ -12,46 +12,30 @@ closeDialog 0; //Close the interaction menu.
 life_action_inUse = true; //Lock out the interaction menu for a bit..
 _weight = [_vehicle] call life_fnc_vehicleWeight;
 if((_weight select 1) >= (_weight select 0)) exitWith {hint localize "STR_NOTF_DeviceFull"; life_action_inUse = false;};
-_resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","lead_1","iron_1","salt_1","sand_1","diamond_1","oil_1","oil_2","rock_1","getreide_1","hopfen_1","tabak_1","trauben_1","zucker_1","zinn_1","silber_1","holz_1","schwefel_1"];
+//check if we are in the resource zone for any of the resources
 _zone = "";
-
-//Find out what zone we're near
 {
-	if(player distance (getMarkerPos _x) < 150) exitWith {_zone = _x;};
-} foreach _resourceZones;
+	_resource = _x;
+	_resourceCfg = [_resource] call life_fnc_resourceCfg;
+	_resourceZones = _resourceCfg select 0;
+	// if there are no zones defined we are done here
+	if (count _resourceZones == 0) exitWith {};
+	_zoneSize = _resourceCfg select 1;
+	_batchSize = _resourceCfg select 2;
+	_requiredItem = _resourceCfg select 3;
+	{
+		if((player distance (getMarkerPos _x)) < _zoneSize) exitWith {_zone = _x;};
+	} forEach _resourceZones;
+	//if we found a zone we are done here as well
+	if(_zone != "") exitWith {};
+} forEach resource_list;
 
 if(_zone == "") exitWith {
 	hint localize "STR_NOTF_notNearResource";
 	life_action_inUse = false;
 };
 
-//Get the resource that will be gathered from the zone name...
-_item = switch(true) do {
-	case (_zone in ["apple_1","apple_2","apple_3","apple_4"]): {"apple"};
-	case (_zone in ["peaches_1","peaches_2","peaches_3","peaches_4"]): {"peach"};
-	case (_zone in ["heroin_1"]): {"heroinu"};
-	case (_zone in ["cocaine_1"]): {"cocaine"};
-	case (_zone in ["weed_1"]): {"cannabis"};
-	case (_zone in ["lead_1"]): {"copperore"};
-	case (_zone in ["iron_1"]): {"ironore"};
-	case (_zone in ["salt_1"]): {"salt"};
-	case (_zone in ["sand_1"]): {"sand"};
-	case (_zone in ["diamond_1"]): {"diamond"};
-	case (_zone in ["oil_1","oil_2"]): {"oilu"};
-	case (_zone in ["rock_1"]): {"rock"};
-	case (_zone in ["getreide_1"]): {"getreideu"};
-	case (_zone in ["hopfen_1"]): {"hopfenu"};
-	case (_zone in ["tabak_1"]): {"tabaku"};
-	case (_zone in ["trauben_1"]): {"traubenu"};
-	case (_zone in ["zucker_1"]): {"zuckeru"};
-	case (_zone in ["zinn_1"]): {"zinnu"};
-	case (_zone in ["silber_1"]): {"silberu"};
-	case (_zone in ["holz_1"]): {"holzu"};
-	case (_zone in ["schwefel_1"]): {"schwefelu"};
-	default {""};
-};
-
-if(_item == "") exitWith {hint "Bad Resource?"; life_action_inUse = false;};
+if(_resource == "") exitWith {hint "Bad Resource?"; life_action_inUse = false;};
 _vehicle setVariable ["mining",true,true]; //Lock the device
 [_vehicle,"life_fnc_soundDevice",true,false] spawn life_fnc_MP; //Broadcast the 'mining' sound of the device for nearby units.
 
@@ -74,32 +58,32 @@ while {true} do {
 	_vInv = _vehicle getVariable ["Trunk",[[],0]];
 	_items = _vInv select 0;
 	_space = _vInv select 1;
-	_itemIndex = [_item,_items] call TON_fnc_index;
+	_itemIndex = [_resource,_items] call TON_fnc_index;
 	_weight = [_vehicle] call life_fnc_vehicleWeight;
-	_sum = [_item,15,_weight select 1,_weight select 0] call life_fnc_calWeightDiff; //Get a sum base of the remaining weight.. 
+	_sum = [_resource,15,_weight select 1,_weight select 0] call life_fnc_calWeightDiff; //Get a sum base of the remaining weight.. 
 	if(_sum < 1) exitWith {titleText[localize "STR_NOTF_DeviceFull","PLAIN"];};
-	_itemWeight = ([_item] call life_fnc_itemWeight) * _sum;
+	_itemWeight = ([_resource] call life_fnc_itemWeight) * _sum;
 	if(_itemIndex == -1) then {
-		_items pushBack [_item,_sum];
+		_items set[count _items,[_resource,_sum]];
 	} else {
 		_val = _items select _itemIndex select 1;
-		_items set[_itemIndex,[_item,_val + _sum]];
+		_items set[_itemIndex,[_resource,_val + _sum]];
 	};
 	
 	if(fuel _vehicle == 0) exitWith {titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];};
 	
 	//Locality checks...
 	if(local _vehicle) then {
-		_vehicle setFuel (fuel _vehicle)-0.045;
+		_vehicle setFuel (fuel _vehicle)-0.055;
 	} else {
-		[[_vehicle,(fuel _vehicle)-0.04],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
+		[[_vehicle,(fuel _vehicle)-0.05],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
 	};
 	
 	if(fuel _vehicle == 0) exitWith {titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];};
 	titleText[format[localize "STR_NOTF_DeviceMined",_sum],"PLAIN"];
 	_vehicle setVariable["Trunk",[_items,_space + _itemWeight],true];
 	_weight = [_vehicle] call life_fnc_vehicleWeight;
-	_sum = [_item,15,_weight select 1,_weight select 0] call life_fnc_calWeightDiff; //Get a sum base of the remaining weight.. 
+	_sum = [_resource,15,_weight select 1,_weight select 0] call life_fnc_calWeightDiff; //Get a sum base of the remaining weight.. 
 	if(_sum < 1) exitWith {titleText[localize "STR_NOTF_DeviceFull","PLAIN"];};
 	sleep 2;
 };
