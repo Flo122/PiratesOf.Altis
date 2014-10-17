@@ -65,8 +65,19 @@ if(playerSide == west) then {
 		};
 	};
 	
+	if(({side _x == east} count playableUnits) > 999) then {
+	_Btn6 ctrlShow false;
+	_Btn6 ctrlEnable false;
+	_Btn6 ctrlSetText localize "STR_vInAct_Impound_disabled";
+	} else {
+	_Btn6 ctrlShow true;
+	_Btn6 ctrlEnable true;
 	_Btn6 ctrlSetText localize "STR_vInAct_Impound";
+	};
+	
 	_Btn6 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
+	
+};
 	
 };
  
