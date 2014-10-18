@@ -130,8 +130,10 @@ _hItems = _hItems + [_x];
 {
 _name = (_x select 0);
 _val = (_x select 1);
-if (_val > 0) then {
-for "_i" from 1 to _val do {
+if (_val >= 1) then 
+{
+for "_i" from 1 to _val do 
+{
 _yItems = _yItems + [_name];
 };
 };
