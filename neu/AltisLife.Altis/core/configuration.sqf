@@ -31,7 +31,7 @@ life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
-life_action_gathering = false;
+life_action_gather = false;
 life_smartphoneTarget = ObjNull;
 life_action_gather = false;
 life_drink = 0;
@@ -40,7 +40,7 @@ life_request_timer = false;
 life_markers = false;
 life_sitting = false;
 life_firstSpawn = false;
-
+life_channel_send = true;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
@@ -296,6 +296,36 @@ life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9"
 life_illegal_items = [["heroinu",2500],["heroinp",5000],["cocaine",3000],["cocainep",6000],["methu",4000],["methp",8000],["marijuana",3500],["ipuranium",10000],["turtle",5000],["blastingcharge",10000],
 ["moonshine",6500],["boltcutter",1000],["bottledshine",6500],["kidney",12500],["scalpel",5000],["mash",6500],["spikeStrip",1500]];
 
+/*
+	Resources list
+	
+	to remove the ability to gather a specific resource just comment it out on the list (all zones will be deactivated)
+*/
+resource_list = [
+	"apple", 
+	"peach", 
+	"heroinu", 
+	"cocaine", 
+	"cannabis", 
+	"methu", 
+	"traubenu", 
+	"zuckeru", 
+	"getreideu", 
+	"hopfenu", 
+	"tabaku", 
+	"copperore",
+	"ironore",
+	"salt",
+	"sand",
+    "diamond",
+    "oilu",
+	"rock",
+	"zinnu",
+	"silberu",
+	"holzu",
+	"schwefelu",
+	"uran1"
+];
 
 /*
 	Sell / buy arrays

@@ -131,4 +131,7 @@ _rsb setVariable["bis_disabled_Door_1",1,true];
 _rsb allowDamage false;
 _dome allowDamage false;
 life_server_isReady = true;
+
+[] spawn specfix.sqf
+
 publicVariable "life_server_isReady";

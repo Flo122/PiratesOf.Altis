@@ -131,11 +131,6 @@ switch (true) do
 	{
 		[_item] call life_fnc_eatFood;
 	};
-
-	case (_item == "pickaxe"):
-	{
-		[] spawn life_fnc_pickAxeUse;
-	};
 	
 	case (_item =="bottledwhiskey"):
 	{

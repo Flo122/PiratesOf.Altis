@@ -31,3 +31,4 @@
 #include "statusBar.hpp"
 #include "veh_repaint.hpp"
 #include "market.hpp"
+#include "channel.hpp"

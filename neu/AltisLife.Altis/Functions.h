@@ -145,6 +145,7 @@ class Life_Client_Core
 		class processMultipleItems {};
 		class sitDown {};
 		class robShops {};
+		class robsmartphoneAction {};
 	};
 	
 	class Special
@@ -209,6 +210,7 @@ class Life_Client_Core
 	class Player_Menu
 	{
 		file = "core\pmenu";
+		class AAN {};
 		class wantedList {};
 		class wantedInfo {};
 		class wantedMenu {};
@@ -232,6 +234,7 @@ class Life_Client_Core
 		class smartphone {};
 		class newMsg {};
 		class showMsg {};
+		class cellphone2 {};
 	};
 	
 	class Functions
@@ -414,7 +417,6 @@ class Life_Client_Core
 	class Items
 	{
 		file = "core\items";
-		class pickaxeUse {};
 		class lockpick {};
 		class handcuffkey {};
 		class spikeStrip {};
@@ -457,5 +459,7 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+		class calldialog {};
+		class sendChannel {};
 	};
 };
