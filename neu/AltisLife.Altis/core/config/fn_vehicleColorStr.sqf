@@ -12,284 +12,327 @@ _color = "";
 
 switch (_vehicle) do
 {
+	// Quad
+	case "B_Quadbike_01_F" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Digi-Wueste"};
+			case 1: {_color = "Schwarz"};
+			case 2: {_color = "Blau"};
+			case 3: {_color = "Rot"};
+			case 4: {_color = "Weiss"};
+			case 5: {_color = "Digi-Gruen"};
+			case 6: {_color = "Jagd-Camo"};
+			case 7: {_color = "Rebellen-Camo"};
+		};
+	};
+	// Offroad
 	case "C_Offroad_01_F" :
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Red";};
-			case 1: {_color = "Yellow";};
-			case 2: {_color = "White";};
-			case 3: {_color = "Blue";};
-			case 4: {_color = "Dark Red";};
-			case 5: {_color = "Blue / White"};
-			case 6: {_color = "Black"};
-			case 7: {_color = "Black"};
-			case 8: {_color = "Taxi"};
-			case 9: {_color = "Medic"};
-			case 10: {_color = "Rockstar Gelb"};
-			case 11: {_color = "Rockstar Lila"};
-			case 12: {_color = "GSG-9/SEK"}; 
-			case 13: {_color = "Hunter"}; 
-			case 14: {_color = "Dodge"};
-			case 15: {_color = "Weedfarmer"};	
-			case 16: {_color = "Monster"};
+			case 0: {_color = "Rot";};
+			case 1: {_color = "Gelb";};
+			case 2: {_color = "Weiss";};
+			case 3: {_color = "Blau";};
+			case 4: {_color = "Dunkelrot";};
+			case 5: {_color = "Blau / Weiss"};
+			case 6: {_color = "Polizei"};
+			case 7: {_color = "Notarzt"};
+       		case 8: {_color = "Tarnung"};
+			case 9: {_color = "Dodge"};
+			case 10: {_color = "Gamer"};
+			case 11: {_color = "Captain Morgan"};
+			case 12: {_color = "Sushi"};
+			case 13: {_color = "Marihuana"};
+			case 14: {_color = "Rebel"};
+			case 15: {_color = "PMO"};
+			case 16: {_color = "Unicorn"};
 		};
 	};
-	
+	// Hatchback
 	case "C_Hatchback_01_F":
 	{
 		switch (_index) do
 		{
 			case 0: {_color = "Beige";};
-			case 1: {_color = "Green";};
-			case 2: {_color = "Blue";};
-			case 3: {_color = "Dark Blue";};
-			case 4: {_color = "Yellow";};
-			case 5: {_color = "White"};
-			case 6: {_color = "Grey"};
-			case 7: {_color = "Black"};
-			case 8: {_color = "Polizei"};
-		};
+			case 1: {_color = "Gruen";};
+			case 2: {_color = "Blau";};
+			case 3: {_color = "Dunkelblau";};
+			case 4: {_color = "Gelb";};
+			case 5: {_color = "Weiss"};
+			case 6: {_color = "Grau"};
+			case 7: {_color = "Schwarz"};
+			case 8: {_color = "Feuer";};
+			case 9: {_color = "Metallica"};
+			case 10: {_color = "Polizei"};
+			case 11: {_color = "Unicorn"};
+			};
 	};
-	
+	// Hatchback Sport
 	case "C_Hatchback_01_sport_F":
 	{
 		switch(_index) do
 		{
-			case 0: {_color = "Red"};
-			case 1: {_color = "Dark Blue"};
+			case 0: {_color = "Rot"};
+			case 1: {_color = "Dunkelblau"};
 			case 2: {_color = "Orange"};
-			case 3: {_color = "Black / White"};
-			case 4: {_color = "Tan"};
-			case 5: {_color = "Green"};
-			case 6: {_color = "GSG9/SEK"};
-			case 7: {_color = "Polizei"};
-			case 8: {_color = "Metallica"};
-			case 9: {_color = "Monster"};
-			
+			case 3: {_color = "Schwarz / Weiss"};
+			case 4: {_color = "Hellbraun"};
+			case 5: {_color = "Gruen"};
+			case 6: {_color = "Feuer";};
+			case 7: {_color = "Metallica"};
+			case 8: {_color = "Undercover"};
+			case 9: {_color = "Polizei"};
+			case 10: {_color = "Unicorn"};
 		};
 	};
-	
+	// SUV	
 	case "C_SUV_01_F":
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "SealDrop";};
-			case 1: {_color = "Polizei";};
-			case 2: {_color = "Silver";};
-			case 3: {_color = "Orange";};
-			case 4: {_color = "SEK/GSG9";};
-			case 5: {_color = "Medic";};
-			case 6: {_color = "Polygon";};
-			case 7: {_color = "Camo";};
-			case 8: {_color = "MonsterEnergy";};
-			case 9: {_color = "Civil";};
-			case 10: {_color = "Civil 2";};
-			case 11: {_color = "Batman";};
-			case 12: {_color = "Ferrari";};
-			case 13: {_color = "Totenkopf";};
-			case 14: {_color = "Hello Kitty";};
+			case 0: {_color = "Dunkelrot";};
+			case 1: {_color = "Silber";};
+			case 2: {_color = "Orange";};
+			case 3: {_color = "Polizei";};
+			case 4: {_color = "Notarzt";};
+			case 5: {_color = "Weltmeister";};
+			case 6: {_color = "Batman"};
+			case 7: {_color = "Carbon"};
+			case 8: {_color = "Carbon Weiss"};
+			case 9: {_color = "Fast"};
+			case 10: {_color = "Ferrari"};
+			case 11: {_color = "Skull"};
+			case 12: {_color = "Yokohama"};
+			case 13: {_color = "Rebel"};
+			case 14: {_color = "Monster Energy"};
+			case 15: {_color = "PEK"};
+			case 16: {_color = "Security"};
+			case 17: {_color = "PoA"};
+			case 18: {_color = "Unicorn"};			
 		};
-	};
-	
-	case "C_Van_01_box_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "White"};
-			case 1: {_color = "Red"};
-			case 2: {_color = "Medic"};
-		};
-	};
-	
+	};	
+	// Truck
 	case "C_Van_01_transport_F":
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "White"};
-			case 1: {_color = "Red"};
+			case 0: {_color = "Weiss"};
+			case 1: {_color = "Rot"};
+		};
+	};	
+	// Truck Box
+	case "C_Van_01_box_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Weiss"};
+			case 1: {_color = "Rot"};
+			case 2: {_color = "Notarzt"};
 		};
 	};
-	
+	// Truck Fuel
 	case "C_Van_01_fuel_F":
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "White"};
-			case 1: {_color = "Red"};
+			case 0: {_color = "Weiss"};
+			case 1: {_color = "Rot"};
 		};
 	};
-	
-	case "B_Quadbike_01_F" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Brown"};
-			case 1: {_color = "Digi Desert"};
-			case 2: {_color = "Black"};
-			case 3: {_color = "Blue"};
-			case 4: {_color = "Red"};
-			case 5: {_color = "White"};
-			case 6: {_color = "Digi Green"};
-			case 7: {_color = "Hunter Camo"};
-			case 8: {_color = "Rebel Camo"};
-		};
-	};
-	
-	case "B_Heli_Light_01_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Polizei"};
-			case 1: {_color = "Black"};
-			case 2: {_color = "Civ Blue"};
-			case 3: {_color = "Civ Red"};
-			case 4: {_color = "Digi Green"};
-			case 5: {_color = "Blueline"};
-			case 6: {_color = "Elliptical"};
-			case 7: {_color = "Furious"};
-			case 8: {_color = "Jeans Blue"};
-			case 9: {_color = "Speedy Redline"};
-			case 10: {_color = "Sunset"};
-			case 11: {_color = "Vrana"};
-			case 12: {_color = "Waves Blue"};
-			case 13: {_color = "Rebel Digital"};
-			case 14: {_color = "Medic"};
-			case 15: {_color = "Redbull"};
-			case 16: {_color = "Hello Kitty"};
-		};
-	};
-	
-	case "O_Heli_Light_02_unarmed_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black"};
-			case 1: {_color = "White / Blue"};
-			case 2: {_color = "Digi Green"};
-			case 3: {_color = "Desert Digi"};
-			case 4: {_color = "ADAC"};
-			case 5: {_color = "Medic"};
-		};
-	};
-	
-	case "B_MRAP_01_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "SEK"};
-			case 1: {_color = "Donator"};
-			case 2: {_color = "Polizei"};
-		};
-	};
-
-	case "O_MRAP_02_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "FleckTarn (Rot)"};
-			case 1: {_color = "Rebellen Tarnung"};
-		};
-	};
-	
+	// Zamak
 	case "I_Truck_02_covered_F":
 	{
 		switch (_index) do
 		{
 			case 0: {_color = "Orange"};
-			case 1: {_color = "Black"};
-			case 2: {_color = "RedBull"};
-			case 3: {_color = "Barbie"};
+			case 1: {_color = "Weed Farmer"};
+			case 2: {_color = "Ereka"};
+			case 3: {_color = "RedBull"};
 		};
 	};
-	
+	// Zamak
 	case "I_Truck_02_transport_F":
 	{
 		switch (_index) do
 		{
 			case 0: {_color = "Orange"};
-			case 1: {_color = "Black"};
+			case 1: {_color = "Weed Farmer"};
+			case 2: {_color = "Ereka"};
+			case 3: {_color = "RedBull"};
 		};
 	};
-
+	// HEMTT
+	case "B_Truck_01_box_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Standard"};
+			case 1: {_color = "Kitty"};
+			case 2: {_color = "Devil"};
+		};
+	};
+	// HEMTT
+	case "B_Truck_01_covered_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Standard"};
+			case 1: {_color = "Kitty"};
+			case 2: {_color = "Devil"};
+		};
+	};
+	// HEMTT
+	case "B_Truck_01_transport_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Standard"};
+			case 1: {_color = "Kitty"};
+			case 2: {_color = "Devil"};
+		};
+	};
+	// HEMTT
+	case "B_Truck_01_mover_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "PMO"};
+		};
+	};
+	// HEMTT
+	case "B_Truck_01_ammo_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Radioaktiv"};
+		};
+	};	
+	// Hummingbird
+	case "B_Heli_Light_01_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Schwarz"};
+			case 1: {_color = "Digi-Gruen"};
+			case 2: {_color = "Blueline"};
+			case 3: {_color = "Elliptical"};
+			case 4: {_color = "Furious"};
+			case 5: {_color = "Jeans Blue"};
+			case 6: {_color = "Speedy Redline"};
+			case 7: {_color = "Sunset"};
+			case 8: {_color = "Vrana"};
+			case 9: {_color = "Waves Blue"};
+			case 10: {_color = "Rebellen-Digital"};
+			case 11: {_color = "Polizei"};
+			case 12: {_color = "Notarzt"};
+			case 13: {_color = "RedBull"};
+			case 14: {_color = "Rebel"};
+			case 15: {_color = "Schwarz"};
+			case 16: {_color = "PMO"};
+		};
+	};
+	// Orca
+	case "O_Heli_Light_02_unarmed_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Schwarz"};
+			case 1: {_color = "Weiss / Blau"};
+			case 2: {_color = "Digi-Gruen"};
+			case 3: {_color = "Wuesten-Digi"};
+			case 4: {_color = "Polizei"};
+			case 5: {_color = "Notarzt"};
+			case 6: {_color = "Rebellen"};
+		};
+	};
+	// Ghosthawk
+	case "B_Heli_Transport_01_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Polizei"};
+			case 1: {_color = "PEK"};
+		};
+	};
+	// Hellcat
+	case "I_Heli_light_03_unarmed_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Polizei"};
+			case 1: {_color = "Donator"};
+			case 2: {_color = "Rebel"};
+		};
+	};
+	// Mohawk
 	case "I_Heli_Transport_02_F":
 	{
 		switch (_index) do
 		{
 			case 0: {_color = "Ion"};
 			case 1: {_color = "Dahoman"};
-			case 2: {_color = "Medic"};
-			case 3: {_color = "SEK/GSG9"};
+			case 2: {_color = "Rebel"};
+			case 3: {_color = "PMO"};
 		};
 	};
-
-	case "I_Heli_light_03_unarmed_F":
+	// Hunter
+	case "B_MRAP_01_F":
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Polizei"};
-			case 1: {_color = "ADAC"};
-			case 2: {_color = "SEK"};
+			case 0: {_color = "Polizei weiss"};
+			case 1: {_color = "Polizei schwarz"};
+			case 2: {_color = "PEK"};
+			case 3: {_color = "Donator"};
+			case 4: {_color = "Die Macht"};
+			case 5: {_color = "Unicorn"};
+			case 6: {_color = "Rot"};
+			case 7: {_color = "Blau"};
+			case 8: {_color = "Gruen"};
+			case 9: {_color = "Grau"};
 		};
 	};
-	
-	case "B_Heli_Transport_01_F":
+	// Hunter
+	case "B_MRAP_01_hmg_F":
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Polizei"};
+			case 0: {_color = "Polizei weiss"};
+			case 1: {_color = "Polizei schwarz"};
 		};
 	};
-	
-	case "C_Offroad_01_repair_F":
+	// Ifrit
+	case "O_MRAP_02_F":
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "ADAC"};
+			case 0: {_color = "Braun"};
+			case 1: {_color = "Grau"};
+			case 2: {_color = "Unicorn"};
+			case 3: {_color = "Blau"};
+			case 4: {_color = "Rot"};
 		};
 	};
-
+	// Strider
 	case "I_MRAP_03_F":
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Camo"};
-			case 1: {_color = "SEK"};
+			case 0: {_color = "PEK"};
+			case 1: {_color = "Schwarz"};
 		};
 	};
-	case "B_Truck_01_box_F":
+	// Strider
+	case "I_MRAP_03_hmg_F":
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Devil"};
-			case 1: {_color = "Hello Kitty"};
-		};
-	};	
-	case "B_Truck_01_transport_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Devil"};
-			case 1: {_color = "Hello Kitty"};
-		};
-	};
-	case "B_Truck_01_covered_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Devil"};
-			case 1: {_color = "Hello Kitty"};
-		};
-	};
-		case "B_Truck_01_ammo_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Devil"};
-			case 1: {_color = "Hello Kitty"};
+			case 0: {_color = "PEK"};
 		};
 	};
 };
-
 
 _color;

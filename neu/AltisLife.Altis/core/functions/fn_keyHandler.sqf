@@ -134,14 +134,49 @@ switch (_code) do
 	
 	//Restraining (Shift + R)
 	case 19:
-	{
+	{	
+	
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && cursorTarget distance player < 4 && speed cursorTarget < 1) then
+		{
+		if(!(animationState cursorTarget=="Incapacitated" or animationState cursorTarget=="amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon") && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
+		{
+		[cursorTarget] spawn life_fnc_knockoutAction;
+		};
+		};
+		
+		//Cops -> Civs
+		if(_shift) then {_handled = true;};
+		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 		{
 			[] call life_fnc_restrainAction;
 		};
+		//Cops -> PMO
+		if(_shift) then {_handled = true;};
+		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == east) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		{
+			[] call life_fnc_restrainAction;
+		};
+		//Cops -> Medics
+		if(_shift) then {_handled = true;};
+		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == independent) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		{
+			[] call life_fnc_restrainAction;
+		};
+		// Civs - > Civs
+		if(_shift) then {_handled = true;};
+		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && isPlayer cursorTarget && (animationState cursorTarget=="Incapacitated" or animationState cursorTarget=="amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon") && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		{
+			[] call life_fnc_restrainAction;
+		};
+		// Civs - > Cops
+		if(_shift) then {_handled = true;};
+		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == west) && alive cursorTarget && cursorTarget distance player < 3.5 && isPlayer cursorTarget && (animationState cursorTarget=="Incapacitated" or animationState cursorTarget=="amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon") && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		{
+			[] call life_fnc_restrainAction;
+		};
+		
 	};
-
 	//T Key (Trunk)
 	case 20:
 	{
@@ -171,18 +206,27 @@ switch (_code) do
 	case 38: 
 	{
 		//If cop run checks for turning lights on.
-		if(_shift && playerSide in [west,independent]) then {
-			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Offroad_01_repair_F"]) then {
-				if(!isNil {vehicle player getVariable "lights"}) then {
-					if(playerSide in [west,independent]) then {
+		if(_shift && playerSide in [west,independent,east]) then {
+			if(vehicle player != player && (typeOf vehicle player) in ["I_MRAP_03_F","B_MRAP_01_hmg_F","B_Quadbike_01_F","I_Heli_Transport_02_F","C_Offroad_01_F","B_Truck_01_mover_F","B_MRAP_01_F","C_SUV_01_F","C_Van_01_box_F","B_MRAP_01_HMG_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","B_Heli_Light_01_F","O_Heli_Light_02_unarmed_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F"]) then {
+					if(playerSide == west) then {
 						[vehicle player] call life_fnc_sirenLights;
 					};
+					if(playerSide == independent) then {
+						[vehicle player] call life_fnc_medicSirenLights;
+					};
 					_handled = true;
-				};
 			};
 		};
-
+		
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
+	};
+	//Y Player Menu
+	case 21:
+	{
+		if(!_alt && !_ctrlKey && !dialog) then
+		{
+			[] call life_fnc_p_openMenu;
+		};
 	};
 	
 	//Z Player Menu
@@ -196,34 +240,66 @@ switch (_code) do
 	
 	//F Key
 	case 33:
-	{
-		if (vehicle player != player && (typeOf vehicle player) in["C_Offroad_01_repair_F","B_Truck_01_transport_F"]) exitWith {hint "Sirene nicht verfügbar"};
-		if(playerSide in [west,independent] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
+    {    if(!_shift) then
+            {
+                if(playerSide in [west,independent] && vehicle player != player && !life_siren2_active && ((driver vehicle player) == player)) then
+                {
+                    [] spawn
+                    {
+                        life_siren2_active = true;
+                        sleep 1.2;
+                        life_siren2_active = false;
+                    };
+                    _veh = vehicle player;
+                    if(isNil {_veh getVariable "siren2"}) then {_veh setVariable["siren2",false,true];};
+                    if((_veh getVariable "siren2")) then
+                    {
+				titleText [localize "STR_MISC_Sirens2OFF","PLAIN"];
+				_veh setVariable["siren2",false,true];
+			}
+				else
+			{
+				titleText [localize "STR_MISC_Sirens2ON","PLAIN"];
+				_veh setVariable["siren2",true,true];
+				if(playerSide == west) then {
+					[[_veh],"life_fnc_copSiren2",nil,true] spawn life_fnc_MP;
+				} else {
+					[[_veh],"life_fnc_medicSiren2",nil,true] spawn life_fnc_MP;
+				};
+			};
+                };
+            };
+
+        if (_shift) then
+        {
+            if(playerSide in [west,independent] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
 		{
 			[] spawn
 			{
 				life_siren_active = true;
-				sleep 4.5;
+				sleep 2;
 				life_siren_active = false;
 			};
 			_veh = vehicle player;
 			if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
 			if((_veh getVariable "siren")) then
 			{
-				titleText ["Sirene AUS","PLAIN"];
+				titleText [localize "STR_MISC_SirensOFF","PLAIN"];
 				_veh setVariable["siren",false,true];
 			}
 				else
 			{
-				titleText ["Sirene AN","PLAIN"];
+				titleText [localize "STR_MISC_SirensON","PLAIN"];
 				_veh setVariable["siren",true,true];
 				if(playerSide == west) then {
 					[[_veh],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
 				} else {
+					//I do not have a custom sound for this and I really don't want to go digging for one, when you have a sound uncomment this and change medicSiren.sqf in the medical folder.
 					[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
 				};
 			};
 		};
+	};
 	};
 	
 	//Ö Key

@@ -94,6 +94,7 @@ class Life_Client_Core
 		class medicLoadout {};
 		class medicLights {};
 		class medicSiren {};
+		class medicSiren2 {};
 	};
 	
 	class Actions
@@ -142,7 +143,6 @@ class Life_Client_Core
 		class packupmauer {};
 		class processActionDual {};
 		class processActionLsd {};
-		class takeOrgans {};
 		class sitDown {};
 		class robShops {};
 	};
@@ -368,6 +368,7 @@ class Life_Client_Core
 		class polizeiLoadout {};
 		class copOpener {};
 		class radarCam {};
+		class copSiren2 {};
 	};
 	
 	class Gangs

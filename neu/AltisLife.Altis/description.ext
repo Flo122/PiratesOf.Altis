@@ -1,20 +1,20 @@
-author = "Tonic | Edit by SealDrop DevTeam";
-onLoadName = "٠٠•● S E A L D R O P ●•٠";
-onLoadMission = "A RPG by SealDrop • Ts³: SealDrop.de • Web: www.sealdrop.de •";
+author = "Tonic";
+onLoadName = "Altis Life RPG v3.1.4.8";
+onLoadMission = "A RPG game mode developed by Tonic and edited by Pirates of Altis";
 joinUnassigned = 1;
 respawn = BASE;
-respawndelay = 1;
-disabledAI = true;
-disableChannels[]= {0,1,2};
+respawndelay = 5;
+disabledAI = 1;
+disableChannels[]={0,1,2};
 enableDebugConsole = 1;
+LoadScreen = "textures\logo.jpg";
 respawnDialog = 0;
-loadScreen = "logo.jpg";
 
 class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 82;
+	maxPlayers = 100;
 };
 
 wreckLimit = 3;
