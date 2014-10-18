@@ -106,7 +106,7 @@ life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
 life_battery = 50;
-__CONST__(life_paycheck_period,10); //Five minutes
+__CONST__(life_paycheck_period,5); //Five minutes
 life_cash = 0;
 __CONST__(life_impound_car,5000);
 __CONST__(life_impound_boat,1000);
@@ -222,9 +222,8 @@ life_inv_items =
 	"life_inv_uranium2",
 	"life_inv_uranium3",
 	"life_inv_uranium4",
-	"life_inv_uranium",
-	"life_inv_kidney",
-	"life_inv_scalpel"
+	"life_inv_uranium"
+
 ];
 
 //Setup variable inv vars.
@@ -337,9 +336,8 @@ sell_array =
 	["yeast",2000], 
 	["cornmeal",200], 
 	["bottles",50],
-	["uranium",10000],
-	["kidney",9000],
-	["scalpel",1000]
+	["uranium",10000]
+
 ];
 __CONST__(sell_array,sell_array);
 
@@ -388,9 +386,8 @@ buy_array =
 	["mash",2500], 
 	["bottles",100],
 	["puranium",1000],
-	["ipuranium",9000],
-	["kidney",15000],
-	["scalpel",7500]
+	["ipuranium",9000]
+
 ];
 __CONST__(buy_array,buy_array);
 
