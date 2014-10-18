@@ -49470,7 +49470,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Device_assembled_F";
 			skill=0.60000002;
-			init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Piratenbrau herstellen"",life_fnc_processAction,""pbrau"",0,false,false,"""",' (life_inv_zuckerip > 0 && life_inv_getreideip > 0) !life_is_processing']; this setVariable[""realname"",""Piratenbrauer""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Piratenbrau herstellen"",life_fnc_processMultipleItems,""pbrau"",0,false,false,"""",'!life_is_processing']; this setVariable[""realname"",""Piratenbrauer""];";
 		};
 		class Item4586
 		{
@@ -49728,7 +49728,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo20_light_green_F";
 			skill=0.60000002;
-			init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Piratenkugel herstellen"",life_fnc_processAction,""pkugel"",0,false,false,"""",' (life_inv_spulver > 0 && life_inv_kkugel > 0) !life_is_processing']; this setVariable[""realname"",""Piratenkugeln""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Piratenkugel herstellen"",life_fnc_processMultipleItems,""pkugel"",0,false,false,"""",'!life_is_processing']; this setVariable[""realname"",""Piratenkugeln""];";
 		};
 		class Item4610
 		{
@@ -49831,7 +49831,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_WaterTank_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Kanonenkugel herstellen"",life_fnc_processAction,""kkugel"",0,false,false,"""",' (life_inv_eisenp > 0 && life_inv_ironr > 0) !life_is_processing']; this setVariable[""realname"",""Kugelgiesser""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Kanonenkugel herstellen"",life_fnc_processMultipleItems,""kkugel"",0,false,false,"""",'!life_is_processing']; this setVariable[""realname"",""Kugelgiesser""];";
 		};
 		class Item4619
 		{
@@ -49865,7 +49865,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_WaterTank_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Bronze herstellen"",life_fnc_processAction,""bronze"",0,false,false,"""",' (life_inv_copperr > 0 && life_inv_zinnp > 0) !life_is_processing']; this setVariable[""realname"",""Bronzeverarbeitung""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Kanonenkugel herstellen"",life_fnc_processMultipleItems,""bronze"",0,false,false,"""",'!life_is_processing']; this setVariable[""realname"",""Bronzeverarbeitung""];";
 		};
 		class Item4622
 		{
@@ -51308,7 +51308,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_WaterTank_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzpulver herstellen"",life_fnc_processAction,""spulver"",0,false,false,"""",' (life_inv_schwefelp > 0 && life_inv_holzp > 0) !life_is_processing']; this setVariable[""realname"",""Schwarzpulverherstellung""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzpulver herstellen"",life_fnc_processMultipleItems,""spulver"",0,false,false,"""",'!life_is_processing']; this setVariable[""realname"",""Schwarzpulverherstellung""];";
 		};
 		class Item4758
 		{
@@ -51319,7 +51319,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_WaterTank_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzpulver herstellen"",life_fnc_processAction,""spulver"",0,false,false,"""",' (life_inv_schwefelp > 0 && life_inv_holzp > 0) !life_is_processing']; this setVariable[""realname"",""Schwarzpulverherstellung""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzpulver herstellen"",life_fnc_processMultipleItems,""spulver"",0,false,false,"""",'!life_is_processing']; this setVariable[""realname"",""Schwarzpulverherstellung""];";
 		};
 		class Item4759
 		{
@@ -51330,7 +51330,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_WaterTank_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzpulver herstellen"",life_fnc_processAction,""spulver"",0,false,false,"""",' (life_inv_schwefelp > 0 && life_inv_holzp > 0) !life_is_processing']; this setVariable[""realname"",""Schwarzpulverherstellung""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzpulver herstellen"",life_fnc_processMultipleItems,""spulver"",0,false,false,"""",'!life_is_processing']; this setVariable[""realname"",""Schwarzpulverherstellung""];";
 		};
 		class Item4760
 		{
@@ -51542,7 +51542,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Schmuck herstellen"",life_fnc_processAction,""schmuck"",0,false,false,"""",' (life_inv_silberp > 0 && life_inv_diamondr > 0) !life_is_processing']; this setVariable[""realname"",""Schmuckherstellung""];";
+			init="this enableSimulation false; this allowDamage false;this addAction[""Schmuck herstellen"",life_fnc_processMultipleItems,""schmuck"",0,false,false,"""",'!life_is_processing']; this setVariable[""realname"",""Schmuckherstellung""];";
 		};
 		class Item4780
 		{
