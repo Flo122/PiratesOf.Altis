@@ -25,17 +25,23 @@ _itemInfo = switch (_type) do
 	case "marijuana": {["cannabis","marijuana",500,"Processing Marijuana"]};
 	case "heroin": {["heroinu","heroinp",1720,"Processing Heroin"]};
 	case "cement": {["rock","cement",350,"Mixing Cement"]};
-	case "grapes": {["grapes","wine",250,"Processing Grapes into Wine"]};
-	case "moonshine": {["yeast","moonshine",250,"Moonshining",true,"mash"]};//new
-	case "meth": {["methu","methp",5000,"Cooking Meth"]};
-	case "bottledshine": {["moonshine","bottledshine",500,"Bootle Moonshine",true,"bottles"]};//new
-	case "whiskey": {["yeast","whiskey",1000,"Fermenting Whiskey",true,"rye"]};//new
-	case "beer": {["yeast","beerp",1500,"Brewing Beer",true,"hops"]};//new
-	case "bottledbeer": {["beerp","bottledbeer",500,"Bottle Beer",true,"bottles"]};//new
-	case "bottledwhiskey": {["whiskey","bottledwhiskey",500,"Bottle Whiskey",true,"bottles"]};//new
-	case "mash": {["water","mash",100,"Mixing Grain Mash",true,"cornmeal"]};//new
-    case "uranium1": {["uranium1","uranium2",5000,"Reinigung des Urans"]}; // Add this
-    case "uranium4": {["uranium4","uranium",15000,"Uran wird getrocknet"]}; // Add this
+	case "whiskey": {["getreideu","getreideip",2850,"Ruehre Maische"]};
+	case "zigarren": {["tabaku","tabakip",2750,"Drehe Zigarren"]};
+	case "rum": {["zuckeru","zuckerip",2600,"Brenne Rum"]};
+	case "gusseisen": {["ironore","eisenp",1050,"Gieße Form"]};
+	case "nudeln": {["getreideu","getreidep",1150,"Mahle Mehl"]};
+	case "holz": {["holzu","holzp",500,"Verkohle Holz"]};
+	case "brauer": {["hopfenu","hopfenp",2000,"Braue Bier"]};
+	case "schwefel": {["schwefelu","schwefelp",1850,"Zerkleinere Schwefel"]};
+	case "silber": {["silberu","silberp",2500,"Schmelze Silber"]};
+	case "zigaretten": {["tabaku","tabakp",2750,"Stopfe Zigaretten"]};
+	case "wein": {["traubenu","traubenp",1000,"Keltere Wein"]};
+	case "zinn": {["zinnu","zinnp",700,"Schmelze Zinn"]};
+	case "zucker": {["zuckeru","zuckerp",1150,"Raffiniere Zucker"]};
+	case "uran2": {["uran1","uran2",10000,"Reinige Uran"]};
+	case "uran3": {["uran2","uran3",20000,"Verarbeite Uran"]};
+	case "uran4": {["uran3","uran4",30000,"Reichere Uran an"]};
+	case "uranip": {["uran2","uranip",50000,"Uran verschmutzen"]};
 	default {[]};
 };
 

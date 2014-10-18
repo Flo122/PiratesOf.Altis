@@ -3019,6 +3019,191 @@
 		</Key>
 	</Package>
 	<Package name="Life_Items">
+		<Key ID="STR_Item_Zucker">
+			<Original>Sugar</Original>
+			<English>Sugar</English>
+			<German>Zucker</German>
+		</Key>
+		<Key ID="STR_Item_Getreide">
+			<Original>Cereals</Original>
+			<English>Cereals</English>
+			<German>Getreide</German>
+		</Key>
+		<Key ID="STR_Item_Hopfen">
+			<Original>Hops</Original>
+			<English>Hops</English>
+			<German>Hopfen</German>
+		</Key>
+		<Key ID="STR_Item_Tabak">
+			<Original>Tobacco</Original>
+			<English>Tobacco</English>
+			<German>Tabak</German>
+		</Key>
+		<Key ID="STR_Item_Trauben">
+			<Original>Grapes</Original>
+			<English>Grapes</English>
+			<German>Trauben</German>
+		</Key>
+		<Key ID="STR_Item_Wanze">
+			<Original>Tracker</Original>
+			<English>Tracker</English>
+			<German>Wanze</German>
+		</Key>
+		<Key ID="STR_Item_Holz">
+			<Original>Wood</Original>
+			<English>Wood</English>
+			<German>Holz</German>
+		</Key>
+		<Key ID="STR_Item_Schwefel">
+			<Original>Sulfur</Original>
+			<English>Sulfur</English>
+			<German>Schwefel</German>
+		</Key>
+		<Key ID="STR_Item_Silbererz">
+			<Original>Silver ore</Original>
+			<English>Silver ore</English>
+			<German>Silbererz</German>
+		</Key>
+		<Key ID="STR_Item_Tabakblatt">
+			<Original>Tobacco leaf</Original>
+			<English>Tobacco leaf</English>
+			<German>Tabakblatt</German>
+		</Key>
+		<Key ID="STR_Item_Zinnerz">
+			<Original>Tin ore</Original>
+			<English>Tin ore</English>
+			<German>Zinnerz</German>
+		</Key>
+		<Key ID="STR_Item_Zuckerrohr">
+			<Original>Sugarcone</Original>
+			<English>Sugarcone</English>
+			<German>Zuckerrohr</German>
+		</Key>
+		<Key ID="STR_Item_Whiskey">
+			<Original>Whiskey</Original>
+			<English>Whiskey</English>
+			<German>Whiskey</German>
+		</Key>
+		<Key ID="STR_Item_Zigarren">
+			<Original>Zigars</Original>
+			<English>Zigars</English>
+			<German>Zigarren</German>
+		</Key>
+		<Key ID="STR_Item_Rum">
+			<Original>Rum</Original>
+			<English>Rum</English>
+			<German>Rum</German>
+		</Key>
+		<Key ID="STR_Item_Gussform">
+			<Original>Mold</Original>
+			<English>Mold</English>
+			<German>Gussform</German>
+		</Key>
+		<Key ID="STR_Item_Mehl">
+			<Original>Flour</Original>
+			<English>Flour</English>
+			<German>Mehl</German>
+		</Key>
+		<Key ID="STR_Item_Holzkohle">
+			<Original>Charcoal</Original>
+			<English>Charcoal</English>
+			<German>Holzkohle</German>
+		</Key>
+		<Key ID="STR_Item_Bier">
+			<Original>Beer</Original>
+			<English>Beer</English>
+			<German>Bier</German>
+		</Key>
+		<Key ID="STR_Item_Schwefelpulver">
+			<Original>Sulfur powder</Original>
+			<English>Sulfur powder</English>
+			<German>Schwefelpulver</German>
+		</Key>
+		<Key ID="STR_Item_Silberbarren">
+			<Original>Silver bars</Original>
+			<English>Silver bars</English>
+			<German>Silberbarren</German>
+		</Key>
+		<Key ID="STR_Item_Zigaretten">
+			<Original>Cigarettes</Original>
+			<English>Cigarettes</English>
+			<German>Zigaretten</German>
+		</Key>
+		<Key ID="STR_Item_Wein">
+			<Original>Wine</Original>
+			<English>Wine</English>
+			<German>Wein</German>
+		</Key>
+		<Key ID="STR_Item_Zinnbarren">
+			<Original>Tin bars</Original>
+			<English>Tin bars</English>
+			<German>Zinnbarren</German>
+		</Key>
+		<Key ID="STR_Item_Bronzebarren">
+			<Original>Bronze bars</Original>
+			<English>Bronze bars</English>
+			<German>Bronzebarren</German>
+		</Key>
+		<Key ID="STR_Item_Schmuck">
+			<Original>Jewelry</Original>
+			<English>Jewelry</English>
+			<German>Schmuck</German>
+		</Key>
+		<Key ID="STR_Item_Piratenbrau">
+			<Original>Pirates brew</Original>
+			<English>Pirates brew</English>
+			<German>Piratenbrau</German>
+		</Key>
+		<Key ID="STR_Item_Schwarzpulver">
+			<Original>Black powder</Original>
+			<English>Black powder</English>
+			<German>Schwarzpulver</German>
+		</Key>
+		<Key ID="STR_Item_Kanonenkugel">
+			<Original>Cannonball</Original>
+			<English>Cannonball</English>
+			<German>Kanonenkugel</German>
+		</Key>
+		<Key ID="STR_Item_Piratenkugel">
+			<Original>Pirates Ball</Original>
+			<English>Pirates Ball</English>
+			<German>Piratenkugel</German>
+		</Key>
+		<Key ID="STR_Item_handcuffkey">
+			<Original>Handcuffkey</Original>
+			<English>Handcuffkey</English>
+			<German>Handschellenschlüssel</German>
+		</Key>
+		<Key ID="STR_Item_Uran1">
+			<Original>Uranium ore</Original>
+			<English>Uranium ore</English>
+			<German>Uranerz</German>
+		</Key>
+		<Key ID="STR_Item_Uran2">
+			<Original>Cleaned uranium</Original>
+			<English>Cleaned uranium</English>
+			<German>Gereinigtes Uranerz</German>
+		</Key>
+		<Key ID="STR_Item_Uran3">
+			<Original>Processed uranium</Original>
+			<English>Processed uranium</English>
+			<German>Verarbeitetes Uran</German>
+		</Key>
+		<Key ID="STR_Item_Uran4">
+			<Original>Enriched uranium</Original>
+			<English>Enriched uranium</English>
+			<German>Angereichteres Uran</German>
+		</Key>
+		<Key ID="STR_Item_Uran5">
+			<Original>Enriched fuel rod</Original>
+			<English>Enriched fuel rod</English>
+			<German>Brennstab</German>
+		</Key>
+		<Key ID="STR_Item_Uranip">
+			<Original>Dirty uranium</Original>
+			<English>Dirty uranium</English>
+			<German>Schmutziges Uran</German>
+		</Key>
 		<Key ID="STR_Item_Cannabis">
 			<Original>Cannabis</Original>
 			<English>Cannabis</English>

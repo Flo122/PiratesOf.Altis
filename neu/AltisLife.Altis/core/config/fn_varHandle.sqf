@@ -50,6 +50,7 @@ switch (_mode) do
 			case "glass": {"life_inv_glass"};
 			case "tbacon": {"life_inv_tbacon"};
 			case "lockpick": {"life_inv_lockpick"};
+			case "handcuffkey": {"life_inv_handcuffkey"};
 			case "redgull": {"life_inv_redgull"};
 			case "peach": {"life_inv_peach"};
 			case "diamond": {"life_inv_diamond"};
@@ -60,42 +61,49 @@ switch (_mode) do
 			case "cement": {"life_inv_cement"};
 			case "rock": {"life_inv_rock"};
 			case "goldbar": {"life_inv_goldbar"};
-			case "wine": {"life_inv_wine"};
-			case "grapes": {"life_inv_grapes"};
-			case "methu": {"life_inv_methu"};
-			case "methp": {"life_inv_methp"};
-			case "methu": {"life_inv_methu"};
-			case "battery": {"life_inv_battery"};
 			case "blastingcharge": {"life_inv_blastingcharge"};
 			case "boltcutter": {"life_inv_boltcutter"};
 			case "defusekit": {"life_inv_defusekit"};
-			case "painkillers": {"life_inv_painkillers"};
-			case "morphium": {"life_inv_morphium"};
-			case "zipties": {"life_inv_zipties"};
 			case "storagesmall": {"life_inv_storagesmall"};
 			case "storagebig": {"life_inv_storagebig"};
+			case "tracker": {"life_inv_tracker"};
+			case "getreideu": {"life_inv_getreideu"};
+			case "holzu": {"life_inv_holzu"};
+			case "hopfenu": {"life_inv_hopfenu"};
+			case "schwefelu": {"life_inv_schwefelu"};
+			case "silberu": {"life_inv_silberu"};
+			case "tabaku": {"life_inv_tabaku"};
+			case "traubenu": {"life_inv_traubenu"};
+			case "zinnu": {"life_inv_zinnu"};
+			case "zuckeru": {"life_inv_zuckeru"};
+			case "getreideip": {"life_inv_getreideip"};
+			case "tabakip": {"life_inv_tabakip"};
+			case "zuckerip": {"life_inv_zuckerip"};
+			case "eisenp": {"life_inv_eisenp"};
+			case "getreidep": {"life_inv_getreidep"};
+			case "holzp": {"life_inv_holzp"};
+			case "hopfenp": {"life_inv_hopfenp"};
+			case "schwefelp": {"life_inv_schwefelp"};
+			case "silberp": {"life_inv_silberp"};
+			case "tabakp": {"life_inv_tabakp"};
+			case "traubenp": {"life_inv_traubenp"};
+			case "zinnp": {"life_inv_zinnp"};
+			case "zuckerp": {"life_inv_zuckerp"};
+			case "bronze": {"life_inv_bronze"};
+			case "schmuck": {"life_inv_schmuck"};
+			case "pbrau": {"life_inv_pbrau"};
+			case "kkugel": {"life_inv_kkugel"};
+			case "spulver": {"life_inv_spulver"};
+			case "pkugel": {"life_inv_pkugel"};
+			case "speedbomb": {"life_inv_speedbomb"};
+			case "uran1": {"life_inv_uran1"};
+			case "uran2": {"life_inv_uran2"};
+			case "uran3": {"life_inv_uran3"};
+			case "uran4": {"life_inv_uran4"};
+			case "uran5": {"life_inv_uran5"};
+			case "uranip": {"life_inv_uranip"};
+			case "battery": {"life_inv_battery"};
 			case "mauer": {"life_inv_mauer"};
-			case "rye": {"life_inv_rye"};
-			case "hops": {"life_inv_hops"};
-			case "yeast": {"life_inv_yeast"};
-			case "cornmeal": {"life_inv_cornmeal"};
-			case "moonshine": {"life_inv_moonshine"};
-			case "bottles": {"life_inv_bottles"};
-			case "bottledshine": {"life_inv_bottledshine"};
-			case "bottledbeer": {"life_inv_bottledbeer"};
-			case "bottledwhiskey": {"life_inv_bottledwhiskey"};
-			case "beerp": {"life_inv_beerp"};
-			case "whiskey": {"life_inv_whiskey"};
-			case "mash": {"life_inv_mash"};
-            case "puranium": {"life_inv_puranium"}; // Add This
-            case "ipuranium": {"life_inv_ipuranium"}; // Add This
-            case "uranium1": {"life_inv_uranium1"}; // Add This
-            case "uranium2": {"life_inv_uranium2"}; // Add This
-            case "uranium3": {"life_inv_uranium3"}; // Add This
-            case "uranium4": {"life_inv_uranium4"}; // Add This
-            case "uranium": {"life_inv_uranium"}; // Add This
-			case "kidney": {"life_inv_kidney"};
-			case "scalpel": {"life_inv_scalpel"};
 		};
 	};
 	
@@ -136,6 +144,7 @@ switch (_mode) do
 			case "life_inv_glass": {"glass"};
 			case "life_inv_redgull": {"redgull"};
 			case "life_inv_lockpick": {"lockpick"};
+			case "life_inv_handcuffkey": {"handcuffkey"};
 			case "life_inv_tbacon": {"tbacon"};
 			case "life_inv_peach": {"peach"};
 			case "life_inv_diamond": {"diamond"};
@@ -147,41 +156,50 @@ switch (_mode) do
 			case "life_inv_cement": {"cement"};
 			case "life_inv_rock": {"rock"};
 			case "life_inv_goldbar": {"goldbar"};
-			case "life_inv_wine": {"wine"};
-			case "life_inv_grapes": {"grapes"};
-			case "life_inv_methu": {"methu"};
-			case "life_inv_methp": {"methp"};
-			case "life_inv_battery": {"battery"};
 			case "life_inv_blastingcharge": {"blastingcharge"};
 			case "life_inv_boltcutter": {"boltcutter"};
 			case "life_inv_defusekit": {"defusekit"};
-			case "life_inv_painkillers": {"painkillers"};
-			case "life_inv_morphium": {"morphium"};
-			case "life_inv_zipties": {"zipties"};
 			case "life_inv_storagesmall": {"storagesmall"};
 			case "life_inv_storagebig": {"storagebig"};
+			case "life_inv_tracker": {"tracker"};
+			case "life_inv_getreideu": {"getreideu"};
+			case "life_inv_holzu": {"holzu"};
+			case "life_inv_hopfenu": {"hopfenu"};
+			case "life_inv_schwefelu": {"schwefelu"};
+			case "life_inv_silberu": {"silberu"};
+			case "life_inv_tabaku": {"tabaku"};
+			case "life_inv_traubenu": {"traubenu"};
+			case "life_inv_zinnu": {"zinnu"};
+			case "life_inv_zuckeru": {"zuckeru"};
+			case "life_inv_getreideip": {"getreideip"};
+			case "life_inv_tabakip": {"tabakip"};
+			case "life_inv_zuckerip": {"zuckerip"};
+			case "life_inv_eisenp": {"eisenp"};
+			case "life_inv_getreidep": {"getreidep"};
+			case "life_inv_holzp": {"holzp"};
+			case "life_inv_hopfenp": {"hopfenp"};
+			case "life_inv_schwefelp": {"schwefelp"};
+			case "life_inv_silberp": {"silberp"};
+			case "life_inv_tabakp": {"tabakp"};
+			case "life_inv_traubenp": {"traubenp"};
+			case "life_inv_zinnp": {"zinnp"};
+			case "life_inv_zuckerp": {"zuckerp"};
+			case "life_inv_bronze": {"bronze"};
+			case "life_inv_schmuck": {"schmuck"};
+			case "life_inv_pbrau": {"pbrau"};
+			case "life_inv_spulver": {"spulver"};
+			case "life_inv_kkugel": {"kkugel"};
+			case "life_inv_pkugel": {"pkugel"};
+			case "life_inv_speedbomb": {"speedbomb"};
+			case "life_inv_zipties": {"zipties"};
+			case "life_inv_uran1": {"uran1"};
+			case "life_inv_uran2": {"uran2"};
+			case "life_inv_uran3": {"uran3"};
+			case "life_inv_uran4": {"uran4"};
+			case "life_inv_uran5": {"uran5"};
+			case "life_inv_uranip": {"uranip"};
+			case "life_inv_battery": {"battery"};
 			case "life_inv_mauer": {"mauer"};
-			case "life_inv_mash": {"mash"};
-			case "life_inv_yeast": {"yeast"};
-			case "life_inv_rye": {"rye"};
-			case "life_inv_hops": {"hops"};
-			case "life_inv_whiskey": {"whiskey"};
-			case "life_inv_beerp": {"beerp"};
-			case "life_inv_bottles": {"bottles"};
-			case "life_inv_cornmeal": {"cornmeal"};
-			case "life_inv_bottledwhiskey": {"bottledwhiskey"};
-			case "life_inv_bottledbeer": {"bottledbeer"};
-			case "life_inv_bottledshine": {"bottledshine"};
-			case "life_inv_moonshine": {"moonshine"};
-            case "life_inv_puranium": {"puranium"}; // Add This
-            case "life_inv_ipuranium": {"ipuranium"}; // Add This
-            case "life_inv_uranium1": {"uranium1"}; // Add This
-            case "life_inv_uranium2": {"uranium2"}; // Add This
-            case "life_inv_uranium3": {"uranium3"}; // Add This
-            case "life_inv_uranium4": {"uranium4"}; // Add This
-            case "life_inv_uranium": {"uranium"}; // Add This 
-			case "life_inv_kidney": {"kidney"};
-			case "life_inv_scalpel": {"scalpel"};
 		};
 	};
 };

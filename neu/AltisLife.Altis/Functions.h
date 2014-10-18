@@ -141,8 +141,8 @@ class Life_Client_Core
 		class surrender {};
 		class removeWeaponAction{};
 		class packupmauer {};
-		class processActionDual {};
-		class processActionLsd {};
+		class processUran
+		class processMultipleItems {};
 		class sitDown {};
 		class robShops {};
 	};
@@ -367,7 +367,6 @@ class Life_Client_Core
 		class polizeiLoadout {};
 		class copOpener {};
 		class radarCam {};
-		class copSiren2 {};
 	};
 	
 	class Gangs
@@ -417,6 +416,7 @@ class Life_Client_Core
 		file = "core\items";
 		class pickaxeUse {};
 		class lockpick {};
+		class handcuffkey {};
 		class spikeStrip {};
 		class jerryRefuel {};
 		class flashbang {};

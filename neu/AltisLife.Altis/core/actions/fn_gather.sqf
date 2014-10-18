@@ -28,11 +28,6 @@ switch(true) do {
 	case (_zone in ["heroin_1"]): {_gather = "heroinu"; _val = 1;};
 	case (_zone in ["cocaine_1","cocaine_2"]): {_gather = "cocaine"; _val = 1;};
 	case (_zone in ["weed_1"]): {_gather = "cannabis"; _val = 1;};
-	case (_zone in ["meth_1"]): {_gather = "methu"; _val = 1;};
-	case (_zone in ["grape_1"]): {_gather = "grapes"; _val = 3;};
-	case (_zone in ["rye_1"]): {_gather = "rye"; _val = 1;};
-	case (_zone in ["yeast_1"]): {_gather = "yeast"; _val = 1;};
-	case (_zone in ["hops_1"]): {_gather = "hops"; _val = 1;};
 	default {""};
 };
 //gather check??

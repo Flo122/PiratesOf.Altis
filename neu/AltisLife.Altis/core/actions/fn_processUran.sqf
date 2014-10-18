@@ -14,7 +14,7 @@ if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing (percent) ..."
 _itemInfo = switch (_type) do
 {
-    case "uranium3": {["uranium3","uranium4",10000,"Getrenntes Uran"]};
+    case "uran5": {["uran4","uran5",10000,"Stelle Brennstaebe her"]};
     default {[]};
 };
 
@@ -43,13 +43,13 @@ _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
 _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 _progress progressSetPosition 0.01;
-_cP = 0.01;
+_cP = 0.005;
 
 life_is_processing = true;
 
 if(_hasLicense) then
 {
-    titleText["Dieser Rohstoff ist schwer zu behandeln ! Sie sollten sich Schützen !","PLAIN"];
+    titleText["Zu schwer zum verarbeiten. Nimm eins nach dem anderen!","PLAIN"];
     while{true} do
     {
         sleep 0.05;
@@ -60,12 +60,12 @@ if(_hasLicense) then
         if(player distance _vendor > 10) exitWith {};
     };
 
-    if(player distance _vendor > 10) exitWith {hint "Du musst mindestens 10 Meter daneben stehen."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
+    if(player distance _vendor > 10) exitWith {hint "Du musst innerhalb von 10 Metern bleiben."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
     if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
     if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
     5 cutText ["","PLAIN"];
 
-    titleText[format["Du hast %1 zu %2 umgewandelt.",_oldVal,_itemName],"PLAIN"];
+    titleText[format["Du hast %1 %2 bekommen",_oldVal,_itemName],"PLAIN"];
 
     life_is_processing = false;
 
@@ -73,6 +73,7 @@ if(_hasLicense) then
     else
 {
 
-    hint "Du benötigst eine Lizenz dafür! Oder willst du Sterben ?";
+    hint "Du kannst das nicht ohne Lizenz verarbeiten.";
     life_is_processing = false;
+
 };    
