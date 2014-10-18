@@ -140,55 +140,6 @@
 
 [] spawn
 {
-	while {true} do
-	{
-		sleep 1.5;
-		if(life_inv_uran4 != 0) then {
-			player forceWalk true;
-			player setFatigue 1;
-			hint "Uran ist schwer!";
-		} else {
-			if(isForcedWalk player) then {
-				player forceWalk false;
-			};
-		};
-	};
-};
-[] spawn
-{
-	while {true} do
-	{
-		sleep 1.5;
-		if(life_inv_uran5 != 0) then {
-			player forceWalk true;
-			player setFatigue 1;
-			hint "Uran ist schwer!";
-		} else {
-			if(isForcedWalk player) then {
-				player forceWalk false;
-			};
-		};
-	};
-};
-[] spawn
-{
-	while {true} do
-	{
-		sleep 1.5;
-		if(life_inv_uranip != 0) then {
-			player forceWalk true;
-			player setFatigue 1;
-			hint "Uran ist schwer!";
-		} else {
-			if(isForcedWalk player) then {
-				player forceWalk false;
-			};
-		};
-	};
-};
-
-[] spawn
-{
 if(playerside == civilian) then {
 	while {true} do
 	{
