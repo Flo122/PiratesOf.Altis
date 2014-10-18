@@ -185,6 +185,8 @@ switch (_shop) do
 			_return pushBack
 			["B_MRAP_01_F",30000];
 			_return pushBack
+			["B_MRAP_01_hmg_F",250000];
+			_return pushBack
 			["C_Hatchback_01_sport_F",250000];
 			_return pushBack
 			["B_Heli_Transport_01_F",200000];
