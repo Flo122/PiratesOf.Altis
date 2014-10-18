@@ -279,7 +279,7 @@ class Life_Client_Core
 		class stripDownPlayer {};
 		class saveGear {};
 		class loadGear {};
-		class autoSave {};
+		//class autoSave {};
 		class emptyFuel {};
 		class fatigueReset {};
 		class introCam {};
@@ -315,7 +315,6 @@ class Life_Client_Core
 		class civInteractionMenu {};
 		class removeWeapons {};
 		class civLoadout {};
-		class hasOrgan {};
 	};
 	
 	class Vehicle
