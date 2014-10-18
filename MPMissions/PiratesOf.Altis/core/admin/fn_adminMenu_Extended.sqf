@@ -20,7 +20,7 @@ if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0;};
 lbClear _plist;
 
 {
-	_pside = switch(side _x) do {case west: {"Cop"}; case civilian : {"Civ"}; case independent : {"Medic"}; case east : {"PMO"}; default {"?"};};
+	_pside = switch(side _x) do {case west: {"Cop"}; case civilian : {"Civ"}; case independent : {"Medic"}; case east : {"pmo"}; default {"?"};};
 	_plist lbAdd format["%1 - %2", name _x,_pside];
 	_plist lbSetdata [(lbSize _plist)-1,str(_x)];
 } foreach playableUnits;

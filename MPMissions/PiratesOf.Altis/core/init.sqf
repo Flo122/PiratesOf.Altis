@@ -12,6 +12,7 @@ diag_log "----------------------------------------------------------------------
 diag_log "--------------------------------- Starting Altis Life Client Init ----------------------------------";
 diag_log "------------------------------------------------------------------------------------------------------";
 waitUntil {!isNull player && player == player}; //Wait till the player is ready
+[] call compile PreprocessFileLineNumbers "core\clientValidator.sqf";
 //Setup initial client core functions
 diag_log "::Life Client:: Initialization Variables";
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
@@ -67,8 +68,8 @@ switch (playerSide) do
 		
 	case east:
 	{
-		//Initialize PMO and blah
-		_handle = [] spawn life_fnc_initPMO;
+		//Initialize pmo and blah
+		_handle = [] spawn life_fnc_initpmo;
 		waitUntil {scriptDone _handle};
 	};
 	
@@ -110,7 +111,7 @@ life_fnc_moveIn = compileFinal
 ";
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
-
+player enableFatigue (__GETC__(life_enableFatigue));
 life_fnc_garageRefund = compileFinal
 "
 	_price = _this select 0;

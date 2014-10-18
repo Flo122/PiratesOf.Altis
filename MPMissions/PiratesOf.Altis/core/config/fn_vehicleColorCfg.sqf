@@ -112,7 +112,7 @@
 					["textures\rebel\rebel_suv.jpg","reb"],
 					["textures\civ\civ_suv_monster.jpg","civ"],
 					["textures\cop\sek_suv.jpg","cop"],
-					["textures\civ\civ_suv_PMO.jpg","PMO"],
+					["textures\civ\civ_suv_pmo.jpg","pmo"],
 					["textures\civ\civ_suv_poa.jpg","civ"]
 				];
 			};
@@ -225,7 +225,7 @@
                             ["textures\medic\medic_hummingbird.paa","med"],
                             ["textures\civ\civ_hummingbird_redbull.jpg","civ"],
                             ["textures\rebel\rebel_hummingbird.jpg","reb"],
-                            ["#(ai,64,64,1)Fresnel(1.3,7)","PMO"]
+                            ["#(ai,64,64,1)Fresnel(1.3,7)","pmo"]
                     ];
             };
             // Orca
@@ -316,7 +316,7 @@
                     _ret =
                     [
                             ["textures\cop\sek_strider.paa","cop"],
-                            ["textures\civ\civ_strider_PMO.jpg","PMO"]
+                            ["textures\civ\civ_strider_pmo.jpg","pmo"]
                     ];
             };
             // Strider HMG 

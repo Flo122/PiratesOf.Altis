@@ -37,7 +37,7 @@ switch (_shop) do
 		];
 	};
 	
-	case "PMO_shop":
+	case "pmo_shop":
 	{
 		_return = [
 			["C_SUV_01_F",25000],
@@ -45,7 +45,7 @@ switch (_shop) do
 		];
 	};
 	
-	case "PMO_air_hs": {
+	case "pmo_air_hs": {
 		_return = [
 			["B_Heli_Light_01_F",200000]
 		];

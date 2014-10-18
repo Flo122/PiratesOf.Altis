@@ -36,7 +36,7 @@ if(_functionName == "bis_fnc_execvm") then {
 	if(_param2 != "initPlayerServer.sqf") exitWith {_exitScope = true;};
 };
 
-/*
+
 if(_callerName == "" OR _callerUID == "") exitWith {}; //NO.
 
 if(_callerUID != "__SERVER__" && _callerName != "__SERVER__" && toLower(_functionName) in ["spy_fnc_cookiejar","spy_fnc_notifyadmins"]) then {
@@ -63,7 +63,7 @@ if(_callerUID != "__SERVER__" && _callerName != "__SERVER__" && toLower(_functio
 		_exitScope = true;
 	};
 };
-	*/
+
 if(toLower(_functionName) == "bis_fnc_endmission") exitWith {false}; //Don't allow BIS_fnc_endMission to be passed.
 
 if(_exitScope) exitWith {false}; //Blah.

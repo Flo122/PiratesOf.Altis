@@ -285,11 +285,11 @@ switch(_shop) do
 		};
 	};
 	
-	case "PMO_basic":
+	case "pmo_basic":
 	{
 		switch (true) do 
 		{
-			case (playerSide != east): {"Du bist kein PMO"};
+			case (playerSide != east): {"Du bist kein pmo"};
 			default {
 				["Altis Sicherheitsdienst",
 					[

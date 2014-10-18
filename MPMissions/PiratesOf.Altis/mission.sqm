@@ -2591,9 +2591,9 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="PMO_1";
+					text="pmo_1";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="PMO";
+					description="pmo";
 				};
 				class Item1
 				{
@@ -2603,9 +2603,9 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="PMO_2";
+					text="pmo_2";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="PMO";
+					description="pmo";
 				};
 				class Item2
 				{
@@ -2615,9 +2615,9 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="PMO_4";
+					text="pmo_4";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="PMO";
+					description="pmo";
 				};
 				class Item3
 				{
@@ -2627,9 +2627,9 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="PMO_3";
+					text="pmo_3";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="PMO";
+					description="pmo";
 				};
 				class Item4
 				{
@@ -2639,9 +2639,9 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="PMO_5";
+					text="pmo_5";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="PMO";
+					description="pmo";
 				};
 			};
 		};
@@ -30145,7 +30145,7 @@ class Mission
 			vehicle="Land_InfoStand_V1_F";
 			leader=1;
 			skill=0.60000002;
-			init="this allowDamage false;  this enableSimulation false;  this setVariable[""realname"",""PMO Dienstfahrzeuge""]; this addAction[""Fahrzeuggarage"",{[[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; createDialog ""Life_impound_menu""; disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""PMO_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east '];  this addAction[""Helikoptergarage"",{[[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; createDialog ""Life_impound_menu""; disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""PMO_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east '];  this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""PMO Heli Shop"",life_fnc_vehicleShopMenu,[""PMO_air_hs"",east,""PMO_air_1"",""PMO"",""Heli Shop""]]; this addAction[""PMO Dienstfahrzeuge"",life_fnc_vehicleShopMenu,[""PMO_shop"",east,""PMO_car_1"",""PMO"",""PMO Dienstfahrzeuge""]]; ";
+			init="this allowDamage false;  this enableSimulation false;  this setVariable[""realname"",""pmo Dienstfahrzeuge""]; this addAction[""Fahrzeuggarage"",{[[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; createDialog ""Life_impound_menu""; disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""pmo_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east '];  this addAction[""Helikoptergarage"",{[[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; createDialog ""Life_impound_menu""; disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""pmo_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east '];  this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""pmo Heli Shop"",life_fnc_vehicleShopMenu,[""pmo_air_hs"",east,""pmo_air_1"",""pmo"",""Heli Shop""]]; this addAction[""pmo Dienstfahrzeuge"",life_fnc_vehicleShopMenu,[""pmo_shop"",east,""pmo_car_1"",""pmo"",""pmo Dienstfahrzeuge""]]; ";
 		};
 		class Item2656
 		{
@@ -49977,7 +49977,7 @@ class Mission
 			vehicle="Land_Metal_rack_F";
 			skill=0.60000002;
 			text="h1_3_5";
-			init="this enableSimulation false; this allowDamage false;    this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];   this addAction[""Dienstuniformen"",life_fnc_clothingMenu,""PMO""]; this addAction[""Dienstwaffen"",life_fnc_weaponShopMenu,""PMO_basic""]; this setVariable[""realname"",""Dienstausrüstung""];";
+			init="this enableSimulation false; this allowDamage false;    this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];   this addAction[""Dienstuniformen"",life_fnc_clothingMenu,""pmo""]; this addAction[""Dienstwaffen"",life_fnc_weaponShopMenu,""pmo_basic""]; this setVariable[""realname"",""Dienstausrüstung""];";
 		};
 		class Item4632
 		{
@@ -53758,14 +53758,14 @@ class Mission
 		class Item226
 		{
 			position[]={12820.208,88.13372,16660.041};
-			name="PMO_spawn";
+			name="pmo_spawn";
 			type="Empty";
 			angle=-112.541;
 		};
 		class Item227
 		{
 			position[]={12833.746,86.265327,16736.166};
-			name="PMO_air_1";
+			name="pmo_air_1";
 			type="Empty";
 			angle=83.485497;
 		};
@@ -54419,7 +54419,7 @@ class Mission
 		class Item310
 		{
 			position[]={12866.719,85.973045,16717.908};
-			name="PMO_car_1";
+			name="pmo_car_1";
 			type="Empty";
 			angle=290;
 		};

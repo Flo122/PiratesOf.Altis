@@ -56,7 +56,7 @@ life_adminlevel = 0;
 life_donatorlevel = 0;
 life_medicLevel = 0;
 life_coplevel = 0;
-life_PMOlevel = 0;
+life_pmolevel = 0;
 
 //Null out harmful things for the server.
 __CONST__(JxMxE_PublishVehicle,"No");
@@ -132,7 +132,7 @@ _rsb setVariable["bis_disabled_Door_1",1,true];
 _rsb allowDamage false;
 _dome allowDamage false;
 
-[] spawn specfix.sqf
+[] spawn specfix.sqf;
 
 life_server_isReady = true;
 publicVariable "life_server_isReady";

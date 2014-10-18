@@ -17,7 +17,7 @@ if((_this select 3) == "donator" && !license_civ_donator) exitWith {hint localiz
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};
 if((_this select 3) in ["medic"] && playerSide != independent) exitWith { hint localize "STR_Shop_NotaMedic"; closeDialog 0;};
-if((_this select 3) in ["PMO"] && playerSide != east) exitWith { hint localize "STR_Shop_NotaPMO"; closeDialog 0;};
+if((_this select 3) in ["pmo"] && playerSide != east) exitWith { hint localize "STR_Shop_Notapmo"; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 

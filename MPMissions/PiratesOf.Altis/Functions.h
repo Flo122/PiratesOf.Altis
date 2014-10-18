@@ -26,7 +26,7 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
-		class initPMO {};
+		class initpmo {};
 		class initZeus {};
 	};
 	
@@ -174,7 +174,7 @@ class Life_Client_Core
 		class clothing_dive {};
 		class clothing_kart {};
 		class clothing_donator {};
-		class clothing_PMO {};
+		class clothing_pmo {};
 		class clothing_medic {};
 	};
 	
@@ -312,11 +312,11 @@ class Life_Client_Core
 		class trackMarkers {};
 	};
 	
-	class PMO
+	class pmo
 	{
-		file = "core\PMO";
-		class PMOMarkers {};
-		class PMOLoadout {};
+		file = "core\pmo";
+		class pmoMarkers {};
+		class pmoLoadout {};
 	};
 	
 	class Cop

@@ -221,8 +221,8 @@ compileFinal "
 	hint format[""Du hast eine Nachricht an die Sanitäter versendet."",_to,_msg];
 	ctrlShow[3022,true];
 ";
-//To PMO
-TON_fnc_cell_PMOrequest = 
+//To pmo
+TON_fnc_cell_pmorequest = 
 compileFinal "
 	private[""_msg"",""_to""];
 	if(({side _x == east} count playableUnits) == 0) exitWith {hint ""Zurzeit ist kein Pannenhelfer im Dienst. Bitte probiere es später nochmal.""};
@@ -233,7 +233,7 @@ compileFinal "
 		
 	[[_msg,name player,6],""TON_fnc_clientMessage"",east,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""Du hast eine Nachricht an den PMO versendet."",_to,_msg];
+	hint format[""Du hast eine Nachricht an den pmo versendet."",_to,_msg];
 	ctrlShow[3023,true];
 ";
 //Admin to All
@@ -256,7 +256,7 @@ publicVariable "TON_fnc_cell_textadmin";
 publicVariable "TON_fnc_cell_adminmsg";
 publicVariable "TON_fnc_cell_adminmsgall";
 publicVariable "TON_fnc_cell_emsrequest";
-publicVariable "TON_fnc_cell_PMOrequest";
+publicVariable "TON_fnc_cell_pmorequest";
 publicVariable "TON_fnc_cell_copmsgall";
 
 //Client Message

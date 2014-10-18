@@ -57,6 +57,8 @@ __CONST__(life_gangPrice,2000000); //Price for creating a gang (They're all pers
 __CONST__(life_gangUpgradeBase,1500000); //MASDASDASD
 __CONST__(life_gangUpgradeMultipler,2.5); //BLAH
 
+__CONST__(life_enableFatigue,true); //Enable / Disable the ARMA 3 Fatigue System
+
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
 

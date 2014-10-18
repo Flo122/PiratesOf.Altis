@@ -11,7 +11,7 @@ private["_mode","_packet","_array","_flag","_value","_value2"];
 _mode = [_this,0,0,[0]] call BIS_fnc_param;
 _packet = [steamid,playerSide,nil,_mode];
 _array = [];
-_flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"}; case east: {"PMO"};};
+_flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"}; case east: {"pmo"};};
 
 switch(_mode) do {
 	case 0: {
@@ -60,7 +60,7 @@ switch(_mode) do {
 	case west: {_query = format["UPDATE players SET cop_gear='%1', cash='%2' WHERE playerid='%3'",_value,_value2,_uid];};
 	case civilian: {_query = format["UPDATE players SET civ_gear='%1', cash='%2' WHERE playerid='%3'",_value,_value2,_uid];};
 	case independent: {_query = format["UPDATE players SET med_gear='%1', cash='%2' WHERE playerid='%3'",_value,_value2,_uid];};
-	case east: {_query = format["UPDATE players SET PMO_gear='%1', cash='%2' WHERE playerid='%3'",_value,_value2,_uid];};
+	case east: {_query = format["UPDATE players SET pmo_gear='%1', cash='%2' WHERE playerid='%3'",_value,_value2,_uid];};
 	};
 	};
 };

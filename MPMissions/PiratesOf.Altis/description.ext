@@ -198,7 +198,6 @@ class CfgDebriefing
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 	
-	/*
 	class SpyGlass
 	{
 		title = "The SpyGlass sees you";
@@ -208,7 +207,6 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
-	*/
 };
 
 class CfgNotifications
@@ -285,9 +283,9 @@ class CfgNotifications
 		priority = 5;
 	};
 	
-	class PMOMessage
+	class pmoMessage
 	{
-		title = "PMO Nachricht";
+		title = "pmo Nachricht";
 		iconPicture = "icons\messagenew.paa";
 		description = "%1";
 		duration = 10;

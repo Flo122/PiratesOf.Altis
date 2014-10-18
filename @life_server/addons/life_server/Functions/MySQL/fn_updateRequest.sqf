@@ -35,7 +35,7 @@ switch (_side) do {
 	case west: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', cop_gear='%4', cop_licenses='%5' WHERE playerid='%6'",_name,_cash,_bank,_gear,_licenses,_uid];};
 	case civilian: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', civ_licenses='%6', civ_gear='%4', arrested='%7' WHERE playerid='%5'",_name,_cash,_bank,_gear,_uid,_licenses,[_this select 7] call DB_fnc_bool];};
 	case independent: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', med_licenses='%4', med_gear='%6' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear];};
-	case east: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', PMO_licenses='%4', PMO_gear='%6' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear];};
+	case east: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', pmo_licenses='%4', pmo_gear='%6' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear];};
 };
 
 waitUntil {sleep (random 0.3); !DB_Async_Active};

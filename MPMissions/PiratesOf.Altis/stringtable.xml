@@ -460,13 +460,13 @@
 			<Italian>Msg medici</Italian>
 			<Portuguese>Chamar SAMU</Portuguese>
 		</Key>		
-		<Key ID="STR_CELL_PMORequest">
-			<Original>An die PMO</Original>
-			<English>An die PMO</English>
-			<German>An die PMO</German>
-			<French>An die PMO</French>
-			<Italian>An die PMO</Italian>
-			<Portuguese>An die PMO</Portuguese>
+		<Key ID="STR_CELL_pmoRequest">
+			<Original>An die pmo</Original>
+			<English>An die pmo</English>
+			<German>An die pmo</German>
+			<French>An die pmo</French>
+			<Italian>An die pmo</Italian>
+			<Portuguese>An die pmo</Portuguese>
 		</Key>		
 		<Key ID="STR_CELL_CopMSGAllBTN">
 			<Original>Globale Nachricht</Original>
@@ -3412,10 +3412,10 @@
 			<English>Security Service</English>
 			<German>Sicherheitsdienst</German>
 		</Key>
-		<Key ID="STR_License_PMO">
-			<Original>PMO Flight License</Original>
-			<English>PMO Flight License</English>
-			<German>PMO Fluglizenz</German>
+		<Key ID="STR_License_pmo">
+			<Original>pmo Flight License</Original>
+			<English>pmo Flight License</English>
+			<German>pmo Fluglizenz</German>
 		</Key>
 		<Key ID="STR_License_Bm">
 			<Original>Black Market License</Original>
@@ -4572,7 +4572,7 @@
 		<Key ID="STR_vInAct_Impound_disabled">
 			<Original>Impound Vehicle</Original>
 			<English>Impound Vehicle</English>
-			<German>PMO verstaendigen</German>
+			<German>pmo verstaendigen</German>
 			<French>Mise en fourrière</French>
 			<Italian>Sequestra Veicolo</Italian>
 		</Key>
@@ -4749,9 +4749,9 @@
 			<English>You are not a Medic!</English>
 			<German>Du bist kein Sanitäter!</German>
 		</Key>		
-		<Key ID="STR_Shop_NotaPMO">
-			<Original>You are not a PMO!</Original>
-			<English>You are not a PMO!</English>
+		<Key ID="STR_Shop_Notapmo">
+			<Original>You are not a pmo!</Original>
+			<English>You are not a pmo!</English>
 			<German>Du bist kein Pannenhelfer!</German>
 		</Key>
 		<Key ID="STR_Shop_YouNeed">

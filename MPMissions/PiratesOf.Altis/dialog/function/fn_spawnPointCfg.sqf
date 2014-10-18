@@ -87,7 +87,7 @@ switch (_side) do
 	
 	case east: {
 		_return = [
-			["PMO_spawn","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["pmo_spawn","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};
 };
