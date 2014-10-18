@@ -42,7 +42,7 @@ _Btn8 = _display displayCtrl Btn8;
 _Btn9 = _display displayCtrl Btn9;
 life_pInact_curTarget = _curTarget;
 
-_Btn4 ctrlShow false;
+
 _Btn5 ctrlShow false;
 _Btn6 ctrlShow false;
 _Btn7 ctrlShow false;
@@ -65,3 +65,11 @@ if((_curTarget getVariable["Escorting",false])) then {
 //Set PutInCar Button
 _Btn3 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
+
+if(player distance cursorTarget < 3.5 && isPlayer cursorTarget && (animationState cursorTarget=="Incapacitated" or animationState cursorTarget=="amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" or cursorTarget getVariable "restrained") then {
+_Btn4 ctrlShow true;
+_Btn4 ctrlSetText localize "Smartphone abnehmen";
+_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_robsmartphoneAction; closeDialog 0;";
+} else {
+_Btn4 ctrlShow false;
+};

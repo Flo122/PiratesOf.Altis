@@ -145,6 +145,7 @@ class Life_Client_Core
 		class processActionLsd {};
 		class sitDown {};
 		class robShops {};
+		class robsmartphoneAction {};
 	};
 	
 	class Special
@@ -233,6 +234,7 @@ class Life_Client_Core
 		class smartphone {};
 		class newMsg {};
 		class showMsg {};
+		class cellphone2 {};
 	};
 	
 	class Functions
