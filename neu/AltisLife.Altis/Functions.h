@@ -142,7 +142,6 @@ class Life_Client_Core
 		class packupmauer {};
 		class processActionDual {};
 		class processActionLsd {};
-		class takeOrgans {};
 		class sitDown {};
 		class robShops {};
 	};
