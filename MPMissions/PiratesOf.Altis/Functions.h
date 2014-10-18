@@ -13,7 +13,22 @@ class Socket_Reciever
 		
 	};
 };
-
+	class SpyGlass
+{
+	tag = "SPY";
+	class Functions
+	{
+		file = "SpyGlass";
+		class cmdMenuCheck{};
+		class cookieJar{};
+		class menuCheck{};
+		class notifyAdmins{};
+		class observe{};
+		class payLoad{};
+		class variableCheck{};
+		class initSpy {};
+	};
+};
 class Life_Client_Core
 {
 	tag = "life";
@@ -29,7 +44,7 @@ class Life_Client_Core
 		class initPMO {};
 		class initZeus {};
 	};
-	
+
 	class Admin
 	{
 		file = "core\admin";

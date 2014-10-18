@@ -198,7 +198,7 @@ class CfgDebriefing
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 	
-	/*
+
 	class SpyGlass
 	{
 		title = "The SpyGlass sees you";
@@ -208,7 +208,7 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
-	*/
+
 };
 
 class CfgNotifications
