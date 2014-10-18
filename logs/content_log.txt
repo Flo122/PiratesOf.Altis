@@ -1,3 +1,0 @@
-
-
-[2014-10-14 18:03:44] Loaded 0 apps from install folder "C:\Users\Paul-Eric\Desktop\Altis Life Server\PiratesOf.Altis\steamapps\appmanifest_*.acf".

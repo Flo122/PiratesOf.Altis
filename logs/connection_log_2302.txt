@@ -1,9 +1,0 @@
-
-
-[2014-10-14 18:03:44] Log session started
-
-[2014-10-14 18:03:44] [0,0] SetSteamID( [A:1:0:0] )
-[2014-10-14 18:03:44] [1,2] Connect() starting connection (eNetQOSLevelLow, 208.64.200.137:27018, UDP)
-
-[2014-10-14 18:03:45] [1,2] ConnectionCompleted() (81.171.115.37:27018, UDP)
-[2014-10-14 18:03:45] [1,2] RecvMsgClientLogOnResponse() : [A:1:2610478086:4734] 'OK'
