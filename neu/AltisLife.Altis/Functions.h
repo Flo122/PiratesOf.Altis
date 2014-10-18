@@ -209,6 +209,7 @@ class Life_Client_Core
 	class Player_Menu
 	{
 		file = "core\pmenu";
+		class AAN {};
 		class wantedList {};
 		class wantedInfo {};
 		class wantedMenu {};
@@ -457,5 +458,7 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+		class calldialog {};
+		class sendChannel {};
 	};
 };

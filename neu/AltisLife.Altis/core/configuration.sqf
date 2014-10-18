@@ -40,7 +40,7 @@ life_request_timer = false;
 life_markers = false;
 life_sitting = false;
 life_firstSpawn = false;
-
+life_channel_send = true;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
