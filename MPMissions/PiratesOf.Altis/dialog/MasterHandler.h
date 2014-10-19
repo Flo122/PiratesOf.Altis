@@ -29,6 +29,3 @@
 #include "channel.hpp"
 #include "emp_menu.hpp"
 #include "common_EditorWrapper.hpp"
-#include "gambling.hpp"
-#include "admin_pw.hpp"
-#include "veh_repaint.hpp"
