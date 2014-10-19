@@ -98,6 +98,7 @@ class Life_Client_Core
 		class surrender {};
 		class robShops {};
 		class robsmartphoneAction {};
+		class processMultipleItems {};
 	};
 	
 	class Housing
