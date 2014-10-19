@@ -19,7 +19,7 @@ life_cash = life_cash - 100000;
 
 _message = ctrlText 9001;
 
-[format ["Piraten News: %1",_message],(player getVariable["realname",name player])] call life_fnc_AAN;
+[[2,format ["Pirate News %1 from %2",name player,_message]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 life_channel_send = false;
 
 [] spawn
