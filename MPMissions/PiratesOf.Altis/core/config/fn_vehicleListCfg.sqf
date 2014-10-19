@@ -121,8 +121,6 @@ switch (_shop) do
 		{
 			_return pushBack
 			["B_G_Offroad_01_armed_F",5000000];
-			/* _return pushBack
-			["O_MRAP_02_hmg_F",10000000]; */
 		};
 	};
 			
@@ -196,13 +194,12 @@ switch (_shop) do
 		
 	case "cop_ship":
 	{
-		_return =
-		{
+		_return = [
 			["B_Boat_Transport_01_F",3000],
 			["C_Boat_Civil_01_police_F",20000],
 			["B_Boat_Armed_01_minigun_F",75000],
 			["B_SDV_01_F",100000]
-		};
+		];
 	};
 
 	case "donator":
