@@ -106,26 +106,7 @@ class CfgSounds
 		name = "car_alarm";  
 		sound[] = {"\sounds\car_alarm.ogg", 1.0, 1};  
 		titles[] = {};
-	};
-	  class Win
-      {
-        name = "Win";
-        sound[] = {"\core\Pirates\sounds\Menu8-Bit.ogg", 1.0, 1};
-        titles[] = {};
-      };
-      class Jackpot
-      {
-        name = "Jackpot";
-        sound[] = {"\core\Pirates\sounds\Jackpot.ogg", 1.0, 1};
-        titles[] = {};
-      }; 
-	  class Lost
-      {
-        name = "Lost";
-        sound[] = {"\core\Pirates\sounds\TextboxBloop8-Bit.ogg", 1.0, 1};
-        titles[] = {};
-      };
-	
+	};	
 	class mining
 	{
 		name = "mining";  
