@@ -3,7 +3,7 @@
 */
 while {true} do {
     {
-        if (count units _x==0) then {
+        if (count units _x == 0) then {
             deleteGroup _x;
             //diag_log ("CUSTOM: GROUP CLEANUP");
         };
