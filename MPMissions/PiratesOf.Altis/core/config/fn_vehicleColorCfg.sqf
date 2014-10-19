@@ -112,7 +112,7 @@
 					["textures\rebel\rebel_suv.jpg","reb"],
 					["textures\civ\civ_suv_monster.jpg","civ"],
 					["textures\cop\sek_suv.jpg","cop"],
-					["textures\civ\civ_suv_pmo.jpg","pmo"],
+					["textures\pmo\pmo_suv.jpg","pmo"],
 					["textures\civ\civ_suv_poa.jpg","civ"]
 				];
 			};
@@ -251,7 +251,7 @@
                             ["textures\cop\sek_ghosthawk_0.paa","cop","textures\cop\sek_ghosthawk_1.paa"]
                     ];
             };
-                    // Hellcat
+            // Hellcat
             case "I_Heli_light_03_unarmed_F":
             {
                     _ret =
@@ -316,7 +316,7 @@
                     _ret =
                     [
                             ["textures\cop\sek_strider.paa","cop"],
-                            ["textures\civ\civ_strider_pmo.jpg","pmo"]
+                            ["textures\pmo\pmo_strider.jpg","pmo"]
                     ];
             };
             // Strider HMG 

@@ -125,7 +125,7 @@ if (_inputItemsDeleted) then {
 
 	//add the new item
 	if (!([true,_outputItem,(_outputItemAmount * _productionAmount)] call life_fnc_handleInv)) then {
-		hint format["Ups. Beim produzieren ist was schiefgelaufen. Irgendein Admin ist Schuld! Ich nicht. Gruﬂ preller"];
+		hint format["Ups. Beim produzieren ist was schiefgelaufen. Irgendein Admin ist Schuld! Ich nicht"];
 		diag_log format["ERROR: fn_processMultipleItems - new item(s) are not added"];
 	};
 

@@ -49870,7 +49870,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Uranschmuggler"",life_fnc_virt_menu,""uranip"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian '];   this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; this setVariable[""realname"",""Kugelgiesser""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Uranschmuggler"",life_fnc_virt_menu,""uranip"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian '];   this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; this setVariable[""realname"",""Uranschmuggler""];";
 		};
 		class Item4617
 		{
@@ -49881,7 +49881,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_WaterTank_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Kanonenkugel herstellen"",life_fnc_processMultipleItems,""bronze"",0,false,false,"""",'!life_is_processing']; this setVariable[""realname"",""Bronzeverarbeitung""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Bronze herstellen"",life_fnc_processMultipleItems,""bronze"",0,false,false,"""",'!life_is_processing']; this setVariable[""realname"",""Bronzeverarbeitung""];";
 		};
 		class Item4618
 		{
