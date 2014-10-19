@@ -26,7 +26,7 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
-		class initpmo {};
+		class initPMO {};
 		class initZeus {};
 	};
 	
@@ -38,6 +38,14 @@ class Life_Client_Core
 		class admingetID {};
 		class adminMenu {};
 		class adminQuery {};
+		class adminSpectate {};
+		class adminTeleport {};
+		class adminTpHere {};
+		class adminDebugCon {};
+		class adminCompensate {};
+		class adminGodMode {};
+		class adminFreeze {};
+		class adminMarkers {};
 	};
 
 	class Medical_System
@@ -268,6 +276,7 @@ class Life_Client_Core
 		class removeLicenses {};
 		class demoChargeTimer {};
 		class civInteractionMenu {};
+		class freezePlayer {};
 	};
 	
 	class Vehicle

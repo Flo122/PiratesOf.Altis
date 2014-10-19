@@ -34,7 +34,7 @@ class Life_Admin_Compensate {
 			text = "";
 			x = 0.1;
 			y = 0.25;
-			w = 0.5; h = 0.32;
+			w = 0.5; h = 0.11;
 		};
 		
 		class Title : Life_RscTitle {

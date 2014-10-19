@@ -233,9 +233,6 @@
 			<German>Spielermarkierung aktiviert</German>
 			<French>Votre Niveau admin n'est pas suffisamment élevée</French>
 		</Key>
-		<Key ID="STR_Admin_RepairBuild">
-			<Original>Repair B</Original>
-		</Key>
 	</Package>
 	<Package name="Admin_Notifications">
 		<Key ID="STR_ANOTF_Query">
