@@ -32,8 +32,8 @@ _productionInfo = switch (_type) do
 	case "bronze": {[["zinnp","copper_r"],[1,1],"bronze",1,"bronze",1337];};
 	case "schmuck": {[["silberp","diamondc"],[1,1],"schmuck",1,"schmuck",1482];};
 	case "pbrau": {[["zuckerip","getreideip"],[1,1],"pbrau",1,"pbrau",2470];};
-	case "kkugel": {[["eisenp","kkugel"],[1,1],"kkugel",1,"kkugel",1398];};
-	case "spulver": {[["schwefelp","spulver"],[1,1],"spulver",1,"spulver",1140];};
+	case "kkugel": {[["eisenp","iron_r"],[1,1],"kkugel",1,"kkugel",1398];};
+	case "spulver": {[["schwefelp","holzp"],[1,1],"spulver",1,"spulver",1140];};
 	case "pkugel": {[["kkugel","spulver"],[1,1],"pkugel",1,"pkugel",6272];};
 	default {[]};
 };
