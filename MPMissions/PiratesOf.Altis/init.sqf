@@ -18,7 +18,7 @@ StartProgress = true;
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
 
 //Scripts
-[] execVM "scripts\zlt_fastrope.sqf";
+//[] execVM "scripts\zlt_fastrope.sqf";
 [] execVM "welcomeMessage.sqf";
 [] execVM "scripts\safezone.sqf";
 [] execVM "scripts\teargas.sqf";
