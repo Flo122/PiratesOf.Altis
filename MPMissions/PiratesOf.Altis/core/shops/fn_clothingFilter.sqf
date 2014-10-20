@@ -33,7 +33,6 @@ lbClear _list;
 _clothes = switch (life_clothing_store) do
 {
 	case "bruce": {[_selection] call life_fnc_clothing_bruce;};
-	case "sec": {[_selection] call life_fnc_clothing_sec;};
 	case "donator": {[_selection] call life_fnc_clothing_donator;};
 	case "cop": {[_selection] call life_fnc_clothing_cop;};
 	case "medic": {[_selection] call life_fnc_clothing_medic;};
