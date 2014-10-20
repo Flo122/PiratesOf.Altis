@@ -191,7 +191,7 @@ compileFinal "
 	
 	[[_msg,name player,3],""TON_fnc_clientMessage"",_to,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""Adminnachricht verdentet an: %1 - Nachricht: %2"",name _to,_msg];
+	hint format[""Adminnachricht versendet an: %1 - Nachricht: %2"",name _to,_msg];
 ";
 //Admin to All
 TON_fnc_cell_adminmsgall =
@@ -228,12 +228,12 @@ compileFinal "
 	if(({side _x == east} count playableUnits) == 0) exitWith {hint ""Zurzeit ist kein Pannenhelfer im Dienst. Bitte probiere es später nochmal.""};
 	ctrlShow[3023,false];
 	_msg = ctrlText 3003;
-	_to = ""EMS Units"";
+	_to = ""PMO"";
 	if(_msg == """") exitWith {hint ""Du musst eine Nachricht eingeben!"";ctrlShow[3023,true];};
 		
 	[[_msg,name player,6],""TON_fnc_clientMessage"",east,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
-	hint format[""Du hast eine Nachricht an den pmo versendet."",_to,_msg];
+	hint format[""Du hast eine Nachricht an den PMO versendet."",_to,_msg];
 	ctrlShow[3023,true];
 ";
 //Admin to All
