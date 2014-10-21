@@ -3469,11 +3469,11 @@
 			<Italian>Porto d'Armi</Italian>
 		</Key>
 		<Key ID="STR_License_Sek">
-			<Original>Pirates Special Force</Original>
-			<English>Pirates Special Force</English>
-			<German>Pirates Einsatz Kommando</German>
-			<French>License du SEK</French>
-			<Italian>Licenza SEK</Italian>
+			<Original>SEK</Original>
+			<English>SEK</English>
+			<German>SEK</German>
+			<French>SEK</French>
+			<Italian>SEK</Italian>
 		</Key>
 		<Key ID="STR_License_CG">
 			<Original>Coast Guard License</Original>
