@@ -67,7 +67,7 @@ switch (_filter) do
 			["G_Squares",nil,10],
 			["G_Lowprofile",nil,30],
 			["G_Combat",nil,55],
-			["G_Bandanna_blk",SEK,55]
+			["G_Balaclava_blk",SEK,55]
 		];
 	};
 	
