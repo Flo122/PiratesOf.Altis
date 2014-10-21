@@ -8,7 +8,7 @@
 private["_ret","_bad","_time","_bail","_esc","_countDown"];
 _ret = [_this,0,[],[[]]] call BIS_fnc_param;
 _bad = [_this,1,false,[false]] call BIS_fnc_param;
-if(_bad) then { _time = time + 1100; } else { _time = time + (15 * 60); };
+if(_bad) then { _time = time + 1100; } else { _time = time + (30 * 60); };
 
 if(count _ret > 0) then { life_bail_amount = (_ret select 3); } else { life_bail_amount = 100000; _time = time + (10 * 60); };
 _esc = false;
@@ -35,7 +35,7 @@ while {true} do
 		hintSilent parseText format[(localize "STR_Jail_Time")+ "<br/> <t size='2'><t color='#FF0000'>%1</t></t><br/><br/>" +(localize "STR_Jail_Pay")+ " %3<br/>" +(localize "STR_Jail_Price")+ " $%2",_countDown,[life_bail_amount] call life_fnc_numberText,if(isNil "life_canpay_bail") then {"Yes"} else {"No"}];
 	};
 	
-	if(player distance (getMarkerPos "jail_marker") > 100) exitWith {
+	if(player distance (getMarkerPos "jail_marker") > 150) exitWith {
 		_esc = true;
 	};
 	
