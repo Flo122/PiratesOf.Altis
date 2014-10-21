@@ -49744,6 +49744,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
+			text="Dealer_4";
 			init="this allowDamage false; this enableSimulation false; this addAction[""Piratenhandel"",life_fnc_virt_menu,""pirat""]; this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; this setVariable[""realname"",""Piratenhandel""];";
 		};
 		class Item4606
@@ -49766,6 +49767,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
+			text="Dealer_5";
 			init="this allowDamage false; this enableSimulation false; this addAction[""Spirituosenhandel"",life_fnc_virt_menu,""sprit""]; this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; this setVariable[""realname"",""Spirituosenhandel""];";
 		};
 		class Item4608
@@ -49814,6 +49816,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_WoodenTable_large_F";
 			skill=0.60000002;
+			text="Dealer_1";
 			init="this allowDamage false; this enableSimulation false; this addAction[""Drogendealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; this setVariable[""realname"",""Drogendealer""];";
 		};
 		class Item4612
@@ -49860,6 +49863,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
+			text="Dealer_6";
 			init="this enableSimulation false; this allowDamage false; this addAction[""Uranschmuggler"",life_fnc_virt_menu,""uranip"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian '];   this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; this setVariable[""realname"",""Kugelgiesser""];";
 		};
 		class Item4616
@@ -50458,6 +50462,7 @@ class Mission
 			vehicle="Land_CratesWooden_F";
 			leader=1;
 			skill=0.60000002;
+			text="Dealer_3";
 			init=" this allowDamage false; this enableSimulation false; this addAction[""Drogendealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; this setVariable[""realname"",""Drogendealer""];";
 		};
 		class Item4672
@@ -50498,6 +50503,7 @@ class Mission
 			vehicle="Land_CratesShabby_F";
 			leader=1;
 			skill=0.60000002;
+			text="Dealer_2";
 			init=" this allowDamage false; this enableSimulation false; this addAction[""Drogendealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; this setVariable[""realname"",""Drogendealer""];";
 		};
 		class Item4676
@@ -52316,7 +52322,7 @@ class Mission
 		};
 		class Item38
 		{
-			position[]={4980.4224,18.096643,16485.131};
+			position[]={4985.187,18.565208,16491.332};
 			name="Dealer_1";
 			text="Drogendealer";
 			type="mil_dot";
@@ -53689,7 +53695,7 @@ class Mission
 		};
 		class Item207
 		{
-			position[]={13413.598,13.843097,11889.908};
+			position[]={13413.017,13.005247,11895.872};
 			name="beruf_2_10";
 			text="Piratenhändler";
 			type="b_unknown";

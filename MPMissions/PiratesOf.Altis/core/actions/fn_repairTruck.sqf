@@ -49,7 +49,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
 		//kein toolkit remove
-		if((playerSide == civilian) or(playerSide == east)) then {
+		if(playerSide == civilian) then {
 		player removeItem "ToolKit";
 		};
 		
