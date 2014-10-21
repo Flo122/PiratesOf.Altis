@@ -29,3 +29,4 @@
 #include "channel.hpp"
 #include "emp_menu.hpp"
 #include "common_EditorWrapper.hpp"
+#include "market.hpp"
