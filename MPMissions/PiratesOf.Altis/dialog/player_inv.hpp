@@ -307,17 +307,29 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-		class ButtonMarket : Life_RscButtonMenu {
+		
+		/*class ButtonMarket : Life_RscButtonMenu {
 			idc = -1;
-			text = "Markt";
-			onButtonClick = "[] spawn life_fnc_openMarketView;";
+			text = "Market";
+			onButtonClick = "[] call life_fnc_OpenEconomy;";
 			//x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.805;
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-		
+		*/
+		/*
+		class ButtonMyGang : Life_RscButtonMenu {
+			idc = 2011;
+			text = "Gruppe";
+			onButtonClick = "[] call life_fnc_gangMenu";
+			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.8 - (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+		*/
 		
 		class ButtonWantedAdd : life_RscButtonMenu {
 			idc = 9800;
