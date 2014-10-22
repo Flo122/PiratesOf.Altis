@@ -199,11 +199,14 @@ class Mission
 	{
 		briefingName="Altis Life RPG";
 		overviewText="Altis Life RPG 3.1.4.8";
+		resistanceEast=1;
 		startWeather=0;
 		startWind=0;
 		forecastWeather=0;
 		forecastWind=0;
 		forecastWaves=0;
+		rainForced=1;
+		lightningsForced=1;
 		wavesForced=1;
 		windForced=1;
 		year=2035;
@@ -52218,7 +52221,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={7788.1226,98.95047,15183.628};
+			position[]={7805.9917,100.59726,15168.09};
 			name="iron_processing";
 			text="Eisenverarbeitung";
 			type="mil_box";
@@ -52601,7 +52604,7 @@ class Mission
 		};
 		class Item63
 		{
-			position[]={14327.465,18.488745,17427.523};
+			position[]={14331.188,18.460356,17427.871};
 			name="Dealer_1_4";
 			text="Drogendealer";
 			type="mil_dot";
@@ -52610,7 +52613,7 @@ class Mission
 		};
 		class Item64
 		{
-			position[]={14344.174,37.080429,18952.045};
+			position[]={14343.423,36.994751,18915.947};
 			name="dimond_1";
 			text="Diamantenverarbeitung";
 			type="mil_triangle";
@@ -52787,7 +52790,7 @@ class Mission
 		};
 		class Item87
 		{
-			position[]={5659.4126,146.76994,12361.631};
+			position[]={5661.833,146.85646,12360.346};
 			name="oil_trader";
 			text="Ölhändler";
 			type="b_unknown";
@@ -53395,7 +53398,7 @@ class Mission
 		};
 		class Item161
 		{
-			position[]={13809.776,60.172993,6402.1748};
+			position[]={13795.847,60.239937,6395.6855};
 			name="turle_dealer_1";
 			text="Schildkrötenhändler";
 			type="mil_dot";
@@ -53403,7 +53406,7 @@ class Mission
 		};
 		class Item162
 		{
-			position[]={10276.803,124.68878,7559.6777};
+			position[]={10297.065,125.3596,7561.6826};
 			name="sellgoldbars";
 			text="Goldbarrenankauf";
 			type="mil_box";
@@ -53434,7 +53437,7 @@ class Mission
 		};
 		class Item166
 		{
-			position[]={12153.025,27.575937,8448.5273};
+			position[]={12151.945,28.050377,8454.5859};
 			name="sellgoldbars_1";
 			text="Goldbarrenankauf";
 			type="mil_box";
@@ -53573,7 +53576,7 @@ class Mission
 		};
 		class Item183
 		{
-			position[]={7282.8374,172.92238,13967.575};
+			position[]={7281.1602,172.91536,13963.685};
 			name="beruf_1_1_1";
 			text="Giesserei";
 			type="mil_dot";
@@ -53637,7 +53640,7 @@ class Mission
 		};
 		class Item191
 		{
-			position[]={10115.059,12.917825,11636.179};
+			position[]={10111.787,12.876121,11636.338};
 			name="beruf_1_1_10";
 			text="Tabakverarbeitung";
 			type="mil_dot";
@@ -53693,7 +53696,7 @@ class Mission
 		};
 		class Item198
 		{
-			position[]={9533.7305,127.11164,15096.382};
+			position[]={9534.1572,127.11221,15095.021};
 			name="beruf_2_1";
 			text="Tabakhändler";
 			type="b_unknown";
@@ -53725,7 +53728,7 @@ class Mission
 		};
 		class Item202
 		{
-			position[]={7514.2744,139.01431,18303.998};
+			position[]={7513.2676,139.06453,18302.166};
 			name="beruf_2_5";
 			text="Zinnhändler";
 			type="b_unknown";
@@ -53954,7 +53957,7 @@ class Mission
 		};
 		class Item232
 		{
-			position[]={11787.335,56.119629,16624.057};
+			position[]={11791.407,56.445805,16622.119};
 			name="beruf_1_1_2_1_2_2";
 			text="Uranreinigung";
 			type="mil_dot";
@@ -53986,7 +53989,7 @@ class Mission
 		};
 		class Item236
 		{
-			position[]={14856.467,4.712255,10730.16};
+			position[]={14875.86,5.425106,10733.535};
 			name="beruf_1_1_2_1_2_6";
 			text="Brennstabherstellung";
 			type="mil_dot";
@@ -53994,7 +53997,7 @@ class Mission
 		};
 		class Item237
 		{
-			position[]={15496.446,12.72648,16271.699};
+			position[]={15490.411,12.747627,16276.117};
 			name="beruf_1_1_2_1_2_8";
 			text="Kraftwerkshändler";
 			type="mil_dot";
