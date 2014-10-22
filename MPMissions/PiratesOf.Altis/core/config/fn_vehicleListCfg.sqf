@@ -188,6 +188,8 @@ switch (_shop) do
 			["C_Hatchback_01_sport_F",250000];
 			_return pushBack
 			["B_Heli_Transport_01_F",200000];
+			_return pushBack
+			["I_Heli_light_03_unarmed_F",300000];
 		};
 	};
 		
