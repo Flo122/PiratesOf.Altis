@@ -43,13 +43,13 @@ if(_veh distance impound_obj < 50) then
 	};
 	_check = nearestObjects[_pos,["LandVehicle","Air"],4];
 	if(count _check > 0) exitWith {hint localize "STR_Shop_Unimpound_VehExist";};
-	if(_price > life_cash) then
+	if(_price > life_cash_pirates) then
 	{
 		_price = _price + 200;
 
-		if(_price > life_atmcash) exitWith {hint localize "STR_Shop_Unimpound_NotEnough"};
-		life_atmcash = life_atmcash - _price;
-		life_cash = life_cash + _price;
+		if(_price > life_atmcash_pirates) exitWith {hint localize "STR_Shop_Unimpound_NotEnough"};
+		life_atmcash_pirates = life_atmcash_pirates - _price;
+		life_cash_pirates = life_cash_pirates + _price;
 	};
 	_name = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
 	_veh setDamage 0;
@@ -76,7 +76,7 @@ if(_veh distance impound_obj < 50) then
 		_veh setPos _pos;
 	};
 	player reveal _veh;
-	life_cash = life_cash - _price;
+	life_cash_pirates = life_cash_pirates - _price;
 	bank_addfunds = _price;
 	publicVariableServer "bank_addfunds";
 	_veh setFuel 1;

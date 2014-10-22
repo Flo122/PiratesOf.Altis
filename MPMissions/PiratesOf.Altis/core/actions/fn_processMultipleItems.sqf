@@ -75,8 +75,8 @@ if (_productionAmount < 1) exitWith {
 //check for cash if the player doesnt have the license and calculate possible max production
 if (!_hasLicense) then {
 	//determine max production by money
-	if ((floor (life_cash / _processingCost)) < _productionAmount) then {
-		_productionAmount = floor (life_cash / _processingCost);
+	if ((floor (life_cash_pirates / _processingCost)) < _productionAmount) then {
+		_productionAmount = floor (life_cash_pirates / _processingCost);
 	};
 };
 
@@ -120,7 +120,7 @@ for "_x" from 0 to ((count _inputItems) - 1) do {
 //add new items if players items where deleted
 if (_inputItemsDeleted) then {
 	if (!_hasLicense) then {
-		life_cash = life_cash - (_processingCost * _productionAmount);
+		life_cash_pirates = life_cash_pirates - (_processingCost * _productionAmount);
 	};
 
 	//add the new item

@@ -16,10 +16,10 @@ closeDialog 0;
 life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
 //Take fee for services.
-if(life_atmcash > (call life_revive_fee)) then {
-life_atmcash = life_atmcash - (call life_revive_fee);
+if(life_atmcash_pirates > (call life_revive_fee)) then {
+life_atmcash_pirates = life_atmcash_pirates - (call life_revive_fee);
 } else {
-life_atmcash = 0;
+life_atmcash_pirates = 0;
 };
 //Bring me back to life.
 player setDir _dir;
