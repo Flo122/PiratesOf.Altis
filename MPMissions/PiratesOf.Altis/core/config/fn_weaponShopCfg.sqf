@@ -208,7 +208,7 @@ switch(_shop) do
 						["30Rnd_9x21_Mag",nil,100],
 						["arifle_MXC_Black_F",nil,10000],
 						["arifle_MX_Black_F",nil,10000],
-						["arifle_MX_Black_SW_F",nil,10000],
+						["arifle_MX_SW_Black_F",nil,10000],
 						["arifle_MXM_Black_F",nil,10000],
 						["30Rnd_65x39_caseless_mag",nil,100],
 						["100Rnd_65x39_caseless_mag",nil,100],
