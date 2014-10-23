@@ -10,7 +10,6 @@ class Socket_Reciever
 		class updateRequest {};
 		class syncData {};
 		class updatePartial {};
-		
 	};
 };
 
