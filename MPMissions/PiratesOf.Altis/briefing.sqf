@@ -66,8 +66,9 @@ player createDiarySubject ["close","Schlusswort"];
 				2. Aufbrechen der Tresorraumtueren<br/>
 				3. Aufsprengen des Tresors<br/>
 				4. Abtransport der geraubten Goldbarren (nur mit Bodenfahrzeug moeglich)<br/>
-				5. Verkauf der Goldbarren beim Goldhaendler<br/><br/>
-				Die Polizei muss die Tueren und den Tresor nach einem Bankraub reparieren, anderenfalls ist die Bank frei zugaenglich. Ist die Sprengladung plaziert, erscheint ein Timer, der den Explosionszeitpunkt anzeigt. Die Sprengladung muss vor Ablauf des Timers mithilfe des Bombenentschaerfers entschaerft werden.<br/><br/>
+				5. Alle Personen innerhalb des markierten Gebietes waehrend eines Bankraubes werden als Bankräuber angesehen und von der Polizei als feindlich eingestuft.
+				6. Verkauf der Goldbarren beim Goldhaendler<br/><br/>
+				Die Polizei muss die Tueren und den Tresor nach einem Bankraub reparieren, anderenfalls ist die Bank frei zugaenglich. Ist die Sprengladung platziert, erscheint ein Timer, der den Explosionszeitpunkt anzeigt. Die Sprengladung muss vor Ablauf des Timers mithilfe des Bombenentschaerfers entschaerft werden.<br/><br/>
 				"
 		]
 	];
@@ -114,7 +115,7 @@ player createDiarySubject ["close","Schlusswort"];
 			"Daten",
 				"
 				- Filter: Pirates of Altis<br/>
-				- IP: 37.187.162.202:2302<br/>
+				- IP: 37.187.165.126:2302<br/>
 				- TS: ts.pirates-of-altis.de<br/>
 				- Homepage: www.pirates-of-altis.de<br/><br/>
 				"
@@ -171,6 +172,7 @@ player createDiarySubject ["close","Schlusswort"];
 				2. Grundloses absichtliches Ueberfahren anderer Spieler (VDM)<br/>
 				3. Grundloses Verursachen von Explosionen mit Personenschaden<br/>
 				4. Ninja-RP: Geld/Schluessel/Weg oder tot (und aehnliche Formulierungen) sind RDM!<br/>
+				5. Beschuss auf die Bank von außerhalb der markierten Zone waehrend eines Bankraubes wird als RDM angesehen<br/>
 				Auch eine Rebellenlizens berechtigt nicht zum wahllosen Toeten!<br/>
 				Gangverstecke sind kein RDM-Gebiet, es gelten normale Regeln.<br/>
 				Selbstverteidigung oder das Verteidigen von Freunden oder Gangmitgliedern gilt nicht als RDM.<br/><br/>
