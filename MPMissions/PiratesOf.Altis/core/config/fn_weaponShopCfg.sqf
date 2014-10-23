@@ -352,7 +352,7 @@ switch(_shop) do
 			{
 				["Piraten Waffenkammer",
 					[
-						["arifle_TRG21_F","TRG21 5.56mm",75000],
+						["arifle_TRG21_F","TRG-21 5.56mm",75000],
 						["arifle_Mk20_F",nil,100000],
 						["30Rnd_556x45_Stanag",nil,10000],
 						["arifle_Katiba_F",nil,125000],
@@ -482,17 +482,17 @@ switch(_shop) do
 			{
 				["Donator Fundgrube",
 					[
-						["arifle_TRG21_F","TRG21 5.56mm",50000],
-						["arifle_Mk20_F",nil,75000],
-						["30Rnd_556x45_Stanag",nil,7500],
-						["arifle_Katiba_F",nil,100000],
-						["30Rnd_65x39_caseless_green",nil,10000],
-						["srifle_DMR_01_F",nil,200000],						
-						["10Rnd_762x51_Mag",nil,20000],
-						["LMG_Zafir_F",nil,350000],
-						["150Rnd_762x51_Box",nil,35000],
-						["srifle_EBR_F",nil,500000],
-						["20Rnd_762x51_Mag",nil,50000]
+						["arifle_TRG21_F","TRG-21 5.56mm",75000],
+						["arifle_Mk20_F",nil,100000],
+						["30Rnd_556x45_Stanag",nil,10000],
+						["arifle_Katiba_F",nil,125000],
+						["30Rnd_65x39_caseless_green",nil,12500],
+						["srifle_DMR_01_F",nil,250000],						
+						["10Rnd_762x51_Mag",nil,25000],
+						["LMG_Zafir_F",nil,400000],
+						["150Rnd_762x51_Box",nil,40000],
+						["srifle_EBR_F",nil,600000],
+						["20Rnd_762x51_Mag",nil,60000]
 					]
 				];
 			};
@@ -510,24 +510,24 @@ switch(_shop) do
 			{
 				["Donator Fundgrube",
 					[
-						["srifle_DMR_01_F",nil,75000],						
-						["10Rnd_762x51_Mag",nil,7500],
-						["LMG_Zafir_F",nil,125000],
-						["150Rnd_762x51_Box",nil,12500],
-						["srifle_EBR_F",nil,175000],
-						["20Rnd_762x51_Mag",nil,17500],
-						["srifle_LRR_camo_F",nil,1750000],
-						["7Rnd_408_Mag",nil,40000],
-						["srifle_GM6_camo_F",nil,3500000],
-						["5Rnd_127x108_Mag",nil,90000],
-						["5Rnd_127x108_APDS_Mag",nil,180000],
-						["arifle_MXC_Black_F",nil,900000],
-						["arifle_MX_Black_F",nil,900000],
-						["arifle_MX_SW_Black_F",nil,900000],
-						["arifle_MXM_Black_F",nil,900000],
-						["30Rnd_65x39_caseless_mag",nil,10000],
-						["100Rnd_65x39_caseless_mag",nil,20000],
-						["HandGrenade_Stone","Blendgranate",90000]
+						["srifle_DMR_01_F",nil,200000],						
+						["10Rnd_762x51_Mag",nil,20000],
+						["LMG_Zafir_F",nil,250000],
+						["150Rnd_762x51_Box",nil,25000],
+						["srifle_EBR_F",nil,300000],
+						["20Rnd_762x51_Mag",nil,30000],
+						["srifle_LRR_F",nil,2000000],
+						["7Rnd_408_Mag",nil,50000],
+						["srifle_GM6_F",nil,4000000],
+						["5Rnd_127x108_Mag",nil,100000],
+						["5Rnd_127x108_APDS_Mag",nil,200000],
+						["arifle_MXC_Black_F",nil,1000000],
+						["arifle_MX_Black_F",nil,1000000],
+						["arifle_MX_SW_Black_F",nil,1000000],
+						["arifle_MXM_Black_F",nil,1000000],
+						["30Rnd_65x39_caseless_mag",nil,12500],
+						["100Rnd_65x39_caseless_mag",nil,25000],
+						["HandGrenade_Stone","Blendgranate",100000]
 					]
 				];
 			};
@@ -544,21 +544,21 @@ switch(_shop) do
 			{
 				["Schwarzmarkt",
 					[
-						["srifle_DMR_01_F",nil,100000],						
-						["10Rnd_762x51_Mag",nil,10000],
-						["LMG_Zafir_F",nil,150000],
-						["150Rnd_762x51_Box",nil,15000],
-						["srifle_EBR_F",nil,200000],
+						["srifle_DMR_01_F",nil,175000],						
+						["10Rnd_762x51_Mag",nil,17500],
+						["LMG_Zafir_F",nil,200000],
+						["150Rnd_762x51_Box",nil,20000],
+						["srifle_EBR_F",nil,250000],
 						["20Rnd_762x51_Mag",nil,25000],
-						["srifle_LRR_F",nil,2000000],
+						["srifle_LRR_F",nil,1750000],
 						["7Rnd_408_Mag",nil,50000],
-						["srifle_GM6_F",nil,4000000],
+						["srifle_GM6_F",nil,3500000],
 						["5Rnd_127x108_Mag",nil,100000],
 						["5Rnd_127x108_APDS_Mag",nil,200000],
-						["arifle_MXC_Black_F",nil,1000000],
-						["arifle_MX_Black_F",nil,1000000],
-						["arifle_MX_SW_Black_F",nil,1000000],
-						["arifle_MXM_Black_F",nil,1000000],
+						["arifle_MXC_Black_F",nil,900000],
+						["arifle_MX_Black_F",nil,900000],
+						["arifle_MX_SW_Black_F",nil,900000],
+						["arifle_MXM_Black_F",nil,900000],
 						["30Rnd_65x39_caseless_mag",nil,12500],
 						["100Rnd_65x39_caseless_mag",nil,25000],
 						["HandGrenade_Stone","Blendgranate",100000]

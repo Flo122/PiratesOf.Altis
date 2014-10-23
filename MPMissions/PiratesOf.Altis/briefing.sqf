@@ -7,36 +7,6 @@ player createDiarySubject ["behavioral","Verhaltensregeln"];
 player createDiarySubject ["penality","Bussgeldkatalog"];
 player createDiarySubject ["close","Schlusswort"];
 
-
-
-
-
-/*  Example
-	player createDiaryRecord ["", //Container
-		[
-			"", //Subsection
-				"
-				TEXT HERE<br/><br/>
-				"
-		]
-	];
-*/
-
-/*	Kopiervorlage
-	player createDiaryRecord["",
-		[
-			"",
-				"
-				
-				"
-		]
-	];
-*/	
-
-
-
-
-
 	player createDiaryRecord["foreword",
 		[
 			"Donator",
@@ -73,7 +43,7 @@ player createDiarySubject ["close","Schlusswort"];
 		]
 	];
 	
-		player createDiaryRecord["foreword",
+	player createDiaryRecord["foreword",
 		[
 			"Changelog",
 				"
@@ -86,7 +56,6 @@ player createDiarySubject ["close","Schlusswort"];
 				Marktsystem Fixed<br/>
 				Fuel Balanced <br/>
 				Script verbesserung CPU auslastung Fixed<br/>
-		
 				"
 		]
 	];
@@ -130,10 +99,6 @@ player createDiarySubject ["close","Schlusswort"];
 				"
 		]
 	];
-
-
-
-
 	
 	player createDiaryRecord["serverrules",
 		[
@@ -172,7 +137,7 @@ player createDiarySubject ["close","Schlusswort"];
 				2. Grundloses absichtliches Ueberfahren anderer Spieler (VDM)<br/>
 				3. Grundloses Verursachen von Explosionen mit Personenschaden<br/>
 				4. Ninja-RP: Geld/Schluessel/Weg oder tot (und aehnliche Formulierungen) sind RDM!<br/>
-				5. Beschuss auf die Bank von außerhalb der markierten Zone waehrend eines Bankraubes wird als RDM angesehen<br/>
+				5. Beschuss auf die Bank von außerhalb der markierten Zone waehrend eines Bankraubes wird als RDM angesehen. Findet das Gefecht außerhalb der Mauern statt, ist dies ein normales Gefecht und wird nicht durch die markierung begrenzt.<br/>
 				Auch eine Rebellenlizens berechtigt nicht zum wahllosen Toeten!<br/>
 				Gangverstecke sind kein RDM-Gebiet, es gelten normale Regeln.<br/>
 				Selbstverteidigung oder das Verteidigen von Freunden oder Gangmitgliedern gilt nicht als RDM.<br/><br/>
@@ -211,7 +176,7 @@ player createDiarySubject ["close","Schlusswort"];
 				6.  Nutzung offensichtlich gehackter Gegenstaende<br/>
 				7.  RDM/VDM<br/>
 				8.  Unangemessene Beleidigungen und rassistische Namen, Aeusserungen, Parolen<br/>
-				9.  Jegliche Aktionen ohne RP-Hintergrund (fortwaehrendes Trolling) oder solche, um RP zu verhindern (absichtlicher Selbstmord, Combatlog)<br/>
+				9.  Jegliche Aktionen ohne RP-Hintergrund (fortwaehrendes Trolling) oder solche, um RP zu verhindern (absichtlicher Selbstmord, Combatlog). Des weiteren wird schlechtes RP (z.B. Geld/Schluessel/Weg oder tot und aehnliche Formulierungen sowie Aktionen) mit einem Tagesbann sanktioniert, der nicht zur Diskussion steht.<br/>
 				10. Missachtung der New Life-Regeln<br/>
 				11. Dreimaliger Kick vom Server.<br/><br/>
 				"
@@ -268,7 +233,7 @@ player createDiarySubject ["close","Schlusswort"];
 				3. Polizeikomissar<br/>
 				4. Polizeioberkomissar<br/>
 				5. Polizeihauptkomissar<br/>
-				6. Bundespolizist | SEK<br/>
+				6. Bundespolizist<br/>
 				7. Stellvertretender Polizeichef<br/>
 				8. Polizeichef<br/>
 				Der ranghoechste Polizist ist fuer jedwede Einsatzleitung sowie fuer die Koordinierung und Aufteilung der Einsatzkraefte zustaendig. Anweisungen hoeherrangiger Polizisten ist unbedingt Folge zu leisten.<br/><br/>
@@ -368,11 +333,7 @@ player createDiarySubject ["close","Schlusswort"];
 				"
 		]
 	];
-	
-	
-	
-	
-	
+		
 	player createDiaryRecord["penality",
 		[
 			"Gefaengniszeiten bei Nichtbezahlen der Strafe",
@@ -486,10 +447,6 @@ player createDiarySubject ["close","Schlusswort"];
 				"
 		]
 	];
-	
-	
-	
-	
 	
 	player createDiaryRecord["close",
 		[
