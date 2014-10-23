@@ -102,6 +102,15 @@ player createDiarySubject ["close","Schlusswort"];
 	
 	player createDiaryRecord["serverrules",
 		[
+			"Beschwerden",
+				"
+				Beschwerden gegen Spieler werden nur noch mit Begruendung sowie Spielernamen bearbeitet. Im Zweifelsfall sind Screenshots oder Videos vorzulegen. Verallgemeintere Gang- oder Polizeibeschwerden werden nicht mehr bearbeitet.<br/>
+				"
+		]
+	];
+	
+	player createDiaryRecord["serverrules",
+		[
 			"Kommunikationsregeln",
 				"
 				1. Im Sidechat darf nur geschrieben, nicht geredet werden.<br/>
