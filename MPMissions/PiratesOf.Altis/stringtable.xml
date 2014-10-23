@@ -3727,7 +3727,7 @@
 		<Key ID="STR_ISTR_Bolt_AlertHouse">
 			<Original>%1 was seen breaking into a house.</Original>
 			<English>%1 was seen breaking into a house.</English>
-			<German>%1 wurde beim Einbruch in ein Haus gesehen.</German>
+			<German>%1 wurde beim Einbruch in ein Haus gesehen.Das Haus gehört %2</German>
 			<French>%1 a été vu rentrant dans une maison par effraction.</French>
 			<Italian>%1 è stato visto fare irruzione in una casa.</Italian>
 		</Key>
